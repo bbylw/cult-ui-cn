@@ -111,7 +111,7 @@ try {
   const api = await fetch(BASE + "/docs/component-api.json")
   check("component-api 200", api.status === 200)
 
-  // 构建产物回归:dither 插件、双主题 color-scheme、静态正文与规范化 URL
+  // 构建产物回归:dither 插件、双主题 color-scheme、无 JS 兜底与规范化 URL
   const globeHtml = fs.readFileSync(
     path.join(dist, "docs/components/globe/index.html"),
     "utf8"
@@ -126,7 +126,10 @@ try {
     "双主题 color-scheme 已声明",
     /color-scheme:\s*light/.test(css) && /color-scheme:\s*dark/.test(css)
   )
-  check("静态页含正文骨架", /<main><h1>/.test(globeHtml))
+  check(
+    "无 JS 兜底正文写入 noscript",
+    /<noscript><main><h1>/.test(globeHtml)
+  )
   check(
     "canonical 使用带尾斜杠的最终地址",
     globeHtml.includes('href="https://cult-ui.ndjp.net/docs/components/globe/"')
@@ -136,6 +139,14 @@ try {
     "首页 meta 数量由数据派生",
     homeHtml.includes(`:${componentCatalog.length} 个免费开源`)
   )
+  const fallbackRendered = await page.evaluate(() => {
+    const el = document.querySelector("noscript")
+    return (
+      (el?.getClientRects().length ?? 0) > 0 ||
+      document.body.innerText.includes("启用 JavaScript 可查看实时演示")
+    )
+  })
+  check("启用 JS 时首屏不显示无 JS 兜底文字", !fallbackRendered)
 
   // 全量巡检:每个组件页的静态 head、演示 chunk 与运行时异常
   await page.evaluate(() => localStorage.setItem("cult-ui-cn-theme", "dark"))

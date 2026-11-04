@@ -57,13 +57,13 @@ function renderFor(route) {
     `$1${url}$2`
   )
 
-  // 正文仍由客户端渲染;这里写入最小静态正文,供不执行 JS 的爬虫与
-  // JS 加载失败时兜底。React createRoot 挂载时会接管并清空 #root。
+  // 正文仍由客户端渲染;无 JS 兜底正文必须放在 <noscript> 中。若直接写进
+  // #root,浏览器会先画出这段静态文字,等 React 挂载后再替换,首屏会闪一下。
   const heading = escapeHtml(meta.title.split(" · ")[0])
   const mdLink = route.startsWith("/docs/components/")
     ? `<p><a href="${route}.md">阅读本页 Markdown 版本</a></p>`
     : ""
-  const shell = `<div id="root"><main><h1>${heading}</h1><p>${escapeHtml(meta.description)}</p>${mdLink}<p>启用 JavaScript 可查看实时演示与完整文档。</p></main></div>`
+  const shell = `<div id="root"></div><noscript><main><h1>${heading}</h1><p>${escapeHtml(meta.description)}</p>${mdLink}<p>启用 JavaScript 可查看实时演示与完整文档。</p></main></noscript>`
   html = html.replace('<div id="root"></div>', () => shell)
 
   return html
