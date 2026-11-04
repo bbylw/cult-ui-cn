@@ -36,6 +36,9 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --grid-line: oklch(0 0 0 / 6%);
+  --dot-color: oklch(0 0 0 / 9%);
+  --hero-glow: oklch(0.72 0.15 85 / 0.16);
 }
 
 .dark {
@@ -70,6 +73,9 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+  --grid-line: oklch(1 0 0 / 4%);
+  --dot-color: oklch(1 0 0 / 8%);
+  --hero-glow: oklch(0.75 0.15 85 / 0.10);
 }
 
 @theme inline {
@@ -135,12 +141,12 @@ html {
 /* 细网格背景 */
 .bg-grid {
   background-image:
-    linear-gradient(to right, oklch(1 0 0 / 4%) 1px, transparent 1px),
-    linear-gradient(to bottom, oklch(1 0 0 / 4%) 1px, transparent 1px);
+    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
   background-size: 64px 64px;
 }
 
 .bg-dots {
-  background-image: radial-gradient(oklch(1 0 0 / 8%) 1px, transparent 1px);
+  background-image: radial-gradient(var(--dot-color) 1px, transparent 1px);
   background-size: 24px 24px;
 }

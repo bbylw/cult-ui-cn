@@ -74,9 +74,9 @@ function Preview({
 /* ── Globe ─────────────────────────────────────────────── */
 function GlobeDemo() {
   return (
-    <Preview className="min-h-[420px]">
+    <Preview className="min-h-[280px] bg-muted/20 sm:min-h-[340px] dark:bg-transparent">
       <DefaultShowcaseGlobe
-        globeSize={360}
+        globeSize={300}
         title="CULT UI"
         orbitPhrase="150+ ANIMATED COMPONENTS · "
       />
@@ -173,7 +173,7 @@ function AnalyticsChartDemo() {
 /* ── Mac Screen ────────────────────────────────────────── */
 function MacScreenDemo() {
   return (
-    <Preview className="min-h-[360px]">
+    <Preview className="min-h-[300px]">
       <MacScreen gifUrl={OG_IMAGE} alt="Cult UI 首屏截图" />
     </Preview>
   )
@@ -204,7 +204,7 @@ function IslandDemo() {
 
 function DynamicIslandDemo() {
   return (
-    <Preview className="min-h-[360px]">
+    <Preview className="min-h-[300px]">
       <DynamicIslandProvider>
         <DynamicIsland id="landing-island">
           <IslandDemo />
@@ -384,7 +384,7 @@ function KanbanBoardDemo() {
 /* ── Fluted Glass ──────────────────────────────────────── */
 function FlutedGlassDemo() {
   return (
-    <Preview className="min-h-[360px] w-full">
+    <Preview className="min-h-[300px] w-full">
       <div className="relative aspect-video w-full overflow-hidden rounded-2xl border">
         <FlutedGlass
           className="absolute inset-0 size-full"

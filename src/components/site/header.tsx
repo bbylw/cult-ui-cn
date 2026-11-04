@@ -1,6 +1,7 @@
+import { useState } from "react"
 import { Link, NavLink } from "react-router-dom"
 import { useTheme } from "@/lib/theme"
-import { Moon, Sun } from "lucide-react"
+import { Menu, Moon, Sun, X } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 
@@ -44,6 +45,8 @@ function ThemeToggle() {
 }
 
 export function SiteHeader() {
+  const [menuOpen, setMenuOpen] = useState(false)
+
   return (
     <header className="bg-background/70 sticky top-0 z-50 w-full border-b backdrop-blur-xl">
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
@@ -98,8 +101,96 @@ export function SiteHeader() {
           <Button asChild className="ml-1 hidden sm:inline-flex">
             <Link to="/docs/installation">开始使用</Link>
           </Button>
+          <Button
+            variant="ghost"
+            size="icon"
+            className="md:hidden"
+            aria-label={menuOpen ? "关闭菜单" : "打开菜单"}
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen((open) => !open)}
+          >
+            {menuOpen ? <X className="size-4" /> : <Menu className="size-4" />}
+          </Button>
         </div>
       </div>
+
+      {menuOpen && (
+        <div className="bg-background absolute inset-x-0 top-full border-b shadow-xl md:hidden">
+          <nav className="mx-auto flex max-w-6xl flex-col gap-0.5 px-4 py-3 sm:px-6">
+            {NAV_ITEMS.map((item) =>
+              item.kind === "external" ? (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={() => setMenuOpen(false)}
+                  className="text-muted-foreground hover:text-foreground rounded-md px-2 py-2 text-sm transition-colors"
+                >
+                  {item.label}
+                </a>
+              ) : (
+                <NavLink
+                  key={item.label}
+                  to={item.to}
+                  end={item.end ?? false}
+                  onClick={() => setMenuOpen(false)}
+                  className={({ isActive }) =>
+                    `rounded-md px-2 py-2 text-sm transition-colors ${
+                      isActive
+                        ? "bg-accent text-accent-foreground font-medium"
+                        : "text-muted-foreground hover:text-foreground"
+                    }`
+                  }
+                >
+                  {item.label}
+                </NavLink>
+              )
+            )}
+            <Link
+              to="/docs/installation"
+              onClick={() => setMenuOpen(false)}
+              className="bg-primary text-primary-foreground mt-2 rounded-md px-3 py-2 text-center text-sm font-medium"
+            >
+              开始使用
+            </Link>
+            <div className="mt-5">
+              <p className="text-muted-foreground px-2 text-xs font-medium">
+                热门组件
+              </p>
+              <div className="mt-1.5 grid grid-cols-2 gap-1">
+                {[
+                  ["3D 地球", "/docs/components/globe"],
+                  ["灵动岛", "/docs/components/dynamic-island"],
+                  ["看板", "/docs/components/kanban-board"],
+                  ["竖纹玻璃", "/docs/components/fluted-glass"],
+                ].map(([label, to]) => (
+                  <Link
+                    key={to}
+                    to={to}
+                    onClick={() => setMenuOpen(false)}
+                    className="text-muted-foreground hover:bg-accent hover:text-foreground rounded-md px-2 py-2 text-sm transition-colors"
+                  >
+                    {label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+            <div className="text-muted-foreground mt-6 border-t px-2 pt-4 pb-2 text-xs leading-relaxed">
+              <p>Cult UI 中文站 · 收录 137 个动画组件</p>
+              <a
+                href="https://github.com/nolly-studio/cult-ui"
+                target="_blank"
+                rel="noreferrer"
+                onClick={() => setMenuOpen(false)}
+                className="hover:text-foreground mt-1 inline-block underline underline-offset-4"
+              >
+                GitHub 仓库
+              </a>
+            </div>
+          </nav>
+        </div>
+      )}
     </header>
   )
 }
