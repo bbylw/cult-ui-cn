@@ -1,0 +1,4 @@
+# 生成物标记,让 GitHub diff 默认折叠这些文件
+public/docs/** linguist-generated=true
+public/llms.txt linguist-generated=true
+public/llms-full.txt linguist-generated=true
