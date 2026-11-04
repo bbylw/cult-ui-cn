@@ -232,7 +232,7 @@ fs.writeFileSync(path.join(publicDir, "llms.txt"), indexLines.join("\n"))
 const full = [
   "# Cult UI 中文站 · 完整文档",
   "",
-  `> 生成时间:${new Date().toISOString().slice(0, 10)}。共 ${componentCatalog.length} 个组件。`,
+  `> 共 ${componentCatalog.length} 个组件。由 scripts/generate-agent-docs.mjs 生成,请勿手工编辑。`,
   "",
   ...componentCatalog.map((entry) => buildMarkdown(entry)),
 ]

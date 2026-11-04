@@ -8,6 +8,7 @@
     "dev": "vite",
     "build": "bun scripts/generate-agent-docs.mjs && tsc -b && vite build",
     "generate:docs": "bun scripts/generate-agent-docs.mjs",
+    "check:docs": "bun run generate:docs && git diff --exit-code HEAD -- public/llms.txt public/llms-full.txt public/docs",
     "lint": "oxlint",
     "preview": "vite preview"
   },
