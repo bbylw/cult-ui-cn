@@ -54,7 +54,7 @@ function Hero() {
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
           <Button size="lg" asChild>
-            <Link to="/docs/components/globe">
+            <Link to="/docs/components">
               浏览组件 <ArrowRight className="size-4" />
             </Link>
           </Button>
@@ -110,7 +110,9 @@ function FeaturedSection() {
           </p>
         </div>
         <Button variant="outline" asChild>
-          <Link to="/docs">浏览全部组件 <ArrowRight className="size-4" /></Link>
+          <Link to="/docs/components">
+            浏览全部组件 <ArrowRight className="size-4" />
+          </Link>
         </Button>
       </div>
 

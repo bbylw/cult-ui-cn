@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import { ArrowRight } from "lucide-react"
 
+import { componentCatalog } from "@/lib/component-catalog"
 import { componentDocs } from "@/lib/docs-data"
 
 export function DocsOverviewPage() {
@@ -23,19 +24,24 @@ export function DocsOverviewPage() {
         实现动画。
       </p>
       <p className="text-muted-foreground mt-3 leading-relaxed">
-        本站为中文翻译与演示,精选 12 个代表性组件提供实时渲染与中文文档。完整组件列表请见{" "}
-        <a
-          href="https://www.cult-ui.com/docs/components/dynamic-island"
-          target="_blank"
-          rel="noreferrer"
-          className="underline underline-offset-4"
-        >
-          官网组件目录
-        </a>
+        本站收录了官方全部 {componentCatalog.length} 个组件的源码与在线演示,
+        并附中文简介与安装命令;其中 {componentDocs.length} 个另有逐项 Props 文档。
+        浏览全部组件请见{" "}
+        <Link to="/docs/components" className="underline underline-offset-4">
+          组件总览
+        </Link>
         。
       </p>
 
-      <h2 className="mt-12 text-2xl font-bold tracking-tight">精选组件</h2>
+      <div className="mt-12 flex flex-wrap items-baseline justify-between gap-3">
+        <h2 className="text-2xl font-bold tracking-tight">带演示的组件</h2>
+        <Link
+          to="/docs/components"
+          className="text-muted-foreground hover:text-foreground text-sm"
+        >
+          查看全部 {componentCatalog.length} 个组件 →
+        </Link>
+      </div>
       <div className="mt-6 grid gap-4 sm:grid-cols-2">
         {componentDocs.map((doc) => (
           <Link

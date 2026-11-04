@@ -6,7 +6,10 @@ const FOOTER_SECTIONS = [
     links: [
       { label: "介绍", to: "/docs" },
       { label: "安装(Vite + bun)", to: "/docs/installation" },
+      { label: "手动安装", to: "/docs/installation/manual" },
       { label: "主题定制", to: "/docs/theming" },
+      { label: "MCP 服务器", to: "/docs/mcp-server" },
+      { label: "LLMs 与 Agent", to: "/docs/llms" },
     ],
   },
   {
@@ -45,9 +48,7 @@ export function SiteFooter() {
           <div>
             <div className="flex items-center gap-2 font-semibold">
               <img src="/favicon.svg" alt="" className="size-6 rounded-md" />
-              <span className="tracking-tight">
-                Cult UI <span className="text-muted-foreground font-normal">中文站</span>
-              </span>
+              <span className="tracking-tight">Cult UI</span>
             </div>
             <p className="text-muted-foreground mt-3 max-w-xs text-sm leading-relaxed">
               150+ 个免费开源的 shadcn/ui 动画组件。CLI 把源码复制进你的项目,代码完全归你所有。
@@ -91,7 +92,7 @@ export function SiteFooter() {
 
         <div className="text-muted-foreground mt-10 flex flex-col gap-2 border-t pt-6 text-xs sm:flex-row sm:items-center sm:justify-between">
           <p>
-            中文站为非官方翻译演示,组件版权归 Nolly Studio 所有,遵循 MIT 许可证发布。
+            本站为非官方翻译演示,组件版权归 Nolly Studio 所有,遵循 MIT 许可证发布。
           </p>
           <p>
             Made by{" "}

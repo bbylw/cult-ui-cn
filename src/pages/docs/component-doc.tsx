@@ -4,6 +4,8 @@ import { ArrowLeft, ArrowRight, Package } from "lucide-react"
 import { CodeBlock } from "@/components/ui/code-block"
 
 import { ComponentDemo } from "@/components/site/demos"
+import { getCatalogEntry } from "@/lib/component-catalog"
+import type { ComponentCatalogEntry } from "@/lib/component-catalog"
 import { componentDocs, getComponentDoc } from "@/lib/docs-data"
 import { NotFoundPage } from "@/pages/not-found"
 
@@ -11,7 +13,11 @@ export function ComponentDocPage() {
   const { slug } = useParams<{ slug: string }>()
   const doc = getComponentDoc(slug)
 
-  if (!doc) return <NotFoundPage />
+  if (!doc) {
+    const entry = getCatalogEntry(slug)
+    if (!entry) return <NotFoundPage />
+    return <CatalogEntryPage entry={entry} />
+  }
 
   const index = componentDocs.findIndex((d) => d.slug === doc.slug)
   const prev = index > 0 ? componentDocs[index - 1] : null
@@ -160,6 +166,112 @@ export function ComponentDocPage() {
         ) : (
           <span className="flex-1" />
         )}
+      </nav>
+    </article>
+  )
+}
+
+/* 已移植源码但暂无实时演示的组件:提供中文简介、安装、导出部件与依赖 */
+function CatalogEntryPage({ entry }: { entry: ComponentCatalogEntry }) {
+  return (
+    <article className="max-w-3xl">
+      <div className="flex flex-wrap items-center gap-3">
+        <h1 className="text-3xl font-bold tracking-tight">{entry.zhName}</h1>
+        <span className="bg-muted text-muted-foreground rounded-full px-2.5 py-0.5 text-xs">
+          {entry.category}
+        </span>
+        <span className="text-muted-foreground rounded-full border px-2.5 py-0.5 text-xs">
+          源码已收录
+        </span>
+      </div>
+      <p className="text-muted-foreground mt-1 font-mono text-sm">{entry.name}</p>
+      <p className="text-muted-foreground mt-4 leading-relaxed">
+        {entry.description}
+      </p>
+
+      <p className="bg-muted/40 border-border mt-6 rounded-lg border px-4 py-3 text-sm leading-relaxed">
+        <strong className="text-foreground">说明:</strong>{" "}
+        <span className="text-muted-foreground">
+          源码已收录在本站{" "}
+          <code className="text-foreground font-mono text-xs">
+            src/components/ui/{entry.slug}.tsx
+          </code>
+          ,可直接 import 使用;该组件暂未做实时演示与逐项 Props 表格,
+          完整示例与 Props 请参考官方文档。
+        </span>
+      </p>
+
+      <section className="mt-10">
+        <h2 className="mb-4 text-xl font-bold tracking-tight">实时演示</h2>
+        <ComponentDemo slug={entry.slug} />
+      </section>
+
+      <section className="mt-10">
+        <h2 className="mb-4 text-xl font-bold tracking-tight">安装</h2>
+        <CodeBlock
+          tabs={[
+            { label: "npm", code: entry.install, language: "bash" },
+            {
+              label: "bun",
+              code: entry.install.replace("npx shadcn", "bunx shadcn"),
+              language: "bash",
+            },
+          ]}
+        />
+      </section>
+
+      {entry.parts.length > 0 && (
+        <section className="mt-10">
+          <h2 className="mb-4 text-xl font-bold tracking-tight">导出部件</h2>
+          <div className="flex flex-wrap gap-2">
+            {entry.parts.map((part) => (
+              <code
+                key={part}
+                className="bg-muted rounded-md px-2 py-1 font-mono text-xs"
+              >
+                {part}
+              </code>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {entry.dependencies.length > 0 && (
+        <section className="mt-10">
+          <h2 className="mb-4 text-xl font-bold tracking-tight">依赖</h2>
+          <ul className="space-y-2">
+            {entry.dependencies.map((dep) => (
+              <li
+                key={dep}
+                className="flex items-start gap-2 text-sm leading-relaxed"
+              >
+                <Package className="text-muted-foreground mt-0.5 size-4 shrink-0" />
+                <span className="text-muted-foreground">{dep}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      <p className="text-muted-foreground mt-8 text-sm">
+        完整英文文档与示例见{" "}
+        <a
+          href={`https://www.cult-ui.com/docs/components/${entry.slug}`}
+          target="_blank"
+          rel="noreferrer"
+          className="underline underline-offset-4"
+        >
+          cult-ui.com/docs/components/{entry.slug}
+        </a>
+      </p>
+
+      <nav className="mt-12 border-t pt-6">
+        <Link
+          to="/docs/components"
+          className="text-muted-foreground hover:text-foreground text-sm"
+        >
+          ← 返回组件总览
+        </Link>
       </nav>
     </article>
   )

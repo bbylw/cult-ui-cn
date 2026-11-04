@@ -1,11 +1,15 @@
 import { NavLink, Outlet } from "react-router-dom"
 
+import { componentCatalog } from "@/lib/component-catalog"
 import { componentDocs } from "@/lib/docs-data"
 
 const QUICK_LINKS = [
   { to: "/docs", label: "介绍", end: true },
   { to: "/docs/installation", label: "安装(Vite + bun)" },
+  { to: "/docs/installation/manual", label: "手动安装" },
   { to: "/docs/theming", label: "主题定制" },
+  { to: "/docs/mcp-server", label: "MCP 服务器" },
+  { to: "/docs/llms", label: "LLMs 与 Agent" },
 ] as const
 
 export function DocsLayout() {
@@ -40,6 +44,24 @@ export function DocsLayout() {
           <div>
             <h3 className="mb-2 px-2 text-sm font-semibold">组件</h3>
             <ul className="space-y-0.5">
+              <li>
+                <NavLink
+                  to="/docs/components"
+                  end
+                  className={({ isActive }) =>
+                    `flex items-baseline justify-between gap-2 rounded-md px-2 py-1.5 text-sm transition-colors ${
+                      isActive
+                        ? "bg-accent text-accent-foreground font-medium"
+                        : "text-muted-foreground hover:text-foreground"
+                    }`
+                  }
+                >
+                  <span>全部组件</span>
+                  <span className="font-mono text-[10px] opacity-60">
+                    {componentCatalog.length}
+                  </span>
+                </NavLink>
+              </li>
               {componentDocs.map((doc) => (
                 <li key={doc.slug}>
                   <NavLink
@@ -104,9 +126,13 @@ export function DocsLayout() {
           <optgroup label="快速开始">
             <option value="/docs">介绍</option>
             <option value="/docs/installation">安装(Vite + bun)</option>
+            <option value="/docs/installation/manual">手动安装</option>
             <option value="/docs/theming">主题定制</option>
+            <option value="/docs/mcp-server">MCP 服务器</option>
+            <option value="/docs/llms">LLMs 与 Agent</option>
           </optgroup>
           <optgroup label="组件">
+            <option value="/docs/components">全部组件</option>
             {componentDocs.map((doc) => (
               <option key={doc.slug} value={`/docs/components/${doc.slug}`}>
                 {doc.zhName} {doc.name}

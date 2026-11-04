@@ -55,9 +55,7 @@ export function SiteHeader() {
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
         <Link to="/" className="flex items-center gap-2 font-semibold">
           <img src="/favicon.svg" alt="" className="size-6 rounded-md" />
-          <span className="tracking-tight">
-            Cult UI <span className="text-muted-foreground font-normal">中文站</span>
-          </span>
+          <span className="tracking-tight">Cult UI</span>
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex">

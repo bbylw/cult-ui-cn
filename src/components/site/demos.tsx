@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { Component, lazy, Suspense, useState, type ReactNode } from "react"
 import { MotionConfig } from "motion/react"
 import { Rocket } from "lucide-react"
 
@@ -51,6 +51,7 @@ import {
 import { MacScreen } from "@/components/ui/mac-screen"
 import TextAnimate from "@/components/ui/text-animate"
 
+import { demoLoaders } from "@/components/demos/registry"
 import { OG_IMAGE } from "@/lib/docs-data"
 
 /* 每个 demo 外层的统一预览容器 */
@@ -192,7 +193,7 @@ function IslandDemo() {
     <DynamicContainer className="flex h-full w-full items-center justify-center">
       <DynamicTitle className="flex items-center gap-2 text-base font-semibold text-white">
         <Rocket className="h-4 w-4 fill-orange-400 text-orange-400" />
-        Cult UI 中文站
+        Cult UI
       </DynamicTitle>
       <DynamicDescription className="text-xs text-white/60">
         灵动岛 · 14 种尺寸预设
@@ -412,14 +413,58 @@ const demoMap: Record<string, () => React.JSX.Element> = {
   "fluted-glass": FlutedGlassDemo,
 }
 
+/* 官方 registry 演示:按需加载,单个演示出错不影响文档其余部分 */
+const lazyDemoMap = Object.fromEntries(
+  Object.entries(demoLoaders).map(([slug, load]) => [slug, lazy(load)])
+) as Record<string, React.LazyExoticComponent<React.ComponentType>>
+
+class DemoBoundary extends Component<
+  { children: ReactNode },
+  { error: Error | null }
+> {
+  state: { error: Error | null } = { error: null }
+
+  static getDerivedStateFromError(error: Error) {
+    return { error }
+  }
+
+  render() {
+    if (this.state.error) {
+      return (
+        <p className="text-muted-foreground text-sm">
+          演示加载失败:{this.state.error.message}
+        </p>
+      )
+    }
+    return this.props.children
+  }
+}
+
 export function ComponentDemo({ slug }: { slug: string }) {
   const Demo = demoMap[slug]
-  if (!Demo) {
+  if (Demo) return <Demo />
+
+  const LazyDemo = lazyDemoMap[slug]
+  if (!LazyDemo) {
     return (
       <p className="text-muted-foreground text-sm">该组件暂无在线演示。</p>
     )
   }
-  return <Demo />
+
+  return (
+    <DemoBoundary>
+      <Suspense
+        fallback={
+          <p className="text-muted-foreground text-sm">正在加载演示…</p>
+        }
+      >
+        <LazyDemo />
+      </Suspense>
+    </DemoBoundary>
+  )
 }
 
-export const demoSlugs = Object.keys(demoMap)
+export const demoSlugs = [
+  ...Object.keys(demoMap),
+  ...Object.keys(lazyDemoMap),
+]

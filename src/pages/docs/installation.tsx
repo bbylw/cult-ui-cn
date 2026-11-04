@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 import { CodeBlock } from "@/components/ui/code-block"
 
 function H2({ children }: { children: React.ReactNode }) {
@@ -11,6 +13,14 @@ function H2({ children }: { children: React.ReactNode }) {
 function P({ children }: { children: React.ReactNode }) {
   return (
     <p className="text-muted-foreground mt-4 leading-relaxed">{children}</p>
+  )
+}
+
+function H3({ children }: { children: React.ReactNode }) {
+  return (
+    <h3 className="mt-8 scroll-mt-24 text-lg font-semibold tracking-tight">
+      {children}
+    </h3>
   )
 }
 
@@ -198,6 +208,16 @@ bunx shadcn@latest add https://www.cult-ui.com/r/shift-card.json`}
         CLI 会自动安装每个组件的 npm 依赖(如 motion、cobe),并把源码写入{" "}
         <code className="bg-muted rounded px-1.5 py-0.5 text-xs">src/components/ui/</code>。
       </P>
+      <P>
+        不方便使用 CLI?可以按{" "}
+        <Link
+          to="/docs/installation/manual"
+          className="underline underline-offset-4"
+        >
+          手动安装
+        </Link>{" "}
+        指南逐项配置,再复制组件源码。
+      </P>
 
       <H2>6. 适配说明(非 Next.js 项目)</H2>
       <P>
@@ -225,6 +245,112 @@ bunx shadcn@latest add https://www.cult-ui.com/r/shift-card.json`}
           import {"{"} DefaultShowcaseGlobe {"}"} from "@/components/ui/globe"
         </code>
         。
+      </P>
+
+      <H2>从终端查找组件</H2>
+      <P>先搜索 registry、预览组件,再决定是否安装:</P>
+      <CodeBlock
+        code={`npx shadcn@latest search @cult-ui --query card
+npx shadcn@latest view @cult-ui/globe`}
+        language="bash"
+        className="mt-4"
+      />
+      <P>
+        想让 AI agent 代劳,请配置{" "}
+        <Link to="/docs/mcp-server" className="underline underline-offset-4">
+          MCP 服务器
+        </Link>
+        。
+      </P>
+
+      <H2>固定 registry 地址</H2>
+      <P>
+        只有在使用 3.0 之前的 shadcn CLI、所处环境访问不到 shadcn registry
+        目录,或希望在团队内明确写出 registry URL 时才需要这一步:
+      </P>
+      <CodeBlock
+        code={`{
+  "registries": {
+    "@cult-ui": "https://www.cult-ui.com/r/{name}.json"
+  }
+}`}
+        language="json"
+        className="mt-4"
+      />
+      <P>任何 CLI 版本也都可以通过 URL 直接安装单个组件:</P>
+      <CodeBlock
+        code="npx shadcn@latest add https://www.cult-ui.com/r/globe.json"
+        language="bash"
+        className="mt-4"
+      />
+
+      <H2>更新组件</H2>
+      <P>
+        组件就是你自己的代码,更新完全可选。加上{" "}
+        <code className="bg-muted rounded px-1.5 py-0.5 text-xs">--overwrite</code>{" "}
+        重新添加,即可替换为最新版本;执行后请检查 diff,保留你想留下的本地改动:
+      </P>
+      <CodeBlock
+        code="npx shadcn@latest add @cult-ui/globe --overwrite"
+        language="bash"
+        className="mt-4"
+      />
+
+      <H2>故障排查</H2>
+
+      <H3>CLI 提示 @cult-ui registry 未知</H3>
+      <P>
+        请使用最新的 CLI({" "}
+        <code className="bg-muted rounded px-1.5 py-0.5 text-xs">npx shadcn@latest</code>
+        ),而不是全局安装或锁定版本的旧版本。若仍然失败,请把上面的{" "}
+        <code className="bg-muted rounded px-1.5 py-0.5 text-xs">registries</code>{" "}
+        条目写进{" "}
+        <code className="bg-muted rounded px-1.5 py-0.5 text-xs">components.json</code>
+        。
+      </P>
+
+      <H3>Cannot find module @/lib/utils</H3>
+      <P>
+        项目还没有用 shadcn/ui 初始化。运行{" "}
+        <code className="bg-muted rounded px-1.5 py-0.5 text-xs">
+          npx shadcn@latest init
+        </code>
+        ,或按{" "}
+        <Link
+          to="/docs/installation/manual"
+          className="underline underline-offset-4"
+        >
+          手动安装
+        </Link>{" "}
+        自行添加{" "}
+        <code className="bg-muted rounded px-1.5 py-0.5 text-xs">cn</code> 工具函数与{" "}
+        <code className="bg-muted rounded px-1.5 py-0.5 text-xs">@/</code> 别名。
+      </P>
+
+      <H3>组件能渲染但没有样式或颜色不对</H3>
+      <P>
+        组件读取 shadcn 的主题令牌,例如{" "}
+        <code className="bg-muted rounded px-1.5 py-0.5 text-xs">--card</code>、{" "}
+        <code className="bg-muted rounded px-1.5 py-0.5 text-xs">--border</code> 与{" "}
+        <code className="bg-muted rounded px-1.5 py-0.5 text-xs">--muted-foreground</code>
+        。请确认全局 CSS 在{" "}
+        <code className="bg-muted rounded px-1.5 py-0.5 text-xs">:root</code> 与{" "}
+        <code className="bg-muted rounded px-1.5 py-0.5 text-xs">.dark</code>{" "}
+        中都定义了这些变量,并让 Tailwind 扫描到{" "}
+        <code className="bg-muted rounded px-1.5 py-0.5 text-xs">components</code>{" "}
+        目录。详见{" "}
+        <Link to="/docs/theming" className="underline underline-offset-4">
+          主题定制
+        </Link>
+        。
+      </P>
+
+      <H3>在 Next.js 之外无法解析 next/image 或 next/link</H3>
+      <P>
+        少数组件使用了 Next.js 的 Image 与 Link 组件,请把它们换成{" "}
+        <code className="bg-muted rounded px-1.5 py-0.5 text-xs">&lt;img&gt;</code> 与{" "}
+        <code className="bg-muted rounded px-1.5 py-0.5 text-xs">&lt;a&gt;</code>
+        ,或你所使用路由的链接组件——本站第 6 步已列出受影响的组件。
       </P>
     </article>
   )

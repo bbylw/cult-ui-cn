@@ -26,7 +26,7 @@ export const componentDocs: ComponentDocData[] = [
     slug: "globe",
     name: "Globe",
     zhName: "3D 地球",
-    category: "动效",
+    category: "特效",
     description:
       "基于 cobe 构建的交互式 3D WebGL 地球组件,支持拖拽旋转、明暗主题自适应、标记点与飞行弧线,适合营销页首屏与仪表盘。",
     install: "npx shadcn@latest add @cult-ui/globe",
@@ -72,7 +72,7 @@ export const componentDocs: ComponentDocData[] = [
     slug: "text-animate",
     name: "Text Animate",
     zhName: "文字动画",
-    category: "动效",
+    category: "文字与排版",
     description:
       "动画文字组件,提供 8 种入场效果(fadeIn、rollIn、whipIn 等),支持逐词/逐字符交错动画,适合标题与口号。",
     install: "npx shadcn@latest add @cult-ui/text-animate",
@@ -189,7 +189,7 @@ export const componentDocs: ComponentDocData[] = [
     slug: "analytics-chart",
     name: "Analytics Chart",
     zhName: "分析图表",
-    category: "图表",
+    category: "数据展示",
     description:
       "Vercel 风格的 SVG 折线图组件,渐变描边、悬浮 tooltip 卡片,纯 SVG 实现无第三方图表库,适合分析仪表盘。",
     install: "npx shadcn@latest add @cult-ui/analytics-chart",
@@ -243,7 +243,7 @@ export const componentDocs: ComponentDocData[] = [
     slug: "dynamic-island",
     name: "Dynamic Island",
     zhName: "灵动岛",
-    category: "动效",
+    category: "特效",
     description:
       "iPhone 灵动岛组件,提供 14 种尺寸预设之间流畅的弹簧过渡,适合通知、播放器、通话等状态演示。",
     install: "npx shadcn@latest add @cult-ui/dynamic-island",
@@ -282,7 +282,7 @@ function Demo() {
     slug: "dock",
     name: "Dock",
     zhName: "程序坞",
-    category: "导航",
+    category: "导航与标签页",
     description:
       "macOS 风格的底部程序坞,鼠标靠近时图标放大、点击弹出动效,适合作品集与工具栏场景。",
     install: "npx shadcn@latest add @cult-ui/dock",
