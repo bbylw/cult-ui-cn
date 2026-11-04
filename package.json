@@ -6,7 +6,7 @@
   "packageManager": "bun@1.4.4",
   "scripts": {
     "dev": "vite",
-    "build": "bun scripts/generate-agent-docs.mjs && tsc -b && vite build && bun scripts/prerender-meta.mjs && bun scripts/prerender-content.mjs",
+    "build": "bun scripts/generate-agent-docs.mjs && tsc -b && vite build && bun scripts/prerender-meta.mjs",
     "generate:docs": "bun scripts/generate-agent-docs.mjs",
     "check:docs": "bun run generate:docs && git diff --exit-code HEAD -- public/llms.txt public/llms-full.txt public/docs",
     "lint": "oxlint",
