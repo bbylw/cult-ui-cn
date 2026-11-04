@@ -37,6 +37,30 @@ export function Example() {
 ## 依赖
 
 - `@base-ui/react`
+
+## 源码属性定义
+
+### HaloTabs
+
+~~~ts
+export function HaloTabs({
+className,
+  ...props
+}: ComponentProps<typeof TabsPrimitive.Root>)
+~~~
+
+### HaloTabsList
+
+~~~ts
+export function HaloTabsList({
+className,
+  variant = "underline",
+  ...props
+}: ComponentProps<typeof TabsPrimitive.List> & {
+  variant?: HaloTabsVariant
+})
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。

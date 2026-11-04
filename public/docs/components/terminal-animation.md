@@ -44,6 +44,35 @@ export function Example() {
 
 - `@radix-ui/react-slot`
 - `@radix-ui/react-use-controllable-state`
+
+## 源码属性定义
+
+### TerminalAnimationRoot
+
+~~~ts
+export function TerminalAnimationRoot({
+tabs,
+  defaultActiveTab = 0,
+  activeTab: activeTabProp,
+  onActiveTabChange,
+  backgroundImage,
+  alwaysDark = false,
+  hideCursorOnComplete = true,
+  className,
+  children,
+  ...props
+}: TerminalAnimationRootProps)
+~~~
+
+### TerminalAnimationBackgroundGradient
+
+~~~ts
+export function TerminalAnimationBackgroundGradient({
+className,
+  ...props
+}: TerminalAnimationBackgroundGradientProps)
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。

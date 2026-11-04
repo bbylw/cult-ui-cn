@@ -35,6 +35,35 @@ export function Example() {
 ## 依赖
 
 - 无额外依赖
+
+## 源码属性定义
+
+### CursorSvg
+
+~~~ts
+export function CursorSvg({
+flip = false
+}: { flip?: boolean })
+~~~
+
+### Cursor
+
+~~~ts
+export function Cursor({
+name,
+  color,
+  side,
+  style: posStyle,
+  delay = false,
+}: {
+  name: string
+  color: string
+  side: CursorSide
+  style?: React.CSSProperties
+  delay?: boolean
+})
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。

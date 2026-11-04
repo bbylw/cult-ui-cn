@@ -40,6 +40,22 @@ export function Example() {
 
 - `@radix-ui/react-use-controllable-state`
 - `class-variance-authority`
+
+## 源码属性定义
+
+### StepIndicator
+
+~~~ts
+export function StepIndicator({
+currentStep,
+  totalSteps,
+  variant = "dots",
+  className,
+  dotClassName,
+  ...props
+}: StepIndicatorProps)
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。

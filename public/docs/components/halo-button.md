@@ -33,6 +33,26 @@ export function Example() {
 
 - `@base-ui/react`
 - `motion`
+
+## 源码属性定义
+
+### HaloButton
+
+~~~ts
+export function HaloButton({
+children,
+  className,
+  translucent = true,
+  isLoading = false,
+  loadingText = "Working…",
+  loadingStaggerSec = DEFAULT_LOADING_STAGGER_SEC,
+  loadingCharDurationSec = DEFAULT_LOADING_CHAR_DURATION_SEC,
+  staggerLabel = true,
+  disabled,
+  onFocus,
+}: HaloButtonProps)
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。

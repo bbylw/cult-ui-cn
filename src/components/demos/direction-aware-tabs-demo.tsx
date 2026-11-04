@@ -3,7 +3,7 @@
 import { BgAnimateButton } from "../ui/bg-animate-button"
 import { DirectionAwareTabs } from "../ui/direction-aware-tabs"
 
-const DirectionAwareTabsDemo = ({}) => {
+const DirectionAwareTabsDemo = () => {
   const tabs = [
     {
       id: 0,

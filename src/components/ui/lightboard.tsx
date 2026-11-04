@@ -464,7 +464,7 @@ function LightBoard({
             controlledHoverState === undefined && updateHoverState(true)
           }
           onMouseLeave={() => {
-            controlledHoverState === undefined && updateHoverState(false)
+            if (controlledHoverState === undefined) updateHoverState(false)
             handleInteractionEnd()
           }}
           onTouchStart={!disableDrawing ? handleTouchStart : undefined}

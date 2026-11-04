@@ -31,10 +31,10 @@ jobs:
         run: bun run lint
       - name: Build
         run: bun run build
-      - name: SPA fallback and custom domain
-        run: |
-          cp dist/index.html dist/404.html
-          echo "cult-ui.ndjp.net" > dist/CNAME
+      - name: Smoke test
+        run: bun run test:smoke
+      - name: Custom domain
+        run: echo "cult-ui.ndjp.net" > dist/CNAME
       - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v5
         with:

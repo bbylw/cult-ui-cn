@@ -32,6 +32,24 @@ export function Example() {
 ## 依赖
 
 - `geist`
+
+## 源码属性定义
+
+### PixelParagraphInverse
+
+~~~ts
+export function PixelParagraphInverse({
+text,
+  plainWords = [],
+  as: Tag = "p",
+  className,
+  pixelFont = "square",
+  plainFont = "sans",
+  plainWordClassName,
+  ...props
+}: PixelParagraphInverseProps)
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。

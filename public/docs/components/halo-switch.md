@@ -33,6 +33,24 @@ export function Example() {
 
 - `@base-ui/react`
 - `motion`
+
+## 源码属性定义
+
+### HaloSwitch
+
+~~~ts
+export function HaloSwitch({
+className,
+  translucent = true,
+  size = "default",
+  checked: checkedProp,
+  defaultChecked,
+  onCheckedChange,
+  disabled,
+  ...rootProps
+}: HaloSwitchProps)
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。

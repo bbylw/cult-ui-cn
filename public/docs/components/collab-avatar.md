@@ -32,6 +32,25 @@ export function Example() {
 ## 依赖
 
 - `motion`
+
+## 源码属性定义
+
+### CollabAvatar
+
+~~~ts
+export function CollabAvatar({
+name,
+  color,
+  size = 24,
+  className,
+}: {
+  name: string
+  color: string
+  size?: number
+  className?: string
+})
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。

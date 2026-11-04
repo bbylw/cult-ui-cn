@@ -34,6 +34,24 @@ export function Example() {
 ## 依赖
 
 - 无额外依赖
+
+## 源码属性定义
+
+### IllustrationCardGrid
+
+~~~ts
+export function IllustrationCardGrid({
+items = DEFAULT_ILLUSTRATION_CARD_GRID_ITEMS,
+  className,
+  cardClassName,
+  contentClassName,
+  titleClassName,
+  descriptionClassName,
+  illustrationClassName,
+  ...props
+}: IllustrationCardGridProps)
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。

@@ -549,6 +549,26 @@ export function Example() {
 
 - `@base-ui/react`
 - `motion`
+
+## 源码属性定义
+
+### HaloButton
+
+~~~ts
+export function HaloButton({
+children,
+  className,
+  translucent = true,
+  isLoading = false,
+  loadingText = "Working…",
+  loadingStaggerSec = DEFAULT_LOADING_STAGGER_SEC,
+  loadingCharDurationSec = DEFAULT_LOADING_CHAR_DURATION_SEC,
+  staggerLabel = true,
+  disabled,
+  onFocus,
+}: HaloButtonProps)
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
@@ -763,6 +783,27 @@ import {
 ## 依赖
 
 - 无额外依赖
+
+## 源码属性定义
+
+### BorderBeamCardTitle
+
+~~~ts
+export function BorderBeamCardTitle({
+className,
+  ...props
+}: ComponentProps<typeof CardTitle>)
+~~~
+
+### BorderBeamCardDescription
+
+~~~ts
+export function BorderBeamCardDescription({
+className,
+  ...props
+}: ComponentProps<typeof CardDescription>)
+~~~
+
 ## 属性(Props)
 
 | 属性 | 类型 | 默认值 | 说明 |
@@ -826,6 +867,33 @@ export function Example() {
 
 - `motion`
 - `@radix-ui/react-use-controllable-state`
+
+## 源码属性定义
+
+### CutoutCard
+
+~~~ts
+export function CutoutCard({
+className,
+  hovered: hoveredProp,
+  defaultHovered = false,
+  onHoveredChange,
+  trackPointerHover = true,
+  onMouseEnter,
+  onMouseLeave,
+  children,
+  ...props
+}: CutoutCardProps)
+~~~
+
+### CutoutCardMedia
+
+~~~ts
+export function CutoutCardMedia({
+className, ...props
+}: CutoutCardMediaProps)
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
@@ -1474,6 +1542,20 @@ export function Example() {
 
 - `motion`
 - `lucide-react`
+
+## 源码属性定义
+
+### ColorPicker
+
+~~~ts
+export function ColorPicker({
+color,
+  onChange,
+}: {
+  color: string
+  onChange: (color: string)
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
@@ -1624,6 +1706,17 @@ export function Example() {
 ## 依赖
 
 - 无额外依赖
+
+## 源码属性定义
+
+### HaloField
+
+~~~ts
+export function HaloField({
+className, ...props
+}: HaloFieldProps)
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
@@ -1920,6 +2013,24 @@ export function Example() {
 
 - `@base-ui/react`
 - `motion`
+
+## 源码属性定义
+
+### HaloSwitch
+
+~~~ts
+export function HaloSwitch({
+className,
+  translucent = true,
+  size = "default",
+  checked: checkedProp,
+  defaultChecked,
+  onCheckedChange,
+  disabled,
+  ...rootProps
+}: HaloSwitchProps)
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
@@ -2167,6 +2278,30 @@ export function Example() {
 ## 依赖
 
 - `@base-ui/react`
+
+## 源码属性定义
+
+### HaloTabs
+
+~~~ts
+export function HaloTabs({
+className,
+  ...props
+}: ComponentProps<typeof TabsPrimitive.Root>)
+~~~
+
+### HaloTabsList
+
+~~~ts
+export function HaloTabsList({
+className,
+  variant = "underline",
+  ...props
+}: ComponentProps<typeof TabsPrimitive.List> & {
+  variant?: HaloTabsVariant
+})
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
@@ -2943,6 +3078,26 @@ export function Example() {
 ## 依赖
 
 - `geist`
+
+## 源码属性定义
+
+### PixelHeading
+
+~~~ts
+export function PixelHeading({
+children,
+  as: Tag = "h1",
+  className,
+  cycleInterval = 150,
+  defaultFontIndex = 0,
+  onFontIndexChange,
+  showLabel = false,
+  mode = "multi",
+  staggerDelay = 50,
+  autoPlay = false,
+}: PixelHeadingProps)
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
@@ -2983,6 +3138,26 @@ export function Example() {
 ## 依赖
 
 - `geist`
+
+## 源码属性定义
+
+### PixelHeading
+
+~~~ts
+export function PixelHeading({
+children,
+  as: Tag = "h1",
+  className,
+  initialFont,
+  hoverFont,
+  cycleInterval = 300,
+  defaultFontIndex = 0,
+  onFontIndexChange,
+  showLabel = false,
+  disableHover = false,
+}: PixelHeadingProps)
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
@@ -3023,6 +3198,23 @@ export function Example() {
 ## 依赖
 
 - `geist`
+
+## 源码属性定义
+
+### PixelParagraph
+
+~~~ts
+export function PixelParagraph({
+text,
+  pixelWords = [],
+  as: Tag = "p",
+  className,
+  font = "square",
+  pixelWordClassName,
+  ...props
+}: PixelParagraphProps)
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
@@ -3063,6 +3255,24 @@ export function Example() {
 ## 依赖
 
 - `geist`
+
+## 源码属性定义
+
+### PixelParagraphInverse
+
+~~~ts
+export function PixelParagraphInverse({
+text,
+  plainWords = [],
+  as: Tag = "p",
+  className,
+  pixelFont = "square",
+  plainFont = "sans",
+  plainWordClassName,
+  ...props
+}: PixelParagraphInverseProps)
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
@@ -3610,6 +3820,29 @@ export function Example() {
 ## 依赖
 
 - 无额外依赖
+
+## 源码属性定义
+
+### GridBeamDividers
+
+~~~ts
+export function GridBeamDividers({
+rows,
+  cols,
+  dividerStroke = "var(--border)",
+  className,
+  ...props
+}: GridBeamDividersProps)
+~~~
+
+### GridBeamContent
+
+~~~ts
+export function GridBeamContent({
+className, ...props
+}: GridBeamContentProps)
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
@@ -4227,6 +4460,24 @@ export function Example() {
 ## 依赖
 
 - 无额外依赖
+
+## 源码属性定义
+
+### IllustrationCardGrid
+
+~~~ts
+export function IllustrationCardGrid({
+items = DEFAULT_ILLUSTRATION_CARD_GRID_ITEMS,
+  className,
+  cardClassName,
+  contentClassName,
+  titleClassName,
+  descriptionClassName,
+  illustrationClassName,
+  ...props
+}: IllustrationCardGridProps)
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
@@ -4269,6 +4520,35 @@ export function Example() {
 ## 依赖
 
 - 无额外依赖
+
+## 源码属性定义
+
+### Code
+
+~~~ts
+export function Code({
+children
+}: { children: React.ReactNode })
+~~~
+
+### CommentBubble
+
+~~~ts
+export function CommentBubble({
+user,
+  color,
+  deviceIcons = [],
+  children,
+  cursor,
+}: {
+  user: string
+  color: string
+  deviceIcons?: IconKey[]
+  children: React.ReactNode
+  cursor?: React.ReactNode
+})
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
@@ -4312,6 +4592,35 @@ export function Example() {
 ## 依赖
 
 - 无额外依赖
+
+## 源码属性定义
+
+### CursorSvg
+
+~~~ts
+export function CursorSvg({
+flip = false
+}: { flip?: boolean })
+~~~
+
+### Cursor
+
+~~~ts
+export function Cursor({
+name,
+  color,
+  side,
+  style: posStyle,
+  delay = false,
+}: {
+  name: string
+  color: string
+  side: CursorSide
+  style?: React.CSSProperties
+  delay?: boolean
+})
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
@@ -4570,6 +4879,33 @@ export function Example() {
 ## 依赖
 
 - 无额外依赖
+
+## 源码属性定义
+
+### SecurityCheckpointBlueLines
+
+~~~ts
+export function SecurityCheckpointBlueLines({
+lines,
+  mounted,
+  cardLeft: _cardLeft,
+  className,
+  ...props
+}: SecurityCheckpointLineLayerProps)
+~~~
+
+### SecurityCheckpointRedLines
+
+~~~ts
+export function SecurityCheckpointRedLines({
+lines,
+  mounted,
+  cardLeft,
+  className,
+  ...props
+}: SecurityCheckpointLineLayerProps)
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
@@ -5669,6 +6005,29 @@ export function Example() {
 ## 依赖
 
 - 无额外依赖
+
+## 源码属性定义
+
+### AnalyticsHeroCrosshair
+
+~~~ts
+export function AnalyticsHeroCrosshair({
+className,
+  ...props
+}: AnalyticsHeroCrosshairProps)
+~~~
+
+### AnalyticsHeroGridLines
+
+~~~ts
+export function AnalyticsHeroGridLines({
+cols,
+  rows,
+  className,
+  ...props
+}: AnalyticsHeroGridLinesProps)
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
@@ -6057,6 +6416,26 @@ export function Example() {
 
 - `class-variance-authority`
 - `motion`
+
+## 源码属性定义
+
+### HaloBadge
+
+~~~ts
+export function HaloBadge({
+variant = "default",
+  className,
+  children,
+  live = false,
+  layout = true,
+  tabularNums = false,
+  translucent = true,
+  interactive = true,
+  pressScale = true,
+  onMouseEnter,
+}: HaloBadgeProps)
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
@@ -6098,6 +6477,26 @@ export function Example() {
 
 - `@base-ui/react`
 - `motion`
+
+## 源码属性定义
+
+### HaloProgress
+
+~~~ts
+export function HaloProgress({
+className,
+  label,
+  showValue,
+  translucent = true,
+  trackClassName,
+  indicatorClassName,
+  value,
+  min = 0,
+  max = 100,
+  ...rootProps
+}: HaloProgressProps)
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
@@ -6152,6 +6551,30 @@ export function Example() {
 - `class-variance-authority`
 - `lucide-react`
 - `motion`
+
+## 源码属性定义
+
+### PollWidgetTrigger
+
+~~~ts
+export function PollWidgetTrigger({
+className,
+  label,
+  children,
+  ...props
+}: PollWidgetTriggerProps)
+~~~
+
+### PollWidgetContent
+
+~~~ts
+export function PollWidgetContent({
+className,
+  children,
+  ...props
+}: PollWidgetContentProps)
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
@@ -6396,6 +6819,22 @@ export function Example() {
 
 - `@radix-ui/react-use-controllable-state`
 - `class-variance-authority`
+
+## 源码属性定义
+
+### StepIndicator
+
+~~~ts
+export function StepIndicator({
+currentStep,
+  totalSteps,
+  variant = "dots",
+  className,
+  dotClassName,
+  ...props
+}: StepIndicatorProps)
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
@@ -7277,6 +7716,35 @@ export function Example() {
 
 - `@radix-ui/react-slot`
 - `@radix-ui/react-use-controllable-state`
+
+## 源码属性定义
+
+### TerminalAnimationRoot
+
+~~~ts
+export function TerminalAnimationRoot({
+tabs,
+  defaultActiveTab = 0,
+  activeTab: activeTabProp,
+  onActiveTabChange,
+  backgroundImage,
+  alwaysDark = false,
+  hideCursorOnComplete = true,
+  className,
+  children,
+  ...props
+}: TerminalAnimationRootProps)
+~~~
+
+### TerminalAnimationBackgroundGradient
+
+~~~ts
+export function TerminalAnimationBackgroundGradient({
+className,
+  ...props
+}: TerminalAnimationBackgroundGradientProps)
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
@@ -7540,6 +8008,25 @@ export function Example() {
 ## 依赖
 
 - `motion`
+
+## 源码属性定义
+
+### CollabAvatar
+
+~~~ts
+export function CollabAvatar({
+name,
+  color,
+  size = 24,
+  className,
+}: {
+  name: string
+  color: string
+  size?: number
+  className?: string
+})
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
@@ -7585,6 +8072,29 @@ export function Example() {
 ## 依赖
 
 - 无额外依赖
+
+## 源码属性定义
+
+### CollabToolbarIcon
+
+~~~ts
+export function CollabToolbarIcon({
+icon
+}: { icon: IconKey })
+~~~
+
+### CollabToolbar
+
+~~~ts
+export function CollabToolbar({
+groups,
+  avatars = [],
+}: {
+  groups: ToolbarGroup[]
+  avatars?: Collaborator[]
+})
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。

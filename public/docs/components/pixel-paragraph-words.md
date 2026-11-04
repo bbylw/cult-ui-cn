@@ -32,6 +32,23 @@ export function Example() {
 ## 依赖
 
 - `geist`
+
+## 源码属性定义
+
+### PixelParagraph
+
+~~~ts
+export function PixelParagraph({
+text,
+  pixelWords = [],
+  as: Tag = "p",
+  className,
+  font = "square",
+  pixelWordClassName,
+  ...props
+}: PixelParagraphProps)
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。

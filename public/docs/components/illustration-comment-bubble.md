@@ -34,6 +34,35 @@ export function Example() {
 ## 依赖
 
 - 无额外依赖
+
+## 源码属性定义
+
+### Code
+
+~~~ts
+export function Code({
+children
+}: { children: React.ReactNode })
+~~~
+
+### CommentBubble
+
+~~~ts
+export function CommentBubble({
+user,
+  color,
+  deviceIcons = [],
+  children,
+  cursor,
+}: {
+  user: string
+  color: string
+  deviceIcons?: IconKey[]
+  children: React.ReactNode
+  cursor?: React.ReactNode
+})
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。

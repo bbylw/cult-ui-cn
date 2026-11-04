@@ -125,7 +125,12 @@
   },
   "halo-button": {
     "usage": "import { HaloButton } from \"@/components/ui/halo-button\"\n\nexport function Example() {\n  return (\n    <HaloButton />\n  )\n}",
-    "typeDefs": [],
+    "typeDefs": [
+      {
+        "name": "HaloButton",
+        "code": "export function HaloButton({\nchildren,\n  className,\n  translucent = true,\n  isLoading = false,\n  loadingText = \"Working…\",\n  loadingStaggerSec = DEFAULT_LOADING_STAGGER_SEC,\n  loadingCharDurationSec = DEFAULT_LOADING_CHAR_DURATION_SEC,\n  staggerLabel = true,\n  disabled,\n  onFocus,\n}: HaloButtonProps)"
+      }
+    ],
     "parts": [
       "HaloButton"
     ]
@@ -159,7 +164,16 @@
   },
   "border-beam-card": {
     "usage": "import {\n  BorderBeamCard,\n  BorderBeamCardHeader,\n  BorderBeamCardTitle,\n  BorderBeamCardDescription,\n  BorderBeamCardContent,\n} from \"@/components/ui/border-beam-card\"\n\n<BorderBeamCard className=\"w-sm\">\n  <BorderBeamCardHeader>\n    <BorderBeamCardTitle>流光边框</BorderBeamCardTitle>\n    <BorderBeamCardDescription>一道光束沿卡片边缘循环流动。</BorderBeamCardDescription>\n  </BorderBeamCardHeader>\n  <BorderBeamCardContent>内容区</BorderBeamCardContent>\n</BorderBeamCard>",
-    "typeDefs": [],
+    "typeDefs": [
+      {
+        "name": "BorderBeamCardTitle",
+        "code": "export function BorderBeamCardTitle({\nclassName,\n  ...props\n}: ComponentProps<typeof CardTitle>)"
+      },
+      {
+        "name": "BorderBeamCardDescription",
+        "code": "export function BorderBeamCardDescription({\nclassName,\n  ...props\n}: ComponentProps<typeof CardDescription>)"
+      }
+    ],
     "parts": [
       "BorderBeamCard",
       "BorderBeamCardAction",
@@ -172,7 +186,16 @@
   },
   "cutout-card": {
     "usage": "import { CutoutCard } from \"@/components/ui/cutout-card\"\n\nexport function Example() {\n  return (\n    <CutoutCard />\n  )\n}",
-    "typeDefs": [],
+    "typeDefs": [
+      {
+        "name": "CutoutCard",
+        "code": "export function CutoutCard({\nclassName,\n  hovered: hoveredProp,\n  defaultHovered = false,\n  onHoveredChange,\n  trackPointerHover = true,\n  onMouseEnter,\n  onMouseLeave,\n  children,\n  ...props\n}: CutoutCardProps)"
+      },
+      {
+        "name": "CutoutCardMedia",
+        "code": "export function CutoutCardMedia({\nclassName, ...props\n}: CutoutCardMediaProps)"
+      }
+    ],
     "parts": [
       "CutoutCard",
       "CutoutCardAction",
@@ -355,7 +378,12 @@
   },
   "color-picker": {
     "usage": "import { ColorPicker } from \"@/components/ui/color-picker\"\n\nexport function Example() {\n  return (\n    <ColorPicker />\n  )\n}",
-    "typeDefs": [],
+    "typeDefs": [
+      {
+        "name": "ColorPicker",
+        "code": "export function ColorPicker({\ncolor,\n  onChange,\n}: {\n  color: string\n  onChange: (color: string)"
+      }
+    ],
     "parts": [
       "ColorPicker"
     ]
@@ -387,7 +415,12 @@
   },
   "halo-field": {
     "usage": "import { HaloField } from \"@/components/ui/halo-field\"\n\nexport function Example() {\n  return (\n    <HaloField />\n  )\n}",
-    "typeDefs": [],
+    "typeDefs": [
+      {
+        "name": "HaloField",
+        "code": "export function HaloField({\nclassName, ...props\n}: HaloFieldProps)"
+      }
+    ],
     "parts": [
       "HaloField",
       "HaloFieldContent",
@@ -462,7 +495,12 @@
   },
   "halo-switch": {
     "usage": "import { HaloSwitch } from \"@/components/ui/halo-switch\"\n\nexport function Example() {\n  return (\n    <HaloSwitch />\n  )\n}",
-    "typeDefs": [],
+    "typeDefs": [
+      {
+        "name": "HaloSwitch",
+        "code": "export function HaloSwitch({\nclassName,\n  translucent = true,\n  size = \"default\",\n  checked: checkedProp,\n  defaultChecked,\n  onCheckedChange,\n  disabled,\n  ...rootProps\n}: HaloSwitchProps)"
+      }
+    ],
     "parts": [
       "HaloSwitch"
     ]
@@ -515,7 +553,16 @@
   },
   "halo-tabs": {
     "usage": "import { HaloTabs } from \"@/components/ui/halo-tabs\"\n\nexport function Example() {\n  return (\n    <HaloTabs />\n  )\n}",
-    "typeDefs": [],
+    "typeDefs": [
+      {
+        "name": "HaloTabs",
+        "code": "export function HaloTabs({\nclassName,\n  ...props\n}: ComponentProps<typeof TabsPrimitive.Root>)"
+      },
+      {
+        "name": "HaloTabsList",
+        "code": "export function HaloTabsList({\nclassName,\n  variant = \"underline\",\n  ...props\n}: ComponentProps<typeof TabsPrimitive.List> & {\n  variant?: HaloTabsVariant\n})"
+      }
+    ],
     "parts": [
       "HaloTabs",
       "HaloTabsContent",
@@ -720,7 +767,12 @@
   },
   "pixel-heading-character": {
     "usage": "import { PixelHeading } from \"@/components/ui/pixel-heading-character\"\n\nexport function Example() {\n  return (\n    <PixelHeading />\n  )\n}",
-    "typeDefs": [],
+    "typeDefs": [
+      {
+        "name": "PixelHeading",
+        "code": "export function PixelHeading({\nchildren,\n  as: Tag = \"h1\",\n  className,\n  cycleInterval = 150,\n  defaultFontIndex = 0,\n  onFontIndexChange,\n  showLabel = false,\n  mode = \"multi\",\n  staggerDelay = 50,\n  autoPlay = false,\n}: PixelHeadingProps)"
+      }
+    ],
     "parts": [
       "PixelHeading",
       "PixelHeadingMode"
@@ -728,21 +780,36 @@
   },
   "pixel-heading-word": {
     "usage": "import { PixelHeading } from \"@/components/ui/pixel-heading-word\"\n\nexport function Example() {\n  return (\n    <PixelHeading />\n  )\n}",
-    "typeDefs": [],
+    "typeDefs": [
+      {
+        "name": "PixelHeading",
+        "code": "export function PixelHeading({\nchildren,\n  as: Tag = \"h1\",\n  className,\n  initialFont,\n  hoverFont,\n  cycleInterval = 300,\n  defaultFontIndex = 0,\n  onFontIndexChange,\n  showLabel = false,\n  disableHover = false,\n}: PixelHeadingProps)"
+      }
+    ],
     "parts": [
       "PixelHeading"
     ]
   },
   "pixel-paragraph-words": {
     "usage": "import { PixelParagraph } from \"@/components/ui/pixel-paragraph-words\"\n\nexport function Example() {\n  return (\n    <PixelParagraph />\n  )\n}",
-    "typeDefs": [],
+    "typeDefs": [
+      {
+        "name": "PixelParagraph",
+        "code": "export function PixelParagraph({\ntext,\n  pixelWords = [],\n  as: Tag = \"p\",\n  className,\n  font = \"square\",\n  pixelWordClassName,\n  ...props\n}: PixelParagraphProps)"
+      }
+    ],
     "parts": [
       "PixelParagraph"
     ]
   },
   "pixel-paragraph-words-inverse": {
     "usage": "import { PixelParagraphInverse } from \"@/components/ui/pixel-paragraph-words-inverse\"\n\nexport function Example() {\n  return (\n    <PixelParagraphInverse />\n  )\n}",
-    "typeDefs": [],
+    "typeDefs": [
+      {
+        "name": "PixelParagraphInverse",
+        "code": "export function PixelParagraphInverse({\ntext,\n  plainWords = [],\n  as: Tag = \"p\",\n  className,\n  pixelFont = \"square\",\n  plainFont = \"sans\",\n  plainWordClassName,\n  ...props\n}: PixelParagraphInverseProps)"
+      }
+    ],
     "parts": [
       "PixelParagraphInverse"
     ]
@@ -844,7 +911,16 @@
   },
   "grid-beam": {
     "usage": "import { BeamCanvasRuntimeConfig } from \"@/components/ui/grid-beam\"\n\nexport function Example() {\n  return (\n    <BeamCanvasRuntimeConfig />\n  )\n}",
-    "typeDefs": [],
+    "typeDefs": [
+      {
+        "name": "GridBeamDividers",
+        "code": "export function GridBeamDividers({\nrows,\n  cols,\n  dividerStroke = \"var(--border)\",\n  className,\n  ...props\n}: GridBeamDividersProps)"
+      },
+      {
+        "name": "GridBeamContent",
+        "code": "export function GridBeamContent({\nclassName, ...props\n}: GridBeamContentProps)"
+      }
+    ],
     "parts": [
       "BeamCanvasRuntimeConfig",
       "GridBeam",
@@ -1037,7 +1113,12 @@
   },
   "illustration-card-grid": {
     "usage": "import { DEFAULT_ILLUSTRATION_CARD_GRID_ITEMS } from \"@/components/ui/illustration-card-grid\"\n\nexport function Example() {\n  return (\n    <DEFAULT_ILLUSTRATION_CARD_GRID_ITEMS />\n  )\n}",
-    "typeDefs": [],
+    "typeDefs": [
+      {
+        "name": "IllustrationCardGrid",
+        "code": "export function IllustrationCardGrid({\nitems = DEFAULT_ILLUSTRATION_CARD_GRID_ITEMS,\n  className,\n  cardClassName,\n  contentClassName,\n  titleClassName,\n  descriptionClassName,\n  illustrationClassName,\n  ...props\n}: IllustrationCardGridProps)"
+      }
+    ],
     "parts": [
       "DEFAULT_ILLUSTRATION_CARD_GRID_ITEMS",
       "IllustrationCardGrid",
@@ -1046,7 +1127,16 @@
   },
   "illustration-comment-bubble": {
     "usage": "import { Code } from \"@/components/ui/illustration-comment-bubble\"\n\nexport function Example() {\n  return (\n    <Code />\n  )\n}",
-    "typeDefs": [],
+    "typeDefs": [
+      {
+        "name": "Code",
+        "code": "export function Code({\nchildren\n}: { children: React.ReactNode })"
+      },
+      {
+        "name": "CommentBubble",
+        "code": "export function CommentBubble({\nuser,\n  color,\n  deviceIcons = [],\n  children,\n  cursor,\n}: {\n  user: string\n  color: string\n  deviceIcons?: IconKey[]\n  children: React.ReactNode\n  cursor?: React.ReactNode\n})"
+      }
+    ],
     "parts": [
       "Code",
       "CommentBubble",
@@ -1055,7 +1145,16 @@
   },
   "illustration-cursor": {
     "usage": "import { Cursor } from \"@/components/ui/illustration-cursor\"\n\nexport function Example() {\n  return (\n    <Cursor />\n  )\n}",
-    "typeDefs": [],
+    "typeDefs": [
+      {
+        "name": "CursorSvg",
+        "code": "export function CursorSvg({\nflip = false\n}: { flip?: boolean })"
+      },
+      {
+        "name": "Cursor",
+        "code": "export function Cursor({\nname,\n  color,\n  side,\n  style: posStyle,\n  delay = false,\n}: {\n  name: string\n  color: string\n  side: CursorSide\n  style?: React.CSSProperties\n  delay?: boolean\n})"
+      }
+    ],
     "parts": [
       "Cursor",
       "CursorDemo",
@@ -1125,7 +1224,16 @@
   },
   "security-checkpoint": {
     "usage": "import { CHECKPOINT_LINES } from \"@/components/ui/security-checkpoint\"\n\nexport function Example() {\n  return (\n    <CHECKPOINT_LINES />\n  )\n}",
-    "typeDefs": [],
+    "typeDefs": [
+      {
+        "name": "SecurityCheckpointBlueLines",
+        "code": "export function SecurityCheckpointBlueLines({\nlines,\n  mounted,\n  cardLeft: _cardLeft,\n  className,\n  ...props\n}: SecurityCheckpointLineLayerProps)"
+      },
+      {
+        "name": "SecurityCheckpointRedLines",
+        "code": "export function SecurityCheckpointRedLines({\nlines,\n  mounted,\n  cardLeft,\n  className,\n  ...props\n}: SecurityCheckpointLineLayerProps)"
+      }
+    ],
     "parts": [
       "CHECKPOINT_LINES",
       "CheckpointLine",
@@ -1416,7 +1524,16 @@
   },
   "marketing-hero-analytics": {
     "usage": "import { ANALYTICS_HERO_CHART_DATA } from \"@/components/ui/marketing-hero-analytics\"\n\nexport function Example() {\n  return (\n    <ANALYTICS_HERO_CHART_DATA />\n  )\n}",
-    "typeDefs": [],
+    "typeDefs": [
+      {
+        "name": "AnalyticsHeroCrosshair",
+        "code": "export function AnalyticsHeroCrosshair({\nclassName,\n  ...props\n}: AnalyticsHeroCrosshairProps)"
+      },
+      {
+        "name": "AnalyticsHeroGridLines",
+        "code": "export function AnalyticsHeroGridLines({\ncols,\n  rows,\n  className,\n  ...props\n}: AnalyticsHeroGridLinesProps)"
+      }
+    ],
     "parts": [
       "ANALYTICS_HERO_CHART_DATA",
       "ANALYTICS_HERO_ICONS",
@@ -1533,21 +1650,40 @@
   },
   "halo-badge": {
     "usage": "import { HaloBadge } from \"@/components/ui/halo-badge\"\n\nexport function Example() {\n  return (\n    <HaloBadge />\n  )\n}",
-    "typeDefs": [],
+    "typeDefs": [
+      {
+        "name": "HaloBadge",
+        "code": "export function HaloBadge({\nvariant = \"default\",\n  className,\n  children,\n  live = false,\n  layout = true,\n  tabularNums = false,\n  translucent = true,\n  interactive = true,\n  pressScale = true,\n  onMouseEnter,\n}: HaloBadgeProps)"
+      }
+    ],
     "parts": [
       "HaloBadge"
     ]
   },
   "halo-progress": {
     "usage": "import { HaloProgress } from \"@/components/ui/halo-progress\"\n\nexport function Example() {\n  return (\n    <HaloProgress />\n  )\n}",
-    "typeDefs": [],
+    "typeDefs": [
+      {
+        "name": "HaloProgress",
+        "code": "export function HaloProgress({\nclassName,\n  label,\n  showValue,\n  translucent = true,\n  trackClassName,\n  indicatorClassName,\n  value,\n  min = 0,\n  max = 100,\n  ...rootProps\n}: HaloProgressProps)"
+      }
+    ],
     "parts": [
       "HaloProgress"
     ]
   },
   "poll-widget": {
     "usage": "import { PollOption } from \"@/components/ui/poll-widget\"\n\nexport function Example() {\n  return (\n    <PollOption />\n  )\n}",
-    "typeDefs": [],
+    "typeDefs": [
+      {
+        "name": "PollWidgetTrigger",
+        "code": "export function PollWidgetTrigger({\nclassName,\n  label,\n  children,\n  ...props\n}: PollWidgetTriggerProps)"
+      },
+      {
+        "name": "PollWidgetContent",
+        "code": "export function PollWidgetContent({\nclassName,\n  children,\n  ...props\n}: PollWidgetContentProps)"
+      }
+    ],
     "parts": [
       "PollOption",
       "PollWidget",
@@ -1617,7 +1753,12 @@
   },
   "onboarding": {
     "usage": "import { ChoiceGroup, FeatureCarousel } from \"@/components/ui/onboarding\"\n\nexport function Example() {\n  return (\n    <ChoiceGroup>\n      <FeatureCarousel />\n    </ChoiceGroup>\n  )\n}",
-    "typeDefs": [],
+    "typeDefs": [
+      {
+        "name": "StepIndicator",
+        "code": "export function StepIndicator({\ncurrentStep,\n  totalSteps,\n  variant = \"dots\",\n  className,\n  dotClassName,\n  ...props\n}: StepIndicatorProps)"
+      }
+    ],
     "parts": [
       "ChoiceGroup",
       "FeatureCarousel",
@@ -1823,7 +1964,16 @@
   },
   "terminal-animation": {
     "usage": "import { TabContent } from \"@/components/ui/terminal-animation\"\n\nexport function Example() {\n  return (\n    <TabContent />\n  )\n}",
-    "typeDefs": [],
+    "typeDefs": [
+      {
+        "name": "TerminalAnimationRoot",
+        "code": "export function TerminalAnimationRoot({\ntabs,\n  defaultActiveTab = 0,\n  activeTab: activeTabProp,\n  onActiveTabChange,\n  backgroundImage,\n  alwaysDark = false,\n  hideCursorOnComplete = true,\n  className,\n  children,\n  ...props\n}: TerminalAnimationRootProps)"
+      },
+      {
+        "name": "TerminalAnimationBackgroundGradient",
+        "code": "export function TerminalAnimationBackgroundGradient({\nclassName,\n  ...props\n}: TerminalAnimationBackgroundGradientProps)"
+      }
+    ],
     "parts": [
       "TabContent",
       "TerminalAnimationBackgroundGradient",
@@ -1891,14 +2041,28 @@
   },
   "collab-avatar": {
     "usage": "import { CollabAvatar } from \"@/components/ui/collab-avatar\"\n\nexport function Example() {\n  return (\n    <CollabAvatar />\n  )\n}",
-    "typeDefs": [],
+    "typeDefs": [
+      {
+        "name": "CollabAvatar",
+        "code": "export function CollabAvatar({\nname,\n  color,\n  size = 24,\n  className,\n}: {\n  name: string\n  color: string\n  size?: number\n  className?: string\n})"
+      }
+    ],
     "parts": [
       "CollabAvatar"
     ]
   },
   "collab-toolbar": {
     "usage": "import { CollabToolbar } from \"@/components/ui/collab-toolbar\"\n\nexport function Example() {\n  return (\n    <CollabToolbar />\n  )\n}",
-    "typeDefs": [],
+    "typeDefs": [
+      {
+        "name": "CollabToolbarIcon",
+        "code": "export function CollabToolbarIcon({\nicon\n}: { icon: IconKey })"
+      },
+      {
+        "name": "CollabToolbar",
+        "code": "export function CollabToolbar({\ngroups,\n  avatars = [],\n}: {\n  groups: ToolbarGroup[]\n  avatars?: Collaborator[]\n})"
+      }
+    ],
     "parts": [
       "CollabToolbar",
       "CollabToolbarDivider",

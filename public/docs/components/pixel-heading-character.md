@@ -33,6 +33,26 @@ export function Example() {
 ## 依赖
 
 - `geist`
+
+## 源码属性定义
+
+### PixelHeading
+
+~~~ts
+export function PixelHeading({
+children,
+  as: Tag = "h1",
+  className,
+  cycleInterval = 150,
+  defaultFontIndex = 0,
+  onFontIndexChange,
+  showLabel = false,
+  mode = "multi",
+  staggerDelay = 50,
+  autoPlay = false,
+}: PixelHeadingProps)
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。

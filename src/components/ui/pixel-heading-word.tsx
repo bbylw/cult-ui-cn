@@ -253,7 +253,11 @@ export function PixelHeading({
   const handleMouseLeave = useCallback(
     (e: React.MouseEvent<HTMLHeadingElement>) => {
       if (!disableHover) {
-        isSwapMode ? swapToInitial() : stopCycling()
+        if (isSwapMode) {
+        swapToInitial()
+      } else {
+        stopCycling()
+      }
       }
       onMouseLeave?.(e)
     },
@@ -263,7 +267,11 @@ export function PixelHeading({
   const handleFocus = useCallback(
     (e: React.FocusEvent<HTMLHeadingElement>) => {
       if (!disableHover) {
-        isSwapMode ? swapToHover() : setIsActive(true)
+        if (isSwapMode) {
+          swapToHover()
+        } else {
+          setIsActive(true)
+        }
       }
       onFocus?.(e)
     },
@@ -273,7 +281,11 @@ export function PixelHeading({
   const handleBlur = useCallback(
     (e: React.FocusEvent<HTMLHeadingElement>) => {
       if (!disableHover) {
-        isSwapMode ? swapToInitial() : setIsActive(false)
+        if (isSwapMode) {
+          swapToInitial()
+        } else {
+          setIsActive(false)
+        }
       }
       onBlur?.(e)
     },

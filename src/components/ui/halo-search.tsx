@@ -935,7 +935,7 @@ export const AiBlobWarpAvatar = forwardRef<
   forwardedRef
 ) {
   const {
-    className: warpClassName,
+    className: _warpClassName,
     speed: warpSpeed,
     ...restWarpProps
   } = warpProps ?? {}

@@ -8,7 +8,7 @@ import { FadeIn } from "@/components/fade-in"
 import TextAnimate from "../ui/text-animate"
 
 // @ts-ignore
-const AnimationDemo = ({ type, children }) => {
+const AnimationDemo = ({ children }) => {
   const ref = useRef(null)
   const [count, setCount] = useState(0)
 
@@ -66,7 +66,7 @@ const Refresh = ({ onClick }) => {
 
 export default function TextAnimationDemo() {
   return (
-    <AnimationDemo type="TextAnimate">
+    <AnimationDemo>
       <div>
         <div className="flex flex-col">
           <div className="flex flex-col py-4">

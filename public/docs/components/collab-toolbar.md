@@ -37,6 +37,29 @@ export function Example() {
 ## 依赖
 
 - 无额外依赖
+
+## 源码属性定义
+
+### CollabToolbarIcon
+
+~~~ts
+export function CollabToolbarIcon({
+icon
+}: { icon: IconKey })
+~~~
+
+### CollabToolbar
+
+~~~ts
+export function CollabToolbar({
+groups,
+  avatars = [],
+}: {
+  groups: ToolbarGroup[]
+  avatars?: Collaborator[]
+})
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。

@@ -77,4 +77,34 @@ for (const route of routes) {
   fs.writeFileSync(outFile, renderFor(route))
 }
 
-console.log(`prerendered meta for ${routes.length} routes`)
+// 独立 404 页:保留静态 head 与客户端入口,GitHub Pages 会以 404 状态返回。
+const notFoundHtml = renderFor("/404").replace(
+  /<link rel="canonical"[^>]*>\s*/,
+  ""
+)
+fs.writeFileSync(path.join(dist, "404.html"), notFoundHtml)
+
+// robots.txt 与 sitemap.xml
+const sitemapUrls = ["/", ...routes]
+const priorityFor = (route) =>
+  route === "/" ? "1.0" : route.startsWith("/docs/components/") ? "0.6" : "0.8"
+const sitemap = [
+  '<?xml version="1.0" encoding="UTF-8"?>',
+  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+  ...sitemapUrls.map(
+    (route) =>
+      `  <url><loc>${SITE_URL}${route}</loc><priority>${priorityFor(route)}</priority></url>`
+  ),
+  "</urlset>",
+  "",
+].join("\n")
+fs.writeFileSync(path.join(dist, "sitemap.xml"), sitemap)
+
+fs.writeFileSync(
+  path.join(dist, "robots.txt"),
+  ["User-agent: *", "Allow: /", `Sitemap: ${SITE_URL}/sitemap.xml`, ""].join("\n")
+)
+
+console.log(
+  `prerendered meta for ${routes.length} routes, plus 404.html, sitemap.xml, robots.txt`
+)

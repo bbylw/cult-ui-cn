@@ -569,7 +569,7 @@ export function FeatureCarousel({
   step2img1Class = defaultClasses.step2img1,
   step2img2Class = defaultClasses.step2img2,
   step3imgClass = defaultClasses.step3img,
-  step4imgClass = defaultClasses.step4img,
+  step4imgClass: _step4imgClass = defaultClasses.step4img,
   ...props
 }: FeatureCarouselProps) {
   const { currentNumber: step, increment } = useNumberCycler()

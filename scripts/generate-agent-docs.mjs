@@ -58,6 +58,28 @@ function extractTypeDefs(source) {
   return defs
 }
 
+/** 没有独立 Props 类型时,提取导出函数的参数签名作为属性参考。 */
+function extractFunctionSignatures(source) {
+  if (!source) return []
+  const defs = []
+  const pattern =
+    /export\s+function\s+([A-Z]\w*)\s*\(\s*\{([\s\S]{0,320}?)\}\s*:\s*([^)]{1,180})\)/g
+  let match
+  while ((match = pattern.exec(source)) && defs.length < 2) {
+    const [, name, params, type] = match
+    const cleanParams = params
+      .trim()
+      .split("\n")
+      .slice(0, 10)
+      .join("\n")
+    defs.push({
+      name,
+      code: `export function ${name}({\n${cleanParams}\n}: ${type.trim()})`,
+    })
+  }
+  return defs
+}
+
 /** 无精修文档时,按导出部件生成最小可运行示例。 */
 function buildUsage(entry, doc) {
   if (doc?.usage) return doc.usage
@@ -87,9 +109,11 @@ for (const entry of componentCatalog) {
   const doc = docBySlug.get(entry.slug)
   const file = path.join(root, "src", "components", "ui", `${entry.slug}.tsx`)
   const source = fs.existsSync(file) ? fs.readFileSync(file, "utf8") : ""
+  const propTypes = extractTypeDefs(source)
   api[entry.slug] = {
     usage: buildUsage(entry, doc),
-    typeDefs: extractTypeDefs(source),
+    typeDefs:
+      propTypes.length > 0 ? propTypes : extractFunctionSignatures(source),
     parts: entry.parts,
   }
 }

@@ -6,10 +6,11 @@
   "packageManager": "bun@1.4.4",
   "scripts": {
     "dev": "vite",
-    "build": "bun scripts/generate-agent-docs.mjs && tsc -b && vite build && bun scripts/prerender-meta.mjs",
+    "build": "bun scripts/generate-agent-docs.mjs && tsc -b && vite build && bun scripts/prerender-meta.mjs && bun scripts/prerender-content.mjs",
     "generate:docs": "bun scripts/generate-agent-docs.mjs",
     "check:docs": "bun run generate:docs && git diff --exit-code HEAD -- public/llms.txt public/llms-full.txt public/docs",
     "lint": "oxlint",
+    "test:smoke": "bun scripts/smoke-test.mjs",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -71,6 +72,7 @@
     "@types/three": "^0.187.0",
     "@vitejs/plugin-react": "^6.1.2",
     "oxlint": "^1.89.0",
+    "playwright": "^1.64.1",
     "typescript": "~7.0.2",
     "vite": "^8.3.5"
   }

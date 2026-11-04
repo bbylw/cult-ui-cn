@@ -44,6 +44,33 @@ export function Example() {
 
 - `motion`
 - `@radix-ui/react-use-controllable-state`
+
+## 源码属性定义
+
+### CutoutCard
+
+~~~ts
+export function CutoutCard({
+className,
+  hovered: hoveredProp,
+  defaultHovered = false,
+  onHoveredChange,
+  trackPointerHover = true,
+  onMouseEnter,
+  onMouseLeave,
+  children,
+  ...props
+}: CutoutCardProps)
+~~~
+
+### CutoutCardMedia
+
+~~~ts
+export function CutoutCardMedia({
+className, ...props
+}: CutoutCardMediaProps)
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。

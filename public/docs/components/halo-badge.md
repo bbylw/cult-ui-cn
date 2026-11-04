@@ -33,6 +33,26 @@ export function Example() {
 
 - `class-variance-authority`
 - `motion`
+
+## 源码属性定义
+
+### HaloBadge
+
+~~~ts
+export function HaloBadge({
+variant = "default",
+  className,
+  children,
+  live = false,
+  layout = true,
+  tabularNums = false,
+  translucent = true,
+  interactive = true,
+  pressScale = true,
+  onMouseEnter,
+}: HaloBadgeProps)
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。

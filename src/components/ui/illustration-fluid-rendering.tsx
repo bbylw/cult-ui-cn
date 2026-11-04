@@ -103,7 +103,7 @@ export function FluidRendering({
   connectorStroke = "var(--border)",
   connectorLineColor = "color-mix(in oklab, var(--muted-foreground) 60%, transparent)",
   logoColor = "var(--card-foreground)",
-  textColor = "var(--foreground)",
+  textColor: _textColor = "var(--foreground)",
   mutedTextColor = "var(--muted-foreground)",
   topIcon,
   upperMidIcon,

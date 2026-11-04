@@ -46,6 +46,30 @@ export function Example() {
 - `class-variance-authority`
 - `lucide-react`
 - `motion`
+
+## 源码属性定义
+
+### PollWidgetTrigger
+
+~~~ts
+export function PollWidgetTrigger({
+className,
+  label,
+  children,
+  ...props
+}: PollWidgetTriggerProps)
+~~~
+
+### PollWidgetContent
+
+~~~ts
+export function PollWidgetContent({
+className,
+  children,
+  ...props
+}: PollWidgetContentProps)
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。

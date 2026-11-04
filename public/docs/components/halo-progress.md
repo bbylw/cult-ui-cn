@@ -33,6 +33,26 @@ export function Example() {
 
 - `@base-ui/react`
 - `motion`
+
+## 源码属性定义
+
+### HaloProgress
+
+~~~ts
+export function HaloProgress({
+className,
+  label,
+  showValue,
+  translucent = true,
+  trackClassName,
+  indicatorClassName,
+  value,
+  min = 0,
+  max = 100,
+  ...rootProps
+}: HaloProgressProps)
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。

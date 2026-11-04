@@ -46,6 +46,27 @@ import {
 ## 依赖
 
 - 无额外依赖
+
+## 源码属性定义
+
+### BorderBeamCardTitle
+
+~~~ts
+export function BorderBeamCardTitle({
+className,
+  ...props
+}: ComponentProps<typeof CardTitle>)
+~~~
+
+### BorderBeamCardDescription
+
+~~~ts
+export function BorderBeamCardDescription({
+className,
+  ...props
+}: ComponentProps<typeof CardDescription>)
+~~~
+
 ## 属性(Props)
 
 | 属性 | 类型 | 默认值 | 说明 |

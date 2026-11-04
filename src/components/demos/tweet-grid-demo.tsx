@@ -17,7 +17,7 @@ const exampleTweets = [
   "1760184980356088267",
 ]
 
-export default function TweetGridDemo({}) {
+export default function TweetGridDemo() {
   return (
     <div className="max-w-md pb-12 md:max-w-4xl">
       <div className="flex w-full justify-center pb-12">

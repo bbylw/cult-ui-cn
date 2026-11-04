@@ -37,6 +37,17 @@ export function Example() {
 ## 依赖
 
 - 无额外依赖
+
+## 源码属性定义
+
+### HaloField
+
+~~~ts
+export function HaloField({
+className, ...props
+}: HaloFieldProps)
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。

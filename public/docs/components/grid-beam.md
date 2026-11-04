@@ -43,6 +43,29 @@ export function Example() {
 ## 依赖
 
 - 无额外依赖
+
+## 源码属性定义
+
+### GridBeamDividers
+
+~~~ts
+export function GridBeamDividers({
+rows,
+  cols,
+  dividerStroke = "var(--border)",
+  className,
+  ...props
+}: GridBeamDividersProps)
+~~~
+
+### GridBeamContent
+
+~~~ts
+export function GridBeamContent({
+className, ...props
+}: GridBeamContentProps)
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。

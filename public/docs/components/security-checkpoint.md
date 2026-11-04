@@ -37,6 +37,33 @@ export function Example() {
 ## 依赖
 
 - 无额外依赖
+
+## 源码属性定义
+
+### SecurityCheckpointBlueLines
+
+~~~ts
+export function SecurityCheckpointBlueLines({
+lines,
+  mounted,
+  cardLeft: _cardLeft,
+  className,
+  ...props
+}: SecurityCheckpointLineLayerProps)
+~~~
+
+### SecurityCheckpointRedLines
+
+~~~ts
+export function SecurityCheckpointRedLines({
+lines,
+  mounted,
+  cardLeft,
+  className,
+  ...props
+}: SecurityCheckpointLineLayerProps)
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。

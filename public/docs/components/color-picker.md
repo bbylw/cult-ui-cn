@@ -33,6 +33,20 @@ export function Example() {
 
 - `motion`
 - `lucide-react`
+
+## 源码属性定义
+
+### ColorPicker
+
+~~~ts
+export function ColorPicker({
+color,
+  onChange,
+}: {
+  color: string
+  onChange: (color: string)
+~~~
+
 ---
 
 由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
