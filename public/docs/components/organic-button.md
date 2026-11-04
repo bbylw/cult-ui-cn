@@ -20,7 +20,7 @@ import { OrganicButton } from "@/components/ui/organic-button"
 
 export function Example() {
   return (
-    <OrganicButton>内容</OrganicButton>
+    <OrganicButton />
   )
 }
 ~~~

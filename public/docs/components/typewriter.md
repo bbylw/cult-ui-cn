@@ -20,7 +20,7 @@ import { Typewriter } from "@/components/ui/typewriter"
 
 export function Example() {
   return (
-    <Typewriter>内容</Typewriter>
+    <Typewriter />
   )
 }
 ~~~

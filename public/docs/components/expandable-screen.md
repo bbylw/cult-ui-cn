@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/expandable-screen
 ## 用法
 
 ~~~tsx
-import { ExpandableScreen, ExpandableScreenBackground, ExpandableScreenContent } from "@/components/ui/expandable-screen"
+import { ExpandableScreen } from "@/components/ui/expandable-screen"
 
 export function Example() {
   return (
-    <ExpandableScreen>
-      <ExpandableScreenBackground />
-    </ExpandableScreen>
+    <ExpandableScreen />
   )
 }
 ~~~

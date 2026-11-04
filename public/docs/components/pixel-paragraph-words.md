@@ -20,7 +20,7 @@ import { PixelParagraph } from "@/components/ui/pixel-paragraph-words"
 
 export function Example() {
   return (
-    <PixelParagraph>内容</PixelParagraph>
+    <PixelParagraph />
   )
 }
 ~~~

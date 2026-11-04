@@ -20,7 +20,7 @@ import { CircuitBoard } from "@/components/ui/circuit-board"
 
 export function Example() {
   return (
-    <CircuitBoard>内容</CircuitBoard>
+    <CircuitBoard />
   )
 }
 ~~~

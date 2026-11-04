@@ -20,7 +20,7 @@ import { HaloSwitch } from "@/components/ui/halo-switch"
 
 export function Example() {
   return (
-    <HaloSwitch>内容</HaloSwitch>
+    <HaloSwitch />
   )
 }
 ~~~

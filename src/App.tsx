@@ -61,9 +61,20 @@ const NotFoundPage = lazy(() =>
 
 function PageFallback() {
   return (
-    <p className="text-muted-foreground mx-auto max-w-6xl px-4 py-16 text-sm sm:px-6">
-      正在加载…
-    </p>
+    <div
+      aria-busy="true"
+      aria-live="polite"
+      className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6"
+    >
+      <span className="sr-only">正在加载页面</span>
+      <div className="bg-muted h-8 w-1/3 rounded-md motion-safe:animate-pulse" />
+      <div className="mt-6 space-y-3">
+        <div className="bg-muted h-4 w-full rounded motion-safe:animate-pulse" />
+        <div className="bg-muted h-4 w-5/6 rounded motion-safe:animate-pulse" />
+        <div className="bg-muted h-4 w-2/3 rounded motion-safe:animate-pulse" />
+      </div>
+      <div className="bg-muted mt-10 h-64 w-full rounded-xl motion-safe:animate-pulse" />
+    </div>
   )
 }
 

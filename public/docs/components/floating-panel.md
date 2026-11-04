@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/floating-panel
 ## 用法
 
 ~~~tsx
-import { FloatingPanelBody, FloatingPanelButton, FloatingPanelCloseButton } from "@/components/ui/floating-panel"
+import { FloatingPanelBody } from "@/components/ui/floating-panel"
 
 export function Example() {
   return (
-    <FloatingPanelBody>
-      <FloatingPanelButton />
-    </FloatingPanelBody>
+    <FloatingPanelBody />
   )
 }
 ~~~

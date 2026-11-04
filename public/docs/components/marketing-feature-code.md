@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/marketing-feature-code
 ## 用法
 
 ~~~tsx
-import { NetworkPolicy, NetworkPolicyCode, NetworkPolicyCodeBlock } from "@/components/ui/marketing-feature-code"
+import { NetworkPolicy } from "@/components/ui/marketing-feature-code"
 
 export function Example() {
   return (
-    <NetworkPolicy>
-      <NetworkPolicyCode />
-    </NetworkPolicy>
+    <NetworkPolicy />
   )
 }
 ~~~

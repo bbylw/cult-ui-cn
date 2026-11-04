@@ -20,7 +20,7 @@ import { DirectionAwareTabs } from "@/components/ui/direction-aware-tabs"
 
 export function Example() {
   return (
-    <DirectionAwareTabs>内容</DirectionAwareTabs>
+    <DirectionAwareTabs />
   )
 }
 ~~~

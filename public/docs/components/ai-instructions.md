@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/ai-instructions
 ## 用法
 
 ~~~tsx
-import { Instruction, Instructions, InstructionsContent } from "@/components/ui/ai-instructions"
+import { Instruction } from "@/components/ui/ai-instructions"
 
 export function Example() {
   return (
-    <Instruction>
-      <Instructions />
-    </Instruction>
+    <Instruction />
   )
 }
 ~~~

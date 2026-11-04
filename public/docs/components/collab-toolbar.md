@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/collab-toolbar
 ## 用法
 
 ~~~tsx
-import { CollabToolbar, CollabToolbarDivider, CollabToolbarIcon } from "@/components/ui/collab-toolbar"
+import { CollabToolbar } from "@/components/ui/collab-toolbar"
 
 export function Example() {
   return (
-    <CollabToolbar>
-      <CollabToolbarDivider />
-    </CollabToolbar>
+    <CollabToolbar />
   )
 }
 ~~~

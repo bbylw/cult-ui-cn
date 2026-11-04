@@ -20,7 +20,7 @@ import { FamilyButton } from "@/components/ui/family-button"
 
 export function Example() {
   return (
-    <FamilyButton>内容</FamilyButton>
+    <FamilyButton />
   )
 }
 ~~~

@@ -20,7 +20,7 @@ import { MorphSurface } from "@/components/ui/morph-surface"
 
 export function Example() {
   return (
-    <MorphSurface>内容</MorphSurface>
+    <MorphSurface />
   )
 }
 ~~~

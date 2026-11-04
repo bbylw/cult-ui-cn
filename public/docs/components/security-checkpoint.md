@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/security-checkpoint
 ## 用法
 
 ~~~tsx
-import { CHECKPOINT_LINES, CheckpointLine, SecurityCheckpoint } from "@/components/ui/security-checkpoint"
+import { CHECKPOINT_LINES } from "@/components/ui/security-checkpoint"
 
 export function Example() {
   return (
-    <CHECKPOINT_LINES>
-      <CheckpointLine />
-    </CHECKPOINT_LINES>
+    <CHECKPOINT_LINES />
   )
 }
 ~~~

@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/file-icons
 ## 用法
 
 ~~~tsx
-import { Icons, getIconForLanguageExtension } from "@/components/ui/file-icons"
+import { Icons } from "@/components/ui/file-icons"
 
 export function Example() {
   return (
-    <Icons>
-      <getIconForLanguageExtension />
-    </Icons>
+    <Icons />
   )
 }
 ~~~

@@ -20,7 +20,7 @@ import { StripeBgGuides } from "@/components/ui/stripe-bg-guides"
 
 export function Example() {
   return (
-    <StripeBgGuides>内容</StripeBgGuides>
+    <StripeBgGuides />
   )
 }
 ~~~

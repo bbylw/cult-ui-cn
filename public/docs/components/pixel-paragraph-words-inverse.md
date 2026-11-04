@@ -20,7 +20,7 @@ import { PixelParagraphInverse } from "@/components/ui/pixel-paragraph-words-inv
 
 export function Example() {
   return (
-    <PixelParagraphInverse>内容</PixelParagraphInverse>
+    <PixelParagraphInverse />
   )
 }
 ~~~

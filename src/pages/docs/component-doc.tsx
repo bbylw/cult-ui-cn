@@ -12,7 +12,9 @@ import { componentDocs, getComponentDoc } from "@/lib/docs-data"
 import { NotFoundPage } from "@/pages/not-found"
 
 export function ComponentDocPage() {
-  const { slug } = useParams<{ slug: string }>()
+  const params = useParams<{ slug: string }>()
+  // 兼容带尾斜杠的静态目录地址。
+  const slug = params.slug?.replace(/\/+$/, "")
   const doc = getComponentDoc(slug)
 
   if (!doc) {

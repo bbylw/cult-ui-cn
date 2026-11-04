@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/hero-color-panel
 ## 用法
 
 ~~~tsx
-import { AISDKIcon, HeroColorPanels, HeroColorPanelsActions } from "@/components/ui/hero-color-panel"
+import { AISDKIcon } from "@/components/ui/hero-color-panel"
 
 export function Example() {
   return (
-    <AISDKIcon>
-      <HeroColorPanels />
-    </AISDKIcon>
+    <AISDKIcon />
   )
 }
 ~~~

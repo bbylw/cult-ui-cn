@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/vote-tally
 ## 用法
 
 ~~~tsx
-import { VoteTally, VoteTallyCount, VoteTallyDescription } from "@/components/ui/vote-tally"
+import { VoteTally } from "@/components/ui/vote-tally"
 
 export function Example() {
   return (
-    <VoteTally>
-      <VoteTallyCount />
-    </VoteTally>
+    <VoteTally />
   )
 }
 ~~~

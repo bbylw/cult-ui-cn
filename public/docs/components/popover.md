@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/popover
 ## 用法
 
 ~~~tsx
-import { PopoverBody, PopoverButton, PopoverCloseButton } from "@/components/ui/popover"
+import { PopoverBody } from "@/components/ui/popover"
 
 export function Example() {
   return (
-    <PopoverBody>
-      <PopoverButton />
-    </PopoverBody>
+    <PopoverBody />
   )
 }
 ~~~

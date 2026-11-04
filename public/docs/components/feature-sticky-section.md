@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/feature-sticky-section
 ## 用法
 
 ~~~tsx
-import { OSSProject, OSSSection, OSSSectionComponents } from "@/components/ui/feature-sticky-section"
+import { OSSProject } from "@/components/ui/feature-sticky-section"
 
 export function Example() {
   return (
-    <OSSProject>
-      <OSSSection />
-    </OSSProject>
+    <OSSProject />
   )
 }
 ~~~

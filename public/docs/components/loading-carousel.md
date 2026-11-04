@@ -20,7 +20,7 @@ import { LoadingCarousel } from "@/components/ui/loading-carousel"
 
 export function Example() {
   return (
-    <LoadingCarousel>内容</LoadingCarousel>
+    <LoadingCarousel />
   )
 }
 ~~~

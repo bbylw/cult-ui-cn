@@ -20,7 +20,7 @@ import { TextureButton } from "@/components/ui/texture-button"
 
 export function Example() {
   return (
-    <TextureButton>内容</TextureButton>
+    <TextureButton />
   )
 }
 ~~~

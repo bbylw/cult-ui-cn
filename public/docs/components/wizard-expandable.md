@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/wizard-expandable
 ## 用法
 
 ~~~tsx
-import { WizardStep, useWizardExpandable } from "@/components/ui/wizard-expandable"
+import { WizardStep } from "@/components/ui/wizard-expandable"
 
 export function Example() {
   return (
-    <WizardStep>
-      <useWizardExpandable />
-    </WizardStep>
+    <WizardStep />
   )
 }
 ~~~

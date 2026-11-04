@@ -20,7 +20,7 @@ import { HaloProgress } from "@/components/ui/halo-progress"
 
 export function Example() {
   return (
-    <HaloProgress>内容</HaloProgress>
+    <HaloProgress />
   )
 }
 ~~~

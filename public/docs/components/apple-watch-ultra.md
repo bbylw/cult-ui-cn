@@ -20,7 +20,7 @@ import { AppleWatchUltra } from "@/components/ui/apple-watch-ultra"
 
 export function Example() {
   return (
-    <AppleWatchUltra>内容</AppleWatchUltra>
+    <AppleWatchUltra />
   )
 }
 ~~~

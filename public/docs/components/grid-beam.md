@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/grid-beam
 ## 用法
 
 ~~~tsx
-import { BeamCanvasRuntimeConfig, GridBeam, GridBeamCanvas } from "@/components/ui/grid-beam"
+import { BeamCanvasRuntimeConfig } from "@/components/ui/grid-beam"
 
 export function Example() {
   return (
-    <BeamCanvasRuntimeConfig>
-      <GridBeam />
-    </BeamCanvasRuntimeConfig>
+    <BeamCanvasRuntimeConfig />
   )
 }
 ~~~

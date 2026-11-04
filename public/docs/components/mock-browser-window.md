@@ -20,7 +20,7 @@ import { BrowserWindow } from "@/components/ui/mock-browser-window"
 
 export function Example() {
   return (
-    <BrowserWindow>内容</BrowserWindow>
+    <BrowserWindow />
   )
 }
 ~~~

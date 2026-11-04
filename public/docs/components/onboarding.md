@@ -16,7 +16,7 @@ npx shadcn@latest add @cult-ui/onboarding
 ## 用法
 
 ~~~tsx
-import { ChoiceGroup, FeatureCarousel, Onboarding } from "@/components/ui/onboarding"
+import { ChoiceGroup, FeatureCarousel } from "@/components/ui/onboarding"
 
 export function Example() {
   return (

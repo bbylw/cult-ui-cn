@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/hover-video-player
 ## 用法
 
 ~~~tsx
-import { HoverVideoPaddingWrapper, HoverVideoPlayer, HoverVideoPlayerControls } from "@/components/ui/hover-video-player"
+import { HoverVideoPaddingWrapper } from "@/components/ui/hover-video-player"
 
 export function Example() {
   return (
-    <HoverVideoPaddingWrapper>
-      <HoverVideoPlayer />
-    </HoverVideoPaddingWrapper>
+    <HoverVideoPaddingWrapper />
   )
 }
 ~~~

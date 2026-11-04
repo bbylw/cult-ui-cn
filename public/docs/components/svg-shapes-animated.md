@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/svg-shapes-animated
 ## 用法
 
 ~~~tsx
-import { ArrowPentagonShapeSvg, ChevronShapeSvg, CircleShapeSvg } from "@/components/ui/svg-shapes-animated"
+import { ArrowPentagonShapeSvg } from "@/components/ui/svg-shapes-animated"
 
 export function Example() {
   return (
-    <ArrowPentagonShapeSvg>
-      <ChevronShapeSvg />
-    </ArrowPentagonShapeSvg>
+    <ArrowPentagonShapeSvg />
   )
 }
 ~~~

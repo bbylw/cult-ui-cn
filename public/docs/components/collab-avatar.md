@@ -20,7 +20,7 @@ import { CollabAvatar } from "@/components/ui/collab-avatar"
 
 export function Example() {
   return (
-    <CollabAvatar>内容</CollabAvatar>
+    <CollabAvatar />
   )
 }
 ~~~

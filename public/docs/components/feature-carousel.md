@@ -20,7 +20,7 @@ import { FeatureCarousel } from "@/components/ui/feature-carousel"
 
 export function Example() {
   return (
-    <FeatureCarousel>内容</FeatureCarousel>
+    <FeatureCarousel />
   )
 }
 ~~~

@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/fluid-ai-workloads
 ## 用法
 
 ~~~tsx
-import { FluidAIWorkloads, FluidAIWorkloadsBranchLines, FluidAIWorkloadsCenterCard } from "@/components/ui/fluid-ai-workloads"
+import { FluidAIWorkloads } from "@/components/ui/fluid-ai-workloads"
 
 export function Example() {
   return (
-    <FluidAIWorkloads>
-      <FluidAIWorkloadsBranchLines />
-    </FluidAIWorkloads>
+    <FluidAIWorkloads />
   )
 }
 ~~~

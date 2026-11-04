@@ -20,7 +20,7 @@ import { GradientButtonGroup } from "@/components/ui/gradient-button-group"
 
 export function Example() {
   return (
-    <GradientButtonGroup>内容</GradientButtonGroup>
+    <GradientButtonGroup />
   )
 }
 ~~~

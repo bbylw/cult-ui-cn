@@ -149,7 +149,15 @@ export function DocsLayout() {
       {/* 文档内容 */}
       <main className="min-w-0 pb-16">
         <Suspense
-          fallback={<p className="text-muted-foreground py-16 text-sm">正在加载…</p>}
+          fallback={
+            <div aria-busy="true" aria-live="polite" className="space-y-4 py-8">
+              <span className="sr-only">正在加载文档</span>
+              <div className="bg-muted h-8 w-1/3 rounded-md motion-safe:animate-pulse" />
+              <div className="bg-muted h-4 w-full rounded motion-safe:animate-pulse" />
+              <div className="bg-muted h-4 w-5/6 rounded motion-safe:animate-pulse" />
+              <div className="bg-muted mt-6 h-56 w-full rounded-xl motion-safe:animate-pulse" />
+            </div>
+          }
         >
           <Outlet />
         </Suspense>

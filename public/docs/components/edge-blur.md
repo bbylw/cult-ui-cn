@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/edge-blur
 ## 用法
 
 ~~~tsx
-import { BottomBlur, EdgeBlur, TopBlur } from "@/components/ui/edge-blur"
+import { BottomBlur } from "@/components/ui/edge-blur"
 
 export function Example() {
   return (
-    <BottomBlur>
-      <EdgeBlur />
-    </BottomBlur>
+    <BottomBlur />
   )
 }
 ~~~

@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/poll-widget
 ## 用法
 
 ~~~tsx
-import { PollOption, PollWidget, PollWidgetAnimationPhase } from "@/components/ui/poll-widget"
+import { PollOption } from "@/components/ui/poll-widget"
 
 export function Example() {
   return (
-    <PollOption>
-      <PollWidget />
-    </PollOption>
+    <PollOption />
   )
 }
 ~~~

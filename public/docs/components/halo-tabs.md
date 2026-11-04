@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/halo-tabs
 ## 用法
 
 ~~~tsx
-import { HaloTabs, HaloTabsContent, HaloTabsIndicator } from "@/components/ui/halo-tabs"
+import { HaloTabs } from "@/components/ui/halo-tabs"
 
 export function Example() {
   return (
-    <HaloTabs>
-      <HaloTabsContent />
-    </HaloTabs>
+    <HaloTabs />
   )
 }
 ~~~

@@ -20,7 +20,7 @@ import { TextGif } from "@/components/ui/text-gif"
 
 export function Example() {
   return (
-    <TextGif>内容</TextGif>
+    <TextGif />
   )
 }
 ~~~

@@ -1,6 +1,6 @@
 {
   "agent-suggest-card-stack": {
-    "usage": "import { AgentSuggestBotBadge, AgentSuggestCardFrame, AgentSuggestCardStack } from \"@/components/ui/agent-suggest-card-stack\"\n\nexport function Example() {\n  return (\n    <AgentSuggestBotBadge>\n      <AgentSuggestCardFrame />\n    </AgentSuggestBotBadge>\n  )\n}",
+    "usage": "import { AgentSuggestBotBadge } from \"@/components/ui/agent-suggest-card-stack\"\n\nexport function Example() {\n  return (\n    <AgentSuggestBotBadge />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "AgentSuggestBotBadge",
@@ -12,14 +12,14 @@
     ]
   },
   "ai-blob-warp": {
-    "usage": "import { AiBlobWarpAvatar } from \"@/components/ui/ai-blob-warp\"\n\nexport function Example() {\n  return (\n    <AiBlobWarpAvatar>内容</AiBlobWarpAvatar>\n  )\n}",
+    "usage": "import { AiBlobWarpAvatar } from \"@/components/ui/ai-blob-warp\"\n\nexport function Example() {\n  return (\n    <AiBlobWarpAvatar />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "AiBlobWarpAvatar"
     ]
   },
   "ai-instructions": {
-    "usage": "import { Instruction, Instructions, InstructionsContent } from \"@/components/ui/ai-instructions\"\n\nexport function Example() {\n  return (\n    <Instruction>\n      <Instructions />\n    </Instruction>\n  )\n}",
+    "usage": "import { Instruction } from \"@/components/ui/ai-instructions\"\n\nexport function Example() {\n  return (\n    <Instruction />\n  )\n}",
     "typeDefs": [
       {
         "name": "InstructionsHoverCardProps",
@@ -42,7 +42,7 @@
     ]
   },
   "prompt-composer": {
-    "usage": "import { AiBlobWarpAvatar, PromptComposer, PromptTextarea } from \"@/components/ui/prompt-composer\"\n\nexport function Example() {\n  return (\n    <AiBlobWarpAvatar>\n      <PromptComposer />\n    </AiBlobWarpAvatar>\n  )\n}",
+    "usage": "import { AiBlobWarpAvatar } from \"@/components/ui/prompt-composer\"\n\nexport function Example() {\n  return (\n    <AiBlobWarpAvatar />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "AiBlobWarpAvatar",
@@ -51,7 +51,7 @@
     ]
   },
   "prompt-library": {
-    "usage": "import { Prompt, PromptLibrary, PromptLibraryContent } from \"@/components/ui/prompt-library\"\n\nexport function Example() {\n  return (\n    <Prompt>\n      <PromptLibrary />\n    </Prompt>\n  )\n}",
+    "usage": "import { Prompt } from \"@/components/ui/prompt-library\"\n\nexport function Example() {\n  return (\n    <Prompt />\n  )\n}",
     "typeDefs": [
       {
         "name": "PromptLibraryHoverCardProps",
@@ -74,14 +74,14 @@
     ]
   },
   "bg-animate-button": {
-    "usage": "import { BgAnimateButton } from \"@/components/ui/bg-animate-button\"\n\nexport function Example() {\n  return (\n    <BgAnimateButton>内容</BgAnimateButton>\n  )\n}",
+    "usage": "import { BgAnimateButton } from \"@/components/ui/bg-animate-button\"\n\nexport function Example() {\n  return (\n    <BgAnimateButton />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "BgAnimateButton"
     ]
   },
   "border-beam-button": {
-    "usage": "import { BorderBeamButton, BorderBeamIconButton } from \"@/components/ui/border-beam-button\"\n\nexport function Example() {\n  return (\n    <BorderBeamButton>\n      <BorderBeamIconButton />\n    </BorderBeamButton>\n  )\n}",
+    "usage": "import { BorderBeamButton } from \"@/components/ui/border-beam-button\"\n\nexport function Example() {\n  return (\n    <BorderBeamButton />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "BorderBeamButton",
@@ -89,7 +89,7 @@
     ]
   },
   "cosmic-button": {
-    "usage": "import { CosmicButton } from \"@/components/ui/cosmic-button\"\n\nexport function Example() {\n  return (\n    <CosmicButton>内容</CosmicButton>\n  )\n}",
+    "usage": "import { CosmicButton } from \"@/components/ui/cosmic-button\"\n\nexport function Example() {\n  return (\n    <CosmicButton />\n  )\n}",
     "typeDefs": [
       {
         "name": "CosmicButtonProps",
@@ -101,7 +101,7 @@
     ]
   },
   "family-button": {
-    "usage": "import { FamilyButton } from \"@/components/ui/family-button\"\n\nexport function Example() {\n  return (\n    <FamilyButton>内容</FamilyButton>\n  )\n}",
+    "usage": "import { FamilyButton } from \"@/components/ui/family-button\"\n\nexport function Example() {\n  return (\n    <FamilyButton />\n  )\n}",
     "typeDefs": [
       {
         "name": "FamilyButtonProps",
@@ -117,21 +117,21 @@
     ]
   },
   "gradient-button-group": {
-    "usage": "import { GradientButtonGroup } from \"@/components/ui/gradient-button-group\"\n\nexport function Example() {\n  return (\n    <GradientButtonGroup>内容</GradientButtonGroup>\n  )\n}",
+    "usage": "import { GradientButtonGroup } from \"@/components/ui/gradient-button-group\"\n\nexport function Example() {\n  return (\n    <GradientButtonGroup />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "GradientButtonGroup"
     ]
   },
   "halo-button": {
-    "usage": "import { HaloButton } from \"@/components/ui/halo-button\"\n\nexport function Example() {\n  return (\n    <HaloButton>内容</HaloButton>\n  )\n}",
+    "usage": "import { HaloButton } from \"@/components/ui/halo-button\"\n\nexport function Example() {\n  return (\n    <HaloButton />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "HaloButton"
     ]
   },
   "metal-button": {
-    "usage": "import { MetalButton, MetalIconButton } from \"@/components/ui/metal-button\"\n\nexport function Example() {\n  return (\n    <MetalButton>\n      <MetalIconButton />\n    </MetalButton>\n  )\n}",
+    "usage": "import { MetalButton } from \"@/components/ui/metal-button\"\n\nexport function Example() {\n  return (\n    <MetalButton />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "MetalButton",
@@ -144,14 +144,14 @@
     "parts": []
   },
   "organic-button": {
-    "usage": "import { OrganicButton } from \"@/components/ui/organic-button\"\n\nexport function Example() {\n  return (\n    <OrganicButton>内容</OrganicButton>\n  )\n}",
+    "usage": "import { OrganicButton } from \"@/components/ui/organic-button\"\n\nexport function Example() {\n  return (\n    <OrganicButton />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "OrganicButton"
     ]
   },
   "texture-button": {
-    "usage": "import { TextureButton } from \"@/components/ui/texture-button\"\n\nexport function Example() {\n  return (\n    <TextureButton>内容</TextureButton>\n  )\n}",
+    "usage": "import { TextureButton } from \"@/components/ui/texture-button\"\n\nexport function Example() {\n  return (\n    <TextureButton />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "TextureButton"
@@ -171,7 +171,7 @@
     ]
   },
   "cutout-card": {
-    "usage": "import { CutoutCard, CutoutCardAction, CutoutCardContent } from \"@/components/ui/cutout-card\"\n\nexport function Example() {\n  return (\n    <CutoutCard>\n      <CutoutCardAction />\n    </CutoutCard>\n  )\n}",
+    "usage": "import { CutoutCard } from \"@/components/ui/cutout-card\"\n\nexport function Example() {\n  return (\n    <CutoutCard />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "CutoutCard",
@@ -189,7 +189,7 @@
     ]
   },
   "expandable": {
-    "usage": "import { Expandable, ExpandableCard, ExpandableCardContent } from \"@/components/ui/expandable\"\n\nexport function Example() {\n  return (\n    <Expandable>\n      <ExpandableCard />\n    </Expandable>\n  )\n}",
+    "usage": "import { Expandable } from \"@/components/ui/expandable\"\n\nexport function Example() {\n  return (\n    <Expandable />\n  )\n}",
     "typeDefs": [
       {
         "name": "AnimationProps",
@@ -230,7 +230,7 @@
     ]
   },
   "halo-card": {
-    "usage": "import { HaloCard, HaloCardAction, HaloCardButton } from \"@/components/ui/halo-card\"\n\nexport function Example() {\n  return (\n    <HaloCard>\n      <HaloCardAction />\n    </HaloCard>\n  )\n}",
+    "usage": "import { HaloCard } from \"@/components/ui/halo-card\"\n\nexport function Example() {\n  return (\n    <HaloCard />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "HaloCard",
@@ -244,7 +244,7 @@
     ]
   },
   "minimal-card": {
-    "usage": "import { MinimalCard, MinimalCardContent, MinimalCardDescription } from \"@/components/ui/minimal-card\"\n\nexport function Example() {\n  return (\n    <MinimalCard>\n      <MinimalCardContent />\n    </MinimalCard>\n  )\n}",
+    "usage": "import { MinimalCard } from \"@/components/ui/minimal-card\"\n\nexport function Example() {\n  return (\n    <MinimalCard />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "MinimalCard",
@@ -256,7 +256,7 @@
     ]
   },
   "organic-card": {
-    "usage": "import { OrganicCard, OrganicCardBand, OrganicCardBody } from \"@/components/ui/organic-card\"\n\nexport function Example() {\n  return (\n    <OrganicCard>\n      <OrganicCardBand />\n    </OrganicCard>\n  )\n}",
+    "usage": "import { OrganicCard } from \"@/components/ui/organic-card\"\n\nexport function Example() {\n  return (\n    <OrganicCard />\n  )\n}",
     "typeDefs": [
       {
         "name": "OrganicCardSharedProps",
@@ -277,7 +277,7 @@
     ]
   },
   "organic-card-small": {
-    "usage": "import { OrganicCardSmall } from \"@/components/ui/organic-card-small\"\n\nexport function Example() {\n  return (\n    <OrganicCardSmall>内容</OrganicCardSmall>\n  )\n}",
+    "usage": "import { OrganicCardSmall } from \"@/components/ui/organic-card-small\"\n\nexport function Example() {\n  return (\n    <OrganicCardSmall />\n  )\n}",
     "typeDefs": [
       {
         "name": "OrganicCardSmallProps",
@@ -289,7 +289,7 @@
     ]
   },
   "shadow-card": {
-    "usage": "import { ShadowCard, ShadowCardBackdrop, ShadowCardBevel } from \"@/components/ui/shadow-card\"\n\nexport function Example() {\n  return (\n    <ShadowCard>\n      <ShadowCardBackdrop />\n    </ShadowCard>\n  )\n}",
+    "usage": "import { ShadowCard } from \"@/components/ui/shadow-card\"\n\nexport function Example() {\n  return (\n    <ShadowCard />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "ShadowCard",
@@ -302,7 +302,7 @@
     ]
   },
   "shift-card": {
-    "usage": "import { ShiftCard, ShiftCardContent, ShiftCardHeader } from \"@/components/ui/shift-card\"\n\nexport function Example() {\n  return (\n    <ShiftCard>\n      <ShiftCardContent />\n    </ShiftCard>\n  )\n}",
+    "usage": "import { ShiftCard } from \"@/components/ui/shift-card\"\n\nexport function Example() {\n  return (\n    <ShiftCard />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "ShiftCard",
@@ -311,7 +311,7 @@
     ]
   },
   "texture-card": {
-    "usage": "import { TextureCard, TextureCardContent, TextureCardDescription } from \"@/components/ui/texture-card\"\n\nexport function Example() {\n  return (\n    <TextureCard>\n      <TextureCardContent />\n    </TextureCard>\n  )\n}",
+    "usage": "import { TextureCard } from \"@/components/ui/texture-card\"\n\nexport function Example() {\n  return (\n    <TextureCard />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "TextureCard",
@@ -325,7 +325,7 @@
     ]
   },
   "base-select": {
-    "usage": "import { Select, SelectContent, SelectGroup } from \"@/components/ui/base-select\"\n\nexport function Example() {\n  return (\n    <Select>\n      <SelectContent />\n    </Select>\n  )\n}",
+    "usage": "import { Select } from \"@/components/ui/base-select\"\n\nexport function Example() {\n  return (\n    <Select />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "Select",
@@ -341,7 +341,7 @@
     ]
   },
   "border-beam-input": {
-    "usage": "import { BorderBeamInput, BorderBeamInputGroup, BorderBeamInputGroupAddon } from \"@/components/ui/border-beam-input\"\n\nexport function Example() {\n  return (\n    <BorderBeamInput>\n      <BorderBeamInputGroup />\n    </BorderBeamInput>\n  )\n}",
+    "usage": "import { BorderBeamInput } from \"@/components/ui/border-beam-input\"\n\nexport function Example() {\n  return (\n    <BorderBeamInput />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "BorderBeamInput",
@@ -354,14 +354,14 @@
     ]
   },
   "color-picker": {
-    "usage": "import { ColorPicker } from \"@/components/ui/color-picker\"\n\nexport function Example() {\n  return (\n    <ColorPicker>内容</ColorPicker>\n  )\n}",
+    "usage": "import { ColorPicker } from \"@/components/ui/color-picker\"\n\nexport function Example() {\n  return (\n    <ColorPicker />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "ColorPicker"
     ]
   },
   "halo-dropzone": {
-    "usage": "import { DropzoneFileTypeGlyph, DropzoneUploadFileList, DropzoneUploadFileRow } from \"@/components/ui/halo-dropzone\"\n\nexport function Example() {\n  return (\n    <DropzoneFileTypeGlyph>\n      <DropzoneUploadFileList />\n    </DropzoneFileTypeGlyph>\n  )\n}",
+    "usage": "import { DropzoneFileTypeGlyph } from \"@/components/ui/halo-dropzone\"\n\nexport function Example() {\n  return (\n    <DropzoneFileTypeGlyph />\n  )\n}",
     "typeDefs": [
       {
         "name": "DropzoneBodyProps",
@@ -386,7 +386,7 @@
     ]
   },
   "halo-field": {
-    "usage": "import { HaloField, HaloFieldContent, HaloFieldDescription } from \"@/components/ui/halo-field\"\n\nexport function Example() {\n  return (\n    <HaloField>\n      <HaloFieldContent />\n    </HaloField>\n  )\n}",
+    "usage": "import { HaloField } from \"@/components/ui/halo-field\"\n\nexport function Example() {\n  return (\n    <HaloField />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "HaloField",
@@ -398,7 +398,7 @@
     ]
   },
   "halo-input": {
-    "usage": "import { HaloInput, HaloTextarea } from \"@/components/ui/halo-input\"\n\nexport function Example() {\n  return (\n    <HaloInput>\n      <HaloTextarea />\n    </HaloInput>\n  )\n}",
+    "usage": "import { HaloInput } from \"@/components/ui/halo-input\"\n\nexport function Example() {\n  return (\n    <HaloInput />\n  )\n}",
     "typeDefs": [
       {
         "name": "ShellProps",
@@ -411,7 +411,7 @@
     ]
   },
   "halo-search": {
-    "usage": "import { AiBlobWarpAvatar, DeletedTextBlurReveal, HaloSearchInput } from \"@/components/ui/halo-search\"\n\nexport function Example() {\n  return (\n    <AiBlobWarpAvatar>\n      <DeletedTextBlurReveal />\n    </AiBlobWarpAvatar>\n  )\n}",
+    "usage": "import { AiBlobWarpAvatar } from \"@/components/ui/halo-search\"\n\nexport function Example() {\n  return (\n    <AiBlobWarpAvatar />\n  )\n}",
     "typeDefs": [
       {
         "name": "DeletedTextBlurRevealProps",
@@ -425,7 +425,7 @@
     ]
   },
   "halo-select": {
-    "usage": "import { HaloSelect, HaloSelectContent, HaloSelectGroup } from \"@/components/ui/halo-select\"\n\nexport function Example() {\n  return (\n    <HaloSelect>\n      <HaloSelectContent />\n    </HaloSelect>\n  )\n}",
+    "usage": "import { HaloSelect } from \"@/components/ui/halo-select\"\n\nexport function Example() {\n  return (\n    <HaloSelect />\n  )\n}",
     "typeDefs": [
       {
         "name": "BorderGlowConfig",
@@ -448,7 +448,7 @@
     ]
   },
   "halo-segmented": {
-    "usage": "import { HaloSegmented, HaloSegmentedItem } from \"@/components/ui/halo-segmented\"\n\nexport function Example() {\n  return (\n    <HaloSegmented>\n      <HaloSegmentedItem />\n    </HaloSegmented>\n  )\n}",
+    "usage": "import { HaloSegmented } from \"@/components/ui/halo-segmented\"\n\nexport function Example() {\n  return (\n    <HaloSegmented />\n  )\n}",
     "typeDefs": [
       {
         "name": "HaloSegmentedProps",
@@ -461,7 +461,7 @@
     ]
   },
   "halo-switch": {
-    "usage": "import { HaloSwitch } from \"@/components/ui/halo-switch\"\n\nexport function Example() {\n  return (\n    <HaloSwitch>内容</HaloSwitch>\n  )\n}",
+    "usage": "import { HaloSwitch } from \"@/components/ui/halo-switch\"\n\nexport function Example() {\n  return (\n    <HaloSwitch />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "HaloSwitch"
@@ -481,7 +481,7 @@
     ]
   },
   "direction-aware-tabs": {
-    "usage": "import { DirectionAwareTabs } from \"@/components/ui/direction-aware-tabs\"\n\nexport function Example() {\n  return (\n    <DirectionAwareTabs>内容</DirectionAwareTabs>\n  )\n}",
+    "usage": "import { DirectionAwareTabs } from \"@/components/ui/direction-aware-tabs\"\n\nexport function Example() {\n  return (\n    <DirectionAwareTabs />\n  )\n}",
     "typeDefs": [
       {
         "name": "OgImageSectionProps",
@@ -514,7 +514,7 @@
     ]
   },
   "halo-tabs": {
-    "usage": "import { HaloTabs, HaloTabsContent, HaloTabsIndicator } from \"@/components/ui/halo-tabs\"\n\nexport function Example() {\n  return (\n    <HaloTabs>\n      <HaloTabsContent />\n    </HaloTabs>\n  )\n}",
+    "usage": "import { HaloTabs } from \"@/components/ui/halo-tabs\"\n\nexport function Example() {\n  return (\n    <HaloTabs />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "HaloTabs",
@@ -541,7 +541,7 @@
     "parts": []
   },
   "family-drawer": {
-    "usage": "import { FamilyDrawerAnimatedContent, FamilyDrawerAnimatedWrapper, FamilyDrawerButton } from \"@/components/ui/family-drawer\"\n\nexport function Example() {\n  return (\n    <FamilyDrawerAnimatedContent>\n      <FamilyDrawerAnimatedWrapper />\n    </FamilyDrawerAnimatedContent>\n  )\n}",
+    "usage": "import { FamilyDrawerAnimatedContent } from \"@/components/ui/family-drawer\"\n\nexport function Example() {\n  return (\n    <FamilyDrawerAnimatedContent />\n  )\n}",
     "typeDefs": [
       {
         "name": "FamilyDrawerRootProps",
@@ -568,7 +568,7 @@
     ]
   },
   "floating-panel": {
-    "usage": "import { FloatingPanelBody, FloatingPanelButton, FloatingPanelCloseButton } from \"@/components/ui/floating-panel\"\n\nexport function Example() {\n  return (\n    <FloatingPanelBody>\n      <FloatingPanelButton />\n    </FloatingPanelBody>\n  )\n}",
+    "usage": "import { FloatingPanelBody } from \"@/components/ui/floating-panel\"\n\nexport function Example() {\n  return (\n    <FloatingPanelBody />\n  )\n}",
     "typeDefs": [
       {
         "name": "FloatingPanelRootProps",
@@ -595,7 +595,7 @@
     ]
   },
   "halo-notification": {
-    "usage": "import { HaloPolishedNotification, HaloPolishedToastSurface, RimVariant } from \"@/components/ui/halo-notification\"\n\nexport function Example() {\n  return (\n    <HaloPolishedNotification>\n      <HaloPolishedToastSurface />\n    </HaloPolishedNotification>\n  )\n}",
+    "usage": "import { HaloPolishedNotification } from \"@/components/ui/halo-notification\"\n\nexport function Example() {\n  return (\n    <HaloPolishedNotification />\n  )\n}",
     "typeDefs": [
       {
         "name": "HaloPolishedToastSurfaceProps",
@@ -609,7 +609,7 @@
     ]
   },
   "halo-toast": {
-    "usage": "import { PolishedToastOptions, PolishedToastSurface, PolishedToaster } from \"@/components/ui/halo-toast\"\n\nexport function Example() {\n  return (\n    <PolishedToastOptions>\n      <PolishedToastSurface />\n    </PolishedToastOptions>\n  )\n}",
+    "usage": "import { PolishedToastOptions } from \"@/components/ui/halo-toast\"\n\nexport function Example() {\n  return (\n    <PolishedToastOptions />\n  )\n}",
     "typeDefs": [
       {
         "name": "PolishedToastSurfaceProps",
@@ -625,7 +625,7 @@
     ]
   },
   "intro-disclosure": {
-    "usage": "import { IntroDisclosure } from \"@/components/ui/intro-disclosure\"\n\nexport function Example() {\n  return (\n    <IntroDisclosure>内容</IntroDisclosure>\n  )\n}",
+    "usage": "import { IntroDisclosure } from \"@/components/ui/intro-disclosure\"\n\nexport function Example() {\n  return (\n    <IntroDisclosure />\n  )\n}",
     "typeDefs": [
       {
         "name": "StepTabProps",
@@ -641,7 +641,7 @@
     ]
   },
   "popover": {
-    "usage": "import { PopoverBody, PopoverButton, PopoverCloseButton } from \"@/components/ui/popover\"\n\nexport function Example() {\n  return (\n    <PopoverBody>\n      <PopoverButton />\n    </PopoverBody>\n  )\n}",
+    "usage": "import { PopoverBody } from \"@/components/ui/popover\"\n\nexport function Example() {\n  return (\n    <PopoverBody />\n  )\n}",
     "typeDefs": [
       {
         "name": "PopoverRootProps",
@@ -668,7 +668,7 @@
     ]
   },
   "popover-form": {
-    "usage": "import { PopoverForm, PopoverFormButton, PopoverFormCutOutLeftIcon } from \"@/components/ui/popover-form\"\n\nexport function Example() {\n  return (\n    <PopoverForm>\n      <PopoverFormButton />\n    </PopoverForm>\n  )\n}",
+    "usage": "import { PopoverForm } from \"@/components/ui/popover-form\"\n\nexport function Example() {\n  return (\n    <PopoverForm />\n  )\n}",
     "typeDefs": [
       {
         "name": "PopoverFormProps",
@@ -685,7 +685,7 @@
     ]
   },
   "side-panel": {
-    "usage": "import { SidePanel } from \"@/components/ui/side-panel\"\n\nexport function Example() {\n  return (\n    <SidePanel>内容</SidePanel>\n  )\n}",
+    "usage": "import { SidePanel } from \"@/components/ui/side-panel\"\n\nexport function Example() {\n  return (\n    <SidePanel />\n  )\n}",
     "typeDefs": [
       {
         "name": "PanelContainerProps",
@@ -701,7 +701,7 @@
     ]
   },
   "gradient-heading": {
-    "usage": "import { GradientHeading, Size, Variant } from \"@/components/ui/gradient-heading\"\n\nexport function Example() {\n  return (\n    <GradientHeading>\n      <Size />\n    </GradientHeading>\n  )\n}",
+    "usage": "import { GradientHeading } from \"@/components/ui/gradient-heading\"\n\nexport function Example() {\n  return (\n    <GradientHeading />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "GradientHeading",
@@ -712,14 +712,14 @@
     ]
   },
   "neumorph-eyebrow": {
-    "usage": "import { NeumorphEyebrow } from \"@/components/ui/neumorph-eyebrow\"\n\nexport function Example() {\n  return (\n    <NeumorphEyebrow>内容</NeumorphEyebrow>\n  )\n}",
+    "usage": "import { NeumorphEyebrow } from \"@/components/ui/neumorph-eyebrow\"\n\nexport function Example() {\n  return (\n    <NeumorphEyebrow />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "NeumorphEyebrow"
     ]
   },
   "pixel-heading-character": {
-    "usage": "import { PixelHeading, PixelHeadingMode } from \"@/components/ui/pixel-heading-character\"\n\nexport function Example() {\n  return (\n    <PixelHeading>\n      <PixelHeadingMode />\n    </PixelHeading>\n  )\n}",
+    "usage": "import { PixelHeading } from \"@/components/ui/pixel-heading-character\"\n\nexport function Example() {\n  return (\n    <PixelHeading />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "PixelHeading",
@@ -727,21 +727,21 @@
     ]
   },
   "pixel-heading-word": {
-    "usage": "import { PixelHeading } from \"@/components/ui/pixel-heading-word\"\n\nexport function Example() {\n  return (\n    <PixelHeading>内容</PixelHeading>\n  )\n}",
+    "usage": "import { PixelHeading } from \"@/components/ui/pixel-heading-word\"\n\nexport function Example() {\n  return (\n    <PixelHeading />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "PixelHeading"
     ]
   },
   "pixel-paragraph-words": {
-    "usage": "import { PixelParagraph } from \"@/components/ui/pixel-paragraph-words\"\n\nexport function Example() {\n  return (\n    <PixelParagraph>内容</PixelParagraph>\n  )\n}",
+    "usage": "import { PixelParagraph } from \"@/components/ui/pixel-paragraph-words\"\n\nexport function Example() {\n  return (\n    <PixelParagraph />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "PixelParagraph"
     ]
   },
   "pixel-paragraph-words-inverse": {
-    "usage": "import { PixelParagraphInverse } from \"@/components/ui/pixel-paragraph-words-inverse\"\n\nexport function Example() {\n  return (\n    <PixelParagraphInverse>内容</PixelParagraphInverse>\n  )\n}",
+    "usage": "import { PixelParagraphInverse } from \"@/components/ui/pixel-paragraph-words-inverse\"\n\nexport function Example() {\n  return (\n    <PixelParagraphInverse />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "PixelParagraphInverse"
@@ -755,14 +755,14 @@
     ]
   },
   "text-gif": {
-    "usage": "import { TextGif } from \"@/components/ui/text-gif\"\n\nexport function Example() {\n  return (\n    <TextGif>内容</TextGif>\n  )\n}",
+    "usage": "import { TextGif } from \"@/components/ui/text-gif\"\n\nexport function Example() {\n  return (\n    <TextGif />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "TextGif"
     ]
   },
   "typewriter": {
-    "usage": "import { Typewriter } from \"@/components/ui/typewriter\"\n\nexport function Example() {\n  return (\n    <Typewriter>内容</Typewriter>\n  )\n}",
+    "usage": "import { Typewriter } from \"@/components/ui/typewriter\"\n\nexport function Example() {\n  return (\n    <Typewriter />\n  )\n}",
     "typeDefs": [
       {
         "name": "ITypewriterProps",
@@ -778,7 +778,7 @@
     ]
   },
   "bg-animated-fractal-dot-grid": {
-    "usage": "import { FractalDotGrid } from \"@/components/ui/bg-animated-fractal-dot-grid\"\n\nexport function Example() {\n  return (\n    <FractalDotGrid>内容</FractalDotGrid>\n  )\n}",
+    "usage": "import { FractalDotGrid } from \"@/components/ui/bg-animated-fractal-dot-grid\"\n\nexport function Example() {\n  return (\n    <FractalDotGrid />\n  )\n}",
     "typeDefs": [
       {
         "name": "FractalDotGridProps",
@@ -790,7 +790,7 @@
     ]
   },
   "bg-animated-gradient": {
-    "usage": "import { GradientAnimation } from \"@/components/ui/bg-animated-gradient\"\n\nexport function Example() {\n  return (\n    <GradientAnimation>内容</GradientAnimation>\n  )\n}",
+    "usage": "import { GradientAnimation } from \"@/components/ui/bg-animated-gradient\"\n\nexport function Example() {\n  return (\n    <GradientAnimation />\n  )\n}",
     "typeDefs": [
       {
         "name": "GradientAnimationProps",
@@ -802,7 +802,7 @@
     ]
   },
   "bg-image-texture": {
-    "usage": "import { BackgroundImageTexture, TextureVariant } from \"@/components/ui/bg-image-texture\"\n\nexport function Example() {\n  return (\n    <BackgroundImageTexture>\n      <TextureVariant />\n    </BackgroundImageTexture>\n  )\n}",
+    "usage": "import { BackgroundImageTexture } from \"@/components/ui/bg-image-texture\"\n\nexport function Example() {\n  return (\n    <BackgroundImageTexture />\n  )\n}",
     "typeDefs": [
       {
         "name": "BackgroundImageTextureProps",
@@ -815,7 +815,7 @@
     ]
   },
   "bg-media": {
-    "usage": "import { BackgroundMedia } from \"@/components/ui/bg-media\"\n\nexport function Example() {\n  return (\n    <BackgroundMedia>内容</BackgroundMedia>\n  )\n}",
+    "usage": "import { BackgroundMedia } from \"@/components/ui/bg-media\"\n\nexport function Example() {\n  return (\n    <BackgroundMedia />\n  )\n}",
     "typeDefs": [
       {
         "name": "BackgroundMediaProps",
@@ -827,7 +827,7 @@
     ]
   },
   "canvas-fractal-grid": {
-    "usage": "import { CanvasFractalGrid } from \"@/components/ui/canvas-fractal-grid\"\n\nexport function Example() {\n  return (\n    <CanvasFractalGrid>内容</CanvasFractalGrid>\n  )\n}",
+    "usage": "import { CanvasFractalGrid } from \"@/components/ui/canvas-fractal-grid\"\n\nexport function Example() {\n  return (\n    <CanvasFractalGrid />\n  )\n}",
     "typeDefs": [
       {
         "name": "CanvasFractalGridProps",
@@ -843,7 +843,7 @@
     ]
   },
   "grid-beam": {
-    "usage": "import { BeamCanvasRuntimeConfig, GridBeam, GridBeamCanvas } from \"@/components/ui/grid-beam\"\n\nexport function Example() {\n  return (\n    <BeamCanvasRuntimeConfig>\n      <GridBeam />\n    </BeamCanvasRuntimeConfig>\n  )\n}",
+    "usage": "import { BeamCanvasRuntimeConfig } from \"@/components/ui/grid-beam\"\n\nexport function Example() {\n  return (\n    <BeamCanvasRuntimeConfig />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "BeamCanvasRuntimeConfig",
@@ -861,7 +861,7 @@
     ]
   },
   "stripe-bg-guides": {
-    "usage": "import { StripeBgGuides } from \"@/components/ui/stripe-bg-guides\"\n\nexport function Example() {\n  return (\n    <StripeBgGuides>内容</StripeBgGuides>\n  )\n}",
+    "usage": "import { StripeBgGuides } from \"@/components/ui/stripe-bg-guides\"\n\nexport function Example() {\n  return (\n    <StripeBgGuides />\n  )\n}",
     "typeDefs": [
       {
         "name": "AnimatedBackgroundGuidesProps",
@@ -873,7 +873,7 @@
     ]
   },
   "svg-bands": {
-    "usage": "import { AngledCornerPanelSvg, ArrowChevronBandSvg, BandShape } from \"@/components/ui/svg-bands\"\n\nexport function Example() {\n  return (\n    <AngledCornerPanelSvg>\n      <ArrowChevronBandSvg />\n    </AngledCornerPanelSvg>\n  )\n}",
+    "usage": "import { AngledCornerPanelSvg } from \"@/components/ui/svg-bands\"\n\nexport function Example() {\n  return (\n    <AngledCornerPanelSvg />\n  )\n}",
     "typeDefs": [
       {
         "name": "BandShapeProps",
@@ -896,7 +896,7 @@
     ]
   },
   "svg-shapes": {
-    "usage": "import { ArrowPentagonShapeSvg, CircleShapeSvg, CubeWireshapeSvg } from \"@/components/ui/svg-shapes\"\n\nexport function Example() {\n  return (\n    <ArrowPentagonShapeSvg>\n      <CircleShapeSvg />\n    </ArrowPentagonShapeSvg>\n  )\n}",
+    "usage": "import { ArrowPentagonShapeSvg } from \"@/components/ui/svg-shapes\"\n\nexport function Example() {\n  return (\n    <ArrowPentagonShapeSvg />\n  )\n}",
     "typeDefs": [
       {
         "name": "ShapeSvgProps",
@@ -919,7 +919,7 @@
     ]
   },
   "svg-shapes-animated": {
-    "usage": "import { ArrowPentagonShapeSvg, ChevronShapeSvg, CircleShapeSvg } from \"@/components/ui/svg-shapes-animated\"\n\nexport function Example() {\n  return (\n    <ArrowPentagonShapeSvg>\n      <ChevronShapeSvg />\n    </ArrowPentagonShapeSvg>\n  )\n}",
+    "usage": "import { ArrowPentagonShapeSvg } from \"@/components/ui/svg-shapes-animated\"\n\nexport function Example() {\n  return (\n    <ArrowPentagonShapeSvg />\n  )\n}",
     "typeDefs": [
       {
         "name": "ShapeSvgProps",
@@ -942,7 +942,7 @@
     ]
   },
   "texture-overlay": {
-    "usage": "import { TextureOverlay, TextureType } from \"@/components/ui/texture-overlay\"\n\nexport function Example() {\n  return (\n    <TextureOverlay>\n      <TextureType />\n    </TextureOverlay>\n  )\n}",
+    "usage": "import { TextureOverlay } from \"@/components/ui/texture-overlay\"\n\nexport function Example() {\n  return (\n    <TextureOverlay />\n  )\n}",
     "typeDefs": [
       {
         "name": "TextureOverlayProps",
@@ -955,14 +955,14 @@
     ]
   },
   "circuit-board": {
-    "usage": "import { CircuitBoard } from \"@/components/ui/circuit-board\"\n\nexport function Example() {\n  return (\n    <CircuitBoard>内容</CircuitBoard>\n  )\n}",
+    "usage": "import { CircuitBoard } from \"@/components/ui/circuit-board\"\n\nexport function Example() {\n  return (\n    <CircuitBoard />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "CircuitBoard"
     ]
   },
   "fluid-ai-workloads": {
-    "usage": "import { FluidAIWorkloads, FluidAIWorkloadsBranchLines, FluidAIWorkloadsCenterCard } from \"@/components/ui/fluid-ai-workloads\"\n\nexport function Example() {\n  return (\n    <FluidAIWorkloads>\n      <FluidAIWorkloadsBranchLines />\n    </FluidAIWorkloads>\n  )\n}",
+    "usage": "import { FluidAIWorkloads } from \"@/components/ui/fluid-ai-workloads\"\n\nexport function Example() {\n  return (\n    <FluidAIWorkloads />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "FluidAIWorkloads",
@@ -974,7 +974,7 @@
     ]
   },
   "gateway-endpoint-illustration": {
-    "usage": "import { AnthropicIcon, GatewayEndpoint, GatewayEndpointBackground } from \"@/components/ui/gateway-endpoint-illustration\"\n\nexport function Example() {\n  return (\n    <AnthropicIcon>\n      <GatewayEndpoint />\n    </AnthropicIcon>\n  )\n}",
+    "usage": "import { AnthropicIcon } from \"@/components/ui/gateway-endpoint-illustration\"\n\nexport function Example() {\n  return (\n    <AnthropicIcon />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "AnthropicIcon",
@@ -992,7 +992,7 @@
     ]
   },
   "gateway-route-illustration": {
-    "usage": "import { AnthropicIcon, CohereIcon, GatewayRouting } from \"@/components/ui/gateway-route-illustration\"\n\nexport function Example() {\n  return (\n    <AnthropicIcon>\n      <CohereIcon />\n    </AnthropicIcon>\n  )\n}",
+    "usage": "import { AnthropicIcon } from \"@/components/ui/gateway-route-illustration\"\n\nexport function Example() {\n  return (\n    <AnthropicIcon />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "AnthropicIcon",
@@ -1009,7 +1009,7 @@
     ]
   },
   "gateway-svg-illustration": {
-    "usage": "import { GatewayOverhead, GatewayOverheadBackground, GatewayOverheadBackgroundGrid } from \"@/components/ui/gateway-svg-illustration\"\n\nexport function Example() {\n  return (\n    <GatewayOverhead>\n      <GatewayOverheadBackground />\n    </GatewayOverhead>\n  )\n}",
+    "usage": "import { GatewayOverhead } from \"@/components/ui/gateway-svg-illustration\"\n\nexport function Example() {\n  return (\n    <GatewayOverhead />\n  )\n}",
     "typeDefs": [
       {
         "name": "GatewayOverheadDefsProps",
@@ -1036,7 +1036,7 @@
     ]
   },
   "illustration-card-grid": {
-    "usage": "import { DEFAULT_ILLUSTRATION_CARD_GRID_ITEMS, IllustrationCardGrid, IllustrationCardGridItem } from \"@/components/ui/illustration-card-grid\"\n\nexport function Example() {\n  return (\n    <DEFAULT_ILLUSTRATION_CARD_GRID_ITEMS>\n      <IllustrationCardGrid />\n    </DEFAULT_ILLUSTRATION_CARD_GRID_ITEMS>\n  )\n}",
+    "usage": "import { DEFAULT_ILLUSTRATION_CARD_GRID_ITEMS } from \"@/components/ui/illustration-card-grid\"\n\nexport function Example() {\n  return (\n    <DEFAULT_ILLUSTRATION_CARD_GRID_ITEMS />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "DEFAULT_ILLUSTRATION_CARD_GRID_ITEMS",
@@ -1045,7 +1045,7 @@
     ]
   },
   "illustration-comment-bubble": {
-    "usage": "import { Code, CommentBubble, CommentBubbleDemo } from \"@/components/ui/illustration-comment-bubble\"\n\nexport function Example() {\n  return (\n    <Code>\n      <CommentBubble />\n    </Code>\n  )\n}",
+    "usage": "import { Code } from \"@/components/ui/illustration-comment-bubble\"\n\nexport function Example() {\n  return (\n    <Code />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "Code",
@@ -1054,7 +1054,7 @@
     ]
   },
   "illustration-cursor": {
-    "usage": "import { Cursor, CursorDemo, CursorSide } from \"@/components/ui/illustration-cursor\"\n\nexport function Example() {\n  return (\n    <Cursor>\n      <CursorDemo />\n    </Cursor>\n  )\n}",
+    "usage": "import { Cursor } from \"@/components/ui/illustration-cursor\"\n\nexport function Example() {\n  return (\n    <Cursor />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "Cursor",
@@ -1064,7 +1064,7 @@
     ]
   },
   "illustration-fluid-rendering": {
-    "usage": "import { FluidRendering, FluidRenderingBigCommerceIcon, FluidRenderingContentfulIcon } from \"@/components/ui/illustration-fluid-rendering\"\n\nexport function Example() {\n  return (\n    <FluidRendering>\n      <FluidRenderingBigCommerceIcon />\n    </FluidRendering>\n  )\n}",
+    "usage": "import { FluidRendering } from \"@/components/ui/illustration-fluid-rendering\"\n\nexport function Example() {\n  return (\n    <FluidRendering />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "FluidRendering",
@@ -1075,7 +1075,7 @@
     ]
   },
   "illustration-globe-vercel": {
-    "usage": "import { BuiltInNodeIcon, CustomNodeIcon, DEFAULT_NODES } from \"@/components/ui/illustration-globe-vercel\"\n\nexport function Example() {\n  return (\n    <BuiltInNodeIcon>\n      <CustomNodeIcon />\n    </BuiltInNodeIcon>\n  )\n}",
+    "usage": "import { BuiltInNodeIcon } from \"@/components/ui/illustration-globe-vercel\"\n\nexport function Example() {\n  return (\n    <BuiltInNodeIcon />\n  )\n}",
     "typeDefs": [
       {
         "name": "DeployGlobeProps",
@@ -1098,7 +1098,7 @@
     ]
   },
   "illustration-graph": {
-    "usage": "import { DataPoint, IllustrationGraph, IllustrationGraphChart } from \"@/components/ui/illustration-graph\"\n\nexport function Example() {\n  return (\n    <DataPoint>\n      <IllustrationGraph />\n    </DataPoint>\n  )\n}",
+    "usage": "import { DataPoint } from \"@/components/ui/illustration-graph\"\n\nexport function Example() {\n  return (\n    <DataPoint />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "DataPoint",
@@ -1110,7 +1110,7 @@
     ]
   },
   "merging-bubbles": {
-    "usage": "import { MergingBubbles, NextLogo, VercelLogo } from \"@/components/ui/merging-bubbles\"\n\nexport function Example() {\n  return (\n    <MergingBubbles>\n      <NextLogo />\n    </MergingBubbles>\n  )\n}",
+    "usage": "import { MergingBubbles } from \"@/components/ui/merging-bubbles\"\n\nexport function Example() {\n  return (\n    <MergingBubbles />\n  )\n}",
     "typeDefs": [
       {
         "name": "MergingBubblesProps",
@@ -1124,7 +1124,7 @@
     ]
   },
   "security-checkpoint": {
-    "usage": "import { CHECKPOINT_LINES, CheckpointLine, SecurityCheckpoint } from \"@/components/ui/security-checkpoint\"\n\nexport function Example() {\n  return (\n    <CHECKPOINT_LINES>\n      <CheckpointLine />\n    </CHECKPOINT_LINES>\n  )\n}",
+    "usage": "import { CHECKPOINT_LINES } from \"@/components/ui/security-checkpoint\"\n\nexport function Example() {\n  return (\n    <CHECKPOINT_LINES />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "CHECKPOINT_LINES",
@@ -1136,7 +1136,7 @@
     ]
   },
   "speech-bubble": {
-    "usage": "import { SpeechBubble, SpeechBubbleBody, SpeechBubbleCursor } from \"@/components/ui/speech-bubble\"\n\nexport function Example() {\n  return (\n    <SpeechBubble>\n      <SpeechBubbleBody />\n    </SpeechBubble>\n  )\n}",
+    "usage": "import { SpeechBubble } from \"@/components/ui/speech-bubble\"\n\nexport function Example() {\n  return (\n    <SpeechBubble />\n  )\n}",
     "typeDefs": [
       {
         "name": "SpeechBubbleProps",
@@ -1153,7 +1153,7 @@
     ]
   },
   "apple-iphone-17-pro": {
-    "usage": "import { DynamicIslandSize, IPhone17ProMax } from \"@/components/ui/apple-iphone-17-pro\"\n\nexport function Example() {\n  return (\n    <DynamicIslandSize>\n      <IPhone17ProMax />\n    </DynamicIslandSize>\n  )\n}",
+    "usage": "import { DynamicIslandSize } from \"@/components/ui/apple-iphone-17-pro\"\n\nexport function Example() {\n  return (\n    <DynamicIslandSize />\n  )\n}",
     "typeDefs": [
       {
         "name": "IPhoneProps",
@@ -1166,7 +1166,7 @@
     ]
   },
   "apple-keyboard": {
-    "usage": "import { AppleKeyboard } from \"@/components/ui/apple-keyboard\"\n\nexport function Example() {\n  return (\n    <AppleKeyboard>内容</AppleKeyboard>\n  )\n}",
+    "usage": "import { AppleKeyboard } from \"@/components/ui/apple-keyboard\"\n\nexport function Example() {\n  return (\n    <AppleKeyboard />\n  )\n}",
     "typeDefs": [
       {
         "name": "KeyProps",
@@ -1178,7 +1178,7 @@
     ]
   },
   "apple-pro-display-xdr": {
-    "usage": "import { AppleProDisplayXDR, StudioScreenMode } from \"@/components/ui/apple-pro-display-xdr\"\n\nexport function Example() {\n  return (\n    <AppleProDisplayXDR>\n      <StudioScreenMode />\n    </AppleProDisplayXDR>\n  )\n}",
+    "usage": "import { AppleProDisplayXDR } from \"@/components/ui/apple-pro-display-xdr\"\n\nexport function Example() {\n  return (\n    <AppleProDisplayXDR />\n  )\n}",
     "typeDefs": [
       {
         "name": "AppleStudioDisplayProps",
@@ -1191,7 +1191,7 @@
     ]
   },
   "apple-watch-ultra": {
-    "usage": "import { AppleWatchUltra } from \"@/components/ui/apple-watch-ultra\"\n\nexport function Example() {\n  return (\n    <AppleWatchUltra>内容</AppleWatchUltra>\n  )\n}",
+    "usage": "import { AppleWatchUltra } from \"@/components/ui/apple-watch-ultra\"\n\nexport function Example() {\n  return (\n    <AppleWatchUltra />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "AppleWatchUltra"
@@ -1210,7 +1210,7 @@
     ]
   },
   "mock-browser-window": {
-    "usage": "import { BrowserWindow } from \"@/components/ui/mock-browser-window\"\n\nexport function Example() {\n  return (\n    <BrowserWindow>内容</BrowserWindow>\n  )\n}",
+    "usage": "import { BrowserWindow } from \"@/components/ui/mock-browser-window\"\n\nexport function Example() {\n  return (\n    <BrowserWindow />\n  )\n}",
     "typeDefs": [
       {
         "name": "WindowControlsProps",
@@ -1226,7 +1226,7 @@
     ]
   },
   "feature-carousel": {
-    "usage": "import { FeatureCarousel } from \"@/components/ui/feature-carousel\"\n\nexport function Example() {\n  return (\n    <FeatureCarousel>内容</FeatureCarousel>\n  )\n}",
+    "usage": "import { FeatureCarousel } from \"@/components/ui/feature-carousel\"\n\nexport function Example() {\n  return (\n    <FeatureCarousel />\n  )\n}",
     "typeDefs": [
       {
         "name": "CardProps",
@@ -1242,7 +1242,7 @@
     ]
   },
   "feature-sticky-section": {
-    "usage": "import { OSSProject, OSSSection, OSSSectionComponents } from \"@/components/ui/feature-sticky-section\"\n\nexport function Example() {\n  return (\n    <OSSProject>\n      <OSSSection />\n    </OSSProject>\n  )\n}",
+    "usage": "import { OSSProject } from \"@/components/ui/feature-sticky-section\"\n\nexport function Example() {\n  return (\n    <OSSProject />\n  )\n}",
     "typeDefs": [
       {
         "name": "OSSSectionProps",
@@ -1258,7 +1258,7 @@
     ]
   },
   "hero-color-panel": {
-    "usage": "import { AISDKIcon, HeroColorPanels, HeroColorPanelsActions } from \"@/components/ui/hero-color-panel\"\n\nexport function Example() {\n  return (\n    <AISDKIcon>\n      <HeroColorPanels />\n    </AISDKIcon>\n  )\n}",
+    "usage": "import { AISDKIcon } from \"@/components/ui/hero-color-panel\"\n\nexport function Example() {\n  return (\n    <AISDKIcon />\n  )\n}",
     "typeDefs": [
       {
         "name": "HeroColorPanelsCTAProps",
@@ -1281,7 +1281,7 @@
     ]
   },
   "hero-dithering": {
-    "usage": "import { AISDKIcon, HeroDithering, HeroDitheringActions } from \"@/components/ui/hero-dithering\"\n\nexport function Example() {\n  return (\n    <AISDKIcon>\n      <HeroDithering />\n    </AISDKIcon>\n  )\n}",
+    "usage": "import { AISDKIcon } from \"@/components/ui/hero-dithering\"\n\nexport function Example() {\n  return (\n    <AISDKIcon />\n  )\n}",
     "typeDefs": [
       {
         "name": "HeroDitheringCTAProps",
@@ -1304,7 +1304,7 @@
     ]
   },
   "hero-heatmap": {
-    "usage": "import { AISDKIcon, HeroHeatmap, HeroHeatmapActions } from \"@/components/ui/hero-heatmap\"\n\nexport function Example() {\n  return (\n    <AISDKIcon>\n      <HeroHeatmap />\n    </AISDKIcon>\n  )\n}",
+    "usage": "import { AISDKIcon } from \"@/components/ui/hero-heatmap\"\n\nexport function Example() {\n  return (\n    <AISDKIcon />\n  )\n}",
     "typeDefs": [
       {
         "name": "HeroHeatmapCTAProps",
@@ -1327,7 +1327,7 @@
     ]
   },
   "hero-liquid-metal": {
-    "usage": "import { AISDKIcon, HeroLiquidMetal, HeroLiquidMetalActions } from \"@/components/ui/hero-liquid-metal\"\n\nexport function Example() {\n  return (\n    <AISDKIcon>\n      <HeroLiquidMetal />\n    </AISDKIcon>\n  )\n}",
+    "usage": "import { AISDKIcon } from \"@/components/ui/hero-liquid-metal\"\n\nexport function Example() {\n  return (\n    <AISDKIcon />\n  )\n}",
     "typeDefs": [
       {
         "name": "HeroLiquidMetalCTAProps",
@@ -1350,7 +1350,7 @@
     ]
   },
   "hero-static-radial-gradient": {
-    "usage": "import { AISDKIcon, HeroStaticRadialGradient, HeroStaticRadialGradientActions } from \"@/components/ui/hero-static-radial-gradient\"\n\nexport function Example() {\n  return (\n    <AISDKIcon>\n      <HeroStaticRadialGradient />\n    </AISDKIcon>\n  )\n}",
+    "usage": "import { AISDKIcon } from \"@/components/ui/hero-static-radial-gradient\"\n\nexport function Example() {\n  return (\n    <AISDKIcon />\n  )\n}",
     "typeDefs": [
       {
         "name": "HeroStaticRadialGradientCTAProps",
@@ -1373,7 +1373,7 @@
     ]
   },
   "loading-carousel": {
-    "usage": "import { LoadingCarousel } from \"@/components/ui/loading-carousel\"\n\nexport function Example() {\n  return (\n    <LoadingCarousel>内容</LoadingCarousel>\n  )\n}",
+    "usage": "import { LoadingCarousel } from \"@/components/ui/loading-carousel\"\n\nexport function Example() {\n  return (\n    <LoadingCarousel />\n  )\n}",
     "typeDefs": [
       {
         "name": "LoadingCarouselProps",
@@ -1385,7 +1385,7 @@
     ]
   },
   "logo-carousel": {
-    "usage": "import { LogoCarousel } from \"@/components/ui/logo-carousel\"\n\nexport function Example() {\n  return (\n    <LogoCarousel>内容</LogoCarousel>\n  )\n}",
+    "usage": "import { LogoCarousel } from \"@/components/ui/logo-carousel\"\n\nexport function Example() {\n  return (\n    <LogoCarousel />\n  )\n}",
     "typeDefs": [
       {
         "name": "LogoColumnProps",
@@ -1397,7 +1397,7 @@
     ]
   },
   "marketing-feature-code": {
-    "usage": "import { NetworkPolicy, NetworkPolicyCode, NetworkPolicyCodeBlock } from \"@/components/ui/marketing-feature-code\"\n\nexport function Example() {\n  return (\n    <NetworkPolicy>\n      <NetworkPolicyCode />\n    </NetworkPolicy>\n  )\n}",
+    "usage": "import { NetworkPolicy } from \"@/components/ui/marketing-feature-code\"\n\nexport function Example() {\n  return (\n    <NetworkPolicy />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "NetworkPolicy",
@@ -1415,7 +1415,7 @@
     ]
   },
   "marketing-hero-analytics": {
-    "usage": "import { ANALYTICS_HERO_CHART_DATA, ANALYTICS_HERO_ICONS, ANALYTICS_HERO_LOGS } from \"@/components/ui/marketing-hero-analytics\"\n\nexport function Example() {\n  return (\n    <ANALYTICS_HERO_CHART_DATA>\n      <ANALYTICS_HERO_ICONS />\n    </ANALYTICS_HERO_CHART_DATA>\n  )\n}",
+    "usage": "import { ANALYTICS_HERO_CHART_DATA } from \"@/components/ui/marketing-hero-analytics\"\n\nexport function Example() {\n  return (\n    <ANALYTICS_HERO_CHART_DATA />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "ANALYTICS_HERO_CHART_DATA",
@@ -1433,7 +1433,7 @@
     ]
   },
   "three-d-carousel": {
-    "usage": "import { useIsomorphicLayoutEffect, useMediaQuery } from \"@/components/ui/three-d-carousel\"\n\nexport function Example() {\n  return (\n    <useIsomorphicLayoutEffect>\n      <useMediaQuery />\n    </useIsomorphicLayoutEffect>\n  )\n}",
+    "usage": "import { useIsomorphicLayoutEffect } from \"@/components/ui/three-d-carousel\"\n\nexport function Example() {\n  return (\n    <useIsomorphicLayoutEffect />\n  )\n}",
     "typeDefs": [
       {
         "name": "UseMediaQueryOptions",
@@ -1446,7 +1446,7 @@
     ]
   },
   "tweet-grid": {
-    "usage": "import { TweetGrid } from \"@/components/ui/tweet-grid\"\n\nexport function Example() {\n  return (\n    <TweetGrid>内容</TweetGrid>\n  )\n}",
+    "usage": "import { TweetGrid } from \"@/components/ui/tweet-grid\"\n\nexport function Example() {\n  return (\n    <TweetGrid />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "TweetGrid"
@@ -1480,7 +1480,7 @@
     ]
   },
   "choice-poll": {
-    "usage": "import { ChoicePoll, ChoicePollDescription, ChoicePollFooter } from \"@/components/ui/choice-poll\"\n\nexport function Example() {\n  return (\n    <ChoicePoll>\n      <ChoicePollDescription />\n    </ChoicePoll>\n  )\n}",
+    "usage": "import { ChoicePoll } from \"@/components/ui/choice-poll\"\n\nexport function Example() {\n  return (\n    <ChoicePoll />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "ChoicePoll",
@@ -1498,7 +1498,7 @@
     ]
   },
   "feature-poll": {
-    "usage": "import { FeaturePoll, FeaturePollDescription, FeaturePollFooter } from \"@/components/ui/feature-poll\"\n\nexport function Example() {\n  return (\n    <FeaturePoll>\n      <FeaturePollDescription />\n    </FeaturePoll>\n  )\n}",
+    "usage": "import { FeaturePoll } from \"@/components/ui/feature-poll\"\n\nexport function Example() {\n  return (\n    <FeaturePoll />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "FeaturePoll",
@@ -1516,7 +1516,7 @@
     ]
   },
   "feature-voting": {
-    "usage": "import { FeatureVoting, FeatureVotingCount, FeatureVotingDescription } from \"@/components/ui/feature-voting\"\n\nexport function Example() {\n  return (\n    <FeatureVoting>\n      <FeatureVotingCount />\n    </FeatureVoting>\n  )\n}",
+    "usage": "import { FeatureVoting } from \"@/components/ui/feature-voting\"\n\nexport function Example() {\n  return (\n    <FeatureVoting />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "FeatureVoting",
@@ -1532,21 +1532,21 @@
     ]
   },
   "halo-badge": {
-    "usage": "import { HaloBadge } from \"@/components/ui/halo-badge\"\n\nexport function Example() {\n  return (\n    <HaloBadge>内容</HaloBadge>\n  )\n}",
+    "usage": "import { HaloBadge } from \"@/components/ui/halo-badge\"\n\nexport function Example() {\n  return (\n    <HaloBadge />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "HaloBadge"
     ]
   },
   "halo-progress": {
-    "usage": "import { HaloProgress } from \"@/components/ui/halo-progress\"\n\nexport function Example() {\n  return (\n    <HaloProgress>内容</HaloProgress>\n  )\n}",
+    "usage": "import { HaloProgress } from \"@/components/ui/halo-progress\"\n\nexport function Example() {\n  return (\n    <HaloProgress />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "HaloProgress"
     ]
   },
   "poll-widget": {
-    "usage": "import { PollOption, PollWidget, PollWidgetAnimationPhase } from \"@/components/ui/poll-widget\"\n\nexport function Example() {\n  return (\n    <PollOption>\n      <PollWidget />\n    </PollOption>\n  )\n}",
+    "usage": "import { PollOption } from \"@/components/ui/poll-widget\"\n\nexport function Example() {\n  return (\n    <PollOption />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "PollOption",
@@ -1564,7 +1564,7 @@
     ]
   },
   "rolling-number": {
-    "usage": "import { RollingNumber } from \"@/components/ui/rolling-number\"\n\nexport function Example() {\n  return (\n    <RollingNumber>内容</RollingNumber>\n  )\n}",
+    "usage": "import { RollingNumber } from \"@/components/ui/rolling-number\"\n\nexport function Example() {\n  return (\n    <RollingNumber />\n  )\n}",
     "typeDefs": [
       {
         "name": "RollingNumberProps",
@@ -1576,7 +1576,7 @@
     ]
   },
   "vote-tally": {
-    "usage": "import { VoteTally, VoteTallyCount, VoteTallyDescription } from \"@/components/ui/vote-tally\"\n\nexport function Example() {\n  return (\n    <VoteTally>\n      <VoteTallyCount />\n    </VoteTally>\n  )\n}",
+    "usage": "import { VoteTally } from \"@/components/ui/vote-tally\"\n\nexport function Example() {\n  return (\n    <VoteTally />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "VoteTally",
@@ -1616,7 +1616,7 @@
     ]
   },
   "onboarding": {
-    "usage": "import { ChoiceGroup, FeatureCarousel, Onboarding } from \"@/components/ui/onboarding\"\n\nexport function Example() {\n  return (\n    <ChoiceGroup>\n      <FeatureCarousel />\n    </ChoiceGroup>\n  )\n}",
+    "usage": "import { ChoiceGroup, FeatureCarousel } from \"@/components/ui/onboarding\"\n\nexport function Example() {\n  return (\n    <ChoiceGroup>\n      <FeatureCarousel />\n    </ChoiceGroup>\n  )\n}",
     "typeDefs": [],
     "parts": [
       "ChoiceGroup",
@@ -1628,7 +1628,7 @@
     ]
   },
   "sortable-list": {
-    "usage": "import { Item, SortableList, SortableListItem } from \"@/components/ui/sortable-list\"\n\nexport function Example() {\n  return (\n    <Item>\n      <SortableList />\n    </Item>\n  )\n}",
+    "usage": "import { Item } from \"@/components/ui/sortable-list\"\n\nexport function Example() {\n  return (\n    <Item />\n  )\n}",
     "typeDefs": [
       {
         "name": "SortableListItemProps",
@@ -1646,7 +1646,7 @@
     ]
   },
   "wizard-expandable": {
-    "usage": "import { WizardStep, useWizardExpandable } from \"@/components/ui/wizard-expandable\"\n\nexport function Example() {\n  return (\n    <WizardStep>\n      <useWizardExpandable />\n    </WizardStep>\n  )\n}",
+    "usage": "import { WizardStep } from \"@/components/ui/wizard-expandable\"\n\nexport function Example() {\n  return (\n    <WizardStep />\n  )\n}",
     "typeDefs": [
       {
         "name": "WizardExpandableProps",
@@ -1659,14 +1659,14 @@
     ]
   },
   "distorted-glass": {
-    "usage": "import { DistortedGlass } from \"@/components/ui/distorted-glass\"\n\nexport function Example() {\n  return (\n    <DistortedGlass>内容</DistortedGlass>\n  )\n}",
+    "usage": "import { DistortedGlass } from \"@/components/ui/distorted-glass\"\n\nexport function Example() {\n  return (\n    <DistortedGlass />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "DistortedGlass"
     ]
   },
   "dither-image": {
-    "usage": "import { DitherAspectRatio, DitherImage, DitherImageCaption } from \"@/components/ui/dither-image\"\n\nexport function Example() {\n  return (\n    <DitherAspectRatio>\n      <DitherImage />\n    </DitherAspectRatio>\n  )\n}",
+    "usage": "import { DitherAspectRatio } from \"@/components/ui/dither-image\"\n\nexport function Example() {\n  return (\n    <DitherAspectRatio />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "DitherAspectRatio",
@@ -1708,7 +1708,7 @@
     ]
   },
   "edge-blur": {
-    "usage": "import { BottomBlur, EdgeBlur, TopBlur } from \"@/components/ui/edge-blur\"\n\nexport function Example() {\n  return (\n    <BottomBlur>\n      <EdgeBlur />\n    </BottomBlur>\n  )\n}",
+    "usage": "import { BottomBlur } from \"@/components/ui/edge-blur\"\n\nexport function Example() {\n  return (\n    <BottomBlur />\n  )\n}",
     "typeDefs": [
       {
         "name": "EdgeBlurProps",
@@ -1722,7 +1722,7 @@
     ]
   },
   "expandable-screen": {
-    "usage": "import { ExpandableScreen, ExpandableScreenBackground, ExpandableScreenContent } from \"@/components/ui/expandable-screen\"\n\nexport function Example() {\n  return (\n    <ExpandableScreen>\n      <ExpandableScreenBackground />\n    </ExpandableScreen>\n  )\n}",
+    "usage": "import { ExpandableScreen } from \"@/components/ui/expandable-screen\"\n\nexport function Example() {\n  return (\n    <ExpandableScreen />\n  )\n}",
     "typeDefs": [
       {
         "name": "ExpandableScreenProps",
@@ -1776,7 +1776,7 @@
     ]
   },
   "lightboard": {
-    "usage": "import { LightBoard, PatternCell } from \"@/components/ui/lightboard\"\n\nexport function Example() {\n  return (\n    <LightBoard>\n      <PatternCell />\n    </LightBoard>\n  )\n}",
+    "usage": "import { LightBoard } from \"@/components/ui/lightboard\"\n\nexport function Example() {\n  return (\n    <LightBoard />\n  )\n}",
     "typeDefs": [
       {
         "name": "LightBoardProps",
@@ -1789,7 +1789,7 @@
     ]
   },
   "morph-surface": {
-    "usage": "import { MorphSurface } from \"@/components/ui/morph-surface\"\n\nexport function Example() {\n  return (\n    <MorphSurface>内容</MorphSurface>\n  )\n}",
+    "usage": "import { MorphSurface } from \"@/components/ui/morph-surface\"\n\nexport function Example() {\n  return (\n    <MorphSurface />\n  )\n}",
     "typeDefs": [
       {
         "name": "SpringConfig",
@@ -1805,7 +1805,7 @@
     ]
   },
   "shader-lens-blur": {
-    "usage": "import { ShaderLensBlur, configAtom } from \"@/components/ui/shader-lens-blur\"\n\nexport function Example() {\n  return (\n    <ShaderLensBlur>\n      <configAtom />\n    </ShaderLensBlur>\n  )\n}",
+    "usage": "import { ShaderLensBlur } from \"@/components/ui/shader-lens-blur\"\n\nexport function Example() {\n  return (\n    <ShaderLensBlur />\n  )\n}",
     "typeDefs": [
       {
         "name": "ShaderConfig",
@@ -1822,7 +1822,7 @@
     ]
   },
   "terminal-animation": {
-    "usage": "import { TabContent, TerminalAnimationBackgroundGradient, TerminalAnimationBlinkingCursor } from \"@/components/ui/terminal-animation\"\n\nexport function Example() {\n  return (\n    <TabContent>\n      <TerminalAnimationBackgroundGradient />\n    </TabContent>\n  )\n}",
+    "usage": "import { TabContent } from \"@/components/ui/terminal-animation\"\n\nexport function Example() {\n  return (\n    <TabContent />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "TabContent",
@@ -1860,7 +1860,7 @@
     ]
   },
   "file-icons": {
-    "usage": "import { Icons, getIconForLanguageExtension } from \"@/components/ui/file-icons\"\n\nexport function Example() {\n  return (\n    <Icons>\n      <getIconForLanguageExtension />\n    </Icons>\n  )\n}",
+    "usage": "import { Icons } from \"@/components/ui/file-icons\"\n\nexport function Example() {\n  return (\n    <Icons />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "Icons",
@@ -1868,7 +1868,7 @@
     ]
   },
   "timer": {
-    "usage": "import { Timer, TimerDisplay, TimerIcon } from \"@/components/ui/timer\"\n\nexport function Example() {\n  return (\n    <Timer>\n      <TimerDisplay />\n    </Timer>\n  )\n}",
+    "usage": "import { Timer } from \"@/components/ui/timer\"\n\nexport function Example() {\n  return (\n    <Timer />\n  )\n}",
     "typeDefs": [
       {
         "name": "TimerRootProps",
@@ -1890,14 +1890,14 @@
     ]
   },
   "collab-avatar": {
-    "usage": "import { CollabAvatar } from \"@/components/ui/collab-avatar\"\n\nexport function Example() {\n  return (\n    <CollabAvatar>内容</CollabAvatar>\n  )\n}",
+    "usage": "import { CollabAvatar } from \"@/components/ui/collab-avatar\"\n\nexport function Example() {\n  return (\n    <CollabAvatar />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "CollabAvatar"
     ]
   },
   "collab-toolbar": {
-    "usage": "import { CollabToolbar, CollabToolbarDivider, CollabToolbarIcon } from \"@/components/ui/collab-toolbar\"\n\nexport function Example() {\n  return (\n    <CollabToolbar>\n      <CollabToolbarDivider />\n    </CollabToolbar>\n  )\n}",
+    "usage": "import { CollabToolbar } from \"@/components/ui/collab-toolbar\"\n\nexport function Example() {\n  return (\n    <CollabToolbar />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "CollabToolbar",
@@ -1909,7 +1909,7 @@
     ]
   },
   "base-tooltip": {
-    "usage": "import { Tooltip, TooltipContent, TooltipProvider } from \"@/components/ui/base-tooltip\"\n\nexport function Example() {\n  return (\n    <Tooltip>\n      <TooltipContent />\n    </Tooltip>\n  )\n}",
+    "usage": "import { Tooltip } from \"@/components/ui/base-tooltip\"\n\nexport function Example() {\n  return (\n    <Tooltip />\n  )\n}",
     "typeDefs": [],
     "parts": [
       "Tooltip",
@@ -1919,7 +1919,7 @@
     ]
   },
   "hover-video-player": {
-    "usage": "import { HoverVideoPaddingWrapper, HoverVideoPlayer, HoverVideoPlayerControls } from \"@/components/ui/hover-video-player\"\n\nexport function Example() {\n  return (\n    <HoverVideoPaddingWrapper>\n      <HoverVideoPlayer />\n    </HoverVideoPaddingWrapper>\n  )\n}",
+    "usage": "import { HoverVideoPaddingWrapper } from \"@/components/ui/hover-video-player\"\n\nexport function Example() {\n  return (\n    <HoverVideoPaddingWrapper />\n  )\n}",
     "typeDefs": [
       {
         "name": "HoverVideoPlayerProps",
@@ -1940,7 +1940,7 @@
     ]
   },
   "youtube-video-player": {
-    "usage": "import { YouTubePlayer, YouTubePlayerControls } from \"@/components/ui/youtube-video-player\"\n\nexport function Example() {\n  return (\n    <YouTubePlayer>\n      <YouTubePlayerControls />\n    </YouTubePlayer>\n  )\n}",
+    "usage": "import { YouTubePlayer } from \"@/components/ui/youtube-video-player\"\n\nexport function Example() {\n  return (\n    <YouTubePlayer />\n  )\n}",
     "typeDefs": [
       {
         "name": "YouTubePlayerProps",

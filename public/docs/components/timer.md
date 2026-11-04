@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/timer
 ## 用法
 
 ~~~tsx
-import { Timer, TimerDisplay, TimerIcon } from "@/components/ui/timer"
+import { Timer } from "@/components/ui/timer"
 
 export function Example() {
   return (
-    <Timer>
-      <TimerDisplay />
-    </Timer>
+    <Timer />
   )
 }
 ~~~

@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/sortable-list
 ## 用法
 
 ~~~tsx
-import { Item, SortableList, SortableListItem } from "@/components/ui/sortable-list"
+import { Item } from "@/components/ui/sortable-list"
 
 export function Example() {
   return (
-    <Item>
-      <SortableList />
-    </Item>
+    <Item />
   )
 }
 ~~~

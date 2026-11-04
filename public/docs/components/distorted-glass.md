@@ -20,7 +20,7 @@ import { DistortedGlass } from "@/components/ui/distorted-glass"
 
 export function Example() {
   return (
-    <DistortedGlass>内容</DistortedGlass>
+    <DistortedGlass />
   )
 }
 ~~~

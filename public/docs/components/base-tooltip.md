@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/base-tooltip
 ## 用法
 
 ~~~tsx
-import { Tooltip, TooltipContent, TooltipProvider } from "@/components/ui/base-tooltip"
+import { Tooltip } from "@/components/ui/base-tooltip"
 
 export function Example() {
   return (
-    <Tooltip>
-      <TooltipContent />
-    </Tooltip>
+    <Tooltip />
   )
 }
 ~~~

@@ -20,7 +20,7 @@ import { RollingNumber } from "@/components/ui/rolling-number"
 
 export function Example() {
   return (
-    <RollingNumber>内容</RollingNumber>
+    <RollingNumber />
   )
 }
 ~~~

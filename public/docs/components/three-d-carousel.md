@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/three-d-carousel
 ## 用法
 
 ~~~tsx
-import { useIsomorphicLayoutEffect, useMediaQuery } from "@/components/ui/three-d-carousel"
+import { useIsomorphicLayoutEffect } from "@/components/ui/three-d-carousel"
 
 export function Example() {
   return (
-    <useIsomorphicLayoutEffect>
-      <useMediaQuery />
-    </useIsomorphicLayoutEffect>
+    <useIsomorphicLayoutEffect />
   )
 }
 ~~~

@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/metal-button
 ## 用法
 
 ~~~tsx
-import { MetalButton, MetalIconButton } from "@/components/ui/metal-button"
+import { MetalButton } from "@/components/ui/metal-button"
 
 export function Example() {
   return (
-    <MetalButton>
-      <MetalIconButton />
-    </MetalButton>
+    <MetalButton />
   )
 }
 ~~~

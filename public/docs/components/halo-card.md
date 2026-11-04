@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/halo-card
 ## 用法
 
 ~~~tsx
-import { HaloCard, HaloCardAction, HaloCardButton } from "@/components/ui/halo-card"
+import { HaloCard } from "@/components/ui/halo-card"
 
 export function Example() {
   return (
-    <HaloCard>
-      <HaloCardAction />
-    </HaloCard>
+    <HaloCard />
   )
 }
 ~~~

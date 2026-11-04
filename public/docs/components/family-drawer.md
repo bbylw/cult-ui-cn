@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/family-drawer
 ## 用法
 
 ~~~tsx
-import { FamilyDrawerAnimatedContent, FamilyDrawerAnimatedWrapper, FamilyDrawerButton } from "@/components/ui/family-drawer"
+import { FamilyDrawerAnimatedContent } from "@/components/ui/family-drawer"
 
 export function Example() {
   return (
-    <FamilyDrawerAnimatedContent>
-      <FamilyDrawerAnimatedWrapper />
-    </FamilyDrawerAnimatedContent>
+    <FamilyDrawerAnimatedContent />
   )
 }
 ~~~

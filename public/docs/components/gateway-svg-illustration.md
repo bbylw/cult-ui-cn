@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/gateway-svg-illustration
 ## 用法
 
 ~~~tsx
-import { GatewayOverhead, GatewayOverheadBackground, GatewayOverheadBackgroundGrid } from "@/components/ui/gateway-svg-illustration"
+import { GatewayOverhead } from "@/components/ui/gateway-svg-illustration"
 
 export function Example() {
   return (
-    <GatewayOverhead>
-      <GatewayOverheadBackground />
-    </GatewayOverhead>
+    <GatewayOverhead />
   )
 }
 ~~~

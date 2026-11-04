@@ -20,7 +20,7 @@ import { LogoCarousel } from "@/components/ui/logo-carousel"
 
 export function Example() {
   return (
-    <LogoCarousel>内容</LogoCarousel>
+    <LogoCarousel />
   )
 }
 ~~~

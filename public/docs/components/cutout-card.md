@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/cutout-card
 ## 用法
 
 ~~~tsx
-import { CutoutCard, CutoutCardAction, CutoutCardContent } from "@/components/ui/cutout-card"
+import { CutoutCard } from "@/components/ui/cutout-card"
 
 export function Example() {
   return (
-    <CutoutCard>
-      <CutoutCardAction />
-    </CutoutCard>
+    <CutoutCard />
   )
 }
 ~~~

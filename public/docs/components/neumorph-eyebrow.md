@@ -20,7 +20,7 @@ import { NeumorphEyebrow } from "@/components/ui/neumorph-eyebrow"
 
 export function Example() {
   return (
-    <NeumorphEyebrow>内容</NeumorphEyebrow>
+    <NeumorphEyebrow />
   )
 }
 ~~~

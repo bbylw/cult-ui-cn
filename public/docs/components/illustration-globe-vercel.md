@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/illustration-globe-vercel
 ## 用法
 
 ~~~tsx
-import { BuiltInNodeIcon, CustomNodeIcon, DEFAULT_NODES } from "@/components/ui/illustration-globe-vercel"
+import { BuiltInNodeIcon } from "@/components/ui/illustration-globe-vercel"
 
 export function Example() {
   return (
-    <BuiltInNodeIcon>
-      <CustomNodeIcon />
-    </BuiltInNodeIcon>
+    <BuiltInNodeIcon />
   )
 }
 ~~~

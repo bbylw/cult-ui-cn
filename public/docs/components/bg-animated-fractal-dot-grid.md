@@ -20,7 +20,7 @@ import { FractalDotGrid } from "@/components/ui/bg-animated-fractal-dot-grid"
 
 export function Example() {
   return (
-    <FractalDotGrid>内容</FractalDotGrid>
+    <FractalDotGrid />
   )
 }
 ~~~

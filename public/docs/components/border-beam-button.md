@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/border-beam-button
 ## 用法
 
 ~~~tsx
-import { BorderBeamButton, BorderBeamIconButton } from "@/components/ui/border-beam-button"
+import { BorderBeamButton } from "@/components/ui/border-beam-button"
 
 export function Example() {
   return (
-    <BorderBeamButton>
-      <BorderBeamIconButton />
-    </BorderBeamButton>
+    <BorderBeamButton />
   )
 }
 ~~~

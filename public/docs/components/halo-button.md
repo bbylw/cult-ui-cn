@@ -20,7 +20,7 @@ import { HaloButton } from "@/components/ui/halo-button"
 
 export function Example() {
   return (
-    <HaloButton>内容</HaloButton>
+    <HaloButton />
   )
 }
 ~~~

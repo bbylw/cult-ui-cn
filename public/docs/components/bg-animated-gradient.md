@@ -20,7 +20,7 @@ import { GradientAnimation } from "@/components/ui/bg-animated-gradient"
 
 export function Example() {
   return (
-    <GradientAnimation>内容</GradientAnimation>
+    <GradientAnimation />
   )
 }
 ~~~

@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/apple-pro-display-xdr
 ## 用法
 
 ~~~tsx
-import { AppleProDisplayXDR, StudioScreenMode } from "@/components/ui/apple-pro-display-xdr"
+import { AppleProDisplayXDR } from "@/components/ui/apple-pro-display-xdr"
 
 export function Example() {
   return (
-    <AppleProDisplayXDR>
-      <StudioScreenMode />
-    </AppleProDisplayXDR>
+    <AppleProDisplayXDR />
   )
 }
 ~~~

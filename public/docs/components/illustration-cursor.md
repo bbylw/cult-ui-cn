@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/illustration-cursor
 ## 用法
 
 ~~~tsx
-import { Cursor, CursorDemo, CursorSide } from "@/components/ui/illustration-cursor"
+import { Cursor } from "@/components/ui/illustration-cursor"
 
 export function Example() {
   return (
-    <Cursor>
-      <CursorDemo />
-    </Cursor>
+    <Cursor />
   )
 }
 ~~~

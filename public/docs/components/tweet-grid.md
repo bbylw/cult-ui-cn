@@ -20,7 +20,7 @@ import { TweetGrid } from "@/components/ui/tweet-grid"
 
 export function Example() {
   return (
-    <TweetGrid>内容</TweetGrid>
+    <TweetGrid />
   )
 }
 ~~~

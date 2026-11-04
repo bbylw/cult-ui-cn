@@ -8,7 +8,22 @@ import React, {
   useState,
 } from "react"
 import { AnimatePresence, motion, MotionConfig } from "motion/react"
-import ReactPlayer from "react-player"
+/** 把 YouTube 观看链接转成可嵌入的 embed 地址,其它地址原样返回。 */
+function toEmbedUrl(url: string) {
+  try {
+    const parsed = new URL(url)
+    if (parsed.hostname === "youtu.be") {
+      return `https://www.youtube.com/embed/${parsed.pathname.slice(1)}`
+    }
+    if (parsed.hostname.endsWith("youtube.com")) {
+      const id = parsed.searchParams.get("v")
+      if (id) return `https://www.youtube.com/embed/${id}`
+    }
+  } catch {
+    // 非绝对地址时按原值使用。
+  }
+  return url
+}
 import useMeasure from "react-use-measure"
 
 import { cn } from "@/lib/utils"
@@ -124,11 +139,12 @@ const YoutubeVideo = forwardRef<HTMLDivElement, YoutubeVideoProps>(
             animate="visible"
             exit="hidden"
           >
-            <ReactPlayer
-              width="100%"
-              height="100%"
-              controls={false}
-              src={url}
+            <iframe
+              src={toEmbedUrl(url)}
+              title="示例视频"
+              className="h-full w-full rounded-xl"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
             />
           </motion.div>
         )}
@@ -170,11 +186,12 @@ const VideoContent: React.FC<VideoContentProps> = ({ url, videoOpen }) => {
           variants={videoVariants}
           transition={transition}
         >
-          <ReactPlayer
-            width="100%"
-            height="100%"
-            controls={false}
-            src={url}
+          <iframe
+            src={toEmbedUrl(url)}
+            title="示例视频"
+            className="h-full w-full rounded-xl"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
           />
         </motion.div>
       )}

@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/halo-input
 ## 用法
 
 ~~~tsx
-import { HaloInput, HaloTextarea } from "@/components/ui/halo-input"
+import { HaloInput } from "@/components/ui/halo-input"
 
 export function Example() {
   return (
-    <HaloInput>
-      <HaloTextarea />
-    </HaloInput>
+    <HaloInput />
   )
 }
 ~~~

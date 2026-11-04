@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/minimal-card
 ## 用法
 
 ~~~tsx
-import { MinimalCard, MinimalCardContent, MinimalCardDescription } from "@/components/ui/minimal-card"
+import { MinimalCard } from "@/components/ui/minimal-card"
 
 export function Example() {
   return (
-    <MinimalCard>
-      <MinimalCardContent />
-    </MinimalCard>
+    <MinimalCard />
   )
 }
 ~~~

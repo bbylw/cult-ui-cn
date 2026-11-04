@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/gateway-route-illustration
 ## 用法
 
 ~~~tsx
-import { AnthropicIcon, CohereIcon, GatewayRouting } from "@/components/ui/gateway-route-illustration"
+import { AnthropicIcon } from "@/components/ui/gateway-route-illustration"
 
 export function Example() {
   return (
-    <AnthropicIcon>
-      <CohereIcon />
-    </AnthropicIcon>
+    <AnthropicIcon />
   )
 }
 ~~~

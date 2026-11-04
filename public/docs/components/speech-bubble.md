@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/speech-bubble
 ## 用法
 
 ~~~tsx
-import { SpeechBubble, SpeechBubbleBody, SpeechBubbleCursor } from "@/components/ui/speech-bubble"
+import { SpeechBubble } from "@/components/ui/speech-bubble"
 
 export function Example() {
   return (
-    <SpeechBubble>
-      <SpeechBubbleBody />
-    </SpeechBubble>
+    <SpeechBubble />
   )
 }
 ~~~

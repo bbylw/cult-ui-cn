@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/border-beam-input
 ## 用法
 
 ~~~tsx
-import { BorderBeamInput, BorderBeamInputGroup, BorderBeamInputGroupAddon } from "@/components/ui/border-beam-input"
+import { BorderBeamInput } from "@/components/ui/border-beam-input"
 
 export function Example() {
   return (
-    <BorderBeamInput>
-      <BorderBeamInputGroup />
-    </BorderBeamInput>
+    <BorderBeamInput />
   )
 }
 ~~~

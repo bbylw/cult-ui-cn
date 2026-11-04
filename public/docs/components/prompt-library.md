@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/prompt-library
 ## 用法
 
 ~~~tsx
-import { Prompt, PromptLibrary, PromptLibraryContent } from "@/components/ui/prompt-library"
+import { Prompt } from "@/components/ui/prompt-library"
 
 export function Example() {
   return (
-    <Prompt>
-      <PromptLibrary />
-    </Prompt>
+    <Prompt />
   )
 }
 ~~~

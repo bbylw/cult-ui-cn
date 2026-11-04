@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/halo-select
 ## 用法
 
 ~~~tsx
-import { HaloSelect, HaloSelectContent, HaloSelectGroup } from "@/components/ui/halo-select"
+import { HaloSelect } from "@/components/ui/halo-select"
 
 export function Example() {
   return (
-    <HaloSelect>
-      <HaloSelectContent />
-    </HaloSelect>
+    <HaloSelect />
   )
 }
 ~~~

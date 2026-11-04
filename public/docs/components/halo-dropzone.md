@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/halo-dropzone
 ## 用法
 
 ~~~tsx
-import { DropzoneFileTypeGlyph, DropzoneUploadFileList, DropzoneUploadFileRow } from "@/components/ui/halo-dropzone"
+import { DropzoneFileTypeGlyph } from "@/components/ui/halo-dropzone"
 
 export function Example() {
   return (
-    <DropzoneFileTypeGlyph>
-      <DropzoneUploadFileList />
-    </DropzoneFileTypeGlyph>
+    <DropzoneFileTypeGlyph />
   )
 }
 ~~~

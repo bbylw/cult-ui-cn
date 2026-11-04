@@ -32,13 +32,11 @@ npx shadcn@latest add @cult-ui/agent-suggest-card-stack
 ## 用法
 
 ~~~tsx
-import { AgentSuggestBotBadge, AgentSuggestCardFrame, AgentSuggestCardStack } from "@/components/ui/agent-suggest-card-stack"
+import { AgentSuggestBotBadge } from "@/components/ui/agent-suggest-card-stack"
 
 export function Example() {
   return (
-    <AgentSuggestBotBadge>
-      <AgentSuggestCardFrame />
-    </AgentSuggestBotBadge>
+    <AgentSuggestBotBadge />
   )
 }
 ~~~
@@ -83,7 +81,7 @@ import { AiBlobWarpAvatar } from "@/components/ui/ai-blob-warp"
 
 export function Example() {
   return (
-    <AiBlobWarpAvatar>内容</AiBlobWarpAvatar>
+    <AiBlobWarpAvatar />
   )
 }
 ~~~
@@ -120,13 +118,11 @@ npx shadcn@latest add @cult-ui/ai-instructions
 ## 用法
 
 ~~~tsx
-import { Instruction, Instructions, InstructionsContent } from "@/components/ui/ai-instructions"
+import { Instruction } from "@/components/ui/ai-instructions"
 
 export function Example() {
   return (
-    <Instruction>
-      <Instructions />
-    </Instruction>
+    <Instruction />
   )
 }
 ~~~
@@ -188,13 +184,11 @@ npx shadcn@latest add @cult-ui/prompt-composer
 ## 用法
 
 ~~~tsx
-import { AiBlobWarpAvatar, PromptComposer, PromptTextarea } from "@/components/ui/prompt-composer"
+import { AiBlobWarpAvatar } from "@/components/ui/prompt-composer"
 
 export function Example() {
   return (
-    <AiBlobWarpAvatar>
-      <PromptComposer />
-    </AiBlobWarpAvatar>
+    <AiBlobWarpAvatar />
   )
 }
 ~~~
@@ -235,13 +229,11 @@ npx shadcn@latest add @cult-ui/prompt-library
 ## 用法
 
 ~~~tsx
-import { Prompt, PromptLibrary, PromptLibraryContent } from "@/components/ui/prompt-library"
+import { Prompt } from "@/components/ui/prompt-library"
 
 export function Example() {
   return (
-    <Prompt>
-      <PromptLibrary />
-    </Prompt>
+    <Prompt />
   )
 }
 ~~~
@@ -307,7 +299,7 @@ import { BgAnimateButton } from "@/components/ui/bg-animate-button"
 
 export function Example() {
   return (
-    <BgAnimateButton>内容</BgAnimateButton>
+    <BgAnimateButton />
   )
 }
 ~~~
@@ -344,13 +336,11 @@ npx shadcn@latest add @cult-ui/border-beam-button
 ## 用法
 
 ~~~tsx
-import { BorderBeamButton, BorderBeamIconButton } from "@/components/ui/border-beam-button"
+import { BorderBeamButton } from "@/components/ui/border-beam-button"
 
 export function Example() {
   return (
-    <BorderBeamButton>
-      <BorderBeamIconButton />
-    </BorderBeamButton>
+    <BorderBeamButton />
   )
 }
 ~~~
@@ -391,7 +381,7 @@ import { CosmicButton } from "@/components/ui/cosmic-button"
 
 export function Example() {
   return (
-    <CosmicButton>内容</CosmicButton>
+    <CosmicButton />
   )
 }
 ~~~
@@ -443,7 +433,7 @@ import { FamilyButton } from "@/components/ui/family-button"
 
 export function Example() {
   return (
-    <FamilyButton>内容</FamilyButton>
+    <FamilyButton />
   )
 }
 ~~~
@@ -505,7 +495,7 @@ import { GradientButtonGroup } from "@/components/ui/gradient-button-group"
 
 export function Example() {
   return (
-    <GradientButtonGroup>内容</GradientButtonGroup>
+    <GradientButtonGroup />
   )
 }
 ~~~
@@ -546,7 +536,7 @@ import { HaloButton } from "@/components/ui/halo-button"
 
 export function Example() {
   return (
-    <HaloButton>内容</HaloButton>
+    <HaloButton />
   )
 }
 ~~~
@@ -583,13 +573,11 @@ npx shadcn@latest add @cult-ui/metal-button
 ## 用法
 
 ~~~tsx
-import { MetalButton, MetalIconButton } from "@/components/ui/metal-button"
+import { MetalButton } from "@/components/ui/metal-button"
 
 export function Example() {
   return (
-    <MetalButton>
-      <MetalIconButton />
-    </MetalButton>
+    <MetalButton />
   )
 }
 ~~~
@@ -666,7 +654,7 @@ import { OrganicButton } from "@/components/ui/organic-button"
 
 export function Example() {
   return (
-    <OrganicButton>内容</OrganicButton>
+    <OrganicButton />
   )
 }
 ~~~
@@ -708,7 +696,7 @@ import { TextureButton } from "@/components/ui/texture-button"
 
 export function Example() {
   return (
-    <TextureButton>内容</TextureButton>
+    <TextureButton />
   )
 }
 ~~~
@@ -810,13 +798,11 @@ npx shadcn@latest add @cult-ui/cutout-card
 ## 用法
 
 ~~~tsx
-import { CutoutCard, CutoutCardAction, CutoutCardContent } from "@/components/ui/cutout-card"
+import { CutoutCard } from "@/components/ui/cutout-card"
 
 export function Example() {
   return (
-    <CutoutCard>
-      <CutoutCardAction />
-    </CutoutCard>
+    <CutoutCard />
   )
 }
 ~~~
@@ -864,13 +850,11 @@ npx shadcn@latest add @cult-ui/expandable
 ## 用法
 
 ~~~tsx
-import { Expandable, ExpandableCard, ExpandableCardContent } from "@/components/ui/expandable"
+import { Expandable } from "@/components/ui/expandable"
 
 export function Example() {
   return (
-    <Expandable>
-      <ExpandableCard />
-    </Expandable>
+    <Expandable />
   )
 }
 ~~~
@@ -1026,13 +1010,11 @@ npx shadcn@latest add @cult-ui/halo-card
 ## 用法
 
 ~~~tsx
-import { HaloCard, HaloCardAction, HaloCardButton } from "@/components/ui/halo-card"
+import { HaloCard } from "@/components/ui/halo-card"
 
 export function Example() {
   return (
-    <HaloCard>
-      <HaloCardAction />
-    </HaloCard>
+    <HaloCard />
   )
 }
 ~~~
@@ -1076,13 +1058,11 @@ npx shadcn@latest add @cult-ui/minimal-card
 ## 用法
 
 ~~~tsx
-import { MinimalCard, MinimalCardContent, MinimalCardDescription } from "@/components/ui/minimal-card"
+import { MinimalCard } from "@/components/ui/minimal-card"
 
 export function Example() {
   return (
-    <MinimalCard>
-      <MinimalCardContent />
-    </MinimalCard>
+    <MinimalCard />
   )
 }
 ~~~
@@ -1123,13 +1103,11 @@ npx shadcn@latest add @cult-ui/organic-card
 ## 用法
 
 ~~~tsx
-import { OrganicCard, OrganicCardBand, OrganicCardBody } from "@/components/ui/organic-card"
+import { OrganicCard } from "@/components/ui/organic-card"
 
 export function Example() {
   return (
-    <OrganicCard>
-      <OrganicCardBand />
-    </OrganicCard>
+    <OrganicCard />
   )
 }
 ~~~
@@ -1191,7 +1169,7 @@ import { OrganicCardSmall } from "@/components/ui/organic-card-small"
 
 export function Example() {
   return (
-    <OrganicCardSmall>内容</OrganicCardSmall>
+    <OrganicCardSmall />
   )
 }
 ~~~
@@ -1247,13 +1225,11 @@ npx shadcn@latest add @cult-ui/shadow-card
 ## 用法
 
 ~~~tsx
-import { ShadowCard, ShadowCardBackdrop, ShadowCardBevel } from "@/components/ui/shadow-card"
+import { ShadowCard } from "@/components/ui/shadow-card"
 
 export function Example() {
   return (
-    <ShadowCard>
-      <ShadowCardBackdrop />
-    </ShadowCard>
+    <ShadowCard />
   )
 }
 ~~~
@@ -1295,13 +1271,11 @@ npx shadcn@latest add @cult-ui/shift-card
 ## 用法
 
 ~~~tsx
-import { ShiftCard, ShiftCardContent, ShiftCardHeader } from "@/components/ui/shift-card"
+import { ShiftCard } from "@/components/ui/shift-card"
 
 export function Example() {
   return (
-    <ShiftCard>
-      <ShiftCardContent />
-    </ShiftCard>
+    <ShiftCard />
   )
 }
 ~~~
@@ -1339,13 +1313,11 @@ npx shadcn@latest add @cult-ui/texture-card
 ## 用法
 
 ~~~tsx
-import { TextureCard, TextureCardContent, TextureCardDescription } from "@/components/ui/texture-card"
+import { TextureCard } from "@/components/ui/texture-card"
 
 export function Example() {
   return (
-    <TextureCard>
-      <TextureCardContent />
-    </TextureCard>
+    <TextureCard />
   )
 }
 ~~~
@@ -1388,13 +1360,11 @@ npx shadcn@latest add @cult-ui/base-select
 ## 用法
 
 ~~~tsx
-import { Select, SelectContent, SelectGroup } from "@/components/ui/base-select"
+import { Select } from "@/components/ui/base-select"
 
 export function Example() {
   return (
-    <Select>
-      <SelectContent />
-    </Select>
+    <Select />
   )
 }
 ~~~
@@ -1441,13 +1411,11 @@ npx shadcn@latest add @cult-ui/border-beam-input
 ## 用法
 
 ~~~tsx
-import { BorderBeamInput, BorderBeamInputGroup, BorderBeamInputGroupAddon } from "@/components/ui/border-beam-input"
+import { BorderBeamInput } from "@/components/ui/border-beam-input"
 
 export function Example() {
   return (
-    <BorderBeamInput>
-      <BorderBeamInputGroup />
-    </BorderBeamInput>
+    <BorderBeamInput />
   )
 }
 ~~~
@@ -1493,7 +1461,7 @@ import { ColorPicker } from "@/components/ui/color-picker"
 
 export function Example() {
   return (
-    <ColorPicker>内容</ColorPicker>
+    <ColorPicker />
   )
 }
 ~~~
@@ -1530,13 +1498,11 @@ npx shadcn@latest add @cult-ui/halo-dropzone
 ## 用法
 
 ~~~tsx
-import { DropzoneFileTypeGlyph, DropzoneUploadFileList, DropzoneUploadFileRow } from "@/components/ui/halo-dropzone"
+import { DropzoneFileTypeGlyph } from "@/components/ui/halo-dropzone"
 
 export function Example() {
   return (
-    <DropzoneFileTypeGlyph>
-      <DropzoneUploadFileList />
-    </DropzoneFileTypeGlyph>
+    <DropzoneFileTypeGlyph />
   )
 }
 ~~~
@@ -1637,13 +1603,11 @@ npx shadcn@latest add @cult-ui/halo-field
 ## 用法
 
 ~~~tsx
-import { HaloField, HaloFieldContent, HaloFieldDescription } from "@/components/ui/halo-field"
+import { HaloField } from "@/components/ui/halo-field"
 
 export function Example() {
   return (
-    <HaloField>
-      <HaloFieldContent />
-    </HaloField>
+    <HaloField />
   )
 }
 ~~~
@@ -1684,13 +1648,11 @@ npx shadcn@latest add @cult-ui/halo-input
 ## 用法
 
 ~~~tsx
-import { HaloInput, HaloTextarea } from "@/components/ui/halo-input"
+import { HaloInput } from "@/components/ui/halo-input"
 
 export function Example() {
   return (
-    <HaloInput>
-      <HaloTextarea />
-    </HaloInput>
+    <HaloInput />
   )
 }
 ~~~
@@ -1744,13 +1706,11 @@ npx shadcn@latest add @cult-ui/halo-search
 ## 用法
 
 ~~~tsx
-import { AiBlobWarpAvatar, DeletedTextBlurReveal, HaloSearchInput } from "@/components/ui/halo-search"
+import { AiBlobWarpAvatar } from "@/components/ui/halo-search"
 
 export function Example() {
   return (
-    <AiBlobWarpAvatar>
-      <DeletedTextBlurReveal />
-    </AiBlobWarpAvatar>
+    <AiBlobWarpAvatar />
   )
 }
 ~~~
@@ -1809,13 +1769,11 @@ npx shadcn@latest add @cult-ui/halo-select
 ## 用法
 
 ~~~tsx
-import { HaloSelect, HaloSelectContent, HaloSelectGroup } from "@/components/ui/halo-select"
+import { HaloSelect } from "@/components/ui/halo-select"
 
 export function Example() {
   return (
-    <HaloSelect>
-      <HaloSelectContent />
-    </HaloSelect>
+    <HaloSelect />
   )
 }
 ~~~
@@ -1884,13 +1842,11 @@ npx shadcn@latest add @cult-ui/halo-segmented
 ## 用法
 
 ~~~tsx
-import { HaloSegmented, HaloSegmentedItem } from "@/components/ui/halo-segmented"
+import { HaloSegmented } from "@/components/ui/halo-segmented"
 
 export function Example() {
   return (
-    <HaloSegmented>
-      <HaloSegmentedItem />
-    </HaloSegmented>
+    <HaloSegmented />
   )
 }
 ~~~
@@ -1951,7 +1907,7 @@ import { HaloSwitch } from "@/components/ui/halo-switch"
 
 export function Example() {
   return (
-    <HaloSwitch>内容</HaloSwitch>
+    <HaloSwitch />
   )
 }
 ~~~
@@ -2055,7 +2011,7 @@ import { DirectionAwareTabs } from "@/components/ui/direction-aware-tabs"
 
 export function Example() {
   return (
-    <DirectionAwareTabs>内容</DirectionAwareTabs>
+    <DirectionAwareTabs />
   )
 }
 ~~~
@@ -2190,13 +2146,11 @@ npx shadcn@latest add @cult-ui/halo-tabs
 ## 用法
 
 ~~~tsx
-import { HaloTabs, HaloTabsContent, HaloTabsIndicator } from "@/components/ui/halo-tabs"
+import { HaloTabs } from "@/components/ui/halo-tabs"
 
 export function Example() {
   return (
-    <HaloTabs>
-      <HaloTabsContent />
-    </HaloTabs>
+    <HaloTabs />
   )
 }
 ~~~
@@ -2322,13 +2276,11 @@ npx shadcn@latest add @cult-ui/family-drawer
 ## 用法
 
 ~~~tsx
-import { FamilyDrawerAnimatedContent, FamilyDrawerAnimatedWrapper, FamilyDrawerButton } from "@/components/ui/family-drawer"
+import { FamilyDrawerAnimatedContent } from "@/components/ui/family-drawer"
 
 export function Example() {
   return (
-    <FamilyDrawerAnimatedContent>
-      <FamilyDrawerAnimatedWrapper />
-    </FamilyDrawerAnimatedContent>
+    <FamilyDrawerAnimatedContent />
   )
 }
 ~~~
@@ -2405,13 +2357,11 @@ npx shadcn@latest add @cult-ui/floating-panel
 ## 用法
 
 ~~~tsx
-import { FloatingPanelBody, FloatingPanelButton, FloatingPanelCloseButton } from "@/components/ui/floating-panel"
+import { FloatingPanelBody } from "@/components/ui/floating-panel"
 
 export function Example() {
   return (
-    <FloatingPanelBody>
-      <FloatingPanelButton />
-    </FloatingPanelBody>
+    <FloatingPanelBody />
   )
 }
 ~~~
@@ -2481,13 +2431,11 @@ npx shadcn@latest add @cult-ui/halo-notification
 ## 用法
 
 ~~~tsx
-import { HaloPolishedNotification, HaloPolishedToastSurface, RimVariant } from "@/components/ui/halo-notification"
+import { HaloPolishedNotification } from "@/components/ui/halo-notification"
 
 export function Example() {
   return (
-    <HaloPolishedNotification>
-      <HaloPolishedToastSurface />
-    </HaloPolishedNotification>
+    <HaloPolishedNotification />
   )
 }
 ~~~
@@ -2552,13 +2500,11 @@ npx shadcn@latest add @cult-ui/halo-toast
 ## 用法
 
 ~~~tsx
-import { PolishedToastOptions, PolishedToastSurface, PolishedToaster } from "@/components/ui/halo-toast"
+import { PolishedToastOptions } from "@/components/ui/halo-toast"
 
 export function Example() {
   return (
-    <PolishedToastOptions>
-      <PolishedToastSurface />
-    </PolishedToastOptions>
+    <PolishedToastOptions />
   )
 }
 ~~~
@@ -2625,7 +2571,7 @@ import { IntroDisclosure } from "@/components/ui/intro-disclosure"
 
 export function Example() {
   return (
-    <IntroDisclosure>内容</IntroDisclosure>
+    <IntroDisclosure />
   )
 }
 ~~~
@@ -2692,13 +2638,11 @@ npx shadcn@latest add @cult-ui/popover
 ## 用法
 
 ~~~tsx
-import { PopoverBody, PopoverButton, PopoverCloseButton } from "@/components/ui/popover"
+import { PopoverBody } from "@/components/ui/popover"
 
 export function Example() {
   return (
-    <PopoverBody>
-      <PopoverButton />
-    </PopoverBody>
+    <PopoverBody />
   )
 }
 ~~~
@@ -2767,13 +2711,11 @@ npx shadcn@latest add @cult-ui/popover-form
 ## 用法
 
 ~~~tsx
-import { PopoverForm, PopoverFormButton, PopoverFormCutOutLeftIcon } from "@/components/ui/popover-form"
+import { PopoverForm } from "@/components/ui/popover-form"
 
 export function Example() {
   return (
-    <PopoverForm>
-      <PopoverFormButton />
-    </PopoverForm>
+    <PopoverForm />
   )
 }
 ~~~
@@ -2838,7 +2780,7 @@ import { SidePanel } from "@/components/ui/side-panel"
 
 export function Example() {
   return (
-    <SidePanel>内容</SidePanel>
+    <SidePanel />
   )
 }
 ~~~
@@ -2899,13 +2841,11 @@ npx shadcn@latest add @cult-ui/gradient-heading
 ## 用法
 
 ~~~tsx
-import { GradientHeading, Size, Variant } from "@/components/ui/gradient-heading"
+import { GradientHeading } from "@/components/ui/gradient-heading"
 
 export function Example() {
   return (
-    <GradientHeading>
-      <Size />
-    </GradientHeading>
+    <GradientHeading />
   )
 }
 ~~~
@@ -2950,7 +2890,7 @@ import { NeumorphEyebrow } from "@/components/ui/neumorph-eyebrow"
 
 export function Example() {
   return (
-    <NeumorphEyebrow>内容</NeumorphEyebrow>
+    <NeumorphEyebrow />
   )
 }
 ~~~
@@ -2986,13 +2926,11 @@ npx shadcn@latest add @cult-ui/pixel-heading-character
 ## 用法
 
 ~~~tsx
-import { PixelHeading, PixelHeadingMode } from "@/components/ui/pixel-heading-character"
+import { PixelHeading } from "@/components/ui/pixel-heading-character"
 
 export function Example() {
   return (
-    <PixelHeading>
-      <PixelHeadingMode />
-    </PixelHeading>
+    <PixelHeading />
   )
 }
 ~~~
@@ -3033,7 +2971,7 @@ import { PixelHeading } from "@/components/ui/pixel-heading-word"
 
 export function Example() {
   return (
-    <PixelHeading>内容</PixelHeading>
+    <PixelHeading />
   )
 }
 ~~~
@@ -3073,7 +3011,7 @@ import { PixelParagraph } from "@/components/ui/pixel-paragraph-words"
 
 export function Example() {
   return (
-    <PixelParagraph>内容</PixelParagraph>
+    <PixelParagraph />
   )
 }
 ~~~
@@ -3113,7 +3051,7 @@ import { PixelParagraphInverse } from "@/components/ui/pixel-paragraph-words-inv
 
 export function Example() {
   return (
-    <PixelParagraphInverse>内容</PixelParagraphInverse>
+    <PixelParagraphInverse />
   )
 }
 ~~~
@@ -3202,7 +3140,7 @@ import { TextGif } from "@/components/ui/text-gif"
 
 export function Example() {
   return (
-    <TextGif>内容</TextGif>
+    <TextGif />
   )
 }
 ~~~
@@ -3242,7 +3180,7 @@ import { Typewriter } from "@/components/ui/typewriter"
 
 export function Example() {
   return (
-    <Typewriter>内容</Typewriter>
+    <Typewriter />
   )
 }
 ~~~
@@ -3304,7 +3242,7 @@ import { FractalDotGrid } from "@/components/ui/bg-animated-fractal-dot-grid"
 
 export function Example() {
   return (
-    <FractalDotGrid>内容</FractalDotGrid>
+    <FractalDotGrid />
   )
 }
 ~~~
@@ -3376,7 +3314,7 @@ import { GradientAnimation } from "@/components/ui/bg-animated-gradient"
 
 export function Example() {
   return (
-    <GradientAnimation>内容</GradientAnimation>
+    <GradientAnimation />
   )
 }
 ~~~
@@ -3425,13 +3363,11 @@ npx shadcn@latest add @cult-ui/bg-image-texture
 ## 用法
 
 ~~~tsx
-import { BackgroundImageTexture, TextureVariant } from "@/components/ui/bg-image-texture"
+import { BackgroundImageTexture } from "@/components/ui/bg-image-texture"
 
 export function Example() {
   return (
-    <BackgroundImageTexture>
-      <TextureVariant />
-    </BackgroundImageTexture>
+    <BackgroundImageTexture />
   )
 }
 ~~~
@@ -3486,7 +3422,7 @@ import { BackgroundMedia } from "@/components/ui/bg-media"
 
 export function Example() {
   return (
-    <BackgroundMedia>内容</BackgroundMedia>
+    <BackgroundMedia />
   )
 }
 ~~~
@@ -3540,7 +3476,7 @@ import { CanvasFractalGrid } from "@/components/ui/canvas-fractal-grid"
 
 export function Example() {
   return (
-    <CanvasFractalGrid>内容</CanvasFractalGrid>
+    <CanvasFractalGrid />
   )
 }
 ~~~
@@ -3647,13 +3583,11 @@ npx shadcn@latest add @cult-ui/grid-beam
 ## 用法
 
 ~~~tsx
-import { BeamCanvasRuntimeConfig, GridBeam, GridBeamCanvas } from "@/components/ui/grid-beam"
+import { BeamCanvasRuntimeConfig } from "@/components/ui/grid-beam"
 
 export function Example() {
   return (
-    <BeamCanvasRuntimeConfig>
-      <GridBeam />
-    </BeamCanvasRuntimeConfig>
+    <BeamCanvasRuntimeConfig />
   )
 }
 ~~~
@@ -3704,7 +3638,7 @@ import { StripeBgGuides } from "@/components/ui/stripe-bg-guides"
 
 export function Example() {
   return (
-    <StripeBgGuides>内容</StripeBgGuides>
+    <StripeBgGuides />
   )
 }
 ~~~
@@ -3768,13 +3702,11 @@ npx shadcn@latest add @cult-ui/svg-bands
 ## 用法
 
 ~~~tsx
-import { AngledCornerPanelSvg, ArrowChevronBandSvg, BandShape } from "@/components/ui/svg-bands"
+import { AngledCornerPanelSvg } from "@/components/ui/svg-bands"
 
 export function Example() {
   return (
-    <AngledCornerPanelSvg>
-      <ArrowChevronBandSvg />
-    </AngledCornerPanelSvg>
+    <AngledCornerPanelSvg />
   )
 }
 ~~~
@@ -3837,13 +3769,11 @@ npx shadcn@latest add @cult-ui/svg-shapes
 ## 用法
 
 ~~~tsx
-import { ArrowPentagonShapeSvg, CircleShapeSvg, CubeWireshapeSvg } from "@/components/ui/svg-shapes"
+import { ArrowPentagonShapeSvg } from "@/components/ui/svg-shapes"
 
 export function Example() {
   return (
-    <ArrowPentagonShapeSvg>
-      <CircleShapeSvg />
-    </ArrowPentagonShapeSvg>
+    <ArrowPentagonShapeSvg />
   )
 }
 ~~~
@@ -3902,13 +3832,11 @@ npx shadcn@latest add @cult-ui/svg-shapes-animated
 ## 用法
 
 ~~~tsx
-import { ArrowPentagonShapeSvg, ChevronShapeSvg, CircleShapeSvg } from "@/components/ui/svg-shapes-animated"
+import { ArrowPentagonShapeSvg } from "@/components/ui/svg-shapes-animated"
 
 export function Example() {
   return (
-    <ArrowPentagonShapeSvg>
-      <ChevronShapeSvg />
-    </ArrowPentagonShapeSvg>
+    <ArrowPentagonShapeSvg />
   )
 }
 ~~~
@@ -3967,13 +3895,11 @@ npx shadcn@latest add @cult-ui/texture-overlay
 ## 用法
 
 ~~~tsx
-import { TextureOverlay, TextureType } from "@/components/ui/texture-overlay"
+import { TextureOverlay } from "@/components/ui/texture-overlay"
 
 export function Example() {
   return (
-    <TextureOverlay>
-      <TextureType />
-    </TextureOverlay>
+    <TextureOverlay />
   )
 }
 ~~~
@@ -4027,7 +3953,7 @@ import { CircuitBoard } from "@/components/ui/circuit-board"
 
 export function Example() {
   return (
-    <CircuitBoard>内容</CircuitBoard>
+    <CircuitBoard />
   )
 }
 ~~~
@@ -4064,13 +3990,11 @@ npx shadcn@latest add @cult-ui/fluid-ai-workloads
 ## 用法
 
 ~~~tsx
-import { FluidAIWorkloads, FluidAIWorkloadsBranchLines, FluidAIWorkloadsCenterCard } from "@/components/ui/fluid-ai-workloads"
+import { FluidAIWorkloads } from "@/components/ui/fluid-ai-workloads"
 
 export function Example() {
   return (
-    <FluidAIWorkloads>
-      <FluidAIWorkloadsBranchLines />
-    </FluidAIWorkloads>
+    <FluidAIWorkloads />
   )
 }
 ~~~
@@ -4111,13 +4035,11 @@ npx shadcn@latest add @cult-ui/gateway-endpoint-illustration
 ## 用法
 
 ~~~tsx
-import { AnthropicIcon, GatewayEndpoint, GatewayEndpointBackground } from "@/components/ui/gateway-endpoint-illustration"
+import { AnthropicIcon } from "@/components/ui/gateway-endpoint-illustration"
 
 export function Example() {
   return (
-    <AnthropicIcon>
-      <GatewayEndpoint />
-    </AnthropicIcon>
+    <AnthropicIcon />
   )
 }
 ~~~
@@ -4164,13 +4086,11 @@ npx shadcn@latest add @cult-ui/gateway-route-illustration
 ## 用法
 
 ~~~tsx
-import { AnthropicIcon, CohereIcon, GatewayRouting } from "@/components/ui/gateway-route-illustration"
+import { AnthropicIcon } from "@/components/ui/gateway-route-illustration"
 
 export function Example() {
   return (
-    <AnthropicIcon>
-      <CohereIcon />
-    </AnthropicIcon>
+    <AnthropicIcon />
   )
 }
 ~~~
@@ -4216,13 +4136,11 @@ npx shadcn@latest add @cult-ui/gateway-svg-illustration
 ## 用法
 
 ~~~tsx
-import { GatewayOverhead, GatewayOverheadBackground, GatewayOverheadBackgroundGrid } from "@/components/ui/gateway-svg-illustration"
+import { GatewayOverhead } from "@/components/ui/gateway-svg-illustration"
 
 export function Example() {
   return (
-    <GatewayOverhead>
-      <GatewayOverheadBackground />
-    </GatewayOverhead>
+    <GatewayOverhead />
   )
 }
 ~~~
@@ -4291,13 +4209,11 @@ npx shadcn@latest add @cult-ui/illustration-card-grid
 ## 用法
 
 ~~~tsx
-import { DEFAULT_ILLUSTRATION_CARD_GRID_ITEMS, IllustrationCardGrid, IllustrationCardGridItem } from "@/components/ui/illustration-card-grid"
+import { DEFAULT_ILLUSTRATION_CARD_GRID_ITEMS } from "@/components/ui/illustration-card-grid"
 
 export function Example() {
   return (
-    <DEFAULT_ILLUSTRATION_CARD_GRID_ITEMS>
-      <IllustrationCardGrid />
-    </DEFAULT_ILLUSTRATION_CARD_GRID_ITEMS>
+    <DEFAULT_ILLUSTRATION_CARD_GRID_ITEMS />
   )
 }
 ~~~
@@ -4335,13 +4251,11 @@ npx shadcn@latest add @cult-ui/illustration-comment-bubble
 ## 用法
 
 ~~~tsx
-import { Code, CommentBubble, CommentBubbleDemo } from "@/components/ui/illustration-comment-bubble"
+import { Code } from "@/components/ui/illustration-comment-bubble"
 
 export function Example() {
   return (
-    <Code>
-      <CommentBubble />
-    </Code>
+    <Code />
   )
 }
 ~~~
@@ -4379,13 +4293,11 @@ npx shadcn@latest add @cult-ui/illustration-cursor
 ## 用法
 
 ~~~tsx
-import { Cursor, CursorDemo, CursorSide } from "@/components/ui/illustration-cursor"
+import { Cursor } from "@/components/ui/illustration-cursor"
 
 export function Example() {
   return (
-    <Cursor>
-      <CursorDemo />
-    </Cursor>
+    <Cursor />
   )
 }
 ~~~
@@ -4424,13 +4336,11 @@ npx shadcn@latest add @cult-ui/illustration-fluid-rendering
 ## 用法
 
 ~~~tsx
-import { FluidRendering, FluidRenderingBigCommerceIcon, FluidRenderingContentfulIcon } from "@/components/ui/illustration-fluid-rendering"
+import { FluidRendering } from "@/components/ui/illustration-fluid-rendering"
 
 export function Example() {
   return (
-    <FluidRendering>
-      <FluidRenderingBigCommerceIcon />
-    </FluidRendering>
+    <FluidRendering />
   )
 }
 ~~~
@@ -4470,13 +4380,11 @@ npx shadcn@latest add @cult-ui/illustration-globe-vercel
 ## 用法
 
 ~~~tsx
-import { BuiltInNodeIcon, CustomNodeIcon, DEFAULT_NODES } from "@/components/ui/illustration-globe-vercel"
+import { BuiltInNodeIcon } from "@/components/ui/illustration-globe-vercel"
 
 export function Example() {
   return (
-    <BuiltInNodeIcon>
-      <CustomNodeIcon />
-    </BuiltInNodeIcon>
+    <BuiltInNodeIcon />
   )
 }
 ~~~
@@ -4539,13 +4447,11 @@ npx shadcn@latest add @cult-ui/illustration-graph
 ## 用法
 
 ~~~tsx
-import { DataPoint, IllustrationGraph, IllustrationGraphChart } from "@/components/ui/illustration-graph"
+import { DataPoint } from "@/components/ui/illustration-graph"
 
 export function Example() {
   return (
-    <DataPoint>
-      <IllustrationGraph />
-    </DataPoint>
+    <DataPoint />
   )
 }
 ~~~
@@ -4586,13 +4492,11 @@ npx shadcn@latest add @cult-ui/merging-bubbles
 ## 用法
 
 ~~~tsx
-import { MergingBubbles, NextLogo, VercelLogo } from "@/components/ui/merging-bubbles"
+import { MergingBubbles } from "@/components/ui/merging-bubbles"
 
 export function Example() {
   return (
-    <MergingBubbles>
-      <NextLogo />
-    </MergingBubbles>
+    <MergingBubbles />
   )
 }
 ~~~
@@ -4645,13 +4549,11 @@ npx shadcn@latest add @cult-ui/security-checkpoint
 ## 用法
 
 ~~~tsx
-import { CHECKPOINT_LINES, CheckpointLine, SecurityCheckpoint } from "@/components/ui/security-checkpoint"
+import { CHECKPOINT_LINES } from "@/components/ui/security-checkpoint"
 
 export function Example() {
   return (
-    <CHECKPOINT_LINES>
-      <CheckpointLine />
-    </CHECKPOINT_LINES>
+    <CHECKPOINT_LINES />
   )
 }
 ~~~
@@ -4692,13 +4594,11 @@ npx shadcn@latest add @cult-ui/speech-bubble
 ## 用法
 
 ~~~tsx
-import { SpeechBubble, SpeechBubbleBody, SpeechBubbleCursor } from "@/components/ui/speech-bubble"
+import { SpeechBubble } from "@/components/ui/speech-bubble"
 
 export function Example() {
   return (
-    <SpeechBubble>
-      <SpeechBubbleBody />
-    </SpeechBubble>
+    <SpeechBubble />
   )
 }
 ~~~
@@ -4752,13 +4652,11 @@ npx shadcn@latest add @cult-ui/apple-iphone-17-pro
 ## 用法
 
 ~~~tsx
-import { DynamicIslandSize, IPhone17ProMax } from "@/components/ui/apple-iphone-17-pro"
+import { DynamicIslandSize } from "@/components/ui/apple-iphone-17-pro"
 
 export function Example() {
   return (
-    <DynamicIslandSize>
-      <IPhone17ProMax />
-    </DynamicIslandSize>
+    <DynamicIslandSize />
   )
 }
 ~~~
@@ -4834,7 +4732,7 @@ import { AppleKeyboard } from "@/components/ui/apple-keyboard"
 
 export function Example() {
   return (
-    <AppleKeyboard>内容</AppleKeyboard>
+    <AppleKeyboard />
   )
 }
 ~~~
@@ -4888,13 +4786,11 @@ npx shadcn@latest add @cult-ui/apple-pro-display-xdr
 ## 用法
 
 ~~~tsx
-import { AppleProDisplayXDR, StudioScreenMode } from "@/components/ui/apple-pro-display-xdr"
+import { AppleProDisplayXDR } from "@/components/ui/apple-pro-display-xdr"
 
 export function Example() {
   return (
-    <AppleProDisplayXDR>
-      <StudioScreenMode />
-    </AppleProDisplayXDR>
+    <AppleProDisplayXDR />
   )
 }
 ~~~
@@ -4951,7 +4847,7 @@ import { AppleWatchUltra } from "@/components/ui/apple-watch-ultra"
 
 export function Example() {
   return (
-    <AppleWatchUltra>内容</AppleWatchUltra>
+    <AppleWatchUltra />
   )
 }
 ~~~
@@ -5054,7 +4950,7 @@ import { BrowserWindow } from "@/components/ui/mock-browser-window"
 
 export function Example() {
   return (
-    <BrowserWindow>内容</BrowserWindow>
+    <BrowserWindow />
   )
 }
 ~~~
@@ -5117,7 +5013,7 @@ import { FeatureCarousel } from "@/components/ui/feature-carousel"
 
 export function Example() {
   return (
-    <FeatureCarousel>内容</FeatureCarousel>
+    <FeatureCarousel />
   )
 }
 ~~~
@@ -5181,13 +5077,11 @@ npx shadcn@latest add @cult-ui/feature-sticky-section
 ## 用法
 
 ~~~tsx
-import { OSSProject, OSSSection, OSSSectionComponents } from "@/components/ui/feature-sticky-section"
+import { OSSProject } from "@/components/ui/feature-sticky-section"
 
 export function Example() {
   return (
-    <OSSProject>
-      <OSSSection />
-    </OSSProject>
+    <OSSProject />
   )
 }
 ~~~
@@ -5240,13 +5134,11 @@ npx shadcn@latest add @cult-ui/hero-color-panel
 ## 用法
 
 ~~~tsx
-import { AISDKIcon, HeroColorPanels, HeroColorPanelsActions } from "@/components/ui/hero-color-panel"
+import { AISDKIcon } from "@/components/ui/hero-color-panel"
 
 export function Example() {
   return (
-    <AISDKIcon>
-      <HeroColorPanels />
-    </AISDKIcon>
+    <AISDKIcon />
   )
 }
 ~~~
@@ -5310,13 +5202,11 @@ npx shadcn@latest add @cult-ui/hero-dithering
 ## 用法
 
 ~~~tsx
-import { AISDKIcon, HeroDithering, HeroDitheringActions } from "@/components/ui/hero-dithering"
+import { AISDKIcon } from "@/components/ui/hero-dithering"
 
 export function Example() {
   return (
-    <AISDKIcon>
-      <HeroDithering />
-    </AISDKIcon>
+    <AISDKIcon />
   )
 }
 ~~~
@@ -5380,13 +5270,11 @@ npx shadcn@latest add @cult-ui/hero-heatmap
 ## 用法
 
 ~~~tsx
-import { AISDKIcon, HeroHeatmap, HeroHeatmapActions } from "@/components/ui/hero-heatmap"
+import { AISDKIcon } from "@/components/ui/hero-heatmap"
 
 export function Example() {
   return (
-    <AISDKIcon>
-      <HeroHeatmap />
-    </AISDKIcon>
+    <AISDKIcon />
   )
 }
 ~~~
@@ -5450,13 +5338,11 @@ npx shadcn@latest add @cult-ui/hero-liquid-metal
 ## 用法
 
 ~~~tsx
-import { AISDKIcon, HeroLiquidMetal, HeroLiquidMetalActions } from "@/components/ui/hero-liquid-metal"
+import { AISDKIcon } from "@/components/ui/hero-liquid-metal"
 
 export function Example() {
   return (
-    <AISDKIcon>
-      <HeroLiquidMetal />
-    </AISDKIcon>
+    <AISDKIcon />
   )
 }
 ~~~
@@ -5520,13 +5406,11 @@ npx shadcn@latest add @cult-ui/hero-static-radial-gradient
 ## 用法
 
 ~~~tsx
-import { AISDKIcon, HeroStaticRadialGradient, HeroStaticRadialGradientActions } from "@/components/ui/hero-static-radial-gradient"
+import { AISDKIcon } from "@/components/ui/hero-static-radial-gradient"
 
 export function Example() {
   return (
-    <AISDKIcon>
-      <HeroStaticRadialGradient />
-    </AISDKIcon>
+    <AISDKIcon />
   )
 }
 ~~~
@@ -5594,7 +5478,7 @@ import { LoadingCarousel } from "@/components/ui/loading-carousel"
 
 export function Example() {
   return (
-    <LoadingCarousel>内容</LoadingCarousel>
+    <LoadingCarousel />
   )
 }
 ~~~
@@ -5658,7 +5542,7 @@ import { LogoCarousel } from "@/components/ui/logo-carousel"
 
 export function Example() {
   return (
-    <LogoCarousel>内容</LogoCarousel>
+    <LogoCarousel />
   )
 }
 ~~~
@@ -5707,13 +5591,11 @@ npx shadcn@latest add @cult-ui/marketing-feature-code
 ## 用法
 
 ~~~tsx
-import { NetworkPolicy, NetworkPolicyCode, NetworkPolicyCodeBlock } from "@/components/ui/marketing-feature-code"
+import { NetworkPolicy } from "@/components/ui/marketing-feature-code"
 
 export function Example() {
   return (
-    <NetworkPolicy>
-      <NetworkPolicyCode />
-    </NetworkPolicy>
+    <NetworkPolicy />
   )
 }
 ~~~
@@ -5760,13 +5642,11 @@ npx shadcn@latest add @cult-ui/marketing-hero-analytics
 ## 用法
 
 ~~~tsx
-import { ANALYTICS_HERO_CHART_DATA, ANALYTICS_HERO_ICONS, ANALYTICS_HERO_LOGS } from "@/components/ui/marketing-hero-analytics"
+import { ANALYTICS_HERO_CHART_DATA } from "@/components/ui/marketing-hero-analytics"
 
 export function Example() {
   return (
-    <ANALYTICS_HERO_CHART_DATA>
-      <ANALYTICS_HERO_ICONS />
-    </ANALYTICS_HERO_CHART_DATA>
+    <ANALYTICS_HERO_CHART_DATA />
   )
 }
 ~~~
@@ -5813,13 +5693,11 @@ npx shadcn@latest add @cult-ui/three-d-carousel
 ## 用法
 
 ~~~tsx
-import { useIsomorphicLayoutEffect, useMediaQuery } from "@/components/ui/three-d-carousel"
+import { useIsomorphicLayoutEffect } from "@/components/ui/three-d-carousel"
 
 export function Example() {
   return (
-    <useIsomorphicLayoutEffect>
-      <useMediaQuery />
-    </useIsomorphicLayoutEffect>
+    <useIsomorphicLayoutEffect />
   )
 }
 ~~~
@@ -5872,7 +5750,7 @@ import { TweetGrid } from "@/components/ui/tweet-grid"
 
 export function Example() {
   return (
-    <TweetGrid>内容</TweetGrid>
+    <TweetGrid />
   )
 }
 ~~~
@@ -6007,13 +5885,11 @@ npx shadcn@latest add @cult-ui/choice-poll
 ## 用法
 
 ~~~tsx
-import { ChoicePoll, ChoicePollDescription, ChoicePollFooter } from "@/components/ui/choice-poll"
+import { ChoicePoll } from "@/components/ui/choice-poll"
 
 export function Example() {
   return (
-    <ChoicePoll>
-      <ChoicePollDescription />
-    </ChoicePoll>
+    <ChoicePoll />
   )
 }
 ~~~
@@ -6062,13 +5938,11 @@ npx shadcn@latest add @cult-ui/feature-poll
 ## 用法
 
 ~~~tsx
-import { FeaturePoll, FeaturePollDescription, FeaturePollFooter } from "@/components/ui/feature-poll"
+import { FeaturePoll } from "@/components/ui/feature-poll"
 
 export function Example() {
   return (
-    <FeaturePoll>
-      <FeaturePollDescription />
-    </FeaturePoll>
+    <FeaturePoll />
   )
 }
 ~~~
@@ -6117,13 +5991,11 @@ npx shadcn@latest add @cult-ui/feature-voting
 ## 用法
 
 ~~~tsx
-import { FeatureVoting, FeatureVotingCount, FeatureVotingDescription } from "@/components/ui/feature-voting"
+import { FeatureVoting } from "@/components/ui/feature-voting"
 
 export function Example() {
   return (
-    <FeatureVoting>
-      <FeatureVotingCount />
-    </FeatureVoting>
+    <FeatureVoting />
   )
 }
 ~~~
@@ -6172,7 +6044,7 @@ import { HaloBadge } from "@/components/ui/halo-badge"
 
 export function Example() {
   return (
-    <HaloBadge>内容</HaloBadge>
+    <HaloBadge />
   )
 }
 ~~~
@@ -6213,7 +6085,7 @@ import { HaloProgress } from "@/components/ui/halo-progress"
 
 export function Example() {
   return (
-    <HaloProgress>内容</HaloProgress>
+    <HaloProgress />
   )
 }
 ~~~
@@ -6250,13 +6122,11 @@ npx shadcn@latest add @cult-ui/poll-widget
 ## 用法
 
 ~~~tsx
-import { PollOption, PollWidget, PollWidgetAnimationPhase } from "@/components/ui/poll-widget"
+import { PollOption } from "@/components/ui/poll-widget"
 
 export function Example() {
   return (
-    <PollOption>
-      <PollWidget />
-    </PollOption>
+    <PollOption />
   )
 }
 ~~~
@@ -6310,7 +6180,7 @@ import { RollingNumber } from "@/components/ui/rolling-number"
 
 export function Example() {
   return (
-    <RollingNumber>内容</RollingNumber>
+    <RollingNumber />
   )
 }
 ~~~
@@ -6364,13 +6234,11 @@ npx shadcn@latest add @cult-ui/vote-tally
 ## 用法
 
 ~~~tsx
-import { VoteTally, VoteTallyCount, VoteTallyDescription } from "@/components/ui/vote-tally"
+import { VoteTally } from "@/components/ui/vote-tally"
 
 export function Example() {
   return (
-    <VoteTally>
-      <VoteTallyCount />
-    </VoteTally>
+    <VoteTally />
   )
 }
 ~~~
@@ -6504,7 +6372,7 @@ npx shadcn@latest add @cult-ui/onboarding
 ## 用法
 
 ~~~tsx
-import { ChoiceGroup, FeatureCarousel, Onboarding } from "@/components/ui/onboarding"
+import { ChoiceGroup, FeatureCarousel } from "@/components/ui/onboarding"
 
 export function Example() {
   return (
@@ -6552,13 +6420,11 @@ npx shadcn@latest add @cult-ui/sortable-list
 ## 用法
 
 ~~~tsx
-import { Item, SortableList, SortableListItem } from "@/components/ui/sortable-list"
+import { Item } from "@/components/ui/sortable-list"
 
 export function Example() {
   return (
-    <Item>
-      <SortableList />
-    </Item>
+    <Item />
   )
 }
 ~~~
@@ -6632,13 +6498,11 @@ npx shadcn@latest add @cult-ui/wizard-expandable
 ## 用法
 
 ~~~tsx
-import { WizardStep, useWizardExpandable } from "@/components/ui/wizard-expandable"
+import { WizardStep } from "@/components/ui/wizard-expandable"
 
 export function Example() {
   return (
-    <WizardStep>
-      <useWizardExpandable />
-    </WizardStep>
+    <WizardStep />
   )
 }
 ~~~
@@ -6718,7 +6582,7 @@ import { DistortedGlass } from "@/components/ui/distorted-glass"
 
 export function Example() {
   return (
-    <DistortedGlass>内容</DistortedGlass>
+    <DistortedGlass />
   )
 }
 ~~~
@@ -6754,13 +6618,11 @@ npx shadcn@latest add @cult-ui/dither-image
 ## 用法
 
 ~~~tsx
-import { DitherAspectRatio, DitherImage, DitherImageCaption } from "@/components/ui/dither-image"
+import { DitherAspectRatio } from "@/components/ui/dither-image"
 
 export function Example() {
   return (
-    <DitherAspectRatio>
-      <DitherImage />
-    </DitherAspectRatio>
+    <DitherAspectRatio />
   )
 }
 ~~~
@@ -6900,13 +6762,11 @@ npx shadcn@latest add @cult-ui/edge-blur
 ## 用法
 
 ~~~tsx
-import { BottomBlur, EdgeBlur, TopBlur } from "@/components/ui/edge-blur"
+import { BottomBlur } from "@/components/ui/edge-blur"
 
 export function Example() {
   return (
-    <BottomBlur>
-      <EdgeBlur />
-    </BottomBlur>
+    <BottomBlur />
   )
 }
 ~~~
@@ -6956,13 +6816,11 @@ npx shadcn@latest add @cult-ui/expandable-screen
 ## 用法
 
 ~~~tsx
-import { ExpandableScreen, ExpandableScreenBackground, ExpandableScreenContent } from "@/components/ui/expandable-screen"
+import { ExpandableScreen } from "@/components/ui/expandable-screen"
 
 export function Example() {
   return (
-    <ExpandableScreen>
-      <ExpandableScreenBackground />
-    </ExpandableScreen>
+    <ExpandableScreen />
   )
 }
 ~~~
@@ -7184,13 +7042,11 @@ npx shadcn@latest add @cult-ui/lightboard
 ## 用法
 
 ~~~tsx
-import { LightBoard, PatternCell } from "@/components/ui/lightboard"
+import { LightBoard } from "@/components/ui/lightboard"
 
 export function Example() {
   return (
-    <LightBoard>
-      <PatternCell />
-    </LightBoard>
+    <LightBoard />
   )
 }
 ~~~
@@ -7253,7 +7109,7 @@ import { MorphSurface } from "@/components/ui/morph-surface"
 
 export function Example() {
   return (
-    <MorphSurface>内容</MorphSurface>
+    <MorphSurface />
   )
 }
 ~~~
@@ -7314,13 +7170,11 @@ npx shadcn@latest add @cult-ui/shader-lens-blur
 ## 用法
 
 ~~~tsx
-import { ShaderLensBlur, configAtom } from "@/components/ui/shader-lens-blur"
+import { ShaderLensBlur } from "@/components/ui/shader-lens-blur"
 
 export function Example() {
   return (
-    <ShaderLensBlur>
-      <configAtom />
-    </ShaderLensBlur>
+    <ShaderLensBlur />
   )
 }
 ~~~
@@ -7395,13 +7249,11 @@ npx shadcn@latest add @cult-ui/terminal-animation
 ## 用法
 
 ~~~tsx
-import { TabContent, TerminalAnimationBackgroundGradient, TerminalAnimationBlinkingCursor } from "@/components/ui/terminal-animation"
+import { TabContent } from "@/components/ui/terminal-animation"
 
 export function Example() {
   return (
-    <TabContent>
-      <TerminalAnimationBackgroundGradient />
-    </TabContent>
+    <TabContent />
   )
 }
 ~~~
@@ -7563,13 +7415,11 @@ npx shadcn@latest add @cult-ui/file-icons
 ## 用法
 
 ~~~tsx
-import { Icons, getIconForLanguageExtension } from "@/components/ui/file-icons"
+import { Icons } from "@/components/ui/file-icons"
 
 export function Example() {
   return (
-    <Icons>
-      <getIconForLanguageExtension />
-    </Icons>
+    <Icons />
   )
 }
 ~~~
@@ -7606,13 +7456,11 @@ npx shadcn@latest add @cult-ui/timer
 ## 用法
 
 ~~~tsx
-import { Timer, TimerDisplay, TimerIcon } from "@/components/ui/timer"
+import { Timer } from "@/components/ui/timer"
 
 export function Example() {
   return (
-    <Timer>
-      <TimerDisplay />
-    </Timer>
+    <Timer />
   )
 }
 ~~~
@@ -7680,7 +7528,7 @@ import { CollabAvatar } from "@/components/ui/collab-avatar"
 
 export function Example() {
   return (
-    <CollabAvatar>内容</CollabAvatar>
+    <CollabAvatar />
   )
 }
 ~~~
@@ -7716,13 +7564,11 @@ npx shadcn@latest add @cult-ui/collab-toolbar
 ## 用法
 
 ~~~tsx
-import { CollabToolbar, CollabToolbarDivider, CollabToolbarIcon } from "@/components/ui/collab-toolbar"
+import { CollabToolbar } from "@/components/ui/collab-toolbar"
 
 export function Example() {
   return (
-    <CollabToolbar>
-      <CollabToolbarDivider />
-    </CollabToolbar>
+    <CollabToolbar />
   )
 }
 ~~~
@@ -7763,13 +7609,11 @@ npx shadcn@latest add @cult-ui/base-tooltip
 ## 用法
 
 ~~~tsx
-import { Tooltip, TooltipContent, TooltipProvider } from "@/components/ui/base-tooltip"
+import { Tooltip } from "@/components/ui/base-tooltip"
 
 export function Example() {
   return (
-    <Tooltip>
-      <TooltipContent />
-    </Tooltip>
+    <Tooltip />
   )
 }
 ~~~
@@ -7809,13 +7653,11 @@ npx shadcn@latest add @cult-ui/hover-video-player
 ## 用法
 
 ~~~tsx
-import { HoverVideoPaddingWrapper, HoverVideoPlayer, HoverVideoPlayerControls } from "@/components/ui/hover-video-player"
+import { HoverVideoPaddingWrapper } from "@/components/ui/hover-video-player"
 
 export function Example() {
   return (
-    <HoverVideoPaddingWrapper>
-      <HoverVideoPlayer />
-    </HoverVideoPaddingWrapper>
+    <HoverVideoPaddingWrapper />
   )
 }
 ~~~
@@ -7892,13 +7734,11 @@ npx shadcn@latest add @cult-ui/youtube-video-player
 ## 用法
 
 ~~~tsx
-import { YouTubePlayer, YouTubePlayerControls } from "@/components/ui/youtube-video-player"
+import { YouTubePlayer } from "@/components/ui/youtube-video-player"
 
 export function Example() {
   return (
-    <YouTubePlayer>
-      <YouTubePlayerControls />
-    </YouTubePlayer>
+    <YouTubePlayer />
   )
 }
 ~~~

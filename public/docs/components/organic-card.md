@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/organic-card
 ## 用法
 
 ~~~tsx
-import { OrganicCard, OrganicCardBand, OrganicCardBody } from "@/components/ui/organic-card"
+import { OrganicCard } from "@/components/ui/organic-card"
 
 export function Example() {
   return (
-    <OrganicCard>
-      <OrganicCardBand />
-    </OrganicCard>
+    <OrganicCard />
   )
 }
 ~~~

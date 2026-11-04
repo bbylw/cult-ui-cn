@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/lightboard
 ## 用法
 
 ~~~tsx
-import { LightBoard, PatternCell } from "@/components/ui/lightboard"
+import { LightBoard } from "@/components/ui/lightboard"
 
 export function Example() {
   return (
-    <LightBoard>
-      <PatternCell />
-    </LightBoard>
+    <LightBoard />
   )
 }
 ~~~

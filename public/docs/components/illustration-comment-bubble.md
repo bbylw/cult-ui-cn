@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/illustration-comment-bubble
 ## 用法
 
 ~~~tsx
-import { Code, CommentBubble, CommentBubbleDemo } from "@/components/ui/illustration-comment-bubble"
+import { Code } from "@/components/ui/illustration-comment-bubble"
 
 export function Example() {
   return (
-    <Code>
-      <CommentBubble />
-    </Code>
+    <Code />
   )
 }
 ~~~

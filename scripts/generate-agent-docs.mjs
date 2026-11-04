@@ -65,11 +65,14 @@ function buildUsage(entry, doc) {
   if (parts.length === 0) {
     return `import { ${entry.name.replace(/\s+/g, "")} } from "@/components/ui/${entry.slug}"`
   }
-  const named = parts.slice(0, 3).join(", ")
   const [primary, secondary] = parts
-  const body = secondary
-    ? `<${primary}>\n      <${secondary} />\n    </${primary}>`
-    : `<${primary}>内容</${primary}>`
+  // 只有 Provider / Root 这类容器才值得嵌套,其余只渲染主部件,避免生成错误的组合。
+  const isWrapper = /(Provider|Root|Context|Group)$/.test(primary)
+  const named = isWrapper && secondary ? `${primary}, ${secondary}` : primary
+  const body =
+    isWrapper && secondary
+      ? `<${primary}>\n      <${secondary} />\n    </${primary}>`
+      : `<${primary} />`
   return `import { ${named} } from "@/components/ui/${entry.slug}"
 
 export function Example() {

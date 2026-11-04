@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/marketing-hero-analytics
 ## 用法
 
 ~~~tsx
-import { ANALYTICS_HERO_CHART_DATA, ANALYTICS_HERO_ICONS, ANALYTICS_HERO_LOGS } from "@/components/ui/marketing-hero-analytics"
+import { ANALYTICS_HERO_CHART_DATA } from "@/components/ui/marketing-hero-analytics"
 
 export function Example() {
   return (
-    <ANALYTICS_HERO_CHART_DATA>
-      <ANALYTICS_HERO_ICONS />
-    </ANALYTICS_HERO_CHART_DATA>
+    <ANALYTICS_HERO_CHART_DATA />
   )
 }
 ~~~

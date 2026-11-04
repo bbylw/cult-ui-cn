@@ -20,7 +20,7 @@ import { ColorPicker } from "@/components/ui/color-picker"
 
 export function Example() {
   return (
-    <ColorPicker>内容</ColorPicker>
+    <ColorPicker />
   )
 }
 ~~~

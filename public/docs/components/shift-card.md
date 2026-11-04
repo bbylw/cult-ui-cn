@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/shift-card
 ## 用法
 
 ~~~tsx
-import { ShiftCard, ShiftCardContent, ShiftCardHeader } from "@/components/ui/shift-card"
+import { ShiftCard } from "@/components/ui/shift-card"
 
 export function Example() {
   return (
-    <ShiftCard>
-      <ShiftCardContent />
-    </ShiftCard>
+    <ShiftCard />
   )
 }
 ~~~

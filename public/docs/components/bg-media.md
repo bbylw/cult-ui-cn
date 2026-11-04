@@ -20,7 +20,7 @@ import { BackgroundMedia } from "@/components/ui/bg-media"
 
 export function Example() {
   return (
-    <BackgroundMedia>内容</BackgroundMedia>
+    <BackgroundMedia />
   )
 }
 ~~~

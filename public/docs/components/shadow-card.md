@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/shadow-card
 ## 用法
 
 ~~~tsx
-import { ShadowCard, ShadowCardBackdrop, ShadowCardBevel } from "@/components/ui/shadow-card"
+import { ShadowCard } from "@/components/ui/shadow-card"
 
 export function Example() {
   return (
-    <ShadowCard>
-      <ShadowCardBackdrop />
-    </ShadowCard>
+    <ShadowCard />
   )
 }
 ~~~

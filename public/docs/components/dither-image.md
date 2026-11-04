@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/dither-image
 ## 用法
 
 ~~~tsx
-import { DitherAspectRatio, DitherImage, DitherImageCaption } from "@/components/ui/dither-image"
+import { DitherAspectRatio } from "@/components/ui/dither-image"
 
 export function Example() {
   return (
-    <DitherAspectRatio>
-      <DitherImage />
-    </DitherAspectRatio>
+    <DitherAspectRatio />
   )
 }
 ~~~

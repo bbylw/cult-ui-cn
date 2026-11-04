@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/hero-dithering
 ## 用法
 
 ~~~tsx
-import { AISDKIcon, HeroDithering, HeroDitheringActions } from "@/components/ui/hero-dithering"
+import { AISDKIcon } from "@/components/ui/hero-dithering"
 
 export function Example() {
   return (
-    <AISDKIcon>
-      <HeroDithering />
-    </AISDKIcon>
+    <AISDKIcon />
   )
 }
 ~~~

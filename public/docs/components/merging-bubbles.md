@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/merging-bubbles
 ## 用法
 
 ~~~tsx
-import { MergingBubbles, NextLogo, VercelLogo } from "@/components/ui/merging-bubbles"
+import { MergingBubbles } from "@/components/ui/merging-bubbles"
 
 export function Example() {
   return (
-    <MergingBubbles>
-      <NextLogo />
-    </MergingBubbles>
+    <MergingBubbles />
   )
 }
 ~~~

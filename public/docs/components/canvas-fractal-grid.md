@@ -20,7 +20,7 @@ import { CanvasFractalGrid } from "@/components/ui/canvas-fractal-grid"
 
 export function Example() {
   return (
-    <CanvasFractalGrid>内容</CanvasFractalGrid>
+    <CanvasFractalGrid />
   )
 }
 ~~~

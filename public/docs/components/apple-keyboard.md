@@ -20,7 +20,7 @@ import { AppleKeyboard } from "@/components/ui/apple-keyboard"
 
 export function Example() {
   return (
-    <AppleKeyboard>内容</AppleKeyboard>
+    <AppleKeyboard />
   )
 }
 ~~~

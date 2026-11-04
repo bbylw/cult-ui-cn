@@ -20,7 +20,7 @@ import { AiBlobWarpAvatar } from "@/components/ui/ai-blob-warp"
 
 export function Example() {
   return (
-    <AiBlobWarpAvatar>内容</AiBlobWarpAvatar>
+    <AiBlobWarpAvatar />
   )
 }
 ~~~

@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/bg-image-texture
 ## 用法
 
 ~~~tsx
-import { BackgroundImageTexture, TextureVariant } from "@/components/ui/bg-image-texture"
+import { BackgroundImageTexture } from "@/components/ui/bg-image-texture"
 
 export function Example() {
   return (
-    <BackgroundImageTexture>
-      <TextureVariant />
-    </BackgroundImageTexture>
+    <BackgroundImageTexture />
   )
 }
 ~~~

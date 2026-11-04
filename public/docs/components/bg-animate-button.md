@@ -20,7 +20,7 @@ import { BgAnimateButton } from "@/components/ui/bg-animate-button"
 
 export function Example() {
   return (
-    <BgAnimateButton>内容</BgAnimateButton>
+    <BgAnimateButton />
   )
 }
 ~~~

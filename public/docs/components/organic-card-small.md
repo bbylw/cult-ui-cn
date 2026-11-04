@@ -20,7 +20,7 @@ import { OrganicCardSmall } from "@/components/ui/organic-card-small"
 
 export function Example() {
   return (
-    <OrganicCardSmall>内容</OrganicCardSmall>
+    <OrganicCardSmall />
   )
 }
 ~~~

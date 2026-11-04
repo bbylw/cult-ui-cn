@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/halo-notification
 ## 用法
 
 ~~~tsx
-import { HaloPolishedNotification, HaloPolishedToastSurface, RimVariant } from "@/components/ui/halo-notification"
+import { HaloPolishedNotification } from "@/components/ui/halo-notification"
 
 export function Example() {
   return (
-    <HaloPolishedNotification>
-      <HaloPolishedToastSurface />
-    </HaloPolishedNotification>
+    <HaloPolishedNotification />
   )
 }
 ~~~

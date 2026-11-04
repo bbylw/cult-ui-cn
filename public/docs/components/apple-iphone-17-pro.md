@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/apple-iphone-17-pro
 ## 用法
 
 ~~~tsx
-import { DynamicIslandSize, IPhone17ProMax } from "@/components/ui/apple-iphone-17-pro"
+import { DynamicIslandSize } from "@/components/ui/apple-iphone-17-pro"
 
 export function Example() {
   return (
-    <DynamicIslandSize>
-      <IPhone17ProMax />
-    </DynamicIslandSize>
+    <DynamicIslandSize />
   )
 }
 ~~~

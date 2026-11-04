@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/choice-poll
 ## 用法
 
 ~~~tsx
-import { ChoicePoll, ChoicePollDescription, ChoicePollFooter } from "@/components/ui/choice-poll"
+import { ChoicePoll } from "@/components/ui/choice-poll"
 
 export function Example() {
   return (
-    <ChoicePoll>
-      <ChoicePollDescription />
-    </ChoicePoll>
+    <ChoicePoll />
   )
 }
 ~~~

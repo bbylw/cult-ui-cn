@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/hero-heatmap
 ## 用法
 
 ~~~tsx
-import { AISDKIcon, HeroHeatmap, HeroHeatmapActions } from "@/components/ui/hero-heatmap"
+import { AISDKIcon } from "@/components/ui/hero-heatmap"
 
 export function Example() {
   return (
-    <AISDKIcon>
-      <HeroHeatmap />
-    </AISDKIcon>
+    <AISDKIcon />
   )
 }
 ~~~

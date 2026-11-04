@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/halo-segmented
 ## 用法
 
 ~~~tsx
-import { HaloSegmented, HaloSegmentedItem } from "@/components/ui/halo-segmented"
+import { HaloSegmented } from "@/components/ui/halo-segmented"
 
 export function Example() {
   return (
-    <HaloSegmented>
-      <HaloSegmentedItem />
-    </HaloSegmented>
+    <HaloSegmented />
   )
 }
 ~~~

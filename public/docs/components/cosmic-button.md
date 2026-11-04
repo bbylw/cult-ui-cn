@@ -20,7 +20,7 @@ import { CosmicButton } from "@/components/ui/cosmic-button"
 
 export function Example() {
   return (
-    <CosmicButton>内容</CosmicButton>
+    <CosmicButton />
   )
 }
 ~~~

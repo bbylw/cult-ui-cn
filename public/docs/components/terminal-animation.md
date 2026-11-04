@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/terminal-animation
 ## 用法
 
 ~~~tsx
-import { TabContent, TerminalAnimationBackgroundGradient, TerminalAnimationBlinkingCursor } from "@/components/ui/terminal-animation"
+import { TabContent } from "@/components/ui/terminal-animation"
 
 export function Example() {
   return (
-    <TabContent>
-      <TerminalAnimationBackgroundGradient />
-    </TabContent>
+    <TabContent />
   )
 }
 ~~~

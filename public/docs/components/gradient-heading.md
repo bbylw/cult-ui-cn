@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/gradient-heading
 ## 用法
 
 ~~~tsx
-import { GradientHeading, Size, Variant } from "@/components/ui/gradient-heading"
+import { GradientHeading } from "@/components/ui/gradient-heading"
 
 export function Example() {
   return (
-    <GradientHeading>
-      <Size />
-    </GradientHeading>
+    <GradientHeading />
   )
 }
 ~~~

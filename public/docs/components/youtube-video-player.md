@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/youtube-video-player
 ## 用法
 
 ~~~tsx
-import { YouTubePlayer, YouTubePlayerControls } from "@/components/ui/youtube-video-player"
+import { YouTubePlayer } from "@/components/ui/youtube-video-player"
 
 export function Example() {
   return (
-    <YouTubePlayer>
-      <YouTubePlayerControls />
-    </YouTubePlayer>
+    <YouTubePlayer />
   )
 }
 ~~~

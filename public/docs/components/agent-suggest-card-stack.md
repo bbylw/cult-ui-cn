@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/agent-suggest-card-stack
 ## 用法
 
 ~~~tsx
-import { AgentSuggestBotBadge, AgentSuggestCardFrame, AgentSuggestCardStack } from "@/components/ui/agent-suggest-card-stack"
+import { AgentSuggestBotBadge } from "@/components/ui/agent-suggest-card-stack"
 
 export function Example() {
   return (
-    <AgentSuggestBotBadge>
-      <AgentSuggestCardFrame />
-    </AgentSuggestBotBadge>
+    <AgentSuggestBotBadge />
   )
 }
 ~~~

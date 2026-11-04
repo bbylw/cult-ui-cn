@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/gateway-endpoint-illustration
 ## 用法
 
 ~~~tsx
-import { AnthropicIcon, GatewayEndpoint, GatewayEndpointBackground } from "@/components/ui/gateway-endpoint-illustration"
+import { AnthropicIcon } from "@/components/ui/gateway-endpoint-illustration"
 
 export function Example() {
   return (
-    <AnthropicIcon>
-      <GatewayEndpoint />
-    </AnthropicIcon>
+    <AnthropicIcon />
   )
 }
 ~~~

@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/halo-toast
 ## 用法
 
 ~~~tsx
-import { PolishedToastOptions, PolishedToastSurface, PolishedToaster } from "@/components/ui/halo-toast"
+import { PolishedToastOptions } from "@/components/ui/halo-toast"
 
 export function Example() {
   return (
-    <PolishedToastOptions>
-      <PolishedToastSurface />
-    </PolishedToastOptions>
+    <PolishedToastOptions />
   )
 }
 ~~~

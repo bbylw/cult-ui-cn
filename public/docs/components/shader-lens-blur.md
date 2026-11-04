@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/shader-lens-blur
 ## 用法
 
 ~~~tsx
-import { ShaderLensBlur, configAtom } from "@/components/ui/shader-lens-blur"
+import { ShaderLensBlur } from "@/components/ui/shader-lens-blur"
 
 export function Example() {
   return (
-    <ShaderLensBlur>
-      <configAtom />
-    </ShaderLensBlur>
+    <ShaderLensBlur />
   )
 }
 ~~~

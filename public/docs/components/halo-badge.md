@@ -20,7 +20,7 @@ import { HaloBadge } from "@/components/ui/halo-badge"
 
 export function Example() {
   return (
-    <HaloBadge>内容</HaloBadge>
+    <HaloBadge />
   )
 }
 ~~~

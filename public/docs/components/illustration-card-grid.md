@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/illustration-card-grid
 ## 用法
 
 ~~~tsx
-import { DEFAULT_ILLUSTRATION_CARD_GRID_ITEMS, IllustrationCardGrid, IllustrationCardGridItem } from "@/components/ui/illustration-card-grid"
+import { DEFAULT_ILLUSTRATION_CARD_GRID_ITEMS } from "@/components/ui/illustration-card-grid"
 
 export function Example() {
   return (
-    <DEFAULT_ILLUSTRATION_CARD_GRID_ITEMS>
-      <IllustrationCardGrid />
-    </DEFAULT_ILLUSTRATION_CARD_GRID_ITEMS>
+    <DEFAULT_ILLUSTRATION_CARD_GRID_ITEMS />
   )
 }
 ~~~

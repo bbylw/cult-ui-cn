@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/halo-field
 ## 用法
 
 ~~~tsx
-import { HaloField, HaloFieldContent, HaloFieldDescription } from "@/components/ui/halo-field"
+import { HaloField } from "@/components/ui/halo-field"
 
 export function Example() {
   return (
-    <HaloField>
-      <HaloFieldContent />
-    </HaloField>
+    <HaloField />
   )
 }
 ~~~

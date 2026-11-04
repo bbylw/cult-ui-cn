@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/feature-voting
 ## 用法
 
 ~~~tsx
-import { FeatureVoting, FeatureVotingCount, FeatureVotingDescription } from "@/components/ui/feature-voting"
+import { FeatureVoting } from "@/components/ui/feature-voting"
 
 export function Example() {
   return (
-    <FeatureVoting>
-      <FeatureVotingCount />
-    </FeatureVoting>
+    <FeatureVoting />
   )
 }
 ~~~

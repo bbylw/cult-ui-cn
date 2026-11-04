@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/base-select
 ## 用法
 
 ~~~tsx
-import { Select, SelectContent, SelectGroup } from "@/components/ui/base-select"
+import { Select } from "@/components/ui/base-select"
 
 export function Example() {
   return (
-    <Select>
-      <SelectContent />
-    </Select>
+    <Select />
   )
 }
 ~~~

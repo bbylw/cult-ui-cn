@@ -20,7 +20,7 @@ import { PixelHeading } from "@/components/ui/pixel-heading-word"
 
 export function Example() {
   return (
-    <PixelHeading>内容</PixelHeading>
+    <PixelHeading />
   )
 }
 ~~~

@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/illustration-fluid-rendering
 ## 用法
 
 ~~~tsx
-import { FluidRendering, FluidRenderingBigCommerceIcon, FluidRenderingContentfulIcon } from "@/components/ui/illustration-fluid-rendering"
+import { FluidRendering } from "@/components/ui/illustration-fluid-rendering"
 
 export function Example() {
   return (
-    <FluidRendering>
-      <FluidRenderingBigCommerceIcon />
-    </FluidRendering>
+    <FluidRendering />
   )
 }
 ~~~

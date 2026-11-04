@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/hero-static-radial-gradient
 ## 用法
 
 ~~~tsx
-import { AISDKIcon, HeroStaticRadialGradient, HeroStaticRadialGradientActions } from "@/components/ui/hero-static-radial-gradient"
+import { AISDKIcon } from "@/components/ui/hero-static-radial-gradient"
 
 export function Example() {
   return (
-    <AISDKIcon>
-      <HeroStaticRadialGradient />
-    </AISDKIcon>
+    <AISDKIcon />
   )
 }
 ~~~

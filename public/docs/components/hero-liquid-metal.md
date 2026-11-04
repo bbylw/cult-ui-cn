@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/hero-liquid-metal
 ## 用法
 
 ~~~tsx
-import { AISDKIcon, HeroLiquidMetal, HeroLiquidMetalActions } from "@/components/ui/hero-liquid-metal"
+import { AISDKIcon } from "@/components/ui/hero-liquid-metal"
 
 export function Example() {
   return (
-    <AISDKIcon>
-      <HeroLiquidMetal />
-    </AISDKIcon>
+    <AISDKIcon />
   )
 }
 ~~~

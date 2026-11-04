@@ -20,7 +20,7 @@ import { IntroDisclosure } from "@/components/ui/intro-disclosure"
 
 export function Example() {
   return (
-    <IntroDisclosure>内容</IntroDisclosure>
+    <IntroDisclosure />
   )
 }
 ~~~

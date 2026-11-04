@@ -20,7 +20,7 @@ import { SidePanel } from "@/components/ui/side-panel"
 
 export function Example() {
   return (
-    <SidePanel>内容</SidePanel>
+    <SidePanel />
   )
 }
 ~~~

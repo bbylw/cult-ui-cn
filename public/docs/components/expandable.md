@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/expandable
 ## 用法
 
 ~~~tsx
-import { Expandable, ExpandableCard, ExpandableCardContent } from "@/components/ui/expandable"
+import { Expandable } from "@/components/ui/expandable"
 
 export function Example() {
   return (
-    <Expandable>
-      <ExpandableCard />
-    </Expandable>
+    <Expandable />
   )
 }
 ~~~

@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/halo-search
 ## 用法
 
 ~~~tsx
-import { AiBlobWarpAvatar, DeletedTextBlurReveal, HaloSearchInput } from "@/components/ui/halo-search"
+import { AiBlobWarpAvatar } from "@/components/ui/halo-search"
 
 export function Example() {
   return (
-    <AiBlobWarpAvatar>
-      <DeletedTextBlurReveal />
-    </AiBlobWarpAvatar>
+    <AiBlobWarpAvatar />
   )
 }
 ~~~

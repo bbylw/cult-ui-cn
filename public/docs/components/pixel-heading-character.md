@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/pixel-heading-character
 ## 用法
 
 ~~~tsx
-import { PixelHeading, PixelHeadingMode } from "@/components/ui/pixel-heading-character"
+import { PixelHeading } from "@/components/ui/pixel-heading-character"
 
 export function Example() {
   return (
-    <PixelHeading>
-      <PixelHeadingMode />
-    </PixelHeading>
+    <PixelHeading />
   )
 }
 ~~~

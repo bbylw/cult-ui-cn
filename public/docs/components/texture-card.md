@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/texture-card
 ## 用法
 
 ~~~tsx
-import { TextureCard, TextureCardContent, TextureCardDescription } from "@/components/ui/texture-card"
+import { TextureCard } from "@/components/ui/texture-card"
 
 export function Example() {
   return (
-    <TextureCard>
-      <TextureCardContent />
-    </TextureCard>
+    <TextureCard />
   )
 }
 ~~~

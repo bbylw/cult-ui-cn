@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/illustration-graph
 ## 用法
 
 ~~~tsx
-import { DataPoint, IllustrationGraph, IllustrationGraphChart } from "@/components/ui/illustration-graph"
+import { DataPoint } from "@/components/ui/illustration-graph"
 
 export function Example() {
   return (
-    <DataPoint>
-      <IllustrationGraph />
-    </DataPoint>
+    <DataPoint />
   )
 }
 ~~~

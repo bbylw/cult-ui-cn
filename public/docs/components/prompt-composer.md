@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/prompt-composer
 ## 用法
 
 ~~~tsx
-import { AiBlobWarpAvatar, PromptComposer, PromptTextarea } from "@/components/ui/prompt-composer"
+import { AiBlobWarpAvatar } from "@/components/ui/prompt-composer"
 
 export function Example() {
   return (
-    <AiBlobWarpAvatar>
-      <PromptComposer />
-    </AiBlobWarpAvatar>
+    <AiBlobWarpAvatar />
   )
 }
 ~~~

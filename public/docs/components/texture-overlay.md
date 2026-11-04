@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/texture-overlay
 ## 用法
 
 ~~~tsx
-import { TextureOverlay, TextureType } from "@/components/ui/texture-overlay"
+import { TextureOverlay } from "@/components/ui/texture-overlay"
 
 export function Example() {
   return (
-    <TextureOverlay>
-      <TextureType />
-    </TextureOverlay>
+    <TextureOverlay />
   )
 }
 ~~~

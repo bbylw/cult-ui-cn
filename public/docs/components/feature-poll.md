@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/feature-poll
 ## 用法
 
 ~~~tsx
-import { FeaturePoll, FeaturePollDescription, FeaturePollFooter } from "@/components/ui/feature-poll"
+import { FeaturePoll } from "@/components/ui/feature-poll"
 
 export function Example() {
   return (
-    <FeaturePoll>
-      <FeaturePollDescription />
-    </FeaturePoll>
+    <FeaturePoll />
   )
 }
 ~~~

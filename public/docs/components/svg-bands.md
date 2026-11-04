@@ -16,13 +16,11 @@ npx shadcn@latest add @cult-ui/svg-bands
 ## 用法
 
 ~~~tsx
-import { AngledCornerPanelSvg, ArrowChevronBandSvg, BandShape } from "@/components/ui/svg-bands"
+import { AngledCornerPanelSvg } from "@/components/ui/svg-bands"
 
 export function Example() {
   return (
-    <AngledCornerPanelSvg>
-      <ArrowChevronBandSvg />
-    </AngledCornerPanelSvg>
+    <AngledCornerPanelSvg />
   )
 }
 ~~~
