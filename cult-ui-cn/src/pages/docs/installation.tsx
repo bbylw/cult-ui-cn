@@ -1,0 +1,231 @@
+import { CodeBlock } from "@/components/ui/code-block"
+
+function H2({ children }: { children: React.ReactNode }) {
+  return (
+    <h2 className="mt-12 scroll-mt-24 text-2xl font-bold tracking-tight">
+      {children}
+    </h2>
+  )
+}
+
+function P({ children }: { children: React.ReactNode }) {
+  return (
+    <p className="text-muted-foreground mt-4 leading-relaxed">{children}</p>
+  )
+}
+
+export function InstallationPage() {
+  return (
+    <article className="max-w-3xl">
+      <h1 className="text-3xl font-bold tracking-tight">安装(Vite + bun)</h1>
+      <P>
+        本指南演示如何用 <strong className="text-foreground">bun</strong>{" "}
+        从零搭建一个 Vite + React + Tailwind CSS v4 项目,并通过 shadcn CLI
+        安装 Cult UI 组件——这正是本站自身使用的技术栈。
+      </P>
+
+      <H2>前提条件</H2>
+      <ul className="text-muted-foreground mt-4 list-disc space-y-1.5 pl-5 text-sm leading-relaxed">
+        <li>已安装 bun 1.1+(或 Node.js 20+ 与任意包管理器)</li>
+        <li>一个 React 18/19 项目(Vite、React Router 等均可)</li>
+        <li>Tailwind CSS v4 与 shadcn/ui 主题令牌已配置</li>
+      </ul>
+
+      <H2>1. 创建 Vite 项目</H2>
+      <CodeBlock
+        code={`bun create vite@latest my-app --template react-ts
+cd my-app
+bun install`}
+        language="bash"
+        className="mt-4"
+      />
+
+      <H2>2. 安装 Tailwind CSS v4</H2>
+      <CodeBlock
+        code="bun add tailwindcss @tailwindcss/vite"
+        language="bash"
+        className="mt-4"
+      />
+      <P>
+        在 <code className="bg-muted rounded px-1.5 py-0.5 text-xs">vite.config.ts</code>{" "}
+        中注册插件并配置 <code className="bg-muted rounded px-1.5 py-0.5 text-xs">@</code>{" "}
+        路径别名:
+      </P>
+      <CodeBlock
+        code={`import path from "path"
+import tailwindcss from "@tailwindcss/vite"
+import react from "@vitejs/plugin-react"
+import { defineConfig } from "vite"
+
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
+})`}
+        language="ts"
+        className="mt-4"
+      />
+      <P>
+        同时在 <code className="bg-muted rounded px-1.5 py-0.5 text-xs">tsconfig.json</code>{" "}
+        与 <code className="bg-muted rounded px-1.5 py-0.5 text-xs">tsconfig.app.json</code>{" "}
+        中加入路径别名,让 IDE 与 shadcn CLI 都能解析 <code className="bg-muted rounded px-1.5 py-0.5 text-xs">@/</code>{" "}
+        导入:
+      </P>
+      <CodeBlock
+        code={`{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}`}
+        language="json"
+        className="mt-4"
+      />
+
+      <H2>3. 引入 Tailwind 与主题令牌</H2>
+      <P>
+        把 <code className="bg-muted rounded px-1.5 py-0.5 text-xs">src/index.css</code>{" "}
+        的内容替换为 Tailwind v4 入口与 shadcn 主题变量(完整变量见
+        主题定制页面):
+      </P>
+      <CodeBlock
+        code={`@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  /* …其余浅色变量 */
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  /* …其余深色变量 */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  /* …其余颜色映射 */
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}`}
+        language="css"
+        className="mt-4"
+      />
+
+      <H2>4. 配置 components.json</H2>
+      <P>
+        在项目根目录创建 <code className="bg-muted rounded px-1.5 py-0.5 text-xs">components.json</code>,
+        并注册 <code className="bg-muted rounded px-1.5 py-0.5 text-xs">@cult-ui</code>{" "}
+        命名空间(也可以用 <code className="bg-muted rounded px-1.5 py-0.5 text-xs">bunx shadcn@latest init</code>{" "}
+        交互式生成后追加 registries 字段):
+      </P>
+      <CodeBlock
+        code={`{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "new-york",
+  "rsc": false,
+  "tsx": true,
+  "tailwind": {
+    "config": "",
+    "css": "src/index.css",
+    "baseColor": "neutral",
+    "cssVariables": true,
+    "prefix": ""
+  },
+  "aliases": {
+    "components": "@/components",
+    "utils": "@/lib/utils",
+    "ui": "@/components/ui",
+    "lib": "@/lib",
+    "hooks": "@/hooks"
+  },
+  "iconLibrary": "lucide",
+  "registries": {
+    "@cult-ui": "https://www.cult-ui.com/r/{name}.json"
+  }
+}`}
+        language="json"
+        className="mt-4"
+      />
+      <P>
+        还需要 <code className="bg-muted rounded px-1.5 py-0.5 text-xs">src/lib/utils.ts</code>{" "}
+        中的 <code className="bg-muted rounded px-1.5 py-0.5 text-xs">cn</code>{" "}
+        工具函数(<code className="bg-muted rounded px-1.5 py-0.5 text-xs">bun add clsx tailwind-merge</code>):
+      </P>
+      <CodeBlock
+        code={`import { clsx, type ClassValue } from "clsx"
+import { twMerge } from "tailwind-merge"
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs))
+}`}
+        language="ts"
+        className="mt-4"
+      />
+
+      <H2>5. 添加 Cult UI 组件</H2>
+      <P>现在可以按名称安装任意组件了:</P>
+      <CodeBlock
+        code={`# 单个组件
+bunx shadcn@latest add @cult-ui/globe
+
+# 多个组件一次装完
+bunx shadcn@latest add @cult-ui/text-animate @cult-ui/border-beam-card
+
+# 或者直接用完整 registry 地址,无需注册命名空间
+bunx shadcn@latest add https://www.cult-ui.com/r/shift-card.json`}
+        language="bash"
+        className="mt-4"
+      />
+      <P>
+        CLI 会自动安装每个组件的 npm 依赖(如 motion、cobe),并把源码写入{" "}
+        <code className="bg-muted rounded px-1.5 py-0.5 text-xs">src/components/ui/</code>。
+      </P>
+
+      <H2>6. 适配说明(非 Next.js 项目)</H2>
+      <P>
+        少数组件基于 Next.js 编写,在 Vite 中需要两处小改动:
+      </P>
+      <ul className="text-muted-foreground mt-4 list-disc space-y-1.5 pl-5 text-sm leading-relaxed">
+        <li>
+          <code className="bg-muted rounded px-1.5 py-0.5 text-xs">next/image</code>{" "}
+          → 替换为标准 <code className="bg-muted rounded px-1.5 py-0.5 text-xs">&lt;img&gt;</code>(如 kanban-board 的头像);
+        </li>
+        <li>
+          <code className="bg-muted rounded px-1.5 py-0.5 text-xs">next/link</code>{" "}
+          → 替换为 <code className="bg-muted rounded px-1.5 py-0.5 text-xs">&lt;a&gt;</code>{" "}
+          或你所用路由的 Link(如 folded-card);
+        </li>
+        <li>
+          <code className="bg-muted rounded px-1.5 py-0.5 text-xs">next-themes</code>{" "}
+          → 本站用 MutationObserver 监听 <code className="bg-muted rounded px-1.5 py-0.5 text-xs">&lt;html&gt;</code>{" "}
+          的 class 变化替代(globe 组件内已适配)。
+        </li>
+      </ul>
+      <P>
+        其余代码在 Vite 中开箱即用。至此即可在页面里导入组件,例如{" "}
+        <code className="bg-muted rounded px-1.5 py-0.5 text-xs">
+          import {"{"} DefaultShowcaseGlobe {"}"} from "@/components/ui/globe"
+        </code>
+        。
+      </P>
+    </article>
+  )
+}
