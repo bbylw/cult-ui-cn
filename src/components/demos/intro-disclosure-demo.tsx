@@ -1,7 +1,6 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { useRouter } from "next/navigation"
 import { ChevronDownIcon, ResetIcon } from "@radix-ui/react-icons"
 import { DatabaseIcon } from "lucide-react"
 import { toast } from "sonner"
@@ -73,7 +72,6 @@ type StorageState = {
 }
 
 export default function IntroDisclosureDemo() {
-  const router = useRouter()
   const [open, setOpen] = useState(true)
   const [openMobile, setOpenMobile] = useState(true)
   const [debugOpen, setDebugOpen] = useState(false)
@@ -118,14 +116,14 @@ export default function IntroDisclosureDemo() {
   const handleClearDesktop = () => {
     localStorage.removeItem("feature_intro-demo_desktop")
     updateStorageState()
-    router.refresh()
+    setOpen(true)
     toast.success("Desktop storage cleared")
   }
 
   const handleClearMobile = () => {
     localStorage.removeItem("feature_intro-demo_mobile")
     updateStorageState()
-    router.refresh()
+    setOpenMobile(true)
     toast.success("Mobile storage cleared")
   }
 

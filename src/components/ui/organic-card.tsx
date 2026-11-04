@@ -7,9 +7,8 @@ import {
   type HTMLAttributes,
   type ReactNode,
 } from "react"
-import type { StaticImport } from "next/dist/shared/lib/get-img-props"
-import Image from "next/image"
-import Link from "next/link"
+import type { StaticImport } from "@/components/ui/image"
+import Image from "@/components/ui/image"
 import { ArrowRight } from "lucide-react"
 
 import { cn } from "@/lib/utils"
@@ -38,10 +37,10 @@ interface OrganicCardSharedProps {
 
 type OrganicCardWithHrefProps = OrganicCardSharedProps &
   Omit<
-    ComponentPropsWithoutRef<typeof Link>,
+    ComponentPropsWithoutRef<"a">,
     "children" | "href" | "className"
   > & {
-    href: ComponentPropsWithoutRef<typeof Link>["href"]
+    href: ComponentPropsWithoutRef<"a">["href"]
   }
 
 type OrganicCardWithoutHrefProps = OrganicCardSharedProps &
@@ -79,14 +78,14 @@ export function OrganicCard({
 
     return (
       <OrganicCardContext.Provider value={{ backgroundColor }}>
-        <Link
+        <a
           {...linkProps}
           className={cn(sharedClassName, className)}
           data-slot="organic-card"
           href={href}
         >
           {children}
-        </Link>
+        </a>
       </OrganicCardContext.Provider>
     )
   }

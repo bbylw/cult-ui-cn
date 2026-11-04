@@ -27,7 +27,7 @@ import {
   useState,
   type MouseEvent,
 } from "react"
-import Image, { type StaticImageData } from "next/image"
+import Image, { type StaticImageData } from "@/components/ui/image"
 import clsx from "clsx"
 import {
   AnimatePresence,
@@ -38,7 +38,6 @@ import {
   type MotionValue,
   type Variants,
 } from "motion/react"
-import Balancer from "react-wrap-balancer"
 
 import { cn } from "@/lib/utils"
 
@@ -425,7 +424,9 @@ function FeatureCard({
                 }}
               >
                 <p className="text-sm leading-5 text-neutral-300 sm:text-base sm:leading-5 dark:text-zinc-400">
-                  <Balancer>{steps[step].description}</Balancer>
+                  <span className="text-balance">
+                    {steps[step].description}
+                  </span>
                 </p>
               </motion.div>
             </motion.div>

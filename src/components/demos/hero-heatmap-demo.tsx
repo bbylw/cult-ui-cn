@@ -15,6 +15,13 @@ import {
   NextjsIcon,
 } from "../ui/hero-heatmap"
 
+/** 内联菱形纹理,避免远程 logo 在 WebGL 纹理加载时失败。 */
+const DIAMOND_TEXTURE =
+  "data:image/svg+xml," +
+  encodeURIComponent(
+    '<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 100 100"><path d="M50 2 98 50 50 98 2 50Z" fill="white"/></svg>'
+  )
+
 export default function HeroHeatmapDemo() {
   return (
     <div className="space-y-16">
@@ -42,7 +49,7 @@ export default function HeroHeatmapDemo() {
             "#ed40b3",
           ]}
           contour={0.6}
-          image="https://shaders.paper.design/images/logos/diamond.svg"
+          image={DIAMOND_TEXTURE}
           innerGlow={0.6}
           noise={0.1}
           outerGlow={0.4}
@@ -69,7 +76,7 @@ export default function HeroHeatmapDemo() {
             innerGlow: 0.6,
             outerGlow: 0.4,
           }}
-          image="https://shaders.paper.design/images/logos/diamond.svg"
+          image={DIAMOND_TEXTURE}
           mobileShaderProps={{
             speed: 0.65,
           }}

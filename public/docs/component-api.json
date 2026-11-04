@@ -1,0 +1,1969 @@
+{
+  "agent-suggest-card-stack": {
+    "usage": "import { AgentSuggestBotBadge, AgentSuggestCardFrame, AgentSuggestCardStack } from \"@/components/ui/agent-suggest-card-stack\"\n\nexport function Example() {\n  return (\n    <AgentSuggestBotBadge>\n      <AgentSuggestCardFrame />\n    </AgentSuggestBotBadge>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "AgentSuggestBotBadge",
+      "AgentSuggestCardFrame",
+      "AgentSuggestCardStack",
+      "AgentSuggestCommitButton",
+      "SuggestionItem",
+      "VercelLogo"
+    ]
+  },
+  "ai-blob-warp": {
+    "usage": "import { AiBlobWarpAvatar } from \"@/components/ui/ai-blob-warp\"\n\nexport function Example() {\n  return (\n    <AiBlobWarpAvatar>内容</AiBlobWarpAvatar>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "AiBlobWarpAvatar"
+    ]
+  },
+  "ai-instructions": {
+    "usage": "import { Instruction, Instructions, InstructionsContent } from \"@/components/ui/ai-instructions\"\n\nexport function Example() {\n  return (\n    <Instruction>\n      <Instructions />\n    </Instruction>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "InstructionsHoverCardProps",
+        "code": "export interface InstructionsHoverCardProps {\n  /** The instruction to preview */\n  instruction: Instruction\n  /** The trigger element (instruction item) */\n  children: ReactNode\n}"
+      }
+    ],
+    "parts": [
+      "Instruction",
+      "Instructions",
+      "InstructionsContent",
+      "InstructionsCreateDialog",
+      "InstructionsCreateTrigger",
+      "InstructionsEmpty",
+      "InstructionsFooter",
+      "InstructionsGroup",
+      "InstructionsHoverCard",
+      "InstructionsItem",
+      "InstructionsItemDescription",
+      "InstructionsItemTitle"
+    ]
+  },
+  "prompt-composer": {
+    "usage": "import { AiBlobWarpAvatar, PromptComposer, PromptTextarea } from \"@/components/ui/prompt-composer\"\n\nexport function Example() {\n  return (\n    <AiBlobWarpAvatar>\n      <PromptComposer />\n    </AiBlobWarpAvatar>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "AiBlobWarpAvatar",
+      "PromptComposer",
+      "PromptTextarea"
+    ]
+  },
+  "prompt-library": {
+    "usage": "import { Prompt, PromptLibrary, PromptLibraryContent } from \"@/components/ui/prompt-library\"\n\nexport function Example() {\n  return (\n    <Prompt>\n      <PromptLibrary />\n    </Prompt>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "PromptLibraryHoverCardProps",
+        "code": "export interface PromptLibraryHoverCardProps {\n  /** The prompt to preview */\n  prompt: Prompt\n  /** The trigger element (prompt item) */\n  children: ReactNode\n}"
+      }
+    ],
+    "parts": [
+      "Prompt",
+      "PromptLibrary",
+      "PromptLibraryContent",
+      "PromptLibraryCreateDialog",
+      "PromptLibraryCreateTrigger",
+      "PromptLibraryEmpty",
+      "PromptLibraryFooter",
+      "PromptLibraryGroup",
+      "PromptLibraryHoverCard",
+      "PromptLibraryItem",
+      "PromptLibraryItemDescription",
+      "PromptLibraryItemTitle"
+    ]
+  },
+  "bg-animate-button": {
+    "usage": "import { BgAnimateButton } from \"@/components/ui/bg-animate-button\"\n\nexport function Example() {\n  return (\n    <BgAnimateButton>内容</BgAnimateButton>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "BgAnimateButton"
+    ]
+  },
+  "border-beam-button": {
+    "usage": "import { BorderBeamButton, BorderBeamIconButton } from \"@/components/ui/border-beam-button\"\n\nexport function Example() {\n  return (\n    <BorderBeamButton>\n      <BorderBeamIconButton />\n    </BorderBeamButton>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "BorderBeamButton",
+      "BorderBeamIconButton"
+    ]
+  },
+  "cosmic-button": {
+    "usage": "import { CosmicButton } from \"@/components/ui/cosmic-button\"\n\nexport function Example() {\n  return (\n    <CosmicButton>内容</CosmicButton>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "CosmicButtonProps",
+        "code": "export type CosmicButtonProps<E extends \"a\" | \"button\" = \"a\"> = {\n  /** The HTML element to render as. @default \"a\" */\n  as?: E\n}"
+      }
+    ],
+    "parts": [
+      "CosmicButton"
+    ]
+  },
+  "family-button": {
+    "usage": "import { FamilyButton } from \"@/components/ui/family-button\"\n\nexport function Example() {\n  return (\n    <FamilyButton>内容</FamilyButton>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "FamilyButtonProps",
+        "code": "interface FamilyButtonProps {\n  children: React.ReactNode\n}"
+      },
+      {
+        "name": "FamilyButtonContainerProps",
+        "code": "interface FamilyButtonContainerProps {\n  isExpanded: boolean\n  toggleExpand: () => void\n  children: ReactNode\n}"
+      }
+    ],
+    "parts": [
+      "FamilyButton"
+    ]
+  },
+  "gradient-button-group": {
+    "usage": "import { GradientButtonGroup } from \"@/components/ui/gradient-button-group\"\n\nexport function Example() {\n  return (\n    <GradientButtonGroup>内容</GradientButtonGroup>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "GradientButtonGroup"
+    ]
+  },
+  "halo-button": {
+    "usage": "import { HaloButton } from \"@/components/ui/halo-button\"\n\nexport function Example() {\n  return (\n    <HaloButton>内容</HaloButton>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "HaloButton"
+    ]
+  },
+  "metal-button": {
+    "usage": "import { MetalButton, MetalIconButton } from \"@/components/ui/metal-button\"\n\nexport function Example() {\n  return (\n    <MetalButton>\n      <MetalIconButton />\n    </MetalButton>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "MetalButton",
+      "MetalIconButton"
+    ]
+  },
+  "neumorph-button": {
+    "usage": "import { NeumorphButton } from \"@/components/ui/neumorph-button\"",
+    "typeDefs": [],
+    "parts": []
+  },
+  "organic-button": {
+    "usage": "import { OrganicButton } from \"@/components/ui/organic-button\"\n\nexport function Example() {\n  return (\n    <OrganicButton>内容</OrganicButton>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "OrganicButton"
+    ]
+  },
+  "texture-button": {
+    "usage": "import { TextureButton } from \"@/components/ui/texture-button\"\n\nexport function Example() {\n  return (\n    <TextureButton>内容</TextureButton>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "TextureButton"
+    ]
+  },
+  "border-beam-card": {
+    "usage": "import {\n  BorderBeamCard,\n  BorderBeamCardHeader,\n  BorderBeamCardTitle,\n  BorderBeamCardDescription,\n  BorderBeamCardContent,\n} from \"@/components/ui/border-beam-card\"\n\n<BorderBeamCard className=\"w-sm\">\n  <BorderBeamCardHeader>\n    <BorderBeamCardTitle>流光边框</BorderBeamCardTitle>\n    <BorderBeamCardDescription>一道光束沿卡片边缘循环流动。</BorderBeamCardDescription>\n  </BorderBeamCardHeader>\n  <BorderBeamCardContent>内容区</BorderBeamCardContent>\n</BorderBeamCard>",
+    "typeDefs": [],
+    "parts": [
+      "BorderBeamCard",
+      "BorderBeamCardAction",
+      "BorderBeamCardContent",
+      "BorderBeamCardDescription",
+      "BorderBeamCardFooter",
+      "BorderBeamCardHeader",
+      "BorderBeamCardTitle"
+    ]
+  },
+  "cutout-card": {
+    "usage": "import { CutoutCard, CutoutCardAction, CutoutCardContent } from \"@/components/ui/cutout-card\"\n\nexport function Example() {\n  return (\n    <CutoutCard>\n      <CutoutCardAction />\n    </CutoutCard>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "CutoutCard",
+      "CutoutCardAction",
+      "CutoutCardContent",
+      "CutoutCardFooter",
+      "CutoutCardImage",
+      "CutoutCardInsetLabel",
+      "CutoutCardMedia",
+      "CutoutCardOverlay",
+      "CutoutCardPin",
+      "CutoutCorner",
+      "cutoutCardSurfaceClassName",
+      "cutoutCardSurfaceShadowClassName"
+    ]
+  },
+  "expandable": {
+    "usage": "import { Expandable, ExpandableCard, ExpandableCardContent } from \"@/components/ui/expandable\"\n\nexport function Example() {\n  return (\n    <Expandable>\n      <ExpandableCard />\n    </Expandable>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "AnimationProps",
+        "code": "interface AnimationProps {\n  initial?: TargetAndTransition\n  animate?: TargetAndTransition\n  exit?: TargetAndTransition\n  transition?: any\n}"
+      },
+      {
+        "name": "ExpandableCardProps",
+        "code": "interface ExpandableCardProps {\n  children: ReactNode\n  className?: string\n  collapsedSize?: { width?: number; height?: number } // Size when collapsed\n  expandedSize?: { width?: number; height?: number } // Size when expanded\n  hoverToExpand?: boolean // Whether to expand on hover\n  expandDelay?: number // Delay before expanding\n  collapseDelay?: number // Delay before collapsing\n}"
+      }
+    ],
+    "parts": [
+      "Expandable",
+      "ExpandableCard",
+      "ExpandableCardContent",
+      "ExpandableCardFooter",
+      "ExpandableCardHeader",
+      "ExpandableContent",
+      "ExpandableTrigger",
+      "useExpandable"
+    ]
+  },
+  "folded-card": {
+    "usage": "import {\n  FoldedCard, FoldedCardFold, FoldedCardLink, FoldedCardBorder,\n  FoldedCardPreview, FoldedCardGrid, FoldedCardFooter,\n  FoldedCardHeading, FoldedCardTitle, FoldedCardBadge,\n  FoldedCardDescription,\n} from \"@/components/ui/folded-card\"\n\n<FoldedCard>\n  <FoldedCardFold />\n  <FoldedCardLink href=\"/docs/components/folded-card\">\n    <FoldedCardBorder />\n    <FoldedCardPreview>\n      <FoldedCardGrid />\n    </FoldedCardPreview>\n    <FoldedCardFooter>\n      <FoldedCardHeading>\n        <FoldedCardTitle>折角卡片</FoldedCardTitle>\n        <FoldedCardBadge>新</FoldedCardBadge>\n      </FoldedCardHeading>\n      <FoldedCardDescription>右上角带折角的卡片。</FoldedCardDescription>\n    </FoldedCardFooter>\n  </FoldedCardLink>\n</FoldedCard>",
+    "typeDefs": [],
+    "parts": [
+      "ChatTail",
+      "FoldedCard",
+      "FoldedCardBadge",
+      "FoldedCardBorder",
+      "FoldedCardDescription",
+      "FoldedCardFold",
+      "FoldedCardFooter",
+      "FoldedCardGrid",
+      "FoldedCardHeading",
+      "FoldedCardLink",
+      "FoldedCardPreview",
+      "FoldedCardTitle"
+    ]
+  },
+  "halo-card": {
+    "usage": "import { HaloCard, HaloCardAction, HaloCardButton } from \"@/components/ui/halo-card\"\n\nexport function Example() {\n  return (\n    <HaloCard>\n      <HaloCardAction />\n    </HaloCard>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "HaloCard",
+      "HaloCardAction",
+      "HaloCardButton",
+      "HaloCardContent",
+      "HaloCardDescription",
+      "HaloCardFooter",
+      "HaloCardHeader",
+      "HaloCardTitle"
+    ]
+  },
+  "minimal-card": {
+    "usage": "import { MinimalCard, MinimalCardContent, MinimalCardDescription } from \"@/components/ui/minimal-card\"\n\nexport function Example() {\n  return (\n    <MinimalCard>\n      <MinimalCardContent />\n    </MinimalCard>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "MinimalCard",
+      "MinimalCardContent",
+      "MinimalCardDescription",
+      "MinimalCardFooter",
+      "MinimalCardImage",
+      "MinimalCardTitle"
+    ]
+  },
+  "organic-card": {
+    "usage": "import { OrganicCard, OrganicCardBand, OrganicCardBody } from \"@/components/ui/organic-card\"\n\nexport function Example() {\n  return (\n    <OrganicCard>\n      <OrganicCardBand />\n    </OrganicCard>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "OrganicCardSharedProps",
+        "code": "interface OrganicCardSharedProps {\n  children: ReactNode\n  backgroundColor?: string\n  className?: string\n}"
+      }
+    ],
+    "parts": [
+      "OrganicCard",
+      "OrganicCardBand",
+      "OrganicCardBody",
+      "OrganicCardDescription",
+      "OrganicCardEyebrow",
+      "OrganicCardFooter",
+      "OrganicCardFooterIcon",
+      "OrganicCardFooterLabel",
+      "OrganicCardImage",
+      "OrganicCardTitle"
+    ]
+  },
+  "organic-card-small": {
+    "usage": "import { OrganicCardSmall } from \"@/components/ui/organic-card-small\"\n\nexport function Example() {\n  return (\n    <OrganicCardSmall>内容</OrganicCardSmall>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "OrganicCardSmallProps",
+        "code": "interface OrganicCardSmallProps {\n  image: string\n  imageAlt?: string\n  category: string\n  date: string\n  title: string\n  href?: string\n  className?: string\n  /** Card body + band fill (defaults to stone) */\n  surfaceColor?: string\n}"
+      }
+    ],
+    "parts": [
+      "OrganicCardSmall"
+    ]
+  },
+  "shadow-card": {
+    "usage": "import { ShadowCard, ShadowCardBackdrop, ShadowCardBevel } from \"@/components/ui/shadow-card\"\n\nexport function Example() {\n  return (\n    <ShadowCard>\n      <ShadowCardBackdrop />\n    </ShadowCard>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "ShadowCard",
+      "ShadowCardBackdrop",
+      "ShadowCardBevel",
+      "ShadowCardFooter",
+      "ShadowCardGlow",
+      "ShadowCardPixelGradient",
+      "ShadowCardVerticalText"
+    ]
+  },
+  "shift-card": {
+    "usage": "import { ShiftCard, ShiftCardContent, ShiftCardHeader } from \"@/components/ui/shift-card\"\n\nexport function Example() {\n  return (\n    <ShiftCard>\n      <ShiftCardContent />\n    </ShiftCard>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "ShiftCard",
+      "ShiftCardContent",
+      "ShiftCardHeader"
+    ]
+  },
+  "texture-card": {
+    "usage": "import { TextureCard, TextureCardContent, TextureCardDescription } from \"@/components/ui/texture-card\"\n\nexport function Example() {\n  return (\n    <TextureCard>\n      <TextureCardContent />\n    </TextureCard>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "TextureCard",
+      "TextureCardContent",
+      "TextureCardDescription",
+      "TextureCardFooter",
+      "TextureCardHeader",
+      "TextureCardStyled",
+      "TextureCardTitle",
+      "TextureSeparator"
+    ]
+  },
+  "base-select": {
+    "usage": "import { Select, SelectContent, SelectGroup } from \"@/components/ui/base-select\"\n\nexport function Example() {\n  return (\n    <Select>\n      <SelectContent />\n    </Select>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "Select",
+      "SelectContent",
+      "SelectGroup",
+      "SelectItem",
+      "SelectLabel",
+      "SelectScrollDownButton",
+      "SelectScrollUpButton",
+      "SelectSeparator",
+      "SelectTrigger",
+      "SelectValue"
+    ]
+  },
+  "border-beam-input": {
+    "usage": "import { BorderBeamInput, BorderBeamInputGroup, BorderBeamInputGroupAddon } from \"@/components/ui/border-beam-input\"\n\nexport function Example() {\n  return (\n    <BorderBeamInput>\n      <BorderBeamInputGroup />\n    </BorderBeamInput>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "BorderBeamInput",
+      "BorderBeamInputGroup",
+      "BorderBeamInputGroupAddon",
+      "BorderBeamInputGroupButton",
+      "BorderBeamInputGroupInput",
+      "BorderBeamInputGroupText",
+      "BorderBeamInputGroupTextarea"
+    ]
+  },
+  "color-picker": {
+    "usage": "import { ColorPicker } from \"@/components/ui/color-picker\"\n\nexport function Example() {\n  return (\n    <ColorPicker>内容</ColorPicker>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "ColorPicker"
+    ]
+  },
+  "halo-dropzone": {
+    "usage": "import { DropzoneFileTypeGlyph, DropzoneUploadFileList, DropzoneUploadFileRow } from \"@/components/ui/halo-dropzone\"\n\nexport function Example() {\n  return (\n    <DropzoneFileTypeGlyph>\n      <DropzoneUploadFileList />\n    </DropzoneFileTypeGlyph>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "DropzoneBodyProps",
+        "code": "interface DropzoneBodyProps {\n  cf: ReturnType<typeof crossfade>\n  cfTransition: ReturnType<typeof crossfadeTransition>\n  disabled: boolean\n  emptyLabel: string\n  formatHint: string | null\n  idleIcon?: ReactNode\n  imageObjectUrls: Record<string, string>\n  reduceMotion: boolean\n  showSuccess: boolean\n  showSuccessThumbnails: boolean\n  successLabel: string\n  uploadedFiles: File[]\n}"
+      },
+      {
+        "name": "HaloDropzoneProps",
+        "code": "export interface HaloDropzoneProps {\n  className?: string\n  accept?: string\n  multiple?: boolean\n  disabled?: boolean\n  /** Frosted glass fill (matches composer translucent mode). */\n  translucent?: boolean\n  /** Called after files are chosen via drop or picker. */\n  onFiles?: (files: File[]) => void\n  /**\n   * Clear the success state after this many ms. `0` keeps success until the next\n   * drop or until the user picks again.\n   */\n  successResetMs?: number\n  /** Primary line in the idle slot. */\n  emptyLabel?: string\n  /** Line under the filename in the success slot. */\n  successLabel?: string\n  /** Optional icon override for the idle slot (defaults to upload). */\n  idleIcon?: ReactNode\n  /** Secondary line under the title; set `null` to hide. */\n  formatHint?: string | null\n  /**\n   * When the dropzone shows success, render thumbnail previews inside the zone.\n   * Set `false` if you show file details (e.g. upload rows) below the dropzone.\n   */\n  showSuccessThumbnails?: boolean\n}"
+      }
+    ],
+    "parts": [
+      "DropzoneFileTypeGlyph",
+      "DropzoneUploadFileList",
+      "DropzoneUploadFileRow",
+      "FilePlaceholderKind",
+      "FileTypePlaceholder",
+      "HaloDropzone",
+      "QueuedFile",
+      "fileKey",
+      "formatFileBytes",
+      "inferPlaceholderKind"
+    ]
+  },
+  "halo-field": {
+    "usage": "import { HaloField, HaloFieldContent, HaloFieldDescription } from \"@/components/ui/halo-field\"\n\nexport function Example() {\n  return (\n    <HaloField>\n      <HaloFieldContent />\n    </HaloField>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "HaloField",
+      "HaloFieldContent",
+      "HaloFieldDescription",
+      "HaloFieldError",
+      "HaloFieldLabel",
+      "HaloFieldTitle"
+    ]
+  },
+  "halo-input": {
+    "usage": "import { HaloInput, HaloTextarea } from \"@/components/ui/halo-input\"\n\nexport function Example() {\n  return (\n    <HaloInput>\n      <HaloTextarea />\n    </HaloInput>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "ShellProps",
+        "code": "interface ShellProps {\n  children: ReactNode\n  className?: string\n  translucent?: boolean\n  invalid?: boolean\n  /** Extra classes on the frosted inner (border + focus ring target). */\n  innerClassName?: string\n}"
+      }
+    ],
+    "parts": [
+      "HaloInput",
+      "HaloTextarea"
+    ]
+  },
+  "halo-search": {
+    "usage": "import { AiBlobWarpAvatar, DeletedTextBlurReveal, HaloSearchInput } from \"@/components/ui/halo-search\"\n\nexport function Example() {\n  return (\n    <AiBlobWarpAvatar>\n      <DeletedTextBlurReveal />\n    </AiBlobWarpAvatar>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "DeletedTextBlurRevealProps",
+        "code": "interface DeletedTextBlurRevealProps {\n  text: string\n  animatedIndexes?: number[]\n  reduceMotion?: boolean\n  className?: string\n  textClassName?: string\n  clipDurationMs?: number\n  blurPx?: number\n  saturatePercent?: number\n  /** Optional diagonal blur “wiper” (disabled in the search field for a simpler exit). */\n  showSweep?: boolean\n}"
+      }
+    ],
+    "parts": [
+      "AiBlobWarpAvatar",
+      "DeletedTextBlurReveal",
+      "HaloSearchInput"
+    ]
+  },
+  "halo-select": {
+    "usage": "import { HaloSelect, HaloSelectContent, HaloSelectGroup } from \"@/components/ui/halo-select\"\n\nexport function Example() {\n  return (\n    <HaloSelect>\n      <HaloSelectContent />\n    </HaloSelect>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "BorderGlowConfig",
+        "code": "interface BorderGlowConfig {\n  opacityIdle: number\n  primaryBg: string\n  secondaryBg: string\n  tertiaryBg: string\n  primaryLeft: string[]\n  secondaryLeft: string[]\n  tertiaryLeft: string[]\n  durationMain: number\n  durationSec: number\n  durationTer: number\n}"
+      }
+    ],
+    "parts": [
+      "HaloSelect",
+      "HaloSelectContent",
+      "HaloSelectGroup",
+      "HaloSelectItem",
+      "HaloSelectLabel",
+      "HaloSelectScrollDownButton",
+      "HaloSelectScrollUpButton",
+      "HaloSelectSeparator",
+      "HaloSelectTrailingIndicator",
+      "HaloSelectTrigger",
+      "HaloSelectValue",
+      "PolishedSelectItem"
+    ]
+  },
+  "halo-segmented": {
+    "usage": "import { HaloSegmented, HaloSegmentedItem } from \"@/components/ui/halo-segmented\"\n\nexport function Example() {\n  return (\n    <HaloSegmented>\n      <HaloSegmentedItem />\n    </HaloSegmented>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "HaloSegmentedProps",
+        "code": "export interface HaloSegmentedProps {\n  items: HaloSegmentedItem[]\n  /** Selected value; omit for uncontrolled usage with `defaultValue`. */\n  value?: string\n  defaultValue?: string\n  onValueChange?: (next: string) => void\n  className?: string\n  /** Frosted track + backdrop blur (matches card/button translucent mode). */\n  translucent?: boolean\n  disabled?: boolean\n}"
+      }
+    ],
+    "parts": [
+      "HaloSegmented",
+      "HaloSegmentedItem"
+    ]
+  },
+  "halo-switch": {
+    "usage": "import { HaloSwitch } from \"@/components/ui/halo-switch\"\n\nexport function Example() {\n  return (\n    <HaloSwitch>内容</HaloSwitch>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "HaloSwitch"
+    ]
+  },
+  "halo-toggle-group": {
+    "usage": "import { HaloToggleGroup, HaloToggleGroupItem } from \"@/components/ui/halo-toggle-group\"\n\nexport function Example() {\n  return (\n    <HaloToggleGroup>\n      <HaloToggleGroupItem />\n    </HaloToggleGroup>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "HaloToggleGroupProps",
+        "code": "export interface HaloToggleGroupProps {\n  items: HaloToggleGroupItem[]\n  /** Selected value; omit for uncontrolled usage with `defaultValue`. */\n  value?: string\n  defaultValue?: string\n  onValueChange?: (next: string) => void\n  className?: string\n  /** Frosted track + backdrop blur (matches card/button translucent mode). */\n  translucent?: boolean\n  disabled?: boolean\n}"
+      }
+    ],
+    "parts": [
+      "HaloToggleGroup",
+      "HaloToggleGroupItem"
+    ]
+  },
+  "direction-aware-tabs": {
+    "usage": "import { DirectionAwareTabs } from \"@/components/ui/direction-aware-tabs\"\n\nexport function Example() {\n  return (\n    <DirectionAwareTabs>内容</DirectionAwareTabs>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "OgImageSectionProps",
+        "code": "interface OgImageSectionProps {\n  tabs: Tab[]\n  className?: string\n  /** Outer container radius (e.g. `rounded-lg`) */\n  rounded?: string\n  /** Inner tab/bubble radius — should be outer radius minus container padding (~3px) */\n  roundedInner?: string\n  onChange?: () => void\n}"
+      }
+    ],
+    "parts": [
+      "DirectionAwareTabs"
+    ]
+  },
+  "dock": {
+    "usage": "import { Dock, DockCard, DockCardInner, DockDivider } from \"@/components/ui/dock\"\n\n<Dock className=\"fixed bottom-4 left-1/2 -translate-x-1/2\">\n  <DockCard id=\"1\">\n    <DockCardInner src=\"/icons/figma.svg\" id=\"1\" />\n  </DockCard>\n  <DockDivider />\n</Dock>",
+    "typeDefs": [
+      {
+        "name": "DockProps",
+        "code": "interface DockProps {\n  className?: string\n  children: ReactNode // React children to be rendered within the dock\n}"
+      },
+      {
+        "name": "DockCardInnerProps",
+        "code": "interface DockCardInnerProps {\n  src: string // Source URL for the image\n  id: string // Unique identifier for the card\n  children?: ReactNode // Optional children for the card\n}"
+      }
+    ],
+    "parts": [
+      "Dock",
+      "DockCard",
+      "DockCardInner",
+      "DockDivider",
+      "useDock",
+      "useMousePosition"
+    ]
+  },
+  "halo-tabs": {
+    "usage": "import { HaloTabs, HaloTabsContent, HaloTabsIndicator } from \"@/components/ui/halo-tabs\"\n\nexport function Example() {\n  return (\n    <HaloTabs>\n      <HaloTabsContent />\n    </HaloTabs>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "HaloTabs",
+      "HaloTabsContent",
+      "HaloTabsIndicator",
+      "HaloTabsList",
+      "HaloTabsTrigger",
+      "HaloTabsVariant"
+    ]
+  },
+  "tabs-illustration-vercel": {
+    "usage": "import { TabsIllustration(Vercel) } from \"@/components/ui/tabs-illustration-vercel\"",
+    "typeDefs": [],
+    "parts": []
+  },
+  "toolbar-expandable": {
+    "usage": "import { ToolbarExpandable } from \"@/components/ui/toolbar-expandable\"",
+    "typeDefs": [
+      {
+        "name": "DynamicToolbarExpandableProps",
+        "code": "interface DynamicToolbarExpandableProps {\n  steps: DynamicStep[]\n  badgeText?: string\n\n  className?: string\n  expanded?: boolean\n  onExpandedChange?: (expanded: boolean) => void\n  activeStep?: string | null\n  onActiveStepChange?: (stepId: string | null) => void\n}"
+      }
+    ],
+    "parts": []
+  },
+  "family-drawer": {
+    "usage": "import { FamilyDrawerAnimatedContent, FamilyDrawerAnimatedWrapper, FamilyDrawerButton } from \"@/components/ui/family-drawer\"\n\nexport function Example() {\n  return (\n    <FamilyDrawerAnimatedContent>\n      <FamilyDrawerAnimatedWrapper />\n    </FamilyDrawerAnimatedContent>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "FamilyDrawerRootProps",
+        "code": "interface FamilyDrawerRootProps {\n  children: ReactNode\n  open?: boolean\n  defaultOpen?: boolean\n  onOpenChange?: (open: boolean) => void\n  defaultView?: string\n  onViewChange?: (view: string) => void\n  views?: ViewsRegistry\n}"
+      },
+      {
+        "name": "FamilyDrawerTriggerProps",
+        "code": "interface FamilyDrawerTriggerProps {\n  children: ReactNode\n  asChild?: boolean\n  className?: string\n}"
+      }
+    ],
+    "parts": [
+      "FamilyDrawerAnimatedContent",
+      "FamilyDrawerAnimatedWrapper",
+      "FamilyDrawerButton",
+      "FamilyDrawerClose",
+      "FamilyDrawerContent",
+      "FamilyDrawerDescription",
+      "FamilyDrawerHeader",
+      "FamilyDrawerOverlay",
+      "FamilyDrawerPortal",
+      "FamilyDrawerRoot",
+      "FamilyDrawerSecondaryButton",
+      "FamilyDrawerTitle"
+    ]
+  },
+  "floating-panel": {
+    "usage": "import { FloatingPanelBody, FloatingPanelButton, FloatingPanelCloseButton } from \"@/components/ui/floating-panel\"\n\nexport function Example() {\n  return (\n    <FloatingPanelBody>\n      <FloatingPanelButton />\n    </FloatingPanelBody>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "FloatingPanelRootProps",
+        "code": "interface FloatingPanelRootProps {\n  children: React.ReactNode\n  className?: string\n}"
+      },
+      {
+        "name": "FloatingPanelTriggerProps",
+        "code": "interface FloatingPanelTriggerProps {\n  children: React.ReactNode\n  className?: string\n  title: string\n}"
+      }
+    ],
+    "parts": [
+      "FloatingPanelBody",
+      "FloatingPanelButton",
+      "FloatingPanelCloseButton",
+      "FloatingPanelContent",
+      "FloatingPanelFooter",
+      "FloatingPanelForm",
+      "FloatingPanelHeader",
+      "FloatingPanelLabel",
+      "FloatingPanelRoot",
+      "FloatingPanelSubmitButton",
+      "FloatingPanelTextarea",
+      "FloatingPanelTrigger"
+    ]
+  },
+  "halo-notification": {
+    "usage": "import { HaloPolishedNotification, HaloPolishedToastSurface, RimVariant } from \"@/components/ui/halo-notification\"\n\nexport function Example() {\n  return (\n    <HaloPolishedNotification>\n      <HaloPolishedToastSurface />\n    </HaloPolishedNotification>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "HaloPolishedToastSurfaceProps",
+        "code": "export interface HaloPolishedToastSurfaceProps {\n  title: string\n  description?: string\n  /**\n   * Change when the notification shows a new message so title/body stagger replay.\n   * Defaults to `title` + `description` (stable for identical copy).\n   */\n  messageKey?: string\n  /** `status` for non-urgent updates; `alert` for urgent/interruptive content. */\n  politeness?: \"status\" | \"alert\"\n  onDismiss?: () => void\n  /** Forwarded to the local `HaloCard`. */\n  translucent?: boolean\n  /** Rim blob + border-trail palette (success / error vs default). */\n  rimVariant?: RimVariant\n  className?: string\n}"
+      }
+    ],
+    "parts": [
+      "HaloPolishedNotification",
+      "HaloPolishedToastSurface",
+      "RimVariant"
+    ]
+  },
+  "halo-toast": {
+    "usage": "import { PolishedToastOptions, PolishedToastSurface, PolishedToaster } from \"@/components/ui/halo-toast\"\n\nexport function Example() {\n  return (\n    <PolishedToastOptions>\n      <PolishedToastSurface />\n    </PolishedToastOptions>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "PolishedToastSurfaceProps",
+        "code": "export interface PolishedToastSurfaceProps {\n  title: string\n  description?: string\n  messageKey?: string\n  politeness?: \"status\" | \"alert\"\n  translucent?: boolean\n  rimVariant?: RimVariant\n  /** Sonner toast id from `toast.custom((id) => …)`; required for the dismiss control. */\n  toastId?: number | string\n  /** When true (default with {@link showPolishedToast}), renders a Dismiss control. */\n  closeButton?: boolean\n  className?: string\n}"
+      }
+    ],
+    "parts": [
+      "PolishedToastOptions",
+      "PolishedToastSurface",
+      "PolishedToaster",
+      "RimVariant",
+      "showPolishedToast"
+    ]
+  },
+  "intro-disclosure": {
+    "usage": "import { IntroDisclosure } from \"@/components/ui/intro-disclosure\"\n\nexport function Example() {\n  return (\n    <IntroDisclosure>内容</IntroDisclosure>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "StepTabProps",
+        "code": "interface StepTabProps {\n  step: Step\n  isActive: boolean\n  onClick: () => void\n  isCompleted: boolean\n}"
+      },
+      {
+        "name": "FeatureDisclosureProps",
+        "code": "interface FeatureDisclosureProps {\n  steps: Step[]\n  featureId: string\n  onComplete?: () => void\n  onSkip?: () => void\n  showProgressBar?: boolean\n  open: boolean\n  setOpen: (open: boolean) => void\n  forceVariant?: \"mobile\" | \"desktop\"\n}"
+      }
+    ],
+    "parts": [
+      "IntroDisclosure"
+    ]
+  },
+  "popover": {
+    "usage": "import { PopoverBody, PopoverButton, PopoverCloseButton } from \"@/components/ui/popover\"\n\nexport function Example() {\n  return (\n    <PopoverBody>\n      <PopoverButton />\n    </PopoverBody>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "PopoverRootProps",
+        "code": "interface PopoverRootProps {\n  children: React.ReactNode\n  className?: string\n}"
+      },
+      {
+        "name": "PopoverTriggerProps",
+        "code": "interface PopoverTriggerProps {\n  children: React.ReactNode\n  className?: string\n}"
+      }
+    ],
+    "parts": [
+      "PopoverBody",
+      "PopoverButton",
+      "PopoverCloseButton",
+      "PopoverContent",
+      "PopoverFooter",
+      "PopoverForm",
+      "PopoverHeader",
+      "PopoverLabel",
+      "PopoverRoot",
+      "PopoverSubmitButton",
+      "PopoverTextarea",
+      "PopoverTrigger"
+    ]
+  },
+  "popover-form": {
+    "usage": "import { PopoverForm, PopoverFormButton, PopoverFormCutOutLeftIcon } from \"@/components/ui/popover-form\"\n\nexport function Example() {\n  return (\n    <PopoverForm>\n      <PopoverFormButton />\n    </PopoverForm>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "PopoverFormProps",
+        "code": "type PopoverFormProps = {\n  open: boolean\n  setOpen: (open: boolean) => void\n  openChild?: ReactNode\n  successChild?: ReactNode\n  showSuccess: boolean\n  width?: string\n  height?: string\n  showCloseButton?: boolean\n  title: string\n}"
+      }
+    ],
+    "parts": [
+      "PopoverForm",
+      "PopoverFormButton",
+      "PopoverFormCutOutLeftIcon",
+      "PopoverFormCutOutRightIcon",
+      "PopoverFormSeparator",
+      "PopoverFormSuccess"
+    ]
+  },
+  "side-panel": {
+    "usage": "import { SidePanel } from \"@/components/ui/side-panel\"\n\nexport function Example() {\n  return (\n    <SidePanel>内容</SidePanel>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "PanelContainerProps",
+        "code": "type PanelContainerProps = {\n  panelOpen: boolean\n  handlePanelOpen: () => void\n  className?: string\n  videoUrl?: string\n  renderButton?: (handleToggle: () => void) => ReactNode\n  children: ReactNode\n}"
+      },
+      {
+        "name": "ResizablePanelProps",
+        "code": "type ResizablePanelProps = {\n  children: React.ReactNode\n}"
+      }
+    ],
+    "parts": [
+      "SidePanel"
+    ]
+  },
+  "gradient-heading": {
+    "usage": "import { GradientHeading, Size, Variant } from \"@/components/ui/gradient-heading\"\n\nexport function Example() {\n  return (\n    <GradientHeading>\n      <Size />\n    </GradientHeading>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "GradientHeading",
+      "Size",
+      "Variant",
+      "Weight",
+      "headingVariants"
+    ]
+  },
+  "neumorph-eyebrow": {
+    "usage": "import { NeumorphEyebrow } from \"@/components/ui/neumorph-eyebrow\"\n\nexport function Example() {\n  return (\n    <NeumorphEyebrow>内容</NeumorphEyebrow>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "NeumorphEyebrow"
+    ]
+  },
+  "pixel-heading-character": {
+    "usage": "import { PixelHeading, PixelHeadingMode } from \"@/components/ui/pixel-heading-character\"\n\nexport function Example() {\n  return (\n    <PixelHeading>\n      <PixelHeadingMode />\n    </PixelHeading>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "PixelHeading",
+      "PixelHeadingMode"
+    ]
+  },
+  "pixel-heading-word": {
+    "usage": "import { PixelHeading } from \"@/components/ui/pixel-heading-word\"\n\nexport function Example() {\n  return (\n    <PixelHeading>内容</PixelHeading>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "PixelHeading"
+    ]
+  },
+  "pixel-paragraph-words": {
+    "usage": "import { PixelParagraph } from \"@/components/ui/pixel-paragraph-words\"\n\nexport function Example() {\n  return (\n    <PixelParagraph>内容</PixelParagraph>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "PixelParagraph"
+    ]
+  },
+  "pixel-paragraph-words-inverse": {
+    "usage": "import { PixelParagraphInverse } from \"@/components/ui/pixel-paragraph-words-inverse\"\n\nexport function Example() {\n  return (\n    <PixelParagraphInverse>内容</PixelParagraphInverse>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "PixelParagraphInverse"
+    ]
+  },
+  "text-animate": {
+    "usage": "import TextAnimate from \"@/components/ui/text-animate\"\n\n<TextAnimate text=\"让界面动起来\" type=\"rollIn\" />",
+    "typeDefs": [],
+    "parts": [
+      "TextAnimate"
+    ]
+  },
+  "text-gif": {
+    "usage": "import { TextGif } from \"@/components/ui/text-gif\"\n\nexport function Example() {\n  return (\n    <TextGif>内容</TextGif>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "TextGif"
+    ]
+  },
+  "typewriter": {
+    "usage": "import { Typewriter } from \"@/components/ui/typewriter\"\n\nexport function Example() {\n  return (\n    <Typewriter>内容</Typewriter>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "ITypewriterProps",
+        "code": "export interface ITypewriterProps {\n  delay: number\n  texts: string[]\n  baseText?: string\n}"
+      },
+      {
+        "name": "IRepeatedTextAnimationProps",
+        "code": "export interface IRepeatedTextAnimationProps {\n  delay: number\n  texts: string[]\n}"
+      }
+    ],
+    "parts": [
+      "Typewriter"
+    ]
+  },
+  "bg-animated-fractal-dot-grid": {
+    "usage": "import { FractalDotGrid } from \"@/components/ui/bg-animated-fractal-dot-grid\"\n\nexport function Example() {\n  return (\n    <FractalDotGrid>内容</FractalDotGrid>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "FractalDotGridProps",
+        "code": "interface FractalDotGridProps {\n  /** Size of each dot in pixels */\n  dotSize?: number\n  /** Spacing between dots in pixels */\n  dotSpacing?: number\n  /** Opacity of dots (0-1) */\n  dotOpacity?: number\n  /** Intensity of the wave effect when hovering */\n  waveIntensity?: number\n  /** Radius of the wave effect in pixels */\n  waveRadius?: number\n  /** Color of the dots (supports any valid CSS color) */\n  dotColor?: string\n  /** Color of the dot glow effect (supports any valid CSS color) */\n  glowColor?: string\n  /** Enable or disable the noise overlay */\n  enableNoise?: boolean\n  /** Opacity of the noise overlay (0-1) */\n  noiseOpacity?: number\n  /** Enable or disable the mouse glow effect */\n  enableMouseGlow?: boolean\n  /** Set the initial performance level */\n  initialPerformance?: \"low\" | \"medium\" | \"high\"\n}"
+      }
+    ],
+    "parts": [
+      "FractalDotGrid"
+    ]
+  },
+  "bg-animated-gradient": {
+    "usage": "import { GradientAnimation } from \"@/components/ui/bg-animated-gradient\"\n\nexport function Example() {\n  return (\n    <GradientAnimation>内容</GradientAnimation>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "GradientAnimationProps",
+        "code": "interface GradientAnimationProps {\n  gradients: GradientType[]\n  animationDuration: number\n  className?: string\n}"
+      }
+    ],
+    "parts": [
+      "GradientAnimation"
+    ]
+  },
+  "bg-image-texture": {
+    "usage": "import { BackgroundImageTexture, TextureVariant } from \"@/components/ui/bg-image-texture\"\n\nexport function Example() {\n  return (\n    <BackgroundImageTexture>\n      <TextureVariant />\n    </BackgroundImageTexture>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "BackgroundImageTextureProps",
+        "code": "interface BackgroundImageTextureProps {\n  variant?: TextureVariant\n  opacity?: number\n  className?: string\n  children?: React.ReactNode\n}"
+      }
+    ],
+    "parts": [
+      "BackgroundImageTexture",
+      "TextureVariant"
+    ]
+  },
+  "bg-media": {
+    "usage": "import { BackgroundMedia } from \"@/components/ui/bg-media\"\n\nexport function Example() {\n  return (\n    <BackgroundMedia>内容</BackgroundMedia>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "BackgroundMediaProps",
+        "code": "interface BackgroundMediaProps {\n  variant?: OverlayVariant\n  type?: MediaType\n  src: string\n  alt?: string\n}"
+      }
+    ],
+    "parts": [
+      "BackgroundMedia"
+    ]
+  },
+  "canvas-fractal-grid": {
+    "usage": "import { CanvasFractalGrid } from \"@/components/ui/canvas-fractal-grid\"\n\nexport function Example() {\n  return (\n    <CanvasFractalGrid>内容</CanvasFractalGrid>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "CanvasFractalGridProps",
+        "code": "interface CanvasFractalGridProps {\n  /** Size of each dot in pixels */\n  dotSize?: number\n  /** Spacing between dots in pixels */\n  dotSpacing?: number\n  /** Opacity of dots (0-1) */\n  dotOpacity?: number\n  /** Duration of the background gradient animation in seconds */\n  gradientAnimationDuration?: number\n  /** Stiffness of mouse tracking (higher values make it more responsive) */\n  mouseTrackingStiffness?: number\n  /** Damping of mouse tracking (higher values make it less bouncy) */\n  mouseTrackingDamping?: number\n  /** Intensity of the wave effect when hovering */\n  waveIntensity?: number\n  /** Radius of the wave effect in pixels */\n  waveRadius?: number\n  /** Array of gradient configurations for the background */\n  gradients?: GradientType[]\n  /** Color of the dots (supports any valid CSS color) */\n  dotColor?: string\n  /** Color of the dot glow effect (supports any valid CSS color) */\n  glowColor?: string\n  /** Enable or disable the noise overlay */\n  enableNoise?: boolean\n  /** Opacity of the noise overlay (0-1) */\n  noiseOpacity?: number\n  /** Enable or disable the mouse glow effect */\n  // …"
+      },
+      {
+        "name": "CanvasFractalGridProps",
+        "code": "interface CanvasFractalGridProps {\n//   /** Size of each dot in pixels */\n//   dotSize?: number\n//   /** Spacing between dots in pixels */\n//   dotSpacing?: number\n//   /** Opacity of dots (0-1) */\n//   dotOpacity?: number\n//   /** Duration of the background gradient animation in seconds */\n//   gradientAnimationDuration?: number\n//   /** Stiffness of mouse tracking (higher values make it more responsive) */\n//   mouseTrackingStiffness?: number\n//   /** Damping of mouse tracking (higher values make it less bouncy) */\n//   mouseTrackingDamping?: number\n//   /** Intensity of the wave effect when hovering */\n//   waveIntensity?: number\n//   /** Radius of the wave effect in pixels */\n//   waveRadius?: number\n//   /** Array of gradient configurations for the background */\n//   gradients?: Gradient[]\n//   /** Color of the dots (supports any valid CSS color) */\n//   dotColor?: string\n//   /** Color of the dot glow effect (supports any valid CSS color) */\n//   glowColor?: string\n//   /** Enable or disable the noise overlay */\n//   enableNoise?: boolean\n//   /** Opacity of the noise overlay (0-1) */\n//   noiseOpacity?: number\n//   /** Enable or disable the mouse glow effect */\n  // …"
+      }
+    ],
+    "parts": [
+      "CanvasFractalGrid"
+    ]
+  },
+  "grid-beam": {
+    "usage": "import { BeamCanvasRuntimeConfig, GridBeam, GridBeamCanvas } from \"@/components/ui/grid-beam\"\n\nexport function Example() {\n  return (\n    <BeamCanvasRuntimeConfig>\n      <GridBeam />\n    </BeamCanvasRuntimeConfig>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "BeamCanvasRuntimeConfig",
+      "GridBeam",
+      "GridBeamCanvas",
+      "GridBeamColorScheme",
+      "GridBeamContent",
+      "GridBeamDividers",
+      "GridBeamPaletteKey",
+      "GridBeamPaletteLayers",
+      "GridBeamThemeProp",
+      "PALETTES",
+      "PaletteBand",
+      "RGB"
+    ]
+  },
+  "stripe-bg-guides": {
+    "usage": "import { StripeBgGuides } from \"@/components/ui/stripe-bg-guides\"\n\nexport function Example() {\n  return (\n    <StripeBgGuides>内容</StripeBgGuides>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "AnimatedBackgroundGuidesProps",
+        "code": "interface AnimatedBackgroundGuidesProps {\n  columnCount?: number\n  className?: string\n  solidLines?: number[]\n  animated?: boolean\n  animationDuration?: number\n  animationDelay?: number\n  glowColor?: string\n  glowSize?: string\n  glowOpacity?: number\n  randomize?: boolean\n  randomInterval?: number\n  direction?: AnimationDirection\n  easing?: AnimationEasing\n  responsive?: boolean\n  minColumnWidth?: string\n  maxActiveColumns?: number\n  darkMode?: boolean\n  contained?: boolean\n}"
+      }
+    ],
+    "parts": [
+      "StripeBgGuides"
+    ]
+  },
+  "svg-bands": {
+    "usage": "import { AngledCornerPanelSvg, ArrowChevronBandSvg, BandShape } from \"@/components/ui/svg-bands\"\n\nexport function Example() {\n  return (\n    <AngledCornerPanelSvg>\n      <ArrowChevronBandSvg />\n    </AngledCornerPanelSvg>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "BandShapeProps",
+        "code": "export interface BandShapeProps {\n  path: string\n  viewBox: string\n  flip?: BandShapeFlip\n  className?: string\n  /** Accessible name; defaults to a generic label when omitted. */\n  title?: string\n}"
+      }
+    ],
+    "parts": [
+      "AngledCornerPanelSvg",
+      "ArrowChevronBandSvg",
+      "BandShape",
+      "BandShapeFlip",
+      "BottomBandSteepRightSvg",
+      "CastleWallBandSvg",
+      "CenterTabBandSvg",
+      "CenterTabTopBandSvg",
+      "DiagonalSlashBandSvg",
+      "DualSideNotchFrameSvg",
+      "FlatSingleAngleBandSvg",
+      "NotchedTopBandSvg"
+    ]
+  },
+  "svg-shapes": {
+    "usage": "import { ArrowPentagonShapeSvg, CircleShapeSvg, CubeWireshapeSvg } from \"@/components/ui/svg-shapes\"\n\nexport function Example() {\n  return (\n    <ArrowPentagonShapeSvg>\n      <CircleShapeSvg />\n    </ArrowPentagonShapeSvg>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "ShapeSvgProps",
+        "code": "export interface ShapeSvgProps {\n  className?: string\n  flip?: ShapeShapeFlip\n}"
+      }
+    ],
+    "parts": [
+      "ArrowPentagonShapeSvg",
+      "CircleShapeSvg",
+      "CubeWireshapeSvg",
+      "DodecahedronWireshapeSvg",
+      "EllipseShapeSvg",
+      "FlowerOfLifeSvg",
+      "GoldenSpiralSvg",
+      "GothicArchPanelSvg",
+      "IcosahedronWireshapeSvg",
+      "KiteShapeSvg",
+      "MetatronsCubeSvg",
+      "OctahedronWireshapeSvg"
+    ]
+  },
+  "svg-shapes-animated": {
+    "usage": "import { ArrowPentagonShapeSvg, ChevronShapeSvg, CircleShapeSvg } from \"@/components/ui/svg-shapes-animated\"\n\nexport function Example() {\n  return (\n    <ArrowPentagonShapeSvg>\n      <ChevronShapeSvg />\n    </ArrowPentagonShapeSvg>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "ShapeSvgProps",
+        "code": "export interface ShapeSvgProps {\n  className?: string\n  flip?: ShapeShapeFlip\n}"
+      }
+    ],
+    "parts": [
+      "ArrowPentagonShapeSvg",
+      "ChevronShapeSvg",
+      "CircleShapeSvg",
+      "CrossShapeSvg",
+      "CubeWireframeSvg",
+      "DiamondShapeSvg",
+      "DodecahedronWireframeSvg",
+      "DoubleNotchTechShapeSvg",
+      "EllipseShapeSvg",
+      "FlowerOfLifeSvg",
+      "GoldenSpiralSvg",
+      "GothicArchPanelSvg"
+    ]
+  },
+  "texture-overlay": {
+    "usage": "import { TextureOverlay, TextureType } from \"@/components/ui/texture-overlay\"\n\nexport function Example() {\n  return (\n    <TextureOverlay>\n      <TextureType />\n    </TextureOverlay>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "TextureOverlayProps",
+        "code": "interface TextureOverlayProps {\n  texture: TextureType\n  opacity?: number\n  className?: string\n}"
+      }
+    ],
+    "parts": [
+      "TextureOverlay",
+      "TextureType"
+    ]
+  },
+  "circuit-board": {
+    "usage": "import { CircuitBoard } from \"@/components/ui/circuit-board\"\n\nexport function Example() {\n  return (\n    <CircuitBoard>内容</CircuitBoard>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "CircuitBoard"
+    ]
+  },
+  "fluid-ai-workloads": {
+    "usage": "import { FluidAIWorkloads, FluidAIWorkloadsBranchLines, FluidAIWorkloadsCenterCard } from \"@/components/ui/fluid-ai-workloads\"\n\nexport function Example() {\n  return (\n    <FluidAIWorkloads>\n      <FluidAIWorkloadsBranchLines />\n    </FluidAIWorkloads>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "FluidAIWorkloads",
+      "FluidAIWorkloadsBranchLines",
+      "FluidAIWorkloadsCenterCard",
+      "FluidAIWorkloadsLeftCard",
+      "FluidAIWorkloadsRightCards",
+      "FluidAIWorkloadsShadowLayer"
+    ]
+  },
+  "gateway-endpoint-illustration": {
+    "usage": "import { AnthropicIcon, GatewayEndpoint, GatewayEndpointBackground } from \"@/components/ui/gateway-endpoint-illustration\"\n\nexport function Example() {\n  return (\n    <AnthropicIcon>\n      <GatewayEndpoint />\n    </AnthropicIcon>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "AnthropicIcon",
+      "GatewayEndpoint",
+      "GatewayEndpointBackground",
+      "GatewayEndpointCenter",
+      "GatewayEndpointConnectionLines",
+      "GatewayEndpointIconBubble",
+      "GatewayEndpointInputLine",
+      "GatewayEndpointRadialCircles",
+      "GatewayEndpointScene",
+      "GatewayEndpointSvg",
+      "MoreIcon",
+      "OpenAIIcon"
+    ]
+  },
+  "gateway-route-illustration": {
+    "usage": "import { AnthropicIcon, CohereIcon, GatewayRouting } from \"@/components/ui/gateway-route-illustration\"\n\nexport function Example() {\n  return (\n    <AnthropicIcon>\n      <CohereIcon />\n    </AnthropicIcon>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "AnthropicIcon",
+      "CohereIcon",
+      "GatewayRouting",
+      "GatewayRoutingArcs",
+      "GatewayRoutingBackground",
+      "GatewayRoutingCenter",
+      "GatewayRoutingGradientRing",
+      "GatewayRoutingIconBubble",
+      "GatewayRoutingScene",
+      "GatewayRoutingSvg",
+      "GeminiIcon"
+    ]
+  },
+  "gateway-svg-illustration": {
+    "usage": "import { GatewayOverhead, GatewayOverheadBackground, GatewayOverheadBackgroundGrid } from \"@/components/ui/gateway-svg-illustration\"\n\nexport function Example() {\n  return (\n    <GatewayOverhead>\n      <GatewayOverheadBackground />\n    </GatewayOverhead>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "GatewayOverheadDefsProps",
+        "code": "type GatewayOverheadDefsProps = {\n  ids: GatewayOverheadIds\n  borderColor: string\n  backgroundColor: string\n}"
+      },
+      {
+        "name": "GatewayOverheadGridProps",
+        "code": "type GatewayOverheadGridProps = {\n  ids: GatewayOverheadIds\n  borderColor: string\n}"
+      }
+    ],
+    "parts": [
+      "GatewayOverhead",
+      "GatewayOverheadBackground",
+      "GatewayOverheadBackgroundGrid",
+      "GatewayOverheadBottomLine",
+      "GatewayOverheadCenterIcon",
+      "GatewayOverheadCenterLine",
+      "GatewayOverheadHub",
+      "GatewayOverheadLeftLine",
+      "GatewayOverheadNodeBox",
+      "GatewayOverheadRightLine",
+      "GatewayOverheadScene",
+      "GatewayOverheadSvg"
+    ]
+  },
+  "illustration-card-grid": {
+    "usage": "import { DEFAULT_ILLUSTRATION_CARD_GRID_ITEMS, IllustrationCardGrid, IllustrationCardGridItem } from \"@/components/ui/illustration-card-grid\"\n\nexport function Example() {\n  return (\n    <DEFAULT_ILLUSTRATION_CARD_GRID_ITEMS>\n      <IllustrationCardGrid />\n    </DEFAULT_ILLUSTRATION_CARD_GRID_ITEMS>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "DEFAULT_ILLUSTRATION_CARD_GRID_ITEMS",
+      "IllustrationCardGrid",
+      "IllustrationCardGridItem"
+    ]
+  },
+  "illustration-comment-bubble": {
+    "usage": "import { Code, CommentBubble, CommentBubbleDemo } from \"@/components/ui/illustration-comment-bubble\"\n\nexport function Example() {\n  return (\n    <Code>\n      <CommentBubble />\n    </Code>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "Code",
+      "CommentBubble",
+      "CommentBubbleDemo"
+    ]
+  },
+  "illustration-cursor": {
+    "usage": "import { Cursor, CursorDemo, CursorSide } from \"@/components/ui/illustration-cursor\"\n\nexport function Example() {\n  return (\n    <Cursor>\n      <CursorDemo />\n    </Cursor>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "Cursor",
+      "CursorDemo",
+      "CursorSide",
+      "CursorSvg"
+    ]
+  },
+  "illustration-fluid-rendering": {
+    "usage": "import { FluidRendering, FluidRenderingBigCommerceIcon, FluidRenderingContentfulIcon } from \"@/components/ui/illustration-fluid-rendering\"\n\nexport function Example() {\n  return (\n    <FluidRendering>\n      <FluidRenderingBigCommerceIcon />\n    </FluidRendering>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "FluidRendering",
+      "FluidRenderingBigCommerceIcon",
+      "FluidRenderingContentfulIcon",
+      "FluidRenderingShopifyIcon",
+      "FluidRenderingStoreIcon"
+    ]
+  },
+  "illustration-globe-vercel": {
+    "usage": "import { BuiltInNodeIcon, CustomNodeIcon, DEFAULT_NODES } from \"@/components/ui/illustration-globe-vercel\"\n\nexport function Example() {\n  return (\n    <BuiltInNodeIcon>\n      <CustomNodeIcon />\n    </BuiltInNodeIcon>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "DeployGlobeProps",
+        "code": "export type DeployGlobeProps = {\n  status?: DeployStatus\n  nodes?: DeployNode[]\n  accentColor?: string\n  duration?: number\n  className?: string\n  onReplay?: () => void\n}"
+      }
+    ],
+    "parts": [
+      "BuiltInNodeIcon",
+      "CustomNodeIcon",
+      "DEFAULT_NODES",
+      "DemoGlobeVercel",
+      "DemoGlobeVercelControls",
+      "DeployGlobe",
+      "DeployGlobeStatusBadge",
+      "DeployGlobeSvg",
+      "DeployNode",
+      "DeployNodeData",
+      "DeployPath",
+      "DeployStatus"
+    ]
+  },
+  "illustration-graph": {
+    "usage": "import { DataPoint, IllustrationGraph, IllustrationGraphChart } from \"@/components/ui/illustration-graph\"\n\nexport function Example() {\n  return (\n    <DataPoint>\n      <IllustrationGraph />\n    </DataPoint>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "DataPoint",
+      "IllustrationGraph",
+      "IllustrationGraphChart",
+      "IllustrationGraphFooter",
+      "IllustrationGraphLines",
+      "defaultDataPoints"
+    ]
+  },
+  "merging-bubbles": {
+    "usage": "import { MergingBubbles, NextLogo, VercelLogo } from \"@/components/ui/merging-bubbles\"\n\nexport function Example() {\n  return (\n    <MergingBubbles>\n      <NextLogo />\n    </MergingBubbles>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "MergingBubblesProps",
+        "code": "interface MergingBubblesProps {\n  size?: \"xs\" | \"sm\" | \"md\" | \"lg\"\n  className?: string\n  startIcon?: React.ReactNode\n  endIcon?: React.ReactNode\n  showPlus?: boolean\n}"
+      }
+    ],
+    "parts": [
+      "MergingBubbles",
+      "NextLogo",
+      "VercelLogo"
+    ]
+  },
+  "security-checkpoint": {
+    "usage": "import { CHECKPOINT_LINES, CheckpointLine, SecurityCheckpoint } from \"@/components/ui/security-checkpoint\"\n\nexport function Example() {\n  return (\n    <CHECKPOINT_LINES>\n      <CheckpointLine />\n    </CHECKPOINT_LINES>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "CHECKPOINT_LINES",
+      "CheckpointLine",
+      "SecurityCheckpoint",
+      "SecurityCheckpointBlueLines",
+      "SecurityCheckpointCard",
+      "SecurityCheckpointRedLines"
+    ]
+  },
+  "speech-bubble": {
+    "usage": "import { SpeechBubble, SpeechBubbleBody, SpeechBubbleCursor } from \"@/components/ui/speech-bubble\"\n\nexport function Example() {\n  return (\n    <SpeechBubble>\n      <SpeechBubbleBody />\n    </SpeechBubble>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "SpeechBubbleProps",
+        "code": "interface SpeechBubbleProps {\n  children: React.ReactNode\n  className?: string\n  showCursor?: boolean\n}"
+      }
+    ],
+    "parts": [
+      "SpeechBubble",
+      "SpeechBubbleBody",
+      "SpeechBubbleCursor",
+      "SpeechBubbleRoot",
+      "SpeechBubbleTail",
+      "SpeechBubbleText"
+    ]
+  },
+  "apple-iphone-17-pro": {
+    "usage": "import { DynamicIslandSize, IPhone17ProMax } from \"@/components/ui/apple-iphone-17-pro\"\n\nexport function Example() {\n  return (\n    <DynamicIslandSize>\n      <IPhone17ProMax />\n    </DynamicIslandSize>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "IPhoneProps",
+        "code": "export interface IPhoneProps {\n  /** Content to display on the screen */\n  children?: ReactNode\n  /** Dynamic Island size preset */\n  dynamicIslandSize?: DynamicIslandSize\n  /** Content to display inside the Dynamic Island when expanded */\n  dynamicIslandContent?: ReactNode\n  /** Frame color variant */\n  frameColor?: \"graphite\" | \"silver\" | \"gold\" | \"blue\"\n  /** Show status bar */\n  showStatusBar?: boolean\n  /** Show home indicator */\n  showHomeIndicator?: boolean\n  /** Custom time to display */\n  time?: string\n  /** Battery level (0-100) */\n  batteryLevel?: number\n  /** Signal strength (0-4) */\n  signalStrength?: number\n  /** Callback when Dynamic Island is tapped */\n  onDynamicIslandTap?: () => void\n  /** Callback when screen is tapped */\n  onScreenTap?: () => void\n  /** Custom className for the container */\n  className?: string\n}"
+      }
+    ],
+    "parts": [
+      "DynamicIslandSize",
+      "IPhone17ProMax"
+    ]
+  },
+  "apple-keyboard": {
+    "usage": "import { AppleKeyboard } from \"@/components/ui/apple-keyboard\"\n\nexport function Example() {\n  return (\n    <AppleKeyboard>内容</AppleKeyboard>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "KeyProps",
+        "code": "interface KeyProps {\n  children?: ReactNode\n  size?: KeySize\n  symbol?: string\n  secondaryLabel?: string\n  icon?: ReactNode\n  corner?: CornerPosition\n  className?: string\n  iconWithLabel?: boolean\n}"
+      }
+    ],
+    "parts": [
+      "AppleKeyboard"
+    ]
+  },
+  "apple-pro-display-xdr": {
+    "usage": "import { AppleProDisplayXDR, StudioScreenMode } from \"@/components/ui/apple-pro-display-xdr\"\n\nexport function Example() {\n  return (\n    <AppleProDisplayXDR>\n      <StudioScreenMode />\n    </AppleProDisplayXDR>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "AppleStudioDisplayProps",
+        "code": "export interface AppleStudioDisplayProps {\n  className?: string\n  /** When set, replaces built-in screen demos */\n  screenContent?: ReactNode\n  /** Initial variant when using built-in content */\n  initialMode?: StudioScreenMode\n}"
+      }
+    ],
+    "parts": [
+      "AppleProDisplayXDR",
+      "StudioScreenMode"
+    ]
+  },
+  "apple-watch-ultra": {
+    "usage": "import { AppleWatchUltra } from \"@/components/ui/apple-watch-ultra\"\n\nexport function Example() {\n  return (\n    <AppleWatchUltra>内容</AppleWatchUltra>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "AppleWatchUltra"
+    ]
+  },
+  "mac-screen": {
+    "usage": "import { MacScreen } from \"@/components/ui/mac-screen\"\n\n<MacScreen\n  gifUrl=\"https://example.com/preview.png\"\n  alt=\"产品截图\"\n/>",
+    "typeDefs": [
+      {
+        "name": "MacScreenProps",
+        "code": "interface MacScreenProps {\n  gifUrl?: string\n  alt?: string\n}"
+      }
+    ],
+    "parts": [
+      "MacScreen"
+    ]
+  },
+  "mock-browser-window": {
+    "usage": "import { BrowserWindow } from \"@/components/ui/mock-browser-window\"\n\nexport function Example() {\n  return (\n    <BrowserWindow>内容</BrowserWindow>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "WindowControlsProps",
+        "code": "interface WindowControlsProps {\n  variant?: \"macos\" | \"windows\" | \"chrome\" | \"safari\"\n  headerStyle?: \"minimal\" | \"full\"\n}"
+      },
+      {
+        "name": "AddressBarProps",
+        "code": "interface AddressBarProps {\n  url?: string\n  secure?: boolean\n  variant?: \"chrome\" | \"safari\"\n  className?: string\n}"
+      }
+    ],
+    "parts": [
+      "BrowserWindow"
+    ]
+  },
+  "feature-carousel": {
+    "usage": "import { FeatureCarousel } from \"@/components/ui/feature-carousel\"\n\nexport function Example() {\n  return (\n    <FeatureCarousel>内容</FeatureCarousel>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "CardProps",
+        "code": "interface CardProps {\n  title: string\n  description: string\n  bgClass?: string\n}"
+      },
+      {
+        "name": "StepImageProps",
+        "code": "interface StepImageProps {\n  src: StaticImageData | string\n  alt: string\n  className?: string\n  style?: React.CSSProperties\n  width?: number\n  height?: number\n}"
+      }
+    ],
+    "parts": [
+      "FeatureCarousel"
+    ]
+  },
+  "feature-sticky-section": {
+    "usage": "import { OSSProject, OSSSection, OSSSectionComponents } from \"@/components/ui/feature-sticky-section\"\n\nexport function Example() {\n  return (\n    <OSSProject>\n      <OSSSection />\n    </OSSProject>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "OSSSectionProps",
+        "code": "export interface OSSSectionProps {\n  /** Project items to display. Defaults to Vite, Vitest, Rolldown, Oxc. */\n  projects?: OSSProject[]\n}"
+      }
+    ],
+    "parts": [
+      "OSSProject",
+      "OSSSection",
+      "OSSSectionComponents",
+      "StickySection",
+      "defaultOSSSectionProjects"
+    ]
+  },
+  "hero-color-panel": {
+    "usage": "import { AISDKIcon, HeroColorPanels, HeroColorPanelsActions } from \"@/components/ui/hero-color-panel\"\n\nexport function Example() {\n  return (\n    <AISDKIcon>\n      <HeroColorPanels />\n    </AISDKIcon>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "HeroColorPanelsCTAProps",
+        "code": "export interface HeroColorPanelsCTAProps {\n  label: React.ReactNode\n  href: string\n  target?: React.HTMLAttributeAnchorTarget\n  rel?: string\n  onClick?: React.MouseEventHandler<HTMLAnchorElement>\n  className?: string\n  buttonClassName?: string\n}"
+      }
+    ],
+    "parts": [
+      "AISDKIcon",
+      "HeroColorPanels",
+      "HeroColorPanelsActions",
+      "HeroColorPanelsBadges",
+      "HeroColorPanelsCTA",
+      "HeroColorPanelsContainer",
+      "HeroColorPanelsContent",
+      "HeroColorPanelsDescription",
+      "HeroColorPanelsHeading",
+      "HeroColorPanelsMobileVisual",
+      "HeroColorPanelsRoot",
+      "HeroColorPanelsTechItem"
+    ]
+  },
+  "hero-dithering": {
+    "usage": "import { AISDKIcon, HeroDithering, HeroDitheringActions } from \"@/components/ui/hero-dithering\"\n\nexport function Example() {\n  return (\n    <AISDKIcon>\n      <HeroDithering />\n    </AISDKIcon>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "HeroDitheringCTAProps",
+        "code": "export interface HeroDitheringCTAProps {\n  label: React.ReactNode\n  href: string\n  target?: React.HTMLAttributeAnchorTarget\n  rel?: string\n  onClick?: React.MouseEventHandler<HTMLAnchorElement>\n  className?: string\n  buttonClassName?: string\n}"
+      }
+    ],
+    "parts": [
+      "AISDKIcon",
+      "HeroDithering",
+      "HeroDitheringActions",
+      "HeroDitheringBadges",
+      "HeroDitheringCTA",
+      "HeroDitheringContainer",
+      "HeroDitheringContent",
+      "HeroDitheringDescription",
+      "HeroDitheringHeading",
+      "HeroDitheringMobileVisual",
+      "HeroDitheringRoot",
+      "HeroDitheringTechItem"
+    ]
+  },
+  "hero-heatmap": {
+    "usage": "import { AISDKIcon, HeroHeatmap, HeroHeatmapActions } from \"@/components/ui/hero-heatmap\"\n\nexport function Example() {\n  return (\n    <AISDKIcon>\n      <HeroHeatmap />\n    </AISDKIcon>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "HeroHeatmapCTAProps",
+        "code": "export interface HeroHeatmapCTAProps {\n  label: React.ReactNode\n  href: string\n  target?: React.HTMLAttributeAnchorTarget\n  rel?: string\n  onClick?: React.MouseEventHandler<HTMLAnchorElement>\n  className?: string\n  buttonClassName?: string\n}"
+      }
+    ],
+    "parts": [
+      "AISDKIcon",
+      "HeroHeatmap",
+      "HeroHeatmapActions",
+      "HeroHeatmapBadges",
+      "HeroHeatmapCTA",
+      "HeroHeatmapContainer",
+      "HeroHeatmapContent",
+      "HeroHeatmapDescription",
+      "HeroHeatmapHeading",
+      "HeroHeatmapMobileVisual",
+      "HeroHeatmapRoot",
+      "HeroHeatmapShaderOverrides"
+    ]
+  },
+  "hero-liquid-metal": {
+    "usage": "import { AISDKIcon, HeroLiquidMetal, HeroLiquidMetalActions } from \"@/components/ui/hero-liquid-metal\"\n\nexport function Example() {\n  return (\n    <AISDKIcon>\n      <HeroLiquidMetal />\n    </AISDKIcon>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "HeroLiquidMetalCTAProps",
+        "code": "export interface HeroLiquidMetalCTAProps {\n  label: React.ReactNode\n  href: string\n  target?: React.HTMLAttributeAnchorTarget\n  rel?: string\n  onClick?: React.MouseEventHandler<HTMLAnchorElement>\n  className?: string\n  buttonClassName?: string\n}"
+      }
+    ],
+    "parts": [
+      "AISDKIcon",
+      "HeroLiquidMetal",
+      "HeroLiquidMetalActions",
+      "HeroLiquidMetalBadges",
+      "HeroLiquidMetalCTA",
+      "HeroLiquidMetalContainer",
+      "HeroLiquidMetalContent",
+      "HeroLiquidMetalDescription",
+      "HeroLiquidMetalHeading",
+      "HeroLiquidMetalMobileVisual",
+      "HeroLiquidMetalRoot",
+      "HeroLiquidMetalShaderOverrides"
+    ]
+  },
+  "hero-static-radial-gradient": {
+    "usage": "import { AISDKIcon, HeroStaticRadialGradient, HeroStaticRadialGradientActions } from \"@/components/ui/hero-static-radial-gradient\"\n\nexport function Example() {\n  return (\n    <AISDKIcon>\n      <HeroStaticRadialGradient />\n    </AISDKIcon>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "HeroStaticRadialGradientCTAProps",
+        "code": "export interface HeroStaticRadialGradientCTAProps {\n  label: React.ReactNode\n  href: string\n  target?: React.HTMLAttributeAnchorTarget\n  rel?: string\n  onClick?: React.MouseEventHandler<HTMLAnchorElement>\n  className?: string\n  buttonClassName?: string\n}"
+      }
+    ],
+    "parts": [
+      "AISDKIcon",
+      "HeroStaticRadialGradient",
+      "HeroStaticRadialGradientActions",
+      "HeroStaticRadialGradientBadges",
+      "HeroStaticRadialGradientCTA",
+      "HeroStaticRadialGradientContainer",
+      "HeroStaticRadialGradientContent",
+      "HeroStaticRadialGradientDescription",
+      "HeroStaticRadialGradientHeading",
+      "HeroStaticRadialGradientMobileVisual",
+      "HeroStaticRadialGradientRoot",
+      "HeroStaticRadialGradientTechItem"
+    ]
+  },
+  "loading-carousel": {
+    "usage": "import { LoadingCarousel } from \"@/components/ui/loading-carousel\"\n\nexport function Example() {\n  return (\n    <LoadingCarousel>内容</LoadingCarousel>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "LoadingCarouselProps",
+        "code": "interface LoadingCarouselProps {\n  tips?: Tip[]\n  className?: string\n  autoplayInterval?: number\n  showNavigation?: boolean\n  showIndicators?: boolean\n  showProgress?: boolean\n  aspectRatio?: \"video\" | \"square\" | \"wide\"\n  textPosition?: \"top\" | \"bottom\"\n  onTipChange?: (index: number) => void\n  backgroundTips?: boolean\n  backgroundGradient?: boolean\n  shuffleTips?: boolean\n}"
+      }
+    ],
+    "parts": [
+      "LoadingCarousel"
+    ]
+  },
+  "logo-carousel": {
+    "usage": "import { LogoCarousel } from \"@/components/ui/logo-carousel\"\n\nexport function Example() {\n  return (\n    <LogoCarousel>内容</LogoCarousel>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "LogoColumnProps",
+        "code": "interface LogoColumnProps {\n  logos: Logo[]\n  index: number\n  currentTime: number\n}"
+      }
+    ],
+    "parts": [
+      "LogoCarousel"
+    ]
+  },
+  "marketing-feature-code": {
+    "usage": "import { NetworkPolicy, NetworkPolicyCode, NetworkPolicyCodeBlock } from \"@/components/ui/marketing-feature-code\"\n\nexport function Example() {\n  return (\n    <NetworkPolicy>\n      <NetworkPolicyCode />\n    </NetworkPolicy>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "NetworkPolicy",
+      "NetworkPolicyCode",
+      "NetworkPolicyCodeBlock",
+      "NetworkPolicyCodeLine",
+      "NetworkPolicyComment",
+      "NetworkPolicyContainer",
+      "NetworkPolicyDescription",
+      "NetworkPolicyEyebrow",
+      "NetworkPolicyFeatureDescription",
+      "NetworkPolicyFeatureIcon",
+      "NetworkPolicyFeatureItem",
+      "NetworkPolicyFeatureText"
+    ]
+  },
+  "marketing-hero-analytics": {
+    "usage": "import { ANALYTICS_HERO_CHART_DATA, ANALYTICS_HERO_ICONS, ANALYTICS_HERO_LOGS } from \"@/components/ui/marketing-hero-analytics\"\n\nexport function Example() {\n  return (\n    <ANALYTICS_HERO_CHART_DATA>\n      <ANALYTICS_HERO_ICONS />\n    </ANALYTICS_HERO_CHART_DATA>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "ANALYTICS_HERO_CHART_DATA",
+      "ANALYTICS_HERO_ICONS",
+      "ANALYTICS_HERO_LOGS",
+      "ANALYTICS_HERO_SOURCES",
+      "ANALYTICS_HERO_STOPS",
+      "AnalyticsHero",
+      "AnalyticsHeroAppLogs",
+      "AnalyticsHeroChart",
+      "AnalyticsHeroChartDatum",
+      "AnalyticsHeroCopy",
+      "AnalyticsHeroCrosshair",
+      "AnalyticsHeroGithubIcon"
+    ]
+  },
+  "three-d-carousel": {
+    "usage": "import { useIsomorphicLayoutEffect, useMediaQuery } from \"@/components/ui/three-d-carousel\"\n\nexport function Example() {\n  return (\n    <useIsomorphicLayoutEffect>\n      <useMediaQuery />\n    </useIsomorphicLayoutEffect>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "UseMediaQueryOptions",
+        "code": "type UseMediaQueryOptions = {\n  defaultValue?: boolean\n  initializeWithValue?: boolean\n}"
+      }
+    ],
+    "parts": [
+      "useIsomorphicLayoutEffect",
+      "useMediaQuery"
+    ]
+  },
+  "tweet-grid": {
+    "usage": "import { TweetGrid } from \"@/components/ui/tweet-grid\"\n\nexport function Example() {\n  return (\n    <TweetGrid>内容</TweetGrid>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "TweetGrid"
+    ]
+  },
+  "analytics-chart": {
+    "usage": "import { AnalyticsLineChart } from \"@/components/ui/analytics-chart\"\n\n<AnalyticsLineChart\n  data={[\n    { date: \"2024-01-07\", label: \"organic\", value: 340 },\n    { date: \"2024-01-14\", label: \"organic\", value: 520 },\n  ]}\n  valueLabel=\"注册量\"\n/>",
+    "typeDefs": [
+      {
+        "name": "AnalyticsTooltipProps",
+        "code": "export interface AnalyticsTooltipProps {\n  point: AnalyticsTooltipPoint\n  color: string\n  px: number\n  py: number\n  side: \"top\" | \"bottom\"\n  valueLabel: string\n  show: boolean\n  /** When true, stacks above pinned/static tooltip cards */\n  isHovered?: boolean\n}"
+      },
+      {
+        "name": "AnalyticsLineChartProps",
+        "code": "export interface AnalyticsLineChartProps {\n  data?: AnalyticsDataPoint[]\n  gradientStops?: AnalyticsGradientStop[]\n  dotColors?: string[]\n  gridLines?: number\n  height?: number\n  pinnedIndices?: number[]\n  valueLabel?: string\n  className?: string\n}"
+      }
+    ],
+    "parts": [
+      "AnalyticsDataPoint",
+      "AnalyticsGradientStop",
+      "AnalyticsLineChart",
+      "AnalyticsTooltip",
+      "AnalyticsTooltipPoint",
+      "DEFAULT_DATA",
+      "DEFAULT_GRADIENT",
+      "EASE_OUT",
+      "PALETTE",
+      "dotColor",
+      "fmtDate",
+      "fmtNum"
+    ]
+  },
+  "choice-poll": {
+    "usage": "import { ChoicePoll, ChoicePollDescription, ChoicePollFooter } from \"@/components/ui/choice-poll\"\n\nexport function Example() {\n  return (\n    <ChoicePoll>\n      <ChoicePollDescription />\n    </ChoicePoll>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "ChoicePoll",
+      "ChoicePollDescription",
+      "ChoicePollFooter",
+      "ChoicePollHeader",
+      "ChoicePollIndicator",
+      "ChoicePollLabel",
+      "ChoicePollOption",
+      "ChoicePollOptions",
+      "ChoicePollPercentage",
+      "ChoicePollProgress",
+      "ChoicePollRoot",
+      "ChoicePollTitle"
+    ]
+  },
+  "feature-poll": {
+    "usage": "import { FeaturePoll, FeaturePollDescription, FeaturePollFooter } from \"@/components/ui/feature-poll\"\n\nexport function Example() {\n  return (\n    <FeaturePoll>\n      <FeaturePollDescription />\n    </FeaturePoll>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "FeaturePoll",
+      "FeaturePollDescription",
+      "FeaturePollFooter",
+      "FeaturePollHeader",
+      "FeaturePollIndicator",
+      "FeaturePollLabel",
+      "FeaturePollOption",
+      "FeaturePollOptions",
+      "FeaturePollPercentage",
+      "FeaturePollProgress",
+      "FeaturePollRoot",
+      "FeaturePollTitle"
+    ]
+  },
+  "feature-voting": {
+    "usage": "import { FeatureVoting, FeatureVotingCount, FeatureVotingDescription } from \"@/components/ui/feature-voting\"\n\nexport function Example() {\n  return (\n    <FeatureVoting>\n      <FeatureVotingCount />\n    </FeatureVoting>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "FeatureVoting",
+      "FeatureVotingCount",
+      "FeatureVotingDescription",
+      "FeatureVotingGroup",
+      "FeatureVotingItem",
+      "FeatureVotingRoot",
+      "FeatureVotingTitle",
+      "FeatureVotingTrigger",
+      "FeatureVotingValue",
+      "useFeatureVoting"
+    ]
+  },
+  "halo-badge": {
+    "usage": "import { HaloBadge } from \"@/components/ui/halo-badge\"\n\nexport function Example() {\n  return (\n    <HaloBadge>内容</HaloBadge>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "HaloBadge"
+    ]
+  },
+  "halo-progress": {
+    "usage": "import { HaloProgress } from \"@/components/ui/halo-progress\"\n\nexport function Example() {\n  return (\n    <HaloProgress>内容</HaloProgress>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "HaloProgress"
+    ]
+  },
+  "poll-widget": {
+    "usage": "import { PollOption, PollWidget, PollWidgetAnimationPhase } from \"@/components/ui/poll-widget\"\n\nexport function Example() {\n  return (\n    <PollOption>\n      <PollWidget />\n    </PollOption>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "PollOption",
+      "PollWidget",
+      "PollWidgetAnimationPhase",
+      "PollWidgetContent",
+      "PollWidgetDialog",
+      "PollWidgetIndicator",
+      "PollWidgetLabel",
+      "PollWidgetMode",
+      "PollWidgetOption",
+      "PollWidgetOptions",
+      "PollWidgetPercentage",
+      "PollWidgetQuestion"
+    ]
+  },
+  "rolling-number": {
+    "usage": "import { RollingNumber } from \"@/components/ui/rolling-number\"\n\nexport function Example() {\n  return (\n    <RollingNumber>内容</RollingNumber>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "RollingNumberProps",
+        "code": "interface RollingNumberProps {\n  value: number\n  mass?: number\n  stiffness?: number\n  damping?: number\n  precision?: number\n  format?: (value: number) => string\n  onAnimationStart?: () => void\n  onAnimationComplete?: () => void\n}"
+      }
+    ],
+    "parts": [
+      "RollingNumber"
+    ]
+  },
+  "vote-tally": {
+    "usage": "import { VoteTally, VoteTallyCount, VoteTallyDescription } from \"@/components/ui/vote-tally\"\n\nexport function Example() {\n  return (\n    <VoteTally>\n      <VoteTallyCount />\n    </VoteTally>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "VoteTally",
+      "VoteTallyCount",
+      "VoteTallyDescription",
+      "VoteTallyGroup",
+      "VoteTallyItem",
+      "VoteTallyRoot",
+      "VoteTallyTitle",
+      "VoteTallyTrigger",
+      "VoteTallyValue",
+      "useVoteTally"
+    ]
+  },
+  "kanban-board": {
+    "usage": "import { Column, gentleSpring } from \"@/components/ui/kanban-board\"\nimport { MotionConfig } from \"motion/react\"\n\n<MotionConfig transition={gentleSpring}>\n  {columns.map((col) => (\n    <Column\n      key={col.id}\n      column={col}\n      dragState={dragState}\n      setDragState={setDragState}\n      onDrop={(cardId, from, to) => moveCard(cardId, from, to)}\n    />\n  ))}\n</MotionConfig>",
+    "typeDefs": [
+      {
+        "name": "TagProps",
+        "code": "type TagProps = {\n  label: string\n  variant: TagVariant\n}"
+      },
+      {
+        "name": "AvatarProps",
+        "code": "type AvatarProps = {\n  src?: string\n  name?: string\n}"
+      }
+    ],
+    "parts": [
+      "Assignee",
+      "CardData",
+      "CardTag",
+      "Column",
+      "ColumnData",
+      "ColumnStatus",
+      "DragState",
+      "TagVariant",
+      "gentleSpring"
+    ]
+  },
+  "onboarding": {
+    "usage": "import { ChoiceGroup, FeatureCarousel, Onboarding } from \"@/components/ui/onboarding\"\n\nexport function Example() {\n  return (\n    <ChoiceGroup>\n      <FeatureCarousel />\n    </ChoiceGroup>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "ChoiceGroup",
+      "FeatureCarousel",
+      "Onboarding",
+      "StepIndicator",
+      "TipsList",
+      "useOnboarding"
+    ]
+  },
+  "sortable-list": {
+    "usage": "import { Item, SortableList, SortableListItem } from \"@/components/ui/sortable-list\"\n\nexport function Example() {\n  return (\n    <Item>\n      <SortableList />\n    </Item>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "SortableListItemProps",
+        "code": "interface SortableListItemProps {\n  item: Item\n  order: number\n  onCompleteItem: (id: number) => void\n  onRemoveItem: (id: number) => void\n  renderExtra?: (item: Item) => React.ReactNode\n  isExpanded?: boolean\n  className?: string\n  handleDrag: () => void\n}"
+      },
+      {
+        "name": "SortableListProps",
+        "code": "interface SortableListProps {\n  items: Item[]\n  setItems: Dispatch<SetStateAction<Item[]>>\n  onCompleteItem: (id: number) => void\n  renderItem: (\n    item: Item,\n    order: number,\n    onCompleteItem: (id: number) => void,\n    onRemoveItem: (id: number) => void\n  ) => ReactNode\n}"
+      }
+    ],
+    "parts": [
+      "Item",
+      "SortableList",
+      "SortableListItem"
+    ]
+  },
+  "wizard-expandable": {
+    "usage": "import { WizardStep, useWizardExpandable } from \"@/components/ui/wizard-expandable\"\n\nexport function Example() {\n  return (\n    <WizardStep>\n      <useWizardExpandable />\n    </WizardStep>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "WizardExpandableProps",
+        "code": "export interface WizardExpandableProps {\n  steps: WizardStep[]\n  badgeText?: string\n\n  className?: string\n  expanded?: boolean\n  onExpandedChange?: (expanded: boolean) => void\n  activeStep?: string | null\n  onActiveStepChange?: (stepId: string | null) => void\n\n  /**\n   * Return false to block moving from the current step to `toStepId`.\n   * Not called when opening the first step (`fromStepId` is null), closing the wizard,\n   * or when `skipValidationForBackward` is true and the target step is before the current one.\n   */\n  canNavigateToStep?: (context: WizardNavigateContext) => boolean\n  /**\n   * When true, navigating to an earlier step does not call `canNavigateToStep`.\n   * @default true\n   */\n  skipValidationForBackward?: boolean\n  /** Called when navigation was blocked by `canNavigateToStep` returning false. */\n  onNavigateBlocked?: (context: WizardNavigateContext) => void\n\n  /**\n   * When `false`, disables Next and the Complete action. When `undefined`, only\n   * `canNavigateToStep` gates forward moves (and Complete stays enabled unless you set this).\n   */\n  // …"
+      }
+    ],
+    "parts": [
+      "WizardStep",
+      "useWizardExpandable"
+    ]
+  },
+  "distorted-glass": {
+    "usage": "import { DistortedGlass } from \"@/components/ui/distorted-glass\"\n\nexport function Example() {\n  return (\n    <DistortedGlass>内容</DistortedGlass>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "DistortedGlass"
+    ]
+  },
+  "dither-image": {
+    "usage": "import { DitherAspectRatio, DitherImage, DitherImageCaption } from \"@/components/ui/dither-image\"\n\nexport function Example() {\n  return (\n    <DitherAspectRatio>\n      <DitherImage />\n    </DitherAspectRatio>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "DitherAspectRatio",
+      "DitherImage",
+      "DitherImageCaption",
+      "DitherImageContent",
+      "DitherImageFrame",
+      "DitherImageOverlay",
+      "DitherImageReveal",
+      "DitherRevealDirection",
+      "DitherSize"
+    ]
+  },
+  "dynamic-island": {
+    "usage": "import {\n  DynamicIsland, DynamicContainer, DynamicTitle,\n  useScheduledAnimations,\n} from \"@/components/ui/dynamic-island\"\n\nfunction Demo() {\n  useScheduledAnimations([\n    { size: \"compact\", delay: 1000 },\n    { size: \"large\", delay: 2400 },\n    { size: \"tall\", delay: 3800 },\n  ])\n  return (\n    <DynamicContainer className=\"flex h-full w-full items-center justify-center\">\n      <DynamicTitle className=\"text-white\">正在播放</DynamicTitle>\n    </DynamicContainer>\n  )\n}\n\n<DynamicIsland id=\"island-demo\"><Demo /></DynamicIsland>",
+    "typeDefs": [
+      {
+        "name": "DynamicIslandProviderProps",
+        "code": "interface DynamicIslandProviderProps {\n  children: React.ReactNode\n  initialSize?: SizePresets\n  initialAnimation?: Array<{ size: SizePresets; delay: number }>\n}"
+      },
+      {
+        "name": "DynamicContainerProps",
+        "code": "type DynamicContainerProps = {\n  className?: string\n  children?: React.ReactNode\n}"
+      }
+    ],
+    "parts": [
+      "DynamicContainer",
+      "DynamicDescription",
+      "DynamicDiv",
+      "DynamicIsland",
+      "DynamicIslandProvider",
+      "DynamicIslandSizePresets",
+      "DynamicTitle",
+      "SIZE_PRESETS",
+      "SizePresets",
+      "damping",
+      "stiffness",
+      "useDynamicIslandSize"
+    ]
+  },
+  "edge-blur": {
+    "usage": "import { BottomBlur, EdgeBlur, TopBlur } from \"@/components/ui/edge-blur\"\n\nexport function Example() {\n  return (\n    <BottomBlur>\n      <EdgeBlur />\n    </BottomBlur>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "EdgeBlurProps",
+        "code": "interface EdgeBlurProps {\n  position?: \"top\" | \"bottom\"\n  height?: number\n}"
+      }
+    ],
+    "parts": [
+      "BottomBlur",
+      "EdgeBlur",
+      "TopBlur"
+    ]
+  },
+  "expandable-screen": {
+    "usage": "import { ExpandableScreen, ExpandableScreenBackground, ExpandableScreenContent } from \"@/components/ui/expandable-screen\"\n\nexport function Example() {\n  return (\n    <ExpandableScreen>\n      <ExpandableScreenBackground />\n    </ExpandableScreen>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "ExpandableScreenProps",
+        "code": "interface ExpandableScreenProps {\n  children: ReactNode\n  defaultExpanded?: boolean\n  onExpandChange?: (expanded: boolean) => void\n  layoutId?: string\n  triggerRadius?: string\n  contentRadius?: string\n  animationDuration?: number\n  lockScroll?: boolean\n}"
+      },
+      {
+        "name": "ExpandableScreenTriggerProps",
+        "code": "interface ExpandableScreenTriggerProps {\n  children: ReactNode\n  className?: string\n}"
+      }
+    ],
+    "parts": [
+      "ExpandableScreen",
+      "ExpandableScreenBackground",
+      "ExpandableScreenContent",
+      "ExpandableScreenTrigger",
+      "useExpandableScreen"
+    ]
+  },
+  "fluted-glass": {
+    "usage": "import { FlutedGlass } from \"@/components/ui/fluted-glass\"\n\n<div className=\"relative aspect-video w-full overflow-hidden rounded-2xl\">\n  <FlutedGlass\n    className=\"absolute inset-0 size-full\"\n    image={imageUrl}\n    width={1280}\n    height={720}\n  />\n</div>",
+    "typeDefs": [],
+    "parts": [
+      "FlutedGlass"
+    ]
+  },
+  "globe": {
+    "usage": "import { DefaultShowcaseGlobe } from \"@/components/ui/globe\"\n\n<DefaultShowcaseGlobe globeSize={520} title=\"CULT PRO\" />",
+    "typeDefs": [
+      {
+        "name": "ShowcaseConfig",
+        "code": "export type ShowcaseConfig = {\n  theta: number\n  dark: number\n  mapBrightness: number\n  markerColor: [number, number, number]\n  baseColor: [number, number, number]\n  arcColor: [number, number, number]\n  markerSize: number\n  markerElevation: number\n}"
+      },
+      {
+        "name": "DefaultShowcaseGlobeProps",
+        "code": "export interface DefaultShowcaseGlobeProps {\n  className?: string\n  globeSize?: number\n  title?: string\n  orbitPhrase?: string\n  /** When true, omit the centered scanline title (e.g. headline lives in the hero column). */\n  hideCenterTitle?: boolean\n}"
+      }
+    ],
+    "parts": [
+      "DefaultShowcaseGlobe",
+      "MarketingHeroGlobe",
+      "ShowcaseConfig",
+      "ShowcaseKey",
+      "analyticsMarkers",
+      "barMarkers",
+      "cdnArcs",
+      "cdnMarkers",
+      "flightArcs",
+      "flightMarkers",
+      "getShowcaseArcs",
+      "getShowcaseMarkers"
+    ]
+  },
+  "lightboard": {
+    "usage": "import { LightBoard, PatternCell } from \"@/components/ui/lightboard\"\n\nexport function Example() {\n  return (\n    <LightBoard>\n      <PatternCell />\n    </LightBoard>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "LightBoardProps",
+        "code": "interface LightBoardProps {\n  gap?: number\n  rows?: number\n  lightSize?: number\n  updateInterval?: number\n  text: string\n  font?: \"default\" | \"7segment\"\n  colors?: Partial<LightBoardColors>\n  disableDrawing?: boolean\n  controlledDrawState?: PatternCell\n  onDrawStateChange?: (newState: PatternCell) => void\n  controlledHoverState?: boolean\n  onHoverStateChange?: (isHovered: boolean) => void\n}"
+      }
+    ],
+    "parts": [
+      "LightBoard",
+      "PatternCell"
+    ]
+  },
+  "morph-surface": {
+    "usage": "import { MorphSurface } from \"@/components/ui/morph-surface\"\n\nexport function Example() {\n  return (\n    <MorphSurface>内容</MorphSurface>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "SpringConfig",
+        "code": "type SpringConfig = {\n  type: \"spring\"\n  stiffness: number\n  damping: number\n  mass?: number\n  delay?: number\n}"
+      },
+      {
+        "name": "TriggerProps",
+        "code": "interface TriggerProps {\n  isOpen: boolean\n  onClick: () => void\n  className?: string\n}"
+      }
+    ],
+    "parts": [
+      "MorphSurface"
+    ]
+  },
+  "shader-lens-blur": {
+    "usage": "import { ShaderLensBlur, configAtom } from \"@/components/ui/shader-lens-blur\"\n\nexport function Example() {\n  return (\n    <ShaderLensBlur>\n      <configAtom />\n    </ShaderLensBlur>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "ShaderConfig",
+        "code": "interface ShaderConfig {\n  variation: number\n  color1: string\n  color2: string\n  color3: string\n  color4: string\n  enableHover: boolean\n  invertMouse: boolean\n  width: string\n  height: string\n}"
+      },
+      {
+        "name": "ShaderConfig",
+        "code": "interface ShaderConfig {\n//   variation: number\n//   color1: string\n//   color2: string\n//   color3: string\n//   color4: string\n//   enableHover: boolean\n//   invertMouse: boolean\n//   width: string\n//   height: string\n// }"
+      }
+    ],
+    "parts": [
+      "ShaderLensBlur",
+      "configAtom"
+    ]
+  },
+  "terminal-animation": {
+    "usage": "import { TabContent, TerminalAnimationBackgroundGradient, TerminalAnimationBlinkingCursor } from \"@/components/ui/terminal-animation\"\n\nexport function Example() {\n  return (\n    <TabContent>\n      <TerminalAnimationBackgroundGradient />\n    </TabContent>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "TabContent",
+      "TerminalAnimationBackgroundGradient",
+      "TerminalAnimationBlinkingCursor",
+      "TerminalAnimationCommandBar",
+      "TerminalAnimationContainer",
+      "TerminalAnimationContent",
+      "TerminalAnimationOutput",
+      "TerminalAnimationOutputLine",
+      "TerminalAnimationRoot",
+      "TerminalAnimationTabList",
+      "TerminalAnimationTabTrigger",
+      "TerminalAnimationTrailingPrompt"
+    ]
+  },
+  "code-block": {
+    "usage": "import { CodeBlock } from \"@/components/ui/code-block\"\n\n<CodeBlock\n  tabs={[\n    { label: \"npm\", code: \"npx shadcn add @cult-ui/globe\" },\n    { label: \"bun\", code: \"bunx shadcn add @cult-ui/globe\" },\n  ]}\n/>\n\n// 或单段代码\n<CodeBlock code=\"bun run dev\" language=\"bash\" />",
+    "typeDefs": [
+      {
+        "name": "CodeBlockProps",
+        "code": "interface CodeBlockProps {\n  tabs?: CodeTab[]\n  code?: string\n  language?: string\n  className?: string\n}"
+      }
+    ],
+    "parts": [
+      "CodeBlock"
+    ]
+  },
+  "copy-button": {
+    "usage": "import { CopyButton } from \"@/components/ui/copy-button\"\n\n<CopyButton value=\"npx shadcn@latest add @cult-ui/globe\" tooltip=\"复制安装命令\" />",
+    "typeDefs": [],
+    "parts": [
+      "CopyButton",
+      "copyToClipboardWithMeta"
+    ]
+  },
+  "file-icons": {
+    "usage": "import { Icons, getIconForLanguageExtension } from \"@/components/ui/file-icons\"\n\nexport function Example() {\n  return (\n    <Icons>\n      <getIconForLanguageExtension />\n    </Icons>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "Icons",
+      "getIconForLanguageExtension"
+    ]
+  },
+  "timer": {
+    "usage": "import { Timer, TimerDisplay, TimerIcon } from \"@/components/ui/timer\"\n\nexport function Example() {\n  return (\n    <Timer>\n      <TimerDisplay />\n    </Timer>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "TimerRootProps",
+        "code": "export type TimerRootProps = {\n  /** Whether the timer is in loading/running state */\n  loading?: boolean\n}"
+      },
+      {
+        "name": "TimerIconProps",
+        "code": "export type TimerIconProps = {\n  /** Custom icon to display instead of default Clock */\n  icon?: React.ComponentType<{ className?: string }>\n}"
+      }
+    ],
+    "parts": [
+      "Timer",
+      "TimerDisplay",
+      "TimerIcon",
+      "TimerRoot",
+      "UseTimerOptions",
+      "UseTimerReturn",
+      "useTimer"
+    ]
+  },
+  "collab-avatar": {
+    "usage": "import { CollabAvatar } from \"@/components/ui/collab-avatar\"\n\nexport function Example() {\n  return (\n    <CollabAvatar>内容</CollabAvatar>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "CollabAvatar"
+    ]
+  },
+  "collab-toolbar": {
+    "usage": "import { CollabToolbar, CollabToolbarDivider, CollabToolbarIcon } from \"@/components/ui/collab-toolbar\"\n\nexport function Example() {\n  return (\n    <CollabToolbar>\n      <CollabToolbarDivider />\n    </CollabToolbar>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "CollabToolbar",
+      "CollabToolbarDivider",
+      "CollabToolbarIcon",
+      "Collaborator",
+      "IconKey",
+      "ToolbarGroup"
+    ]
+  },
+  "base-tooltip": {
+    "usage": "import { Tooltip, TooltipContent, TooltipProvider } from \"@/components/ui/base-tooltip\"\n\nexport function Example() {\n  return (\n    <Tooltip>\n      <TooltipContent />\n    </Tooltip>\n  )\n}",
+    "typeDefs": [],
+    "parts": [
+      "Tooltip",
+      "TooltipContent",
+      "TooltipProvider",
+      "TooltipTrigger"
+    ]
+  },
+  "hover-video-player": {
+    "usage": "import { HoverVideoPaddingWrapper, HoverVideoPlayer, HoverVideoPlayerControls } from \"@/components/ui/hover-video-player\"\n\nexport function Example() {\n  return (\n    <HoverVideoPaddingWrapper>\n      <HoverVideoPlayer />\n    </HoverVideoPaddingWrapper>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "HoverVideoPlayerProps",
+        "code": "interface HoverVideoPlayerProps {\n  videoSrc: string\n  thumbnailSrc?: string\n  hoverOverlay?: React.ReactNode\n  pausedOverlay?: React.ReactNode\n  loadingOverlay?: React.ReactNode\n  playbackStartDelay?: number\n  restartOnPaused?: boolean\n  unloadVideoOnPaused?: boolean\n  playbackRangeStart?: number\n  playbackRangeEnd?: number\n  muted?: boolean\n  loop?: boolean\n  preload?: \"auto\" | \"metadata\" | \"none\"\n  className?: string\n  style?: React.CSSProperties\n  onHoverStart?: () => void\n  onHoverEnd?: () => void\n  enableControls?: boolean\n  cropTop?: number\n  cropBottom?: number\n  isVimeo?: boolean\n}"
+      }
+    ],
+    "parts": [
+      "HoverVideoPaddingWrapper",
+      "HoverVideoPlayer",
+      "HoverVideoPlayerControls",
+      "HoverVideoPlayerHoverOverlay",
+      "HoverVideoPlayerLoadingOverlay",
+      "HoverVideoPlayerPausedOverlay",
+      "HoverVideoPlayerPiPButton",
+      "HoverVideoPlayerPlayPauseButton",
+      "HoverVideoPlayerProgressBar",
+      "HoverVideoPlayerVolumeControl"
+    ]
+  },
+  "youtube-video-player": {
+    "usage": "import { YouTubePlayer, YouTubePlayerControls } from \"@/components/ui/youtube-video-player\"\n\nexport function Example() {\n  return (\n    <YouTubePlayer>\n      <YouTubePlayerControls />\n    </YouTubePlayer>\n  )\n}",
+    "typeDefs": [
+      {
+        "name": "YouTubePlayerProps",
+        "code": "interface YouTubePlayerProps {\n  videoId: string\n  title?: string\n  defaultExpanded?: boolean\n  customThumbnail?: string\n\n  // Container & Layout\n  className?: string\n  containerClassName?: string\n  expandedClassName?: string\n\n  // Thumbnail & Media\n  thumbnailClassName?: string\n  thumbnailImageClassName?: string\n\n  // Play Button\n  playButtonClassName?: string\n  playIconClassName?: string\n\n  // Title\n  titleClassName?: string\n\n  // Controls\n  controlsClassName?: string\n  expandButtonClassName?: string\n\n  // Backdrop\n  backdropClassName?: string\n  // …"
+      },
+      {
+        "name": "YouTubePlayerControlsProps",
+        "code": "interface YouTubePlayerControlsProps {\n  videoId: string\n  expanded: boolean\n  playing: boolean\n  isHovered: boolean\n  onToggleExpand: () => void\n  controlsClassName?: string\n  expandButtonClassName?: string\n}"
+      }
+    ],
+    "parts": [
+      "YouTubePlayer",
+      "YouTubePlayerControls"
+    ]
+  },
+  "squiggle-arrow": {
+    "usage": "import { SquiggleArrow } from \"@/components/ui/squiggle-arrow\"",
+    "typeDefs": [
+      {
+        "name": "SquigglyArrowProps",
+        "code": "interface SquigglyArrowProps {\n  width?: number\n  height?: number\n  strokeWidth?: number\n  className?: string\n  direction?: \"right\" | \"left\" | \"up\" | \"down\"\n  variant?: \"wavy\" | \"bouncy\" | \"smooth\"\n}"
+      }
+    ],
+    "parts": []
+  }
+}

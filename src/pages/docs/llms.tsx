@@ -17,14 +17,18 @@ function P({ children }: { children: React.ReactNode }) {
 }
 
 const RESOURCES: Array<[string, string, string]> = [
-  ["llms.txt", "/llms.txt", "所有文档页与组件的索引,附带安装说明"],
-  ["llms-full.txt", "/llms-full.txt", "全部文档页(含组件源码)合并成单个文件"],
+  ["llms.txt", "/llms.txt", "本站全部组件的索引,附带中文简介与安装命令"],
+  ["llms-full.txt", "/llms-full.txt", "全部组件文档合并成单个文件,适合一次性喂给 Agent"],
   [
     "Markdown 页面",
-    "在任意文档 URL 后加 .md",
-    "单个组件的文档、演示与源码",
+    "/docs/components/<name>.md",
+    "单个组件的文档、用法、导出部件与源码属性定义",
   ],
-  ["Registry", "/r/registry.json 与 /r/{name}.json", "用 shadcn CLI 安装组件"],
+  [
+    "Registry",
+    "https://www.cult-ui.com/r/{name}.json",
+    "官方 registry,用 shadcn CLI 安装组件",
+  ],
 ]
 
 export function LlmsPage() {
@@ -32,7 +36,7 @@ export function LlmsPage() {
     <article className="max-w-3xl">
       <h1 className="text-3xl font-bold tracking-tight">LLMs 与 Agent</h1>
       <P>
-        Cult UI 的文档同时以 AI 编程 agent 可直接读取的格式发布。把 agent
+        Cult UI 的文档同时以 AI 编程 Agent 可直接读取的格式发布。把 Agent
         指向下面任一来源,它就会安装真实的组件,而不是猜测 API。
       </P>
 
@@ -60,13 +64,13 @@ export function LlmsPage() {
         </table>
       </div>
       <P>
-        每个文档页还有一个「Copy page」按钮,可一键复制该页的 markdown,并提供在
-        ChatGPT、Claude 或 v0 中打开的快捷方式。
+        每个组件页都有一个「复制 Markdown」按钮,可一键复制该页的机器可读版本;
+        文件由构建脚本生成,与页面内容保持同步。
       </P>
 
-      <H2>让 agent 安装组件</H2>
+      <H2>让 Agent 安装组件</H2>
       <P>
-        任何能执行终端命令的 agent 都可以按名称安装组件。{" "}
+        任何能执行终端命令的 Agent 都可以按名称安装组件。{" "}
         <code className="bg-muted rounded px-1.5 py-0.5 text-xs">@cult-ui</code>{" "}
         命名空间已内置于 shadcn CLI,无需任何配置:
       </P>
@@ -76,7 +80,7 @@ export function LlmsPage() {
         className="mt-4"
       />
       <P>
-        想让 agent 用自然语言浏览和搜索 registry,请配置{" "}
+        想让 Agent 用自然语言浏览和搜索 registry,请配置{" "}
         <Link to="/docs/mcp-server" className="underline underline-offset-4">
           MCP 服务器
         </Link>
@@ -92,7 +96,7 @@ export function LlmsPage() {
         <code className="bg-muted rounded px-1.5 py-0.5 text-xs">
           .cursor/rules
         </code>{" "}
-        文件,agent 就知道该如何使用 Cult UI:
+        文件,Agent 就知道该如何使用 Cult UI:
       </P>
       <CodeBlock
         code={`## Cult UI

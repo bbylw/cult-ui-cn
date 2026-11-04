@@ -12,7 +12,7 @@ import {
   type ForwardedRef,
   type ReactNode,
 } from "react"
-import NextImage from "next/image"
+import NextImage from "@/components/ui/image"
 import { Slot } from "@radix-ui/react-slot"
 import { useControllableState } from "@radix-ui/react-use-controllable-state"
 

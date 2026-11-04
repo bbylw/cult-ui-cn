@@ -1,0 +1,8017 @@
+# Cult UI 中文站 · 完整文档
+
+---
+
+
+
+---
+
+> 生成时间:2026-11-04。共 137 个组件。
+
+---
+
+
+
+---
+
+# 建议卡堆叠 (Agent Suggest Card Stack)
+
+> AI 助手回复用的一叠建议卡,带进度条、成功与失败状态以及提交按钮。
+
+- 分类:AI 组件
+- 本站页面:https://cult-ui.ndjp.net/docs/components/agent-suggest-card-stack
+- 官方文档:https://www.cult-ui.com/docs/components/agent-suggest-card-stack
+- 源码位置:`src/components/ui/agent-suggest-card-stack.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/agent-suggest-card-stack
+~~~
+
+## 用法
+
+~~~tsx
+import { AgentSuggestBotBadge, AgentSuggestCardFrame, AgentSuggestCardStack } from "@/components/ui/agent-suggest-card-stack"
+
+export function Example() {
+  return (
+    <AgentSuggestBotBadge>
+      <AgentSuggestCardFrame />
+    </AgentSuggestBotBadge>
+  )
+}
+~~~
+
+## 导出部件
+
+- `AgentSuggestBotBadge`
+- `AgentSuggestCardFrame`
+- `AgentSuggestCardStack`
+- `AgentSuggestCommitButton`
+- `SuggestionItem`
+- `VercelLogo`
+
+## 依赖
+
+- 无额外依赖
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# AI 光斑头像 (AI Blob Warp)
+
+> 圆形 AI 助手头像,内部是 Paper Design Warp 着色器,遵循减弱动效设置。
+
+- 分类:AI 组件
+- 本站页面:https://cult-ui.ndjp.net/docs/components/ai-blob-warp
+- 官方文档:https://www.cult-ui.com/docs/components/ai-blob-warp
+- 源码位置:`src/components/ui/ai-blob-warp.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/ai-blob-warp
+~~~
+
+## 用法
+
+~~~tsx
+import { AiBlobWarpAvatar } from "@/components/ui/ai-blob-warp"
+
+export function Example() {
+  return (
+    <AiBlobWarpAvatar>内容</AiBlobWarpAvatar>
+  )
+}
+~~~
+
+## 导出部件
+
+- `AiBlobWarpAvatar`
+
+## 依赖
+
+- `@paper-design/shaders-react`
+- `motion`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# AI 指令管理 (AI Instructions)
+
+> 在弹出层里搜索、开关、新建自定义 AI 指令的组合式组件。
+
+- 分类:AI 组件
+- 本站页面:https://cult-ui.ndjp.net/docs/components/ai-instructions
+- 官方文档:https://www.cult-ui.com/docs/components/ai-instructions
+- 源码位置:`src/components/ui/ai-instructions.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/ai-instructions
+~~~
+
+## 用法
+
+~~~tsx
+import { Instruction, Instructions, InstructionsContent } from "@/components/ui/ai-instructions"
+
+export function Example() {
+  return (
+    <Instruction>
+      <Instructions />
+    </Instruction>
+  )
+}
+~~~
+
+## 导出部件
+
+- `Instruction`
+- `Instructions`
+- `InstructionsContent`
+- `InstructionsCreateDialog`
+- `InstructionsCreateTrigger`
+- `InstructionsEmpty`
+- `InstructionsFooter`
+- `InstructionsGroup`
+- `InstructionsHoverCard`
+- `InstructionsItem`
+- `InstructionsItemDescription`
+- `InstructionsItemTitle`
+
+## 依赖
+
+- `@hugeicons/core-free-icons`
+- `@hugeicons/react`
+
+## 源码属性定义
+
+### InstructionsHoverCardProps
+
+~~~ts
+export interface InstructionsHoverCardProps {
+  /** The instruction to preview */
+  instruction: Instruction
+  /** The trigger element (instruction item) */
+  children: ReactNode
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 提示词输入器 (Prompt Composer)
+
+> 多行提示词输入框,带着色器头像、交错占位符、加载线与发送/附件按钮。
+
+- 分类:AI 组件
+- 本站页面:https://cult-ui.ndjp.net/docs/components/prompt-composer
+- 官方文档:https://www.cult-ui.com/docs/components/prompt-composer
+- 源码位置:`src/components/ui/prompt-composer.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/prompt-composer
+~~~
+
+## 用法
+
+~~~tsx
+import { AiBlobWarpAvatar, PromptComposer, PromptTextarea } from "@/components/ui/prompt-composer"
+
+export function Example() {
+  return (
+    <AiBlobWarpAvatar>
+      <PromptComposer />
+    </AiBlobWarpAvatar>
+  )
+}
+~~~
+
+## 导出部件
+
+- `AiBlobWarpAvatar`
+- `PromptComposer`
+- `PromptTextarea`
+
+## 依赖
+
+- `@base-ui/react`
+- `@paper-design/shaders-react`
+- `lucide-react`
+- `motion`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 提示词库 (Prompt Library)
+
+> 按分类浏览、插入和管理提示词模板,支持自定义提示词。
+
+- 分类:AI 组件
+- 本站页面:https://cult-ui.ndjp.net/docs/components/prompt-library
+- 官方文档:https://www.cult-ui.com/docs/components/prompt-library
+- 源码位置:`src/components/ui/prompt-library.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/prompt-library
+~~~
+
+## 用法
+
+~~~tsx
+import { Prompt, PromptLibrary, PromptLibraryContent } from "@/components/ui/prompt-library"
+
+export function Example() {
+  return (
+    <Prompt>
+      <PromptLibrary />
+    </Prompt>
+  )
+}
+~~~
+
+## 导出部件
+
+- `Prompt`
+- `PromptLibrary`
+- `PromptLibraryContent`
+- `PromptLibraryCreateDialog`
+- `PromptLibraryCreateTrigger`
+- `PromptLibraryEmpty`
+- `PromptLibraryFooter`
+- `PromptLibraryGroup`
+- `PromptLibraryHoverCard`
+- `PromptLibraryItem`
+- `PromptLibraryItemDescription`
+- `PromptLibraryItemTitle`
+
+## 依赖
+
+- `@hugeicons/core-free-icons`
+- `@hugeicons/react`
+
+## 源码属性定义
+
+### PromptLibraryHoverCardProps
+
+~~~ts
+export interface PromptLibraryHoverCardProps {
+  /** The prompt to preview */
+  prompt: Prompt
+  /** The trigger element (prompt item) */
+  children: ReactNode
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 渐变背景按钮 (Background Animate Button)
+
+> 背景为旋转圆锥渐变的按钮,内置预设渐变、CVA 变体与 asChild。
+
+- 分类:按钮
+- 本站页面:https://cult-ui.ndjp.net/docs/components/bg-animate-button
+- 官方文档:https://www.cult-ui.com/docs/components/bg-animate-button
+- 源码位置:`src/components/ui/bg-animate-button.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/bg-animate-button
+~~~
+
+## 用法
+
+~~~tsx
+import { BgAnimateButton } from "@/components/ui/bg-animate-button"
+
+export function Example() {
+  return (
+    <BgAnimateButton>内容</BgAnimateButton>
+  )
+}
+~~~
+
+## 导出部件
+
+- `BgAnimateButton`
+
+## 依赖
+
+- `@radix-ui/react-slot`
+- `class-variance-authority`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 流光边框按钮 (Border Beam Button)
+
+> shadcn 按钮外包一圈流动光束,提供文字与图标两种变体。
+
+- 分类:按钮
+- 本站页面:https://cult-ui.ndjp.net/docs/components/border-beam-button
+- 官方文档:https://www.cult-ui.com/docs/components/border-beam-button
+- 源码位置:`src/components/ui/border-beam-button.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/border-beam-button
+~~~
+
+## 用法
+
+~~~tsx
+import { BorderBeamButton, BorderBeamIconButton } from "@/components/ui/border-beam-button"
+
+export function Example() {
+  return (
+    <BorderBeamButton>
+      <BorderBeamIconButton />
+    </BorderBeamButton>
+  )
+}
+~~~
+
+## 导出部件
+
+- `BorderBeamButton`
+- `BorderBeamIconButton`
+
+## 依赖
+
+- 无额外依赖
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 宇宙按钮 (Cosmic Button)
+
+> 带光晕宇宙渐变边框的链接或按钮,悬停时边框扩大,适合首屏 CTA。
+
+- 分类:按钮
+- 本站页面:https://cult-ui.ndjp.net/docs/components/cosmic-button
+- 官方文档:https://www.cult-ui.com/docs/components/cosmic-button
+- 源码位置:`src/components/ui/cosmic-button.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/cosmic-button
+~~~
+
+## 用法
+
+~~~tsx
+import { CosmicButton } from "@/components/ui/cosmic-button"
+
+export function Example() {
+  return (
+    <CosmicButton>内容</CosmicButton>
+  )
+}
+~~~
+
+## 导出部件
+
+- `CosmicButton`
+
+## 依赖
+
+- 无额外依赖
+
+## 源码属性定义
+
+### CosmicButtonProps
+
+~~~ts
+export type CosmicButtonProps<E extends "a" | "button" = "a"> = {
+  /** The HTML element to render as. @default "a" */
+  as?: E
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# Family 浮动按钮 (Family Button)
+
+> 从加号展开成内容面板的浮动按钮,灵感来自 Family 应用。
+
+- 分类:按钮
+- 本站页面:https://cult-ui.ndjp.net/docs/components/family-button
+- 官方文档:https://www.cult-ui.com/docs/components/family-button
+- 源码位置:`src/components/ui/family-button.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/family-button
+~~~
+
+## 用法
+
+~~~tsx
+import { FamilyButton } from "@/components/ui/family-button"
+
+export function Example() {
+  return (
+    <FamilyButton>内容</FamilyButton>
+  )
+}
+~~~
+
+## 导出部件
+
+- `FamilyButton`
+
+## 依赖
+
+- `lucide-react`
+- `motion`
+
+## 源码属性定义
+
+### FamilyButtonProps
+
+~~~ts
+interface FamilyButtonProps {
+  children: React.ReactNode
+}
+~~~
+
+### FamilyButtonContainerProps
+
+~~~ts
+interface FamilyButtonContainerProps {
+  isExpanded: boolean
+  toggleExpand: () => void
+  children: ReactNode
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 渐变按钮组 (Gradient Button Group)
+
+> 分层图标按钮组,带流动的激活光环与内置明暗主题切换。
+
+- 分类:按钮
+- 本站页面:https://cult-ui.ndjp.net/docs/components/gradient-button-group
+- 官方文档:https://www.cult-ui.com/docs/components/gradient-button-group
+- 源码位置:`src/components/ui/gradient-button-group.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/gradient-button-group
+~~~
+
+## 用法
+
+~~~tsx
+import { GradientButtonGroup } from "@/components/ui/gradient-button-group"
+
+export function Example() {
+  return (
+    <GradientButtonGroup>内容</GradientButtonGroup>
+  )
+}
+~~~
+
+## 导出部件
+
+- `GradientButtonGroup`
+
+## 依赖
+
+- `motion`
+- `next-themes`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# Halo 按钮 (Halo Button)
+
+> 带流动渐变边框、磨砂填充与交错文字的主动作按钮,内置加载态。
+
+- 分类:按钮
+- 本站页面:https://cult-ui.ndjp.net/docs/components/halo-button
+- 官方文档:https://www.cult-ui.com/docs/components/halo-button
+- 源码位置:`src/components/ui/halo-button.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/halo-button
+~~~
+
+## 用法
+
+~~~tsx
+import { HaloButton } from "@/components/ui/halo-button"
+
+export function Example() {
+  return (
+    <HaloButton>内容</HaloButton>
+  )
+}
+~~~
+
+## 导出部件
+
+- `HaloButton`
+
+## 依赖
+
+- `@base-ui/react`
+- `motion`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 金属按钮 (Metal Button)
+
+> shadcn 按钮外包 MetalFx 液态金属光环,有文字与图标变体。
+
+- 分类:按钮
+- 本站页面:https://cult-ui.ndjp.net/docs/components/metal-button
+- 官方文档:https://www.cult-ui.com/docs/components/metal-button
+- 源码位置:`src/components/ui/metal-button.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/metal-button
+~~~
+
+## 用法
+
+~~~tsx
+import { MetalButton, MetalIconButton } from "@/components/ui/metal-button"
+
+export function Example() {
+  return (
+    <MetalButton>
+      <MetalIconButton />
+    </MetalButton>
+  )
+}
+~~~
+
+## 导出部件
+
+- `MetalButton`
+- `MetalIconButton`
+
+## 依赖
+
+- `metal-fx`
+- `class-variance-authority`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 新拟态按钮 (Neumorph Button)
+
+> 柔光阴影的新拟态按钮,按下带触感回弹。
+
+- 分类:按钮
+- 本站页面:https://cult-ui.ndjp.net/docs/components/neumorph-button
+- 官方文档:https://www.cult-ui.com/docs/components/neumorph-button
+- 源码位置:`src/components/ui/neumorph-button.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/neumorph-button
+~~~
+
+## 用法
+
+~~~tsx
+import { NeumorphButton } from "@/components/ui/neumorph-button"
+~~~
+
+## 导出部件
+
+
+## 依赖
+
+- `class-variance-authority`
+- `lucide-react`
+- `motion`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 有机形状按钮 (Organic Button)
+
+> 两端固定 SVG 端帽的链接式 CTA,通过 CSS 变量共享表面配色。
+
+- 分类:按钮
+- 本站页面:https://cult-ui.ndjp.net/docs/components/organic-button
+- 官方文档:https://www.cult-ui.com/docs/components/organic-button
+- 源码位置:`src/components/ui/organic-button.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/organic-button
+~~~
+
+## 用法
+
+~~~tsx
+import { OrganicButton } from "@/components/ui/organic-button"
+
+export function Example() {
+  return (
+    <OrganicButton>内容</OrganicButton>
+  )
+}
+~~~
+
+## 导出部件
+
+- `OrganicButton`
+
+## 依赖
+
+- `@radix-ui/react-slot`
+- `class-variance-authority`
+- `lucide-react`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 纹理按钮 (Texture Button)
+
+> 带纹理叠加层的按钮,提供多种预设变体。
+
+- 分类:按钮
+- 本站页面:https://cult-ui.ndjp.net/docs/components/texture-button
+- 官方文档:https://www.cult-ui.com/docs/components/texture-button
+- 源码位置:`src/components/ui/texture-button.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/texture-button
+~~~
+
+## 用法
+
+~~~tsx
+import { TextureButton } from "@/components/ui/texture-button"
+
+export function Example() {
+  return (
+    <TextureButton>内容</TextureButton>
+  )
+}
+~~~
+
+## 导出部件
+
+- `TextureButton`
+
+## 依赖
+
+- `@radix-ui/react-slot`
+- `class-variance-authority`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 流光边框卡片 (Border Beam Card)
+
+> 带有一道沿边缘循环流动光束的卡片组件,基于 shadcn Card 封装,常用于功能亮点展示与定价卡。
+
+- 分类:卡片
+- 本站页面:https://cult-ui.ndjp.net/docs/components/border-beam-card
+- 官方文档:https://www.cult-ui.com/docs/components/border-beam-card
+- 源码位置:`src/components/ui/border-beam-card.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/border-beam-card
+~~~
+
+## 用法
+
+~~~tsx
+import {
+  BorderBeamCard,
+  BorderBeamCardHeader,
+  BorderBeamCardTitle,
+  BorderBeamCardDescription,
+  BorderBeamCardContent,
+} from "@/components/ui/border-beam-card"
+
+<BorderBeamCard className="w-sm">
+  <BorderBeamCardHeader>
+    <BorderBeamCardTitle>流光边框</BorderBeamCardTitle>
+    <BorderBeamCardDescription>一道光束沿卡片边缘循环流动。</BorderBeamCardDescription>
+  </BorderBeamCardHeader>
+  <BorderBeamCardContent>内容区</BorderBeamCardContent>
+</BorderBeamCard>
+~~~
+
+## 导出部件
+
+- `BorderBeamCard`
+- `BorderBeamCardAction`
+- `BorderBeamCardContent`
+- `BorderBeamCardDescription`
+- `BorderBeamCardFooter`
+- `BorderBeamCardHeader`
+- `BorderBeamCardTitle`
+
+## 依赖
+
+- 无额外依赖
+## 属性(Props)
+
+| 属性 | 类型 | 默认值 | 说明 |
+| --- | --- | --- | --- |
+| `children` | `React.ReactNode` | — | 卡片内容。 |
+| `size` | `"default" \| "sm"` | `"default"` | 卡片布局密度,与 shadcn Card 的 size 一致。 |
+| `beamSize` | `"sm" \| "md" \| "line"` | `"md"` | 光束粗细预设。 |
+| `cardClassName` | `string` | — | 合并到内部 Card 的类名。 |
+| `theme` | `"auto" \| ...` | `"auto"` | 光束配色主题,auto 跟随明暗模式。 |
+| `borderRadius` | `string \| number` | — | 覆盖圆角。 |
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 切角图片卡 (Cutout Card)
+
+> 带切角装饰、内嵌标签、图钉与悬停操作按钮的图片卡片。
+
+- 分类:卡片
+- 本站页面:https://cult-ui.ndjp.net/docs/components/cutout-card
+- 官方文档:https://www.cult-ui.com/docs/components/cutout-card
+- 源码位置:`src/components/ui/cutout-card.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/cutout-card
+~~~
+
+## 用法
+
+~~~tsx
+import { CutoutCard, CutoutCardAction, CutoutCardContent } from "@/components/ui/cutout-card"
+
+export function Example() {
+  return (
+    <CutoutCard>
+      <CutoutCardAction />
+    </CutoutCard>
+  )
+}
+~~~
+
+## 导出部件
+
+- `CutoutCard`
+- `CutoutCardAction`
+- `CutoutCardContent`
+- `CutoutCardFooter`
+- `CutoutCardImage`
+- `CutoutCardInsetLabel`
+- `CutoutCardMedia`
+- `CutoutCardOverlay`
+- `CutoutCardPin`
+- `CutoutCorner`
+- `cutoutCardSurfaceClassName`
+- `cutoutCardSurfaceShadowClassName`
+
+## 依赖
+
+- `motion`
+- `@radix-ui/react-use-controllable-state`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 可展开卡片 (Expandable)
+
+> 在收起与展开状态间平滑动画,展开后显示更多细节。
+
+- 分类:卡片
+- 本站页面:https://cult-ui.ndjp.net/docs/components/expandable
+- 官方文档:https://www.cult-ui.com/docs/components/expandable
+- 源码位置:`src/components/ui/expandable.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/expandable
+~~~
+
+## 用法
+
+~~~tsx
+import { Expandable, ExpandableCard, ExpandableCardContent } from "@/components/ui/expandable"
+
+export function Example() {
+  return (
+    <Expandable>
+      <ExpandableCard />
+    </Expandable>
+  )
+}
+~~~
+
+## 导出部件
+
+- `Expandable`
+- `ExpandableCard`
+- `ExpandableCardContent`
+- `ExpandableCardFooter`
+- `ExpandableCardHeader`
+- `ExpandableContent`
+- `ExpandableTrigger`
+- `useExpandable`
+
+## 依赖
+
+- `motion`
+- `react-use-measure`
+
+## 源码属性定义
+
+### AnimationProps
+
+~~~ts
+interface AnimationProps {
+  initial?: TargetAndTransition
+  animate?: TargetAndTransition
+  exit?: TargetAndTransition
+  transition?: any
+}
+~~~
+
+### ExpandableCardProps
+
+~~~ts
+interface ExpandableCardProps {
+  children: ReactNode
+  className?: string
+  collapsedSize?: { width?: number; height?: number } // Size when collapsed
+  expandedSize?: { width?: number; height?: number } // Size when expanded
+  hoverToExpand?: boolean // Whether to expand on hover
+  expandDelay?: number // Delay before expanding
+  collapseDelay?: number // Delay before collapsing
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 折角卡片 (Folded Card)
+
+> 可组合的折角卡片组件,右上角带真实翻折效果,适合模板集市、博客索引、资源目录等场景。
+
+- 分类:卡片
+- 本站页面:https://cult-ui.ndjp.net/docs/components/folded-card
+- 官方文档:https://www.cult-ui.com/docs/components/folded-card
+- 源码位置:`src/components/ui/folded-card.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/folded-card
+~~~
+
+## 用法
+
+~~~tsx
+import {
+  FoldedCard, FoldedCardFold, FoldedCardLink, FoldedCardBorder,
+  FoldedCardPreview, FoldedCardGrid, FoldedCardFooter,
+  FoldedCardHeading, FoldedCardTitle, FoldedCardBadge,
+  FoldedCardDescription,
+} from "@/components/ui/folded-card"
+
+<FoldedCard>
+  <FoldedCardFold />
+  <FoldedCardLink href="/docs/components/folded-card">
+    <FoldedCardBorder />
+    <FoldedCardPreview>
+      <FoldedCardGrid />
+    </FoldedCardPreview>
+    <FoldedCardFooter>
+      <FoldedCardHeading>
+        <FoldedCardTitle>折角卡片</FoldedCardTitle>
+        <FoldedCardBadge>新</FoldedCardBadge>
+      </FoldedCardHeading>
+      <FoldedCardDescription>右上角带折角的卡片。</FoldedCardDescription>
+    </FoldedCardFooter>
+  </FoldedCardLink>
+</FoldedCard>
+~~~
+
+## 导出部件
+
+- `ChatTail`
+- `FoldedCard`
+- `FoldedCardBadge`
+- `FoldedCardBorder`
+- `FoldedCardDescription`
+- `FoldedCardFold`
+- `FoldedCardFooter`
+- `FoldedCardGrid`
+- `FoldedCardHeading`
+- `FoldedCardLink`
+- `FoldedCardPreview`
+- `FoldedCardTitle`
+
+## 依赖
+
+- 无额外依赖
+## 备注
+
+原组件基于 Next.js Link,本站已将其适配为标准 <a> 标签,可在 Vite 中直接使用。
+
+## 属性(Props)
+
+| 属性 | 类型 | 默认值 | 说明 |
+| --- | --- | --- | --- |
+| `FoldedCard` | `div props` | — | 根容器,默认 max-w-sm 并应用折角裁剪路径。 |
+| `FoldedCardFold` | `div props` | — | 右上角 40×40px 的翻折角。 |
+| `FoldedCardLink` | `a props` | — | 链接包装器(Vite 环境渲染为 <a>)。 |
+| `FoldedCardPreview` | `div props` | — | 预览区,默认高 228px。 |
+| `FoldedCardGrid` | `rows?, columns?` | — | 装饰网格,默认 4×4。 |
+| `FoldedCardTitle` | `h3 props` | — | 卡片标题。 |
+| `FoldedCardBadge` | `span props` | — | 小徽章。 |
+| `FoldedCardDescription` | `p props` | — | 描述,默认 line-clamp-3。 |
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# Halo 卡片 (Halo Card)
+
+> 带流动渐变边框、磨砂表面与页眉/内容/页脚插槽的卡片。
+
+- 分类:卡片
+- 本站页面:https://cult-ui.ndjp.net/docs/components/halo-card
+- 官方文档:https://www.cult-ui.com/docs/components/halo-card
+- 源码位置:`src/components/ui/halo-card.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/halo-card
+~~~
+
+## 用法
+
+~~~tsx
+import { HaloCard, HaloCardAction, HaloCardButton } from "@/components/ui/halo-card"
+
+export function Example() {
+  return (
+    <HaloCard>
+      <HaloCardAction />
+    </HaloCard>
+  )
+}
+~~~
+
+## 导出部件
+
+- `HaloCard`
+- `HaloCardAction`
+- `HaloCardButton`
+- `HaloCardContent`
+- `HaloCardDescription`
+- `HaloCardFooter`
+- `HaloCardHeader`
+- `HaloCardTitle`
+
+## 依赖
+
+- `@base-ui/react`
+- `motion`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 极简卡片 (Minimal Card)
+
+> 干净克制的卡片,只有细微边框与悬停阴影。
+
+- 分类:卡片
+- 本站页面:https://cult-ui.ndjp.net/docs/components/minimal-card
+- 官方文档:https://www.cult-ui.com/docs/components/minimal-card
+- 源码位置:`src/components/ui/minimal-card.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/minimal-card
+~~~
+
+## 用法
+
+~~~tsx
+import { MinimalCard, MinimalCardContent, MinimalCardDescription } from "@/components/ui/minimal-card"
+
+export function Example() {
+  return (
+    <MinimalCard>
+      <MinimalCardContent />
+    </MinimalCard>
+  )
+}
+~~~
+
+## 导出部件
+
+- `MinimalCard`
+- `MinimalCardContent`
+- `MinimalCardDescription`
+- `MinimalCardFooter`
+- `MinimalCardImage`
+- `MinimalCardTitle`
+
+## 依赖
+
+- 无额外依赖
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 有机卡片 (Organic Card)
+
+> 营销用组合卡片:图片插槽、眉标、标题、正文、强调色带与底部 CTA。
+
+- 分类:卡片
+- 本站页面:https://cult-ui.ndjp.net/docs/components/organic-card
+- 官方文档:https://www.cult-ui.com/docs/components/organic-card
+- 源码位置:`src/components/ui/organic-card.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/organic-card
+~~~
+
+## 用法
+
+~~~tsx
+import { OrganicCard, OrganicCardBand, OrganicCardBody } from "@/components/ui/organic-card"
+
+export function Example() {
+  return (
+    <OrganicCard>
+      <OrganicCardBand />
+    </OrganicCard>
+  )
+}
+~~~
+
+## 导出部件
+
+- `OrganicCard`
+- `OrganicCardBand`
+- `OrganicCardBody`
+- `OrganicCardDescription`
+- `OrganicCardEyebrow`
+- `OrganicCardFooter`
+- `OrganicCardFooterIcon`
+- `OrganicCardFooterLabel`
+- `OrganicCardImage`
+- `OrganicCardTitle`
+
+## 依赖
+
+- `lucide-react`
+
+## 源码属性定义
+
+### OrganicCardSharedProps
+
+~~~ts
+interface OrganicCardSharedProps {
+  children: ReactNode
+  backgroundColor?: string
+  className?: string
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 有机小卡片 (Organic Card Small)
+
+> 带 SVG 轮廓的小卡片,展示分类与日期,悬停时有形变动画。
+
+- 分类:卡片
+- 本站页面:https://cult-ui.ndjp.net/docs/components/organic-card-small
+- 官方文档:https://www.cult-ui.com/docs/components/organic-card-small
+- 源码位置:`src/components/ui/organic-card-small.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/organic-card-small
+~~~
+
+## 用法
+
+~~~tsx
+import { OrganicCardSmall } from "@/components/ui/organic-card-small"
+
+export function Example() {
+  return (
+    <OrganicCardSmall>内容</OrganicCardSmall>
+  )
+}
+~~~
+
+## 导出部件
+
+- `OrganicCardSmall`
+
+## 依赖
+
+- `lucide-react`
+- `motion`
+
+## 源码属性定义
+
+### OrganicCardSmallProps
+
+~~~ts
+interface OrganicCardSmallProps {
+  image: string
+  imageAlt?: string
+  category: string
+  date: string
+  title: string
+  href?: string
+  className?: string
+  /** Card body + band fill (defaults to stone) */
+  surfaceColor?: string
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 阴影卡片 (Shadow Card)
+
+> L 形成型阴影的营销卡片,可选像素渐变网格与链接根节点。
+
+- 分类:卡片
+- 本站页面:https://cult-ui.ndjp.net/docs/components/shadow-card
+- 官方文档:https://www.cult-ui.com/docs/components/shadow-card
+- 源码位置:`src/components/ui/shadow-card.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/shadow-card
+~~~
+
+## 用法
+
+~~~tsx
+import { ShadowCard, ShadowCardBackdrop, ShadowCardBevel } from "@/components/ui/shadow-card"
+
+export function Example() {
+  return (
+    <ShadowCard>
+      <ShadowCardBackdrop />
+    </ShadowCard>
+  )
+}
+~~~
+
+## 导出部件
+
+- `ShadowCard`
+- `ShadowCardBackdrop`
+- `ShadowCardBevel`
+- `ShadowCardFooter`
+- `ShadowCardGlow`
+- `ShadowCardPixelGradient`
+- `ShadowCardVerticalText`
+
+## 依赖
+
+- `@radix-ui/react-slot`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 位移动画卡片 (Shift Card)
+
+> 悬停时内部图层错位滑动的卡片。
+
+- 分类:卡片
+- 本站页面:https://cult-ui.ndjp.net/docs/components/shift-card
+- 官方文档:https://www.cult-ui.com/docs/components/shift-card
+- 源码位置:`src/components/ui/shift-card.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/shift-card
+~~~
+
+## 用法
+
+~~~tsx
+import { ShiftCard, ShiftCardContent, ShiftCardHeader } from "@/components/ui/shift-card"
+
+export function Example() {
+  return (
+    <ShiftCard>
+      <ShiftCardContent />
+    </ShiftCard>
+  )
+}
+~~~
+
+## 导出部件
+
+- `ShiftCard`
+- `ShiftCardContent`
+- `ShiftCardHeader`
+
+## 依赖
+
+- `motion`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 纹理卡片 (Texture Card)
+
+> 带纹理背景与多种样式预设的卡片。
+
+- 分类:卡片
+- 本站页面:https://cult-ui.ndjp.net/docs/components/texture-card
+- 官方文档:https://www.cult-ui.com/docs/components/texture-card
+- 源码位置:`src/components/ui/texture-card.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/texture-card
+~~~
+
+## 用法
+
+~~~tsx
+import { TextureCard, TextureCardContent, TextureCardDescription } from "@/components/ui/texture-card"
+
+export function Example() {
+  return (
+    <TextureCard>
+      <TextureCardContent />
+    </TextureCard>
+  )
+}
+~~~
+
+## 导出部件
+
+- `TextureCard`
+- `TextureCardContent`
+- `TextureCardDescription`
+- `TextureCardFooter`
+- `TextureCardHeader`
+- `TextureCardStyled`
+- `TextureCardTitle`
+- `TextureSeparator`
+
+## 依赖
+
+- 无额外依赖
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# Base UI 选择器 (Base Select)
+
+> Halo Select 底层的 Base UI 选择器原语(Select、Item、Group 等)。
+
+- 分类:表单与输入
+- 本站页面:https://cult-ui.ndjp.net/docs/components/base-select
+- 官方文档:https://www.cult-ui.com/docs/components/base-select
+- 源码位置:`src/components/ui/base-select.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/base-select
+~~~
+
+## 用法
+
+~~~tsx
+import { Select, SelectContent, SelectGroup } from "@/components/ui/base-select"
+
+export function Example() {
+  return (
+    <Select>
+      <SelectContent />
+    </Select>
+  )
+}
+~~~
+
+## 导出部件
+
+- `Select`
+- `SelectContent`
+- `SelectGroup`
+- `SelectItem`
+- `SelectLabel`
+- `SelectScrollDownButton`
+- `SelectScrollUpButton`
+- `SelectSeparator`
+- `SelectTrigger`
+- `SelectValue`
+
+## 依赖
+
+- `@base-ui/react`
+- `@hugeicons/react`
+- `@hugeicons/core-free-icons`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 流光输入框 (Border Beam Input)
+
+> Base UI 输入框与输入组上加流动光束,可选底边或整圈。
+
+- 分类:表单与输入
+- 本站页面:https://cult-ui.ndjp.net/docs/components/border-beam-input
+- 官方文档:https://www.cult-ui.com/docs/components/border-beam-input
+- 源码位置:`src/components/ui/border-beam-input.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/border-beam-input
+~~~
+
+## 用法
+
+~~~tsx
+import { BorderBeamInput, BorderBeamInputGroup, BorderBeamInputGroupAddon } from "@/components/ui/border-beam-input"
+
+export function Example() {
+  return (
+    <BorderBeamInput>
+      <BorderBeamInputGroup />
+    </BorderBeamInput>
+  )
+}
+~~~
+
+## 导出部件
+
+- `BorderBeamInput`
+- `BorderBeamInputGroup`
+- `BorderBeamInputGroupAddon`
+- `BorderBeamInputGroupButton`
+- `BorderBeamInputGroupInput`
+- `BorderBeamInputGroupText`
+- `BorderBeamInputGroupTextarea`
+
+## 依赖
+
+- `@base-ui/react`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 颜色选择器 (Color Picker)
+
+> HLS 滑杆、HEX 输入与预设色板组成的取色器。
+
+- 分类:表单与输入
+- 本站页面:https://cult-ui.ndjp.net/docs/components/color-picker
+- 官方文档:https://www.cult-ui.com/docs/components/color-picker
+- 源码位置:`src/components/ui/color-picker.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/color-picker
+~~~
+
+## 用法
+
+~~~tsx
+import { ColorPicker } from "@/components/ui/color-picker"
+
+export function Example() {
+  return (
+    <ColorPicker>内容</ColorPicker>
+  )
+}
+~~~
+
+## 导出部件
+
+- `ColorPicker`
+
+## 依赖
+
+- `motion`
+- `lucide-react`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# Halo 拖放上传 (Halo Dropzone)
+
+> 带动画虚线边框与文件类型图标的拖放上传区,支持键盘操作。
+
+- 分类:表单与输入
+- 本站页面:https://cult-ui.ndjp.net/docs/components/halo-dropzone
+- 官方文档:https://www.cult-ui.com/docs/components/halo-dropzone
+- 源码位置:`src/components/ui/halo-dropzone.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/halo-dropzone
+~~~
+
+## 用法
+
+~~~tsx
+import { DropzoneFileTypeGlyph, DropzoneUploadFileList, DropzoneUploadFileRow } from "@/components/ui/halo-dropzone"
+
+export function Example() {
+  return (
+    <DropzoneFileTypeGlyph>
+      <DropzoneUploadFileList />
+    </DropzoneFileTypeGlyph>
+  )
+}
+~~~
+
+## 导出部件
+
+- `DropzoneFileTypeGlyph`
+- `DropzoneUploadFileList`
+- `DropzoneUploadFileRow`
+- `FilePlaceholderKind`
+- `FileTypePlaceholder`
+- `HaloDropzone`
+- `QueuedFile`
+- `fileKey`
+- `formatFileBytes`
+- `inferPlaceholderKind`
+
+## 依赖
+
+- `lucide-react`
+- `motion`
+
+## 源码属性定义
+
+### DropzoneBodyProps
+
+~~~ts
+interface DropzoneBodyProps {
+  cf: ReturnType<typeof crossfade>
+  cfTransition: ReturnType<typeof crossfadeTransition>
+  disabled: boolean
+  emptyLabel: string
+  formatHint: string | null
+  idleIcon?: ReactNode
+  imageObjectUrls: Record<string, string>
+  reduceMotion: boolean
+  showSuccess: boolean
+  showSuccessThumbnails: boolean
+  successLabel: string
+  uploadedFiles: File[]
+}
+~~~
+
+### HaloDropzoneProps
+
+~~~ts
+export interface HaloDropzoneProps {
+  className?: string
+  accept?: string
+  multiple?: boolean
+  disabled?: boolean
+  /** Frosted glass fill (matches composer translucent mode). */
+  translucent?: boolean
+  /** Called after files are chosen via drop or picker. */
+  onFiles?: (files: File[]) => void
+  /**
+   * Clear the success state after this many ms. `0` keeps success until the next
+   * drop or until the user picks again.
+   */
+  successResetMs?: number
+  /** Primary line in the idle slot. */
+  emptyLabel?: string
+  /** Line under the filename in the success slot. */
+  successLabel?: string
+  /** Optional icon override for the idle slot (defaults to upload). */
+  idleIcon?: ReactNode
+  /** Secondary line under the title; set `null` to hide. */
+  formatHint?: string | null
+  /**
+   * When the dropzone shows success, render thumbnail previews inside the zone.
+   * Set `false` if you show file details (e.g. upload rows) below the dropzone.
+   */
+  showSuccessThumbnails?: boolean
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# Halo 表单字段 (Halo Field)
+
+> 为 Halo Input 与 Textarea 提供的标签、描述与错误提示布局。
+
+- 分类:表单与输入
+- 本站页面:https://cult-ui.ndjp.net/docs/components/halo-field
+- 官方文档:https://www.cult-ui.com/docs/components/halo-field
+- 源码位置:`src/components/ui/halo-field.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/halo-field
+~~~
+
+## 用法
+
+~~~tsx
+import { HaloField, HaloFieldContent, HaloFieldDescription } from "@/components/ui/halo-field"
+
+export function Example() {
+  return (
+    <HaloField>
+      <HaloFieldContent />
+    </HaloField>
+  )
+}
+~~~
+
+## 导出部件
+
+- `HaloField`
+- `HaloFieldContent`
+- `HaloFieldDescription`
+- `HaloFieldError`
+- `HaloFieldLabel`
+- `HaloFieldTitle`
+
+## 依赖
+
+- 无额外依赖
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# Halo 输入框 (Halo Input)
+
+> 单行与多行输入框,磨砂填充加渐变边框,含错误态。
+
+- 分类:表单与输入
+- 本站页面:https://cult-ui.ndjp.net/docs/components/halo-input
+- 官方文档:https://www.cult-ui.com/docs/components/halo-input
+- 源码位置:`src/components/ui/halo-input.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/halo-input
+~~~
+
+## 用法
+
+~~~tsx
+import { HaloInput, HaloTextarea } from "@/components/ui/halo-input"
+
+export function Example() {
+  return (
+    <HaloInput>
+      <HaloTextarea />
+    </HaloInput>
+  )
+}
+~~~
+
+## 导出部件
+
+- `HaloInput`
+- `HaloTextarea`
+
+## 依赖
+
+- `@base-ui/react`
+- `motion`
+
+## 源码属性定义
+
+### ShellProps
+
+~~~ts
+interface ShellProps {
+  children: ReactNode
+  className?: string
+  translucent?: boolean
+  invalid?: boolean
+  /** Extra classes on the frosted inner (border + focus ring target). */
+  innerClassName?: string
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# Halo 搜索框 (Halo Search)
+
+> 带流动渐变边框、交错占位符、清除与加载态的搜索框。
+
+- 分类:表单与输入
+- 本站页面:https://cult-ui.ndjp.net/docs/components/halo-search
+- 官方文档:https://www.cult-ui.com/docs/components/halo-search
+- 源码位置:`src/components/ui/halo-search.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/halo-search
+~~~
+
+## 用法
+
+~~~tsx
+import { AiBlobWarpAvatar, DeletedTextBlurReveal, HaloSearchInput } from "@/components/ui/halo-search"
+
+export function Example() {
+  return (
+    <AiBlobWarpAvatar>
+      <DeletedTextBlurReveal />
+    </AiBlobWarpAvatar>
+  )
+}
+~~~
+
+## 导出部件
+
+- `AiBlobWarpAvatar`
+- `DeletedTextBlurReveal`
+- `HaloSearchInput`
+
+## 依赖
+
+- `@paper-design/shaders-react`
+- `motion`
+
+## 源码属性定义
+
+### DeletedTextBlurRevealProps
+
+~~~ts
+interface DeletedTextBlurRevealProps {
+  text: string
+  animatedIndexes?: number[]
+  reduceMotion?: boolean
+  className?: string
+  textClassName?: string
+  clipDurationMs?: number
+  blurPx?: number
+  saturatePercent?: number
+  /** Optional diagonal blur “wiper” (disabled in the search field for a simpler exit). */
+  showSweep?: boolean
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# Halo 选择器 (Halo Select)
+
+> 组合式动画下拉选择器,渐变边框、磨砂填充与交错标签。
+
+- 分类:表单与输入
+- 本站页面:https://cult-ui.ndjp.net/docs/components/halo-select
+- 官方文档:https://www.cult-ui.com/docs/components/halo-select
+- 源码位置:`src/components/ui/halo-select.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/halo-select
+~~~
+
+## 用法
+
+~~~tsx
+import { HaloSelect, HaloSelectContent, HaloSelectGroup } from "@/components/ui/halo-select"
+
+export function Example() {
+  return (
+    <HaloSelect>
+      <HaloSelectContent />
+    </HaloSelect>
+  )
+}
+~~~
+
+## 导出部件
+
+- `HaloSelect`
+- `HaloSelectContent`
+- `HaloSelectGroup`
+- `HaloSelectItem`
+- `HaloSelectLabel`
+- `HaloSelectScrollDownButton`
+- `HaloSelectScrollUpButton`
+- `HaloSelectSeparator`
+- `HaloSelectTrailingIndicator`
+- `HaloSelectTrigger`
+- `HaloSelectValue`
+- `PolishedSelectItem`
+
+## 依赖
+
+- `@base-ui/react`
+- `lucide-react`
+- `motion`
+
+## 源码属性定义
+
+### BorderGlowConfig
+
+~~~ts
+interface BorderGlowConfig {
+  opacityIdle: number
+  primaryBg: string
+  secondaryBg: string
+  tertiaryBg: string
+  primaryLeft: string[]
+  secondaryLeft: string[]
+  tertiaryLeft: string[]
+  durationMain: number
+  durationSec: number
+  durationTer: number
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# Halo 分段控件 (Halo Segmented)
+
+> 磨砂轨道加弹簧滑块的分段控件。
+
+- 分类:表单与输入
+- 本站页面:https://cult-ui.ndjp.net/docs/components/halo-segmented
+- 官方文档:https://www.cult-ui.com/docs/components/halo-segmented
+- 源码位置:`src/components/ui/halo-segmented.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/halo-segmented
+~~~
+
+## 用法
+
+~~~tsx
+import { HaloSegmented, HaloSegmentedItem } from "@/components/ui/halo-segmented"
+
+export function Example() {
+  return (
+    <HaloSegmented>
+      <HaloSegmentedItem />
+    </HaloSegmented>
+  )
+}
+~~~
+
+## 导出部件
+
+- `HaloSegmented`
+- `HaloSegmentedItem`
+
+## 依赖
+
+- `@base-ui/react`
+- `motion`
+
+## 源码属性定义
+
+### HaloSegmentedProps
+
+~~~ts
+export interface HaloSegmentedProps {
+  items: HaloSegmentedItem[]
+  /** Selected value; omit for uncontrolled usage with `defaultValue`. */
+  value?: string
+  defaultValue?: string
+  onValueChange?: (next: string) => void
+  className?: string
+  /** Frosted track + backdrop blur (matches card/button translucent mode). */
+  translucent?: boolean
+  disabled?: boolean
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# Halo 开关 (Halo Switch)
+
+> 弹簧滑块、磨砂轨道并扩大触控热区的开关。
+
+- 分类:表单与输入
+- 本站页面:https://cult-ui.ndjp.net/docs/components/halo-switch
+- 官方文档:https://www.cult-ui.com/docs/components/halo-switch
+- 源码位置:`src/components/ui/halo-switch.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/halo-switch
+~~~
+
+## 用法
+
+~~~tsx
+import { HaloSwitch } from "@/components/ui/halo-switch"
+
+export function Example() {
+  return (
+    <HaloSwitch>内容</HaloSwitch>
+  )
+}
+~~~
+
+## 导出部件
+
+- `HaloSwitch`
+
+## 依赖
+
+- `@base-ui/react`
+- `motion`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# Halo 切换组 (Halo Toggle Group)
+
+> 单选切换组,磨砂轨道加弹簧滑块,用于视图与对齐切换。
+
+- 分类:表单与输入
+- 本站页面:https://cult-ui.ndjp.net/docs/components/halo-toggle-group
+- 官方文档:https://www.cult-ui.com/docs/components/halo-toggle-group
+- 源码位置:`src/components/ui/halo-toggle-group.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/halo-toggle-group
+~~~
+
+## 用法
+
+~~~tsx
+import { HaloToggleGroup, HaloToggleGroupItem } from "@/components/ui/halo-toggle-group"
+
+export function Example() {
+  return (
+    <HaloToggleGroup>
+      <HaloToggleGroupItem />
+    </HaloToggleGroup>
+  )
+}
+~~~
+
+## 导出部件
+
+- `HaloToggleGroup`
+- `HaloToggleGroupItem`
+
+## 依赖
+
+- `@base-ui/react`
+- `motion`
+
+## 源码属性定义
+
+### HaloToggleGroupProps
+
+~~~ts
+export interface HaloToggleGroupProps {
+  items: HaloToggleGroupItem[]
+  /** Selected value; omit for uncontrolled usage with `defaultValue`. */
+  value?: string
+  defaultValue?: string
+  onValueChange?: (next: string) => void
+  className?: string
+  /** Frosted track + backdrop blur (matches card/button translucent mode). */
+  translucent?: boolean
+  disabled?: boolean
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 方向感知标签页 (Direction Aware Tabs)
+
+> 内容按方向左右滑动切换,并随内容平滑改变尺寸。
+
+- 分类:导航与标签页
+- 本站页面:https://cult-ui.ndjp.net/docs/components/direction-aware-tabs
+- 官方文档:https://www.cult-ui.com/docs/components/direction-aware-tabs
+- 源码位置:`src/components/ui/direction-aware-tabs.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/direction-aware-tabs
+~~~
+
+## 用法
+
+~~~tsx
+import { DirectionAwareTabs } from "@/components/ui/direction-aware-tabs"
+
+export function Example() {
+  return (
+    <DirectionAwareTabs>内容</DirectionAwareTabs>
+  )
+}
+~~~
+
+## 导出部件
+
+- `DirectionAwareTabs`
+
+## 依赖
+
+- `motion`
+- `react-use-measure`
+
+## 源码属性定义
+
+### OgImageSectionProps
+
+~~~ts
+interface OgImageSectionProps {
+  tabs: Tab[]
+  className?: string
+  /** Outer container radius (e.g. `rounded-lg`) */
+  rounded?: string
+  /** Inner tab/bubble radius — should be outer radius minus container padding (~3px) */
+  roundedInner?: string
+  onChange?: () => void
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 程序坞 (Dock)
+
+> macOS 风格的底部程序坞,鼠标靠近时图标放大、点击弹出动效,适合作品集与工具栏场景。
+
+- 分类:导航与标签页
+- 本站页面:https://cult-ui.ndjp.net/docs/components/dock
+- 官方文档:https://www.cult-ui.com/docs/components/dock
+- 源码位置:`src/components/ui/dock.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/dock
+~~~
+
+## 用法
+
+~~~tsx
+import { Dock, DockCard, DockCardInner, DockDivider } from "@/components/ui/dock"
+
+<Dock className="fixed bottom-4 left-1/2 -translate-x-1/2">
+  <DockCard id="1">
+    <DockCardInner src="/icons/figma.svg" id="1" />
+  </DockCard>
+  <DockDivider />
+</Dock>
+~~~
+
+## 导出部件
+
+- `Dock`
+- `DockCard`
+- `DockCardInner`
+- `DockDivider`
+- `useDock`
+- `useMousePosition`
+
+## 依赖
+
+- `motion`
+
+## 源码属性定义
+
+### DockProps
+
+~~~ts
+interface DockProps {
+  className?: string
+  children: ReactNode // React children to be rendered within the dock
+}
+~~~
+
+### DockCardInnerProps
+
+~~~ts
+interface DockCardInnerProps {
+  src: string // Source URL for the image
+  id: string // Unique identifier for the card
+  children?: ReactNode // Optional children for the card
+}
+~~~
+
+## 备注
+
+图标通过 DockCardInner 的 src 传入,任意图片皆可。
+
+## 属性(Props)
+
+| 属性 | 类型 | 默认值 | 说明 |
+| --- | --- | --- | --- |
+| `Dock` | `className, children` | — | 根容器,管理悬停与缩放状态。 |
+| `DockCard` | `children, id` | — | 单个图标卡,点击触发布局动画。 |
+| `DockCardInner` | `src, id, children` | — | 图标图片(必须有 src)。 |
+| `DockDivider` | `—` | — | 分隔线。 |
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# Halo 标签页 (Halo Tabs)
+
+> Base UI 标签页,带下滑线或胶囊指示器与渐变配色。
+
+- 分类:导航与标签页
+- 本站页面:https://cult-ui.ndjp.net/docs/components/halo-tabs
+- 官方文档:https://www.cult-ui.com/docs/components/halo-tabs
+- 源码位置:`src/components/ui/halo-tabs.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/halo-tabs
+~~~
+
+## 用法
+
+~~~tsx
+import { HaloTabs, HaloTabsContent, HaloTabsIndicator } from "@/components/ui/halo-tabs"
+
+export function Example() {
+  return (
+    <HaloTabs>
+      <HaloTabsContent />
+    </HaloTabs>
+  )
+}
+~~~
+
+## 导出部件
+
+- `HaloTabs`
+- `HaloTabsContent`
+- `HaloTabsIndicator`
+- `HaloTabsList`
+- `HaloTabsTrigger`
+- `HaloTabsVariant`
+
+## 依赖
+
+- `@base-ui/react`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# Vercel 风格标签页 (Tabs Illustration (Vercel))
+
+> 切换时展示 Vercel 风格插画的标签页。
+
+- 分类:导航与标签页
+- 本站页面:https://cult-ui.ndjp.net/docs/components/tabs-illustration-vercel
+- 官方文档:https://www.cult-ui.com/docs/components/tabs-illustration-vercel
+- 源码位置:`src/components/ui/tabs-illustration-vercel.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/tabs-illustration-vercel
+~~~
+
+## 用法
+
+~~~tsx
+import { TabsIllustration(Vercel) } from "@/components/ui/tabs-illustration-vercel"
+~~~
+
+## 导出部件
+
+
+## 依赖
+
+- 无额外依赖
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 可扩展工具栏 (Toolbar Expandable)
+
+> 分步展开的工具栏,带动画与增强滚动。
+
+- 分类:导航与标签页
+- 本站页面:https://cult-ui.ndjp.net/docs/components/toolbar-expandable
+- 官方文档:https://www.cult-ui.com/docs/components/toolbar-expandable
+- 源码位置:`src/components/ui/toolbar-expandable.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/toolbar-expandable
+~~~
+
+## 用法
+
+~~~tsx
+import { ToolbarExpandable } from "@/components/ui/toolbar-expandable"
+~~~
+
+## 导出部件
+
+
+## 依赖
+
+- `motion`
+- `@radix-ui/react-scroll-area`
+
+## 源码属性定义
+
+### DynamicToolbarExpandableProps
+
+~~~ts
+interface DynamicToolbarExpandableProps {
+  steps: DynamicStep[]
+  badgeText?: string
+
+  className?: string
+  expanded?: boolean
+  onExpandedChange?: (expanded: boolean) => void
+  activeStep?: string | null
+  onActiveStepChange?: (stepId: string | null) => void
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 多视图抽屉 (Family Drawer)
+
+> 基于 Vaul 的底部多视图抽屉,切换视图时平滑改变高度。
+
+- 分类:浮层与抽屉
+- 本站页面:https://cult-ui.ndjp.net/docs/components/family-drawer
+- 官方文档:https://www.cult-ui.com/docs/components/family-drawer
+- 源码位置:`src/components/ui/family-drawer.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/family-drawer
+~~~
+
+## 用法
+
+~~~tsx
+import { FamilyDrawerAnimatedContent, FamilyDrawerAnimatedWrapper, FamilyDrawerButton } from "@/components/ui/family-drawer"
+
+export function Example() {
+  return (
+    <FamilyDrawerAnimatedContent>
+      <FamilyDrawerAnimatedWrapper />
+    </FamilyDrawerAnimatedContent>
+  )
+}
+~~~
+
+## 导出部件
+
+- `FamilyDrawerAnimatedContent`
+- `FamilyDrawerAnimatedWrapper`
+- `FamilyDrawerButton`
+- `FamilyDrawerClose`
+- `FamilyDrawerContent`
+- `FamilyDrawerDescription`
+- `FamilyDrawerHeader`
+- `FamilyDrawerOverlay`
+- `FamilyDrawerPortal`
+- `FamilyDrawerRoot`
+- `FamilyDrawerSecondaryButton`
+- `FamilyDrawerTitle`
+
+## 依赖
+
+- `motion`
+- `react-use-measure`
+- `vaul`
+- `@radix-ui/react-slot`
+
+## 源码属性定义
+
+### FamilyDrawerRootProps
+
+~~~ts
+interface FamilyDrawerRootProps {
+  children: ReactNode
+  open?: boolean
+  defaultOpen?: boolean
+  onOpenChange?: (open: boolean) => void
+  defaultView?: string
+  onViewChange?: (view: string) => void
+  views?: ViewsRegistry
+}
+~~~
+
+### FamilyDrawerTriggerProps
+
+~~~ts
+interface FamilyDrawerTriggerProps {
+  children: ReactNode
+  asChild?: boolean
+  className?: string
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 浮动面板 (Floating Panel)
+
+> 从触发器位置形变展开的浮动面板,含表单与文本域部件。
+
+- 分类:浮层与抽屉
+- 本站页面:https://cult-ui.ndjp.net/docs/components/floating-panel
+- 官方文档:https://www.cult-ui.com/docs/components/floating-panel
+- 源码位置:`src/components/ui/floating-panel.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/floating-panel
+~~~
+
+## 用法
+
+~~~tsx
+import { FloatingPanelBody, FloatingPanelButton, FloatingPanelCloseButton } from "@/components/ui/floating-panel"
+
+export function Example() {
+  return (
+    <FloatingPanelBody>
+      <FloatingPanelButton />
+    </FloatingPanelBody>
+  )
+}
+~~~
+
+## 导出部件
+
+- `FloatingPanelBody`
+- `FloatingPanelButton`
+- `FloatingPanelCloseButton`
+- `FloatingPanelContent`
+- `FloatingPanelFooter`
+- `FloatingPanelForm`
+- `FloatingPanelHeader`
+- `FloatingPanelLabel`
+- `FloatingPanelRoot`
+- `FloatingPanelSubmitButton`
+- `FloatingPanelTextarea`
+- `FloatingPanelTrigger`
+
+## 依赖
+
+- `motion`
+- `lucide-react`
+
+## 源码属性定义
+
+### FloatingPanelRootProps
+
+~~~ts
+interface FloatingPanelRootProps {
+  children: React.ReactNode
+  className?: string
+}
+~~~
+
+### FloatingPanelTriggerProps
+
+~~~ts
+interface FloatingPanelTriggerProps {
+  children: React.ReactNode
+  className?: string
+  title: string
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# Halo 通知 (Halo Notification)
+
+> 行内通知卡片,多种边框风格与交错文字动画,可关闭。
+
+- 分类:浮层与抽屉
+- 本站页面:https://cult-ui.ndjp.net/docs/components/halo-notification
+- 官方文档:https://www.cult-ui.com/docs/components/halo-notification
+- 源码位置:`src/components/ui/halo-notification.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/halo-notification
+~~~
+
+## 用法
+
+~~~tsx
+import { HaloPolishedNotification, HaloPolishedToastSurface, RimVariant } from "@/components/ui/halo-notification"
+
+export function Example() {
+  return (
+    <HaloPolishedNotification>
+      <HaloPolishedToastSurface />
+    </HaloPolishedNotification>
+  )
+}
+~~~
+
+## 导出部件
+
+- `HaloPolishedNotification`
+- `HaloPolishedToastSurface`
+- `RimVariant`
+
+## 依赖
+
+- `@base-ui/react`
+- `lucide-react`
+- `motion`
+
+## 源码属性定义
+
+### HaloPolishedToastSurfaceProps
+
+~~~ts
+export interface HaloPolishedToastSurfaceProps {
+  title: string
+  description?: string
+  /**
+   * Change when the notification shows a new message so title/body stagger replay.
+   * Defaults to `title` + `description` (stable for identical copy).
+   */
+  messageKey?: string
+  /** `status` for non-urgent updates; `alert` for urgent/interruptive content. */
+  politeness?: "status" | "alert"
+  onDismiss?: () => void
+  /** Forwarded to the local `HaloCard`. */
+  translucent?: boolean
+  /** Rim blob + border-trail palette (success / error vs default). */
+  rimVariant?: RimVariant
+  className?: string
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# Halo Toast (Halo Toast)
+
+> 基于 Sonner 的 Halo 风格 Toast,支持操作按钮,需在根布局挂载一次。
+
+- 分类:浮层与抽屉
+- 本站页面:https://cult-ui.ndjp.net/docs/components/halo-toast
+- 官方文档:https://www.cult-ui.com/docs/components/halo-toast
+- 源码位置:`src/components/ui/halo-toast.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/halo-toast
+~~~
+
+## 用法
+
+~~~tsx
+import { PolishedToastOptions, PolishedToastSurface, PolishedToaster } from "@/components/ui/halo-toast"
+
+export function Example() {
+  return (
+    <PolishedToastOptions>
+      <PolishedToastSurface />
+    </PolishedToastOptions>
+  )
+}
+~~~
+
+## 导出部件
+
+- `PolishedToastOptions`
+- `PolishedToastSurface`
+- `PolishedToaster`
+- `RimVariant`
+- `showPolishedToast`
+
+## 依赖
+
+- `lucide-react`
+- `motion`
+- `sonner`
+
+## 源码属性定义
+
+### PolishedToastSurfaceProps
+
+~~~ts
+export interface PolishedToastSurfaceProps {
+  title: string
+  description?: string
+  messageKey?: string
+  politeness?: "status" | "alert"
+  translucent?: boolean
+  rimVariant?: RimVariant
+  /** Sonner toast id from `toast.custom((id) => …)`; required for the dismiss control. */
+  toastId?: number | string
+  /** When true (default with {@link showPolishedToast}), renders a Dismiss control. */
+  closeButton?: boolean
+  className?: string
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 新手引导 (Intro Disclosure)
+
+> 桌面用 Dialog、移动端用 Drawer 的多步引导,记录已关闭状态。
+
+- 分类:浮层与抽屉
+- 本站页面:https://cult-ui.ndjp.net/docs/components/intro-disclosure
+- 官方文档:https://www.cult-ui.com/docs/components/intro-disclosure
+- 源码位置:`src/components/ui/intro-disclosure.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/intro-disclosure
+~~~
+
+## 用法
+
+~~~tsx
+import { IntroDisclosure } from "@/components/ui/intro-disclosure"
+
+export function Example() {
+  return (
+    <IntroDisclosure>内容</IntroDisclosure>
+  )
+}
+~~~
+
+## 导出部件
+
+- `IntroDisclosure`
+
+## 依赖
+
+- `motion`
+- `react-use-measure`
+- `lucide-react`
+
+## 源码属性定义
+
+### StepTabProps
+
+~~~ts
+interface StepTabProps {
+  step: Step
+  isActive: boolean
+  onClick: () => void
+  isCompleted: boolean
+}
+~~~
+
+### FeatureDisclosureProps
+
+~~~ts
+interface FeatureDisclosureProps {
+  steps: Step[]
+  featureId: string
+  onComplete?: () => void
+  onSkip?: () => void
+  showProgressBar?: boolean
+  open: boolean
+  setOpen: (open: boolean) => void
+  forceVariant?: "mobile" | "desktop"
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 弹出层 (Popover)
+
+> 带表单支持与流畅过渡的动画弹出层。
+
+- 分类:浮层与抽屉
+- 本站页面:https://cult-ui.ndjp.net/docs/components/popover
+- 官方文档:https://www.cult-ui.com/docs/components/popover
+- 源码位置:`src/components/ui/popover.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/popover
+~~~
+
+## 用法
+
+~~~tsx
+import { PopoverBody, PopoverButton, PopoverCloseButton } from "@/components/ui/popover"
+
+export function Example() {
+  return (
+    <PopoverBody>
+      <PopoverButton />
+    </PopoverBody>
+  )
+}
+~~~
+
+## 导出部件
+
+- `PopoverBody`
+- `PopoverButton`
+- `PopoverCloseButton`
+- `PopoverContent`
+- `PopoverFooter`
+- `PopoverForm`
+- `PopoverHeader`
+- `PopoverLabel`
+- `PopoverRoot`
+- `PopoverSubmitButton`
+- `PopoverTextarea`
+- `PopoverTrigger`
+
+## 依赖
+
+- `motion`
+- `lucide-react`
+
+## 源码属性定义
+
+### PopoverRootProps
+
+~~~ts
+interface PopoverRootProps {
+  children: React.ReactNode
+  className?: string
+}
+~~~
+
+### PopoverTriggerProps
+
+~~~ts
+interface PopoverTriggerProps {
+  children: React.ReactNode
+  className?: string
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 表单弹出层 (Popover Form)
+
+> 带成功态与动画过渡的表单弹出层。
+
+- 分类:浮层与抽屉
+- 本站页面:https://cult-ui.ndjp.net/docs/components/popover-form
+- 官方文档:https://www.cult-ui.com/docs/components/popover-form
+- 源码位置:`src/components/ui/popover-form.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/popover-form
+~~~
+
+## 用法
+
+~~~tsx
+import { PopoverForm, PopoverFormButton, PopoverFormCutOutLeftIcon } from "@/components/ui/popover-form"
+
+export function Example() {
+  return (
+    <PopoverForm>
+      <PopoverFormButton />
+    </PopoverForm>
+  )
+}
+~~~
+
+## 导出部件
+
+- `PopoverForm`
+- `PopoverFormButton`
+- `PopoverFormCutOutLeftIcon`
+- `PopoverFormCutOutRightIcon`
+- `PopoverFormSeparator`
+- `PopoverFormSuccess`
+
+## 依赖
+
+- `motion`
+- `lucide-react`
+
+## 源码属性定义
+
+### PopoverFormProps
+
+~~~ts
+type PopoverFormProps = {
+  open: boolean
+  setOpen: (open: boolean) => void
+  openChild?: ReactNode
+  successChild?: ReactNode
+  showSuccess: boolean
+  width?: string
+  height?: string
+  showCloseButton?: boolean
+  title: string
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 侧边面板 (Side Panel)
+
+> 可从任意方向滑入的侧边面板。
+
+- 分类:浮层与抽屉
+- 本站页面:https://cult-ui.ndjp.net/docs/components/side-panel
+- 官方文档:https://www.cult-ui.com/docs/components/side-panel
+- 源码位置:`src/components/ui/side-panel.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/side-panel
+~~~
+
+## 用法
+
+~~~tsx
+import { SidePanel } from "@/components/ui/side-panel"
+
+export function Example() {
+  return (
+    <SidePanel>内容</SidePanel>
+  )
+}
+~~~
+
+## 导出部件
+
+- `SidePanel`
+
+## 依赖
+
+- `motion`
+- `react-use-measure`
+
+## 源码属性定义
+
+### PanelContainerProps
+
+~~~ts
+type PanelContainerProps = {
+  panelOpen: boolean
+  handlePanelOpen: () => void
+  className?: string
+  videoUrl?: string
+  renderButton?: (handleToggle: () => void) => ReactNode
+  children: ReactNode
+}
+~~~
+
+### ResizablePanelProps
+
+~~~ts
+type ResizablePanelProps = {
+  children: React.ReactNode
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 渐变标题 (Gradient Heading)
+
+> 渐变文字标题,提供颜色、字号、字重的 CVA 变体与 asChild。
+
+- 分类:文字与排版
+- 本站页面:https://cult-ui.ndjp.net/docs/components/gradient-heading
+- 官方文档:https://www.cult-ui.com/docs/components/gradient-heading
+- 源码位置:`src/components/ui/gradient-heading.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/gradient-heading
+~~~
+
+## 用法
+
+~~~tsx
+import { GradientHeading, Size, Variant } from "@/components/ui/gradient-heading"
+
+export function Example() {
+  return (
+    <GradientHeading>
+      <Size />
+    </GradientHeading>
+  )
+}
+~~~
+
+## 导出部件
+
+- `GradientHeading`
+- `Size`
+- `Variant`
+- `Weight`
+- `headingVariants`
+
+## 依赖
+
+- `@radix-ui/react-slot`
+- `class-variance-authority`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 新拟态眉标 (Neumorph Eyebrow)
+
+> 柔光阴影的新拟态小标题。
+
+- 分类:文字与排版
+- 本站页面:https://cult-ui.ndjp.net/docs/components/neumorph-eyebrow
+- 官方文档:https://www.cult-ui.com/docs/components/neumorph-eyebrow
+- 源码位置:`src/components/ui/neumorph-eyebrow.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/neumorph-eyebrow
+~~~
+
+## 用法
+
+~~~tsx
+import { NeumorphEyebrow } from "@/components/ui/neumorph-eyebrow"
+
+export function Example() {
+  return (
+    <NeumorphEyebrow>内容</NeumorphEyebrow>
+  )
+}
+~~~
+
+## 导出部件
+
+- `NeumorphEyebrow`
+
+## 依赖
+
+- `class-variance-authority`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 像素标题(逐字) (Pixel Heading Character)
+
+> 逐字符动画的像素字体标题,提供四种动画模式。
+
+- 分类:文字与排版
+- 本站页面:https://cult-ui.ndjp.net/docs/components/pixel-heading-character
+- 官方文档:https://www.cult-ui.com/docs/components/pixel-heading-character
+- 源码位置:`src/components/ui/pixel-heading-character.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/pixel-heading-character
+~~~
+
+## 用法
+
+~~~tsx
+import { PixelHeading, PixelHeadingMode } from "@/components/ui/pixel-heading-character"
+
+export function Example() {
+  return (
+    <PixelHeading>
+      <PixelHeadingMode />
+    </PixelHeading>
+  )
+}
+~~~
+
+## 导出部件
+
+- `PixelHeading`
+- `PixelHeadingMode`
+
+## 依赖
+
+- `geist`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 像素标题(整词) (Pixel Heading Word)
+
+> 整词切换像素字体的标题,悬停可换体或循环。
+
+- 分类:文字与排版
+- 本站页面:https://cult-ui.ndjp.net/docs/components/pixel-heading-word
+- 官方文档:https://www.cult-ui.com/docs/components/pixel-heading-word
+- 源码位置:`src/components/ui/pixel-heading-word.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/pixel-heading-word
+~~~
+
+## 用法
+
+~~~tsx
+import { PixelHeading } from "@/components/ui/pixel-heading-word"
+
+export function Example() {
+  return (
+    <PixelHeading>内容</PixelHeading>
+  )
+}
+~~~
+
+## 导出部件
+
+- `PixelHeading`
+
+## 依赖
+
+- `geist`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 像素段落 (Pixel Paragraph Words)
+
+> 段落中指定单词渲染为可交互的像素字体,悬停切换。
+
+- 分类:文字与排版
+- 本站页面:https://cult-ui.ndjp.net/docs/components/pixel-paragraph-words
+- 官方文档:https://www.cult-ui.com/docs/components/pixel-paragraph-words
+- 源码位置:`src/components/ui/pixel-paragraph-words.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/pixel-paragraph-words
+~~~
+
+## 用法
+
+~~~tsx
+import { PixelParagraph } from "@/components/ui/pixel-paragraph-words"
+
+export function Example() {
+  return (
+    <PixelParagraph>内容</PixelParagraph>
+  )
+}
+~~~
+
+## 导出部件
+
+- `PixelParagraph`
+
+## 依赖
+
+- `geist`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 反相像素段落 (Pixel Paragraph Words Inverse)
+
+> 整段像素字体,只有指定单词逃逸为可交互的无衬线或等宽字体。
+
+- 分类:文字与排版
+- 本站页面:https://cult-ui.ndjp.net/docs/components/pixel-paragraph-words-inverse
+- 官方文档:https://www.cult-ui.com/docs/components/pixel-paragraph-words-inverse
+- 源码位置:`src/components/ui/pixel-paragraph-words-inverse.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/pixel-paragraph-words-inverse
+~~~
+
+## 用法
+
+~~~tsx
+import { PixelParagraphInverse } from "@/components/ui/pixel-paragraph-words-inverse"
+
+export function Example() {
+  return (
+    <PixelParagraphInverse>内容</PixelParagraphInverse>
+  )
+}
+~~~
+
+## 导出部件
+
+- `PixelParagraphInverse`
+
+## 依赖
+
+- `geist`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 文字动画 (Text Animate)
+
+> 动画文字组件,提供 8 种入场效果(fadeIn、rollIn、whipIn 等),支持逐词/逐字符交错动画,适合标题与口号。
+
+- 分类:文字与排版
+- 本站页面:https://cult-ui.ndjp.net/docs/components/text-animate
+- 官方文档:https://www.cult-ui.com/docs/components/text-animate
+- 源码位置:`src/components/ui/text-animate.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/text-animate
+~~~
+
+## 用法
+
+~~~tsx
+import TextAnimate from "@/components/ui/text-animate"
+
+<TextAnimate text="让界面动起来" type="rollIn" />
+~~~
+
+## 导出部件
+
+- `TextAnimate`
+
+## 依赖
+
+- `motion`
+## 备注
+
+中文没有空格分隔,组件会按字符逐个交错动画,效果同样自然。
+
+## 属性(Props)
+
+| 属性 | 类型 | 默认值 | 说明 |
+| --- | --- | --- | --- |
+| `text` | `string` | — | 要展示的文字内容。 |
+| `type` | `"fadeIn" \| "fadeInUp" \| "popIn" \| "shiftInUp" \| "rollIn" \| "whipIn" \| "whipInUp" \| "calmInUp"` | — | 入场动画类型。 |
+| `delay` | `number` | — | 动画延迟(秒)。 |
+| `duration` | `number` | — | 动画时长(秒)。 |
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# GIF 文字 (Text GIF)
+
+> 模拟 GIF 循环跳动的文字效果。
+
+- 分类:文字与排版
+- 本站页面:https://cult-ui.ndjp.net/docs/components/text-gif
+- 官方文档:https://www.cult-ui.com/docs/components/text-gif
+- 源码位置:`src/components/ui/text-gif.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/text-gif
+~~~
+
+## 用法
+
+~~~tsx
+import { TextGif } from "@/components/ui/text-gif"
+
+export function Example() {
+  return (
+    <TextGif>内容</TextGif>
+  )
+}
+~~~
+
+## 导出部件
+
+- `TextGif`
+
+## 依赖
+
+- `class-variance-authority`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 打字机 (Typewriter)
+
+> 可调打字速度与光标动画的打字机文字。
+
+- 分类:文字与排版
+- 本站页面:https://cult-ui.ndjp.net/docs/components/typewriter
+- 官方文档:https://www.cult-ui.com/docs/components/typewriter
+- 源码位置:`src/components/ui/typewriter.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/typewriter
+~~~
+
+## 用法
+
+~~~tsx
+import { Typewriter } from "@/components/ui/typewriter"
+
+export function Example() {
+  return (
+    <Typewriter>内容</Typewriter>
+  )
+}
+~~~
+
+## 导出部件
+
+- `Typewriter`
+
+## 依赖
+
+- `motion`
+
+## 源码属性定义
+
+### ITypewriterProps
+
+~~~ts
+export interface ITypewriterProps {
+  delay: number
+  texts: string[]
+  baseText?: string
+}
+~~~
+
+### IRepeatedTextAnimationProps
+
+~~~ts
+export interface IRepeatedTextAnimationProps {
+  delay: number
+  texts: string[]
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 分形点阵背景 (Background Animated Fractal Dot Grid)
+
+> 带性能优化与响应式处理的分形点阵动画背景。
+
+- 分类:背景与纹理
+- 本站页面:https://cult-ui.ndjp.net/docs/components/bg-animated-fractal-dot-grid
+- 官方文档:https://www.cult-ui.com/docs/components/bg-animated-fractal-dot-grid
+- 源码位置:`src/components/ui/bg-animated-fractal-dot-grid.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/bg-animated-fractal-dot-grid
+~~~
+
+## 用法
+
+~~~tsx
+import { FractalDotGrid } from "@/components/ui/bg-animated-fractal-dot-grid"
+
+export function Example() {
+  return (
+    <FractalDotGrid>内容</FractalDotGrid>
+  )
+}
+~~~
+
+## 导出部件
+
+- `FractalDotGrid`
+
+## 依赖
+
+- `motion`
+
+## 源码属性定义
+
+### FractalDotGridProps
+
+~~~ts
+interface FractalDotGridProps {
+  /** Size of each dot in pixels */
+  dotSize?: number
+  /** Spacing between dots in pixels */
+  dotSpacing?: number
+  /** Opacity of dots (0-1) */
+  dotOpacity?: number
+  /** Intensity of the wave effect when hovering */
+  waveIntensity?: number
+  /** Radius of the wave effect in pixels */
+  waveRadius?: number
+  /** Color of the dots (supports any valid CSS color) */
+  dotColor?: string
+  /** Color of the dot glow effect (supports any valid CSS color) */
+  glowColor?: string
+  /** Enable or disable the noise overlay */
+  enableNoise?: boolean
+  /** Opacity of the noise overlay (0-1) */
+  noiseOpacity?: number
+  /** Enable or disable the mouse glow effect */
+  enableMouseGlow?: boolean
+  /** Set the initial performance level */
+  initialPerformance?: "low" | "medium" | "high"
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 渐变背景 (Background Animated Gradient)
+
+> 颜色过渡可自定义的动画渐变背景。
+
+- 分类:背景与纹理
+- 本站页面:https://cult-ui.ndjp.net/docs/components/bg-animated-gradient
+- 官方文档:https://www.cult-ui.com/docs/components/bg-animated-gradient
+- 源码位置:`src/components/ui/bg-animated-gradient.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/bg-animated-gradient
+~~~
+
+## 用法
+
+~~~tsx
+import { GradientAnimation } from "@/components/ui/bg-animated-gradient"
+
+export function Example() {
+  return (
+    <GradientAnimation>内容</GradientAnimation>
+  )
+}
+~~~
+
+## 导出部件
+
+- `GradientAnimation`
+
+## 依赖
+
+- `motion`
+
+## 源码属性定义
+
+### GradientAnimationProps
+
+~~~ts
+interface GradientAnimationProps {
+  gradients: GradientType[]
+  animationDuration: number
+  className?: string
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 图片纹理背景 (Background Image Texture)
+
+> 织物、网格噪点、纸张等纹理,可调不透明度。
+
+- 分类:背景与纹理
+- 本站页面:https://cult-ui.ndjp.net/docs/components/bg-image-texture
+- 官方文档:https://www.cult-ui.com/docs/components/bg-image-texture
+- 源码位置:`src/components/ui/bg-image-texture.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/bg-image-texture
+~~~
+
+## 用法
+
+~~~tsx
+import { BackgroundImageTexture, TextureVariant } from "@/components/ui/bg-image-texture"
+
+export function Example() {
+  return (
+    <BackgroundImageTexture>
+      <TextureVariant />
+    </BackgroundImageTexture>
+  )
+}
+~~~
+
+## 导出部件
+
+- `BackgroundImageTexture`
+- `TextureVariant`
+
+## 依赖
+
+- 无额外依赖
+
+## 源码属性定义
+
+### BackgroundImageTextureProps
+
+~~~ts
+interface BackgroundImageTextureProps {
+  variant?: TextureVariant
+  opacity?: number
+  className?: string
+  children?: React.ReactNode
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 背景媒体 (Background Media)
+
+> 全屏图片或视频背景,带明暗遮罩与播放/暂停按钮。
+
+- 分类:背景与纹理
+- 本站页面:https://cult-ui.ndjp.net/docs/components/bg-media
+- 官方文档:https://www.cult-ui.com/docs/components/bg-media
+- 源码位置:`src/components/ui/bg-media.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/bg-media
+~~~
+
+## 用法
+
+~~~tsx
+import { BackgroundMedia } from "@/components/ui/bg-media"
+
+export function Example() {
+  return (
+    <BackgroundMedia>内容</BackgroundMedia>
+  )
+}
+~~~
+
+## 导出部件
+
+- `BackgroundMedia`
+
+## 依赖
+
+- `class-variance-authority`
+
+## 源码属性定义
+
+### BackgroundMediaProps
+
+~~~ts
+interface BackgroundMediaProps {
+  variant?: OverlayVariant
+  type?: MediaType
+  src: string
+  alt?: string
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 画布分形网格 (Canvas Fractal Grid)
+
+> 跟随鼠标的分形点阵画布,带波浪与光晕,适合首屏。
+
+- 分类:背景与纹理
+- 本站页面:https://cult-ui.ndjp.net/docs/components/canvas-fractal-grid
+- 官方文档:https://www.cult-ui.com/docs/components/canvas-fractal-grid
+- 源码位置:`src/components/ui/canvas-fractal-grid.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/canvas-fractal-grid
+~~~
+
+## 用法
+
+~~~tsx
+import { CanvasFractalGrid } from "@/components/ui/canvas-fractal-grid"
+
+export function Example() {
+  return (
+    <CanvasFractalGrid>内容</CanvasFractalGrid>
+  )
+}
+~~~
+
+## 导出部件
+
+- `CanvasFractalGrid`
+
+## 依赖
+
+- `motion`
+
+## 源码属性定义
+
+### CanvasFractalGridProps
+
+~~~ts
+interface CanvasFractalGridProps {
+  /** Size of each dot in pixels */
+  dotSize?: number
+  /** Spacing between dots in pixels */
+  dotSpacing?: number
+  /** Opacity of dots (0-1) */
+  dotOpacity?: number
+  /** Duration of the background gradient animation in seconds */
+  gradientAnimationDuration?: number
+  /** Stiffness of mouse tracking (higher values make it more responsive) */
+  mouseTrackingStiffness?: number
+  /** Damping of mouse tracking (higher values make it less bouncy) */
+  mouseTrackingDamping?: number
+  /** Intensity of the wave effect when hovering */
+  waveIntensity?: number
+  /** Radius of the wave effect in pixels */
+  waveRadius?: number
+  /** Array of gradient configurations for the background */
+  gradients?: GradientType[]
+  /** Color of the dots (supports any valid CSS color) */
+  dotColor?: string
+  /** Color of the dot glow effect (supports any valid CSS color) */
+  glowColor?: string
+  /** Enable or disable the noise overlay */
+  enableNoise?: boolean
+  /** Opacity of the noise overlay (0-1) */
+  noiseOpacity?: number
+  /** Enable or disable the mouse glow effect */
+  // …
+~~~
+
+### CanvasFractalGridProps
+
+~~~ts
+interface CanvasFractalGridProps {
+//   /** Size of each dot in pixels */
+//   dotSize?: number
+//   /** Spacing between dots in pixels */
+//   dotSpacing?: number
+//   /** Opacity of dots (0-1) */
+//   dotOpacity?: number
+//   /** Duration of the background gradient animation in seconds */
+//   gradientAnimationDuration?: number
+//   /** Stiffness of mouse tracking (higher values make it more responsive) */
+//   mouseTrackingStiffness?: number
+//   /** Damping of mouse tracking (higher values make it less bouncy) */
+//   mouseTrackingDamping?: number
+//   /** Intensity of the wave effect when hovering */
+//   waveIntensity?: number
+//   /** Radius of the wave effect in pixels */
+//   waveRadius?: number
+//   /** Array of gradient configurations for the background */
+//   gradients?: Gradient[]
+//   /** Color of the dots (supports any valid CSS color) */
+//   dotColor?: string
+//   /** Color of the dot glow effect (supports any valid CSS color) */
+//   glowColor?: string
+//   /** Enable or disable the noise overlay */
+//   enableNoise?: boolean
+//   /** Opacity of the noise overlay (0-1) */
+//   noiseOpacity?: number
+//   /** Enable or disable the mouse glow effect */
+  // …
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 网格光束 (Grid Beam)
+
+> 网格上流动的光束画布,提供调色板预设、SVG 分隔与 useGridBeam。
+
+- 分类:背景与纹理
+- 本站页面:https://cult-ui.ndjp.net/docs/components/grid-beam
+- 官方文档:https://www.cult-ui.com/docs/components/grid-beam
+- 源码位置:`src/components/ui/grid-beam.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/grid-beam
+~~~
+
+## 用法
+
+~~~tsx
+import { BeamCanvasRuntimeConfig, GridBeam, GridBeamCanvas } from "@/components/ui/grid-beam"
+
+export function Example() {
+  return (
+    <BeamCanvasRuntimeConfig>
+      <GridBeam />
+    </BeamCanvasRuntimeConfig>
+  )
+}
+~~~
+
+## 导出部件
+
+- `BeamCanvasRuntimeConfig`
+- `GridBeam`
+- `GridBeamCanvas`
+- `GridBeamColorScheme`
+- `GridBeamContent`
+- `GridBeamDividers`
+- `GridBeamPaletteKey`
+- `GridBeamPaletteLayers`
+- `GridBeamThemeProp`
+- `PALETTES`
+- `PaletteBand`
+- `RGB`
+
+## 依赖
+
+- 无额外依赖
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 参考线背景 (Stripe BG Guides)
+
+> Stripe 风格的背景参考线与动画图案。
+
+- 分类:背景与纹理
+- 本站页面:https://cult-ui.ndjp.net/docs/components/stripe-bg-guides
+- 官方文档:https://www.cult-ui.com/docs/components/stripe-bg-guides
+- 源码位置:`src/components/ui/stripe-bg-guides.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/stripe-bg-guides
+~~~
+
+## 用法
+
+~~~tsx
+import { StripeBgGuides } from "@/components/ui/stripe-bg-guides"
+
+export function Example() {
+  return (
+    <StripeBgGuides>内容</StripeBgGuides>
+  )
+}
+~~~
+
+## 导出部件
+
+- `StripeBgGuides`
+
+## 依赖
+
+- `motion`
+
+## 源码属性定义
+
+### AnimatedBackgroundGuidesProps
+
+~~~ts
+interface AnimatedBackgroundGuidesProps {
+  columnCount?: number
+  className?: string
+  solidLines?: number[]
+  animated?: boolean
+  animationDuration?: number
+  animationDelay?: number
+  glowColor?: string
+  glowSize?: string
+  glowOpacity?: number
+  randomize?: boolean
+  randomInterval?: number
+  direction?: AnimationDirection
+  easing?: AnimationEasing
+  responsive?: boolean
+  minColumnWidth?: string
+  maxActiveColumns?: number
+  darkMode?: boolean
+  contained?: boolean
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# SVG 分段带 (SVG Bands)
+
+> 宽幅分段带、城垛与锯齿边缘、陡峭首屏切角与装饰框。
+
+- 分类:背景与纹理
+- 本站页面:https://cult-ui.ndjp.net/docs/components/svg-bands
+- 官方文档:https://www.cult-ui.com/docs/components/svg-bands
+- 源码位置:`src/components/ui/svg-bands.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/svg-bands
+~~~
+
+## 用法
+
+~~~tsx
+import { AngledCornerPanelSvg, ArrowChevronBandSvg, BandShape } from "@/components/ui/svg-bands"
+
+export function Example() {
+  return (
+    <AngledCornerPanelSvg>
+      <ArrowChevronBandSvg />
+    </AngledCornerPanelSvg>
+  )
+}
+~~~
+
+## 导出部件
+
+- `AngledCornerPanelSvg`
+- `ArrowChevronBandSvg`
+- `BandShape`
+- `BandShapeFlip`
+- `BottomBandSteepRightSvg`
+- `CastleWallBandSvg`
+- `CenterTabBandSvg`
+- `CenterTabTopBandSvg`
+- `DiagonalSlashBandSvg`
+- `DualSideNotchFrameSvg`
+- `FlatSingleAngleBandSvg`
+- `NotchedTopBandSvg`
+
+## 依赖
+
+- 无额外依赖
+
+## 源码属性定义
+
+### BandShapeProps
+
+~~~ts
+export interface BandShapeProps {
+  path: string
+  viewBox: string
+  flip?: BandShapeFlip
+  className?: string
+  /** Accessible name; defaults to a generic label when omitted. */
+  title?: string
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# SVG 形状面板 (SVG Shapes)
+
+> 宽幅 SVG 形状与面板,用于背景和首屏装饰。
+
+- 分类:背景与纹理
+- 本站页面:https://cult-ui.ndjp.net/docs/components/svg-shapes
+- 官方文档:https://www.cult-ui.com/docs/components/svg-shapes
+- 源码位置:`src/components/ui/svg-shapes.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/svg-shapes
+~~~
+
+## 用法
+
+~~~tsx
+import { ArrowPentagonShapeSvg, CircleShapeSvg, CubeWireshapeSvg } from "@/components/ui/svg-shapes"
+
+export function Example() {
+  return (
+    <ArrowPentagonShapeSvg>
+      <CircleShapeSvg />
+    </ArrowPentagonShapeSvg>
+  )
+}
+~~~
+
+## 导出部件
+
+- `ArrowPentagonShapeSvg`
+- `CircleShapeSvg`
+- `CubeWireshapeSvg`
+- `DodecahedronWireshapeSvg`
+- `EllipseShapeSvg`
+- `FlowerOfLifeSvg`
+- `GoldenSpiralSvg`
+- `GothicArchPanelSvg`
+- `IcosahedronWireshapeSvg`
+- `KiteShapeSvg`
+- `MetatronsCubeSvg`
+- `OctahedronWireshapeSvg`
+
+## 依赖
+
+- 无额外依赖
+
+## 源码属性定义
+
+### ShapeSvgProps
+
+~~~ts
+export interface ShapeSvgProps {
+  className?: string
+  flip?: ShapeShapeFlip
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 滚动描边 SVG (SVG Shapes Animated)
+
+> 滚动触发的描边绘制动画,配合宽幅 SVG 形状使用。
+
+- 分类:背景与纹理
+- 本站页面:https://cult-ui.ndjp.net/docs/components/svg-shapes-animated
+- 官方文档:https://www.cult-ui.com/docs/components/svg-shapes-animated
+- 源码位置:`src/components/ui/svg-shapes-animated.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/svg-shapes-animated
+~~~
+
+## 用法
+
+~~~tsx
+import { ArrowPentagonShapeSvg, ChevronShapeSvg, CircleShapeSvg } from "@/components/ui/svg-shapes-animated"
+
+export function Example() {
+  return (
+    <ArrowPentagonShapeSvg>
+      <ChevronShapeSvg />
+    </ArrowPentagonShapeSvg>
+  )
+}
+~~~
+
+## 导出部件
+
+- `ArrowPentagonShapeSvg`
+- `ChevronShapeSvg`
+- `CircleShapeSvg`
+- `CrossShapeSvg`
+- `CubeWireframeSvg`
+- `DiamondShapeSvg`
+- `DodecahedronWireframeSvg`
+- `DoubleNotchTechShapeSvg`
+- `EllipseShapeSvg`
+- `FlowerOfLifeSvg`
+- `GoldenSpiralSvg`
+- `GothicArchPanelSvg`
+
+## 依赖
+
+- `motion`
+
+## 源码属性定义
+
+### ShapeSvgProps
+
+~~~ts
+export interface ShapeSvgProps {
+  className?: string
+  flip?: ShapeShapeFlip
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 纹理叠加 (Texture Overlay)
+
+> 多种 CSS 渐变图案叠加层,给背景增加质感。
+
+- 分类:背景与纹理
+- 本站页面:https://cult-ui.ndjp.net/docs/components/texture-overlay
+- 官方文档:https://www.cult-ui.com/docs/components/texture-overlay
+- 源码位置:`src/components/ui/texture-overlay.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/texture-overlay
+~~~
+
+## 用法
+
+~~~tsx
+import { TextureOverlay, TextureType } from "@/components/ui/texture-overlay"
+
+export function Example() {
+  return (
+    <TextureOverlay>
+      <TextureType />
+    </TextureOverlay>
+  )
+}
+~~~
+
+## 导出部件
+
+- `TextureOverlay`
+- `TextureType`
+
+## 依赖
+
+- 无额外依赖
+
+## 源码属性定义
+
+### TextureOverlayProps
+
+~~~ts
+interface TextureOverlayProps {
+  texture: TextureType
+  opacity?: number
+  className?: string
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 电路板插画 (Circuit Board)
+
+> 发光走线与中心芯片的 SVG 电路动画,适合 AI 与开发者工具。
+
+- 分类:插画
+- 本站页面:https://cult-ui.ndjp.net/docs/components/circuit-board
+- 官方文档:https://www.cult-ui.com/docs/components/circuit-board
+- 源码位置:`src/components/ui/circuit-board.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/circuit-board
+~~~
+
+## 用法
+
+~~~tsx
+import { CircuitBoard } from "@/components/ui/circuit-board"
+
+export function Example() {
+  return (
+    <CircuitBoard>内容</CircuitBoard>
+  )
+}
+~~~
+
+## 导出部件
+
+- `CircuitBoard`
+
+## 依赖
+
+- `lucide-react`
+- `motion`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# AI 负载插画 (Fluid AI Workloads)
+
+> 用分叉连线连接卡片的 SVG 插画,展示 AI 负载与算力。
+
+- 分类:插画
+- 本站页面:https://cult-ui.ndjp.net/docs/components/fluid-ai-workloads
+- 官方文档:https://www.cult-ui.com/docs/components/fluid-ai-workloads
+- 源码位置:`src/components/ui/fluid-ai-workloads.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/fluid-ai-workloads
+~~~
+
+## 用法
+
+~~~tsx
+import { FluidAIWorkloads, FluidAIWorkloadsBranchLines, FluidAIWorkloadsCenterCard } from "@/components/ui/fluid-ai-workloads"
+
+export function Example() {
+  return (
+    <FluidAIWorkloads>
+      <FluidAIWorkloadsBranchLines />
+    </FluidAIWorkloads>
+  )
+}
+~~~
+
+## 导出部件
+
+- `FluidAIWorkloads`
+- `FluidAIWorkloadsBranchLines`
+- `FluidAIWorkloadsCenterCard`
+- `FluidAIWorkloadsLeftCard`
+- `FluidAIWorkloadsRightCards`
+- `FluidAIWorkloadsShadowLayer`
+
+## 依赖
+
+- 无额外依赖
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 网关端点插画 (Gateway Endpoint Illustration)
+
+> 一个 API 端点扇出到四个模型提供商的 SVG 插画。
+
+- 分类:插画
+- 本站页面:https://cult-ui.ndjp.net/docs/components/gateway-endpoint-illustration
+- 官方文档:https://www.cult-ui.com/docs/components/gateway-endpoint-illustration
+- 源码位置:`src/components/ui/gateway-endpoint-illustration.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/gateway-endpoint-illustration
+~~~
+
+## 用法
+
+~~~tsx
+import { AnthropicIcon, GatewayEndpoint, GatewayEndpointBackground } from "@/components/ui/gateway-endpoint-illustration"
+
+export function Example() {
+  return (
+    <AnthropicIcon>
+      <GatewayEndpoint />
+    </AnthropicIcon>
+  )
+}
+~~~
+
+## 导出部件
+
+- `AnthropicIcon`
+- `GatewayEndpoint`
+- `GatewayEndpointBackground`
+- `GatewayEndpointCenter`
+- `GatewayEndpointConnectionLines`
+- `GatewayEndpointIconBubble`
+- `GatewayEndpointInputLine`
+- `GatewayEndpointRadialCircles`
+- `GatewayEndpointScene`
+- `GatewayEndpointSvg`
+- `MoreIcon`
+- `OpenAIIcon`
+
+## 依赖
+
+- 无额外依赖
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 网关路由插画 (Gateway Route Illustration)
+
+> 用弧线与圆环表现网关在多个模型提供商之间路由请求。
+
+- 分类:插画
+- 本站页面:https://cult-ui.ndjp.net/docs/components/gateway-route-illustration
+- 官方文档:https://www.cult-ui.com/docs/components/gateway-route-illustration
+- 源码位置:`src/components/ui/gateway-route-illustration.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/gateway-route-illustration
+~~~
+
+## 用法
+
+~~~tsx
+import { AnthropicIcon, CohereIcon, GatewayRouting } from "@/components/ui/gateway-route-illustration"
+
+export function Example() {
+  return (
+    <AnthropicIcon>
+      <CohereIcon />
+    </AnthropicIcon>
+  )
+}
+~~~
+
+## 导出部件
+
+- `AnthropicIcon`
+- `CohereIcon`
+- `GatewayRouting`
+- `GatewayRoutingArcs`
+- `GatewayRoutingBackground`
+- `GatewayRoutingCenter`
+- `GatewayRoutingGradientRing`
+- `GatewayRoutingIconBubble`
+- `GatewayRoutingScene`
+- `GatewayRoutingSvg`
+- `GeminiIcon`
+
+## 依赖
+
+- 无额外依赖
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 网关 SVG 插画 (Gateway SVG Illustration)
+
+> 把多条线汇入中心网关的 SVG 枢纽插画。
+
+- 分类:插画
+- 本站页面:https://cult-ui.ndjp.net/docs/components/gateway-svg-illustration
+- 官方文档:https://www.cult-ui.com/docs/components/gateway-svg-illustration
+- 源码位置:`src/components/ui/gateway-svg-illustration.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/gateway-svg-illustration
+~~~
+
+## 用法
+
+~~~tsx
+import { GatewayOverhead, GatewayOverheadBackground, GatewayOverheadBackgroundGrid } from "@/components/ui/gateway-svg-illustration"
+
+export function Example() {
+  return (
+    <GatewayOverhead>
+      <GatewayOverheadBackground />
+    </GatewayOverhead>
+  )
+}
+~~~
+
+## 导出部件
+
+- `GatewayOverhead`
+- `GatewayOverheadBackground`
+- `GatewayOverheadBackgroundGrid`
+- `GatewayOverheadBottomLine`
+- `GatewayOverheadCenterIcon`
+- `GatewayOverheadCenterLine`
+- `GatewayOverheadHub`
+- `GatewayOverheadLeftLine`
+- `GatewayOverheadNodeBox`
+- `GatewayOverheadRightLine`
+- `GatewayOverheadScene`
+- `GatewayOverheadSvg`
+
+## 依赖
+
+- 无额外依赖
+
+## 源码属性定义
+
+### GatewayOverheadDefsProps
+
+~~~ts
+type GatewayOverheadDefsProps = {
+  ids: GatewayOverheadIds
+  borderColor: string
+  backgroundColor: string
+}
+~~~
+
+### GatewayOverheadGridProps
+
+~~~ts
+type GatewayOverheadGridProps = {
+  ids: GatewayOverheadIds
+  borderColor: string
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 插画卡片网格 (Illustration Card Grid)
+
+> 带内置 AI 网关插画的功能卡片网格。
+
+- 分类:插画
+- 本站页面:https://cult-ui.ndjp.net/docs/components/illustration-card-grid
+- 官方文档:https://www.cult-ui.com/docs/components/illustration-card-grid
+- 源码位置:`src/components/ui/illustration-card-grid.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/illustration-card-grid
+~~~
+
+## 用法
+
+~~~tsx
+import { DEFAULT_ILLUSTRATION_CARD_GRID_ITEMS, IllustrationCardGrid, IllustrationCardGridItem } from "@/components/ui/illustration-card-grid"
+
+export function Example() {
+  return (
+    <DEFAULT_ILLUSTRATION_CARD_GRID_ITEMS>
+      <IllustrationCardGrid />
+    </DEFAULT_ILLUSTRATION_CARD_GRID_ITEMS>
+  )
+}
+~~~
+
+## 导出部件
+
+- `DEFAULT_ILLUSTRATION_CARD_GRID_ITEMS`
+- `IllustrationCardGrid`
+- `IllustrationCardGridItem`
+
+## 依赖
+
+- 无额外依赖
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 评论气泡插画 (Illustration Comment Bubble)
+
+> 含头像、行内代码与光标的评论气泡,用于评审与聊天。
+
+- 分类:插画
+- 本站页面:https://cult-ui.ndjp.net/docs/components/illustration-comment-bubble
+- 官方文档:https://www.cult-ui.com/docs/components/illustration-comment-bubble
+- 源码位置:`src/components/ui/illustration-comment-bubble.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/illustration-comment-bubble
+~~~
+
+## 用法
+
+~~~tsx
+import { Code, CommentBubble, CommentBubbleDemo } from "@/components/ui/illustration-comment-bubble"
+
+export function Example() {
+  return (
+    <Code>
+      <CommentBubble />
+    </Code>
+  )
+}
+~~~
+
+## 导出部件
+
+- `Code`
+- `CommentBubble`
+- `CommentBubbleDemo`
+
+## 依赖
+
+- 无额外依赖
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 多人光标插画 (Illustration Cursor)
+
+> 带名字标签与配色的协作光标动画。
+
+- 分类:插画
+- 本站页面:https://cult-ui.ndjp.net/docs/components/illustration-cursor
+- 官方文档:https://www.cult-ui.com/docs/components/illustration-cursor
+- 源码位置:`src/components/ui/illustration-cursor.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/illustration-cursor
+~~~
+
+## 用法
+
+~~~tsx
+import { Cursor, CursorDemo, CursorSide } from "@/components/ui/illustration-cursor"
+
+export function Example() {
+  return (
+    <Cursor>
+      <CursorDemo />
+    </Cursor>
+  )
+}
+~~~
+
+## 导出部件
+
+- `Cursor`
+- `CursorDemo`
+- `CursorSide`
+- `CursorSvg`
+
+## 依赖
+
+- 无额外依赖
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 流体渲染插画 (Illustration Fluid Rendering)
+
+> 把浏览器连接到电商与 CMS 平台的 SVG 插画。
+
+- 分类:插画
+- 本站页面:https://cult-ui.ndjp.net/docs/components/illustration-fluid-rendering
+- 官方文档:https://www.cult-ui.com/docs/components/illustration-fluid-rendering
+- 源码位置:`src/components/ui/illustration-fluid-rendering.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/illustration-fluid-rendering
+~~~
+
+## 用法
+
+~~~tsx
+import { FluidRendering, FluidRenderingBigCommerceIcon, FluidRenderingContentfulIcon } from "@/components/ui/illustration-fluid-rendering"
+
+export function Example() {
+  return (
+    <FluidRendering>
+      <FluidRenderingBigCommerceIcon />
+    </FluidRendering>
+  )
+}
+~~~
+
+## 导出部件
+
+- `FluidRendering`
+- `FluidRenderingBigCommerceIcon`
+- `FluidRenderingContentfulIcon`
+- `FluidRenderingShopifyIcon`
+- `FluidRenderingStoreIcon`
+
+## 依赖
+
+- 无额外依赖
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# Globe 部署插画 (Illustration Globe Vercel)
+
+> 展示部署中、已部署与失败状态的 Globe 动画。
+
+- 分类:插画
+- 本站页面:https://cult-ui.ndjp.net/docs/components/illustration-globe-vercel
+- 官方文档:https://www.cult-ui.com/docs/components/illustration-globe-vercel
+- 源码位置:`src/components/ui/illustration-globe-vercel.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/illustration-globe-vercel
+~~~
+
+## 用法
+
+~~~tsx
+import { BuiltInNodeIcon, CustomNodeIcon, DEFAULT_NODES } from "@/components/ui/illustration-globe-vercel"
+
+export function Example() {
+  return (
+    <BuiltInNodeIcon>
+      <CustomNodeIcon />
+    </BuiltInNodeIcon>
+  )
+}
+~~~
+
+## 导出部件
+
+- `BuiltInNodeIcon`
+- `CustomNodeIcon`
+- `DEFAULT_NODES`
+- `DemoGlobeVercel`
+- `DemoGlobeVercelControls`
+- `DeployGlobe`
+- `DeployGlobeStatusBadge`
+- `DeployGlobeSvg`
+- `DeployNode`
+- `DeployNodeData`
+- `DeployPath`
+- `DeployStatus`
+
+## 依赖
+
+- 无额外依赖
+
+## 源码属性定义
+
+### DeployGlobeProps
+
+~~~ts
+export type DeployGlobeProps = {
+  status?: DeployStatus
+  nodes?: DeployNode[]
+  accentColor?: string
+  duration?: number
+  className?: string
+  onReplay?: () => void
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 图表插画 (Illustration Graph)
+
+> 带数据点、坐标标签与错误区域高亮的折线插画。
+
+- 分类:插画
+- 本站页面:https://cult-ui.ndjp.net/docs/components/illustration-graph
+- 官方文档:https://www.cult-ui.com/docs/components/illustration-graph
+- 源码位置:`src/components/ui/illustration-graph.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/illustration-graph
+~~~
+
+## 用法
+
+~~~tsx
+import { DataPoint, IllustrationGraph, IllustrationGraphChart } from "@/components/ui/illustration-graph"
+
+export function Example() {
+  return (
+    <DataPoint>
+      <IllustrationGraph />
+    </DataPoint>
+  )
+}
+~~~
+
+## 导出部件
+
+- `DataPoint`
+- `IllustrationGraph`
+- `IllustrationGraphChart`
+- `IllustrationGraphFooter`
+- `IllustrationGraphLines`
+- `defaultDataPoints`
+
+## 依赖
+
+- 无额外依赖
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 融合气泡插画 (Merging Bubbles)
+
+> 多个气泡相互融合的可视化插画。
+
+- 分类:插画
+- 本站页面:https://cult-ui.ndjp.net/docs/components/merging-bubbles
+- 官方文档:https://www.cult-ui.com/docs/components/merging-bubbles
+- 源码位置:`src/components/ui/merging-bubbles.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/merging-bubbles
+~~~
+
+## 用法
+
+~~~tsx
+import { MergingBubbles, NextLogo, VercelLogo } from "@/components/ui/merging-bubbles"
+
+export function Example() {
+  return (
+    <MergingBubbles>
+      <NextLogo />
+    </MergingBubbles>
+  )
+}
+~~~
+
+## 导出部件
+
+- `MergingBubbles`
+- `NextLogo`
+- `VercelLogo`
+
+## 依赖
+
+- 无额外依赖
+
+## 源码属性定义
+
+### MergingBubblesProps
+
+~~~ts
+interface MergingBubblesProps {
+  size?: "xs" | "sm" | "md" | "lg"
+  className?: string
+  startIcon?: React.ReactNode
+  endIcon?: React.ReactNode
+  showPlus?: boolean
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 安全检查点插画 (Security Checkpoint)
+
+> 表现安全检查点流程的插画组件。
+
+- 分类:插画
+- 本站页面:https://cult-ui.ndjp.net/docs/components/security-checkpoint
+- 官方文档:https://www.cult-ui.com/docs/components/security-checkpoint
+- 源码位置:`src/components/ui/security-checkpoint.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/security-checkpoint
+~~~
+
+## 用法
+
+~~~tsx
+import { CHECKPOINT_LINES, CheckpointLine, SecurityCheckpoint } from "@/components/ui/security-checkpoint"
+
+export function Example() {
+  return (
+    <CHECKPOINT_LINES>
+      <CheckpointLine />
+    </CHECKPOINT_LINES>
+  )
+}
+~~~
+
+## 导出部件
+
+- `CHECKPOINT_LINES`
+- `CheckpointLine`
+- `SecurityCheckpoint`
+- `SecurityCheckpointBlueLines`
+- `SecurityCheckpointCard`
+- `SecurityCheckpointRedLines`
+
+## 依赖
+
+- 无额外依赖
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 对话气泡 (Speech Bubble)
+
+> 带方向与配色变体的对话气泡。
+
+- 分类:插画
+- 本站页面:https://cult-ui.ndjp.net/docs/components/speech-bubble
+- 官方文档:https://www.cult-ui.com/docs/components/speech-bubble
+- 源码位置:`src/components/ui/speech-bubble.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/speech-bubble
+~~~
+
+## 用法
+
+~~~tsx
+import { SpeechBubble, SpeechBubbleBody, SpeechBubbleCursor } from "@/components/ui/speech-bubble"
+
+export function Example() {
+  return (
+    <SpeechBubble>
+      <SpeechBubbleBody />
+    </SpeechBubble>
+  )
+}
+~~~
+
+## 导出部件
+
+- `SpeechBubble`
+- `SpeechBubbleBody`
+- `SpeechBubbleCursor`
+- `SpeechBubbleRoot`
+- `SpeechBubbleTail`
+- `SpeechBubbleText`
+
+## 依赖
+
+- 无额外依赖
+
+## 源码属性定义
+
+### SpeechBubbleProps
+
+~~~ts
+interface SpeechBubbleProps {
+  children: React.ReactNode
+  className?: string
+  showCursor?: boolean
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# iPhone 17 Pro 样机 (Apple iPhone 17 Pro Max)
+
+> 带灵动岛、状态栏与四种边框配色的 iPhone 17 Pro 外壳。
+
+- 分类:样机
+- 本站页面:https://cult-ui.ndjp.net/docs/components/apple-iphone-17-pro
+- 官方文档:https://www.cult-ui.com/docs/components/apple-iphone-17-pro
+- 源码位置:`src/components/ui/apple-iphone-17-pro.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/apple-iphone-17-pro
+~~~
+
+## 用法
+
+~~~tsx
+import { DynamicIslandSize, IPhone17ProMax } from "@/components/ui/apple-iphone-17-pro"
+
+export function Example() {
+  return (
+    <DynamicIslandSize>
+      <IPhone17ProMax />
+    </DynamicIslandSize>
+  )
+}
+~~~
+
+## 导出部件
+
+- `DynamicIslandSize`
+- `IPhone17ProMax`
+
+## 依赖
+
+- `lucide-react`
+- `motion`
+
+## 源码属性定义
+
+### IPhoneProps
+
+~~~ts
+export interface IPhoneProps {
+  /** Content to display on the screen */
+  children?: ReactNode
+  /** Dynamic Island size preset */
+  dynamicIslandSize?: DynamicIslandSize
+  /** Content to display inside the Dynamic Island when expanded */
+  dynamicIslandContent?: ReactNode
+  /** Frame color variant */
+  frameColor?: "graphite" | "silver" | "gold" | "blue"
+  /** Show status bar */
+  showStatusBar?: boolean
+  /** Show home indicator */
+  showHomeIndicator?: boolean
+  /** Custom time to display */
+  time?: string
+  /** Battery level (0-100) */
+  batteryLevel?: number
+  /** Signal strength (0-4) */
+  signalStrength?: number
+  /** Callback when Dynamic Island is tapped */
+  onDynamicIslandTap?: () => void
+  /** Callback when screen is tapped */
+  onScreenTap?: () => void
+  /** Custom className for the container */
+  className?: string
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 苹果键盘 (Apple Keyboard)
+
+> 带标注按键与媒体键行的 Apple Magic Keyboard 插画,可演示快捷键。
+
+- 分类:样机
+- 本站页面:https://cult-ui.ndjp.net/docs/components/apple-keyboard
+- 官方文档:https://www.cult-ui.com/docs/components/apple-keyboard
+- 源码位置:`src/components/ui/apple-keyboard.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/apple-keyboard
+~~~
+
+## 用法
+
+~~~tsx
+import { AppleKeyboard } from "@/components/ui/apple-keyboard"
+
+export function Example() {
+  return (
+    <AppleKeyboard>内容</AppleKeyboard>
+  )
+}
+~~~
+
+## 导出部件
+
+- `AppleKeyboard`
+
+## 依赖
+
+- `@tabler/icons-react`
+
+## 源码属性定义
+
+### KeyProps
+
+~~~ts
+interface KeyProps {
+  children?: ReactNode
+  size?: KeySize
+  symbol?: string
+  secondaryLabel?: string
+  icon?: ReactNode
+  corner?: CornerPosition
+  className?: string
+  iconWithLabel?: boolean
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# Pro Display XDR 样机 (Apple Pro Display XDR)
+
+> 铝制边框、屏幕模式与可交互 macOS 程序坞的显示器样机。
+
+- 分类:样机
+- 本站页面:https://cult-ui.ndjp.net/docs/components/apple-pro-display-xdr
+- 官方文档:https://www.cult-ui.com/docs/components/apple-pro-display-xdr
+- 源码位置:`src/components/ui/apple-pro-display-xdr.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/apple-pro-display-xdr
+~~~
+
+## 用法
+
+~~~tsx
+import { AppleProDisplayXDR, StudioScreenMode } from "@/components/ui/apple-pro-display-xdr"
+
+export function Example() {
+  return (
+    <AppleProDisplayXDR>
+      <StudioScreenMode />
+    </AppleProDisplayXDR>
+  )
+}
+~~~
+
+## 导出部件
+
+- `AppleProDisplayXDR`
+- `StudioScreenMode`
+
+## 依赖
+
+- `@tabler/icons-react`
+- `motion`
+
+## 源码属性定义
+
+### AppleStudioDisplayProps
+
+~~~ts
+export interface AppleStudioDisplayProps {
+  className?: string
+  /** When set, replaces built-in screen demos */
+  screenContent?: ReactNode
+  /** Initial variant when using built-in content */
+  initialMode?: StudioScreenMode
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# Apple Watch Ultra 样机 (Apple Watch Ultra)
+
+> 表壳、复杂功能、表冠与操作按钮俱全的 Watch Ultra 样机。
+
+- 分类:样机
+- 本站页面:https://cult-ui.ndjp.net/docs/components/apple-watch-ultra
+- 官方文档:https://www.cult-ui.com/docs/components/apple-watch-ultra
+- 源码位置:`src/components/ui/apple-watch-ultra.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/apple-watch-ultra
+~~~
+
+## 用法
+
+~~~tsx
+import { AppleWatchUltra } from "@/components/ui/apple-watch-ultra"
+
+export function Example() {
+  return (
+    <AppleWatchUltra>内容</AppleWatchUltra>
+  )
+}
+~~~
+
+## 导出部件
+
+- `AppleWatchUltra`
+
+## 依赖
+
+- `lucide-react`
+- `motion`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# Mac 屏幕 (Mac Screen)
+
+> 经典 Macintosh CRT 显示器样机,在复古屏幕框内展示图片或 GIF,响应式且零外部依赖。
+
+- 分类:样机
+- 本站页面:https://cult-ui.ndjp.net/docs/components/mac-screen
+- 官方文档:https://www.cult-ui.com/docs/components/mac-screen
+- 源码位置:`src/components/ui/mac-screen.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/mac-screen
+~~~
+
+## 用法
+
+~~~tsx
+import { MacScreen } from "@/components/ui/mac-screen"
+
+<MacScreen
+  gifUrl="https://example.com/preview.png"
+  alt="产品截图"
+/>
+~~~
+
+## 导出部件
+
+- `MacScreen`
+
+## 依赖
+
+- 无额外依赖
+
+## 源码属性定义
+
+### MacScreenProps
+
+~~~ts
+interface MacScreenProps {
+  gifUrl?: string
+  alt?: string
+}
+~~~
+
+## 备注
+
+屏幕框图片位于 public/component-frames/apple-computer-img.png,本站已随项目提供。
+
+## 属性(Props)
+
+| 属性 | 类型 | 默认值 | 说明 |
+| --- | --- | --- | --- |
+| `gifUrl` | `string` | `Giphy 默认图` | 屏幕内展示的图片或 GIF 地址。 |
+| `alt` | `string` | `"Screen content"` | 图片替代文本。 |
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 浏览器窗口 (Mock Browser Window)
+
+> 可定制的浏览器窗口样机,支持 Chrome、Safari 与通用样式和侧边栏。
+
+- 分类:样机
+- 本站页面:https://cult-ui.ndjp.net/docs/components/mock-browser-window
+- 官方文档:https://www.cult-ui.com/docs/components/mock-browser-window
+- 源码位置:`src/components/ui/mock-browser-window.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/mock-browser-window
+~~~
+
+## 用法
+
+~~~tsx
+import { BrowserWindow } from "@/components/ui/mock-browser-window"
+
+export function Example() {
+  return (
+    <BrowserWindow>内容</BrowserWindow>
+  )
+}
+~~~
+
+## 导出部件
+
+- `BrowserWindow`
+
+## 依赖
+
+- 无额外依赖
+
+## 源码属性定义
+
+### WindowControlsProps
+
+~~~ts
+interface WindowControlsProps {
+  variant?: "macos" | "windows" | "chrome" | "safari"
+  headerStyle?: "minimal" | "full"
+}
+~~~
+
+### AddressBarProps
+
+~~~ts
+interface AddressBarProps {
+  url?: string
+  secure?: boolean
+  variant?: "chrome" | "safari"
+  className?: string
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 功能轮播 (Feature Carousel)
+
+> 左右并排截图的分步功能轮播,适合落地页与产品导览。
+
+- 分类:展示区块
+- 本站页面:https://cult-ui.ndjp.net/docs/components/feature-carousel
+- 官方文档:https://www.cult-ui.com/docs/components/feature-carousel
+- 源码位置:`src/components/ui/feature-carousel.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/feature-carousel
+~~~
+
+## 用法
+
+~~~tsx
+import { FeatureCarousel } from "@/components/ui/feature-carousel"
+
+export function Example() {
+  return (
+    <FeatureCarousel>内容</FeatureCarousel>
+  )
+}
+~~~
+
+## 导出部件
+
+- `FeatureCarousel`
+
+## 依赖
+
+- `motion`
+- `clsx`
+- `react-wrap-balancer`
+
+## 源码属性定义
+
+### CardProps
+
+~~~ts
+interface CardProps {
+  title: string
+  description: string
+  bgClass?: string
+}
+~~~
+
+### StepImageProps
+
+~~~ts
+interface StepImageProps {
+  src: StaticImageData | string
+  alt: string
+  className?: string
+  style?: React.CSSProperties
+  width?: number
+  height?: number
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 吸顶功能区块 (Feature Sticky Section)
+
+> 滚动吸顶的功能区块,把触发器与内容面板配对并跟踪当前面板。
+
+- 分类:展示区块
+- 本站页面:https://cult-ui.ndjp.net/docs/components/feature-sticky-section
+- 官方文档:https://www.cult-ui.com/docs/components/feature-sticky-section
+- 源码位置:`src/components/ui/feature-sticky-section.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/feature-sticky-section
+~~~
+
+## 用法
+
+~~~tsx
+import { OSSProject, OSSSection, OSSSectionComponents } from "@/components/ui/feature-sticky-section"
+
+export function Example() {
+  return (
+    <OSSProject>
+      <OSSSection />
+    </OSSProject>
+  )
+}
+~~~
+
+## 导出部件
+
+- `OSSProject`
+- `OSSSection`
+- `OSSSectionComponents`
+- `StickySection`
+- `defaultOSSSectionProjects`
+
+## 依赖
+
+- `@radix-ui/react-slot`
+- `@radix-ui/react-use-controllable-state`
+
+## 源码属性定义
+
+### OSSSectionProps
+
+~~~ts
+export interface OSSSectionProps {
+  /** Project items to display. Defaults to Vite, Vitest, Rolldown, Oxc. */
+  projects?: OSSProject[]
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# Hero 色彩面板 (Hero Color Panel)
+
+> 左右分栏首屏,右侧为 ColorPanels 着色器视觉,含 CTA 与技术栈徽章。
+
+- 分类:展示区块
+- 本站页面:https://cult-ui.ndjp.net/docs/components/hero-color-panel
+- 官方文档:https://www.cult-ui.com/docs/components/hero-color-panel
+- 源码位置:`src/components/ui/hero-color-panel.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/hero-color-panel
+~~~
+
+## 用法
+
+~~~tsx
+import { AISDKIcon, HeroColorPanels, HeroColorPanelsActions } from "@/components/ui/hero-color-panel"
+
+export function Example() {
+  return (
+    <AISDKIcon>
+      <HeroColorPanels />
+    </AISDKIcon>
+  )
+}
+~~~
+
+## 导出部件
+
+- `AISDKIcon`
+- `HeroColorPanels`
+- `HeroColorPanelsActions`
+- `HeroColorPanelsBadges`
+- `HeroColorPanelsCTA`
+- `HeroColorPanelsContainer`
+- `HeroColorPanelsContent`
+- `HeroColorPanelsDescription`
+- `HeroColorPanelsHeading`
+- `HeroColorPanelsMobileVisual`
+- `HeroColorPanelsRoot`
+- `HeroColorPanelsTechItem`
+
+## 依赖
+
+- `@paper-design/shaders-react`
+
+## 源码属性定义
+
+### HeroColorPanelsCTAProps
+
+~~~ts
+export interface HeroColorPanelsCTAProps {
+  label: React.ReactNode
+  href: string
+  target?: React.HTMLAttributeAnchorTarget
+  rel?: string
+  onClick?: React.MouseEventHandler<HTMLAnchorElement>
+  className?: string
+  buttonClassName?: string
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# Hero 抖动 (Hero Dithering)
+
+> 左右分栏首屏,右侧为抖动着色器视觉。
+
+- 分类:展示区块
+- 本站页面:https://cult-ui.ndjp.net/docs/components/hero-dithering
+- 官方文档:https://www.cult-ui.com/docs/components/hero-dithering
+- 源码位置:`src/components/ui/hero-dithering.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/hero-dithering
+~~~
+
+## 用法
+
+~~~tsx
+import { AISDKIcon, HeroDithering, HeroDitheringActions } from "@/components/ui/hero-dithering"
+
+export function Example() {
+  return (
+    <AISDKIcon>
+      <HeroDithering />
+    </AISDKIcon>
+  )
+}
+~~~
+
+## 导出部件
+
+- `AISDKIcon`
+- `HeroDithering`
+- `HeroDitheringActions`
+- `HeroDitheringBadges`
+- `HeroDitheringCTA`
+- `HeroDitheringContainer`
+- `HeroDitheringContent`
+- `HeroDitheringDescription`
+- `HeroDitheringHeading`
+- `HeroDitheringMobileVisual`
+- `HeroDitheringRoot`
+- `HeroDitheringTechItem`
+
+## 依赖
+
+- `@paper-design/shaders-react`
+
+## 源码属性定义
+
+### HeroDitheringCTAProps
+
+~~~ts
+export interface HeroDitheringCTAProps {
+  label: React.ReactNode
+  href: string
+  target?: React.HTMLAttributeAnchorTarget
+  rel?: string
+  onClick?: React.MouseEventHandler<HTMLAnchorElement>
+  className?: string
+  buttonClassName?: string
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# Hero 热力图 (Hero Heatmap)
+
+> 左右分栏首屏,右侧为发光热力着色器视觉。
+
+- 分类:展示区块
+- 本站页面:https://cult-ui.ndjp.net/docs/components/hero-heatmap
+- 官方文档:https://www.cult-ui.com/docs/components/hero-heatmap
+- 源码位置:`src/components/ui/hero-heatmap.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/hero-heatmap
+~~~
+
+## 用法
+
+~~~tsx
+import { AISDKIcon, HeroHeatmap, HeroHeatmapActions } from "@/components/ui/hero-heatmap"
+
+export function Example() {
+  return (
+    <AISDKIcon>
+      <HeroHeatmap />
+    </AISDKIcon>
+  )
+}
+~~~
+
+## 导出部件
+
+- `AISDKIcon`
+- `HeroHeatmap`
+- `HeroHeatmapActions`
+- `HeroHeatmapBadges`
+- `HeroHeatmapCTA`
+- `HeroHeatmapContainer`
+- `HeroHeatmapContent`
+- `HeroHeatmapDescription`
+- `HeroHeatmapHeading`
+- `HeroHeatmapMobileVisual`
+- `HeroHeatmapRoot`
+- `HeroHeatmapShaderOverrides`
+
+## 依赖
+
+- `@paper-design/shaders-react`
+
+## 源码属性定义
+
+### HeroHeatmapCTAProps
+
+~~~ts
+export interface HeroHeatmapCTAProps {
+  label: React.ReactNode
+  href: string
+  target?: React.HTMLAttributeAnchorTarget
+  rel?: string
+  onClick?: React.MouseEventHandler<HTMLAnchorElement>
+  className?: string
+  buttonClassName?: string
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# Hero 液态金属 (Hero Liquid Metal)
+
+> 左右分栏首屏,右侧为铬金属液态着色器视觉。
+
+- 分类:展示区块
+- 本站页面:https://cult-ui.ndjp.net/docs/components/hero-liquid-metal
+- 官方文档:https://www.cult-ui.com/docs/components/hero-liquid-metal
+- 源码位置:`src/components/ui/hero-liquid-metal.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/hero-liquid-metal
+~~~
+
+## 用法
+
+~~~tsx
+import { AISDKIcon, HeroLiquidMetal, HeroLiquidMetalActions } from "@/components/ui/hero-liquid-metal"
+
+export function Example() {
+  return (
+    <AISDKIcon>
+      <HeroLiquidMetal />
+    </AISDKIcon>
+  )
+}
+~~~
+
+## 导出部件
+
+- `AISDKIcon`
+- `HeroLiquidMetal`
+- `HeroLiquidMetalActions`
+- `HeroLiquidMetalBadges`
+- `HeroLiquidMetalCTA`
+- `HeroLiquidMetalContainer`
+- `HeroLiquidMetalContent`
+- `HeroLiquidMetalDescription`
+- `HeroLiquidMetalHeading`
+- `HeroLiquidMetalMobileVisual`
+- `HeroLiquidMetalRoot`
+- `HeroLiquidMetalShaderOverrides`
+
+## 依赖
+
+- `@paper-design/shaders-react`
+
+## 源码属性定义
+
+### HeroLiquidMetalCTAProps
+
+~~~ts
+export interface HeroLiquidMetalCTAProps {
+  label: React.ReactNode
+  href: string
+  target?: React.HTMLAttributeAnchorTarget
+  rel?: string
+  onClick?: React.MouseEventHandler<HTMLAnchorElement>
+  className?: string
+  buttonClassName?: string
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# Hero 径向渐变 (Hero Static Radial Gradient)
+
+> 左右分栏首屏,右侧为静态径向渐变色视觉。
+
+- 分类:展示区块
+- 本站页面:https://cult-ui.ndjp.net/docs/components/hero-static-radial-gradient
+- 官方文档:https://www.cult-ui.com/docs/components/hero-static-radial-gradient
+- 源码位置:`src/components/ui/hero-static-radial-gradient.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/hero-static-radial-gradient
+~~~
+
+## 用法
+
+~~~tsx
+import { AISDKIcon, HeroStaticRadialGradient, HeroStaticRadialGradientActions } from "@/components/ui/hero-static-radial-gradient"
+
+export function Example() {
+  return (
+    <AISDKIcon>
+      <HeroStaticRadialGradient />
+    </AISDKIcon>
+  )
+}
+~~~
+
+## 导出部件
+
+- `AISDKIcon`
+- `HeroStaticRadialGradient`
+- `HeroStaticRadialGradientActions`
+- `HeroStaticRadialGradientBadges`
+- `HeroStaticRadialGradientCTA`
+- `HeroStaticRadialGradientContainer`
+- `HeroStaticRadialGradientContent`
+- `HeroStaticRadialGradientDescription`
+- `HeroStaticRadialGradientHeading`
+- `HeroStaticRadialGradientMobileVisual`
+- `HeroStaticRadialGradientRoot`
+- `HeroStaticRadialGradientTechItem`
+
+## 依赖
+
+- `@paper-design/shaders-react`
+
+## 源码属性定义
+
+### HeroStaticRadialGradientCTAProps
+
+~~~ts
+export interface HeroStaticRadialGradientCTAProps {
+  label: React.ReactNode
+  href: string
+  target?: React.HTMLAttributeAnchorTarget
+  rel?: string
+  onClick?: React.MouseEventHandler<HTMLAnchorElement>
+  className?: string
+  buttonClassName?: string
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 加载轮播 (Loading Carousel)
+
+> 基于 Embla 的自动播放提示轮播,适合加载态展示。
+
+- 分类:展示区块
+- 本站页面:https://cult-ui.ndjp.net/docs/components/loading-carousel
+- 官方文档:https://www.cult-ui.com/docs/components/loading-carousel
+- 源码位置:`src/components/ui/loading-carousel.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/loading-carousel
+~~~
+
+## 用法
+
+~~~tsx
+import { LoadingCarousel } from "@/components/ui/loading-carousel"
+
+export function Example() {
+  return (
+    <LoadingCarousel>内容</LoadingCarousel>
+  )
+}
+~~~
+
+## 导出部件
+
+- `LoadingCarousel`
+
+## 依赖
+
+- `embla-carousel-autoplay`
+- `lucide-react`
+- `motion`
+
+## 源码属性定义
+
+### LoadingCarouselProps
+
+~~~ts
+interface LoadingCarouselProps {
+  tips?: Tip[]
+  className?: string
+  autoplayInterval?: number
+  showNavigation?: boolean
+  showIndicators?: boolean
+  showProgress?: boolean
+  aspectRatio?: "video" | "square" | "wide"
+  textPosition?: "top" | "bottom"
+  onTipChange?: (index: number) => void
+  backgroundTips?: boolean
+  backgroundGradient?: boolean
+  shuffleTips?: boolean
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# Logo 轮播 (Logo Carousel)
+
+> 按列交错展示品牌 SVG 的 Logo 轮播。
+
+- 分类:展示区块
+- 本站页面:https://cult-ui.ndjp.net/docs/components/logo-carousel
+- 官方文档:https://www.cult-ui.com/docs/components/logo-carousel
+- 源码位置:`src/components/ui/logo-carousel.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/logo-carousel
+~~~
+
+## 用法
+
+~~~tsx
+import { LogoCarousel } from "@/components/ui/logo-carousel"
+
+export function Example() {
+  return (
+    <LogoCarousel>内容</LogoCarousel>
+  )
+}
+~~~
+
+## 导出部件
+
+- `LogoCarousel`
+
+## 依赖
+
+- `motion`
+
+## 源码属性定义
+
+### LogoColumnProps
+
+~~~ts
+interface LogoColumnProps {
+  logos: Logo[]
+  index: number
+  currentTime: number
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 功能代码区块 (Marketing Feature Code)
+
+> 面向代码或网络策略功能的营销区块。
+
+- 分类:展示区块
+- 本站页面:https://cult-ui.ndjp.net/docs/components/marketing-feature-code
+- 官方文档:https://www.cult-ui.com/docs/components/marketing-feature-code
+- 源码位置:`src/components/ui/marketing-feature-code.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/marketing-feature-code
+~~~
+
+## 用法
+
+~~~tsx
+import { NetworkPolicy, NetworkPolicyCode, NetworkPolicyCodeBlock } from "@/components/ui/marketing-feature-code"
+
+export function Example() {
+  return (
+    <NetworkPolicy>
+      <NetworkPolicyCode />
+    </NetworkPolicy>
+  )
+}
+~~~
+
+## 导出部件
+
+- `NetworkPolicy`
+- `NetworkPolicyCode`
+- `NetworkPolicyCodeBlock`
+- `NetworkPolicyCodeLine`
+- `NetworkPolicyComment`
+- `NetworkPolicyContainer`
+- `NetworkPolicyDescription`
+- `NetworkPolicyEyebrow`
+- `NetworkPolicyFeatureDescription`
+- `NetworkPolicyFeatureIcon`
+- `NetworkPolicyFeatureItem`
+- `NetworkPolicyFeatureText`
+
+## 依赖
+
+- `lucide-react`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 分析首屏 (Marketing Hero Analytics)
+
+> 营销页用的分析风格首屏区块。
+
+- 分类:展示区块
+- 本站页面:https://cult-ui.ndjp.net/docs/components/marketing-hero-analytics
+- 官方文档:https://www.cult-ui.com/docs/components/marketing-hero-analytics
+- 源码位置:`src/components/ui/marketing-hero-analytics.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/marketing-hero-analytics
+~~~
+
+## 用法
+
+~~~tsx
+import { ANALYTICS_HERO_CHART_DATA, ANALYTICS_HERO_ICONS, ANALYTICS_HERO_LOGS } from "@/components/ui/marketing-hero-analytics"
+
+export function Example() {
+  return (
+    <ANALYTICS_HERO_CHART_DATA>
+      <ANALYTICS_HERO_ICONS />
+    </ANALYTICS_HERO_CHART_DATA>
+  )
+}
+~~~
+
+## 导出部件
+
+- `ANALYTICS_HERO_CHART_DATA`
+- `ANALYTICS_HERO_ICONS`
+- `ANALYTICS_HERO_LOGS`
+- `ANALYTICS_HERO_SOURCES`
+- `ANALYTICS_HERO_STOPS`
+- `AnalyticsHero`
+- `AnalyticsHeroAppLogs`
+- `AnalyticsHeroChart`
+- `AnalyticsHeroChartDatum`
+- `AnalyticsHeroCopy`
+- `AnalyticsHeroCrosshair`
+- `AnalyticsHeroGithubIcon`
+
+## 依赖
+
+- 无额外依赖
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 3D 轮播 (Three D Carousel)
+
+> 带透视效果的三维轮播,项目之间平滑切换。
+
+- 分类:展示区块
+- 本站页面:https://cult-ui.ndjp.net/docs/components/three-d-carousel
+- 官方文档:https://www.cult-ui.com/docs/components/three-d-carousel
+- 源码位置:`src/components/ui/three-d-carousel.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/three-d-carousel
+~~~
+
+## 用法
+
+~~~tsx
+import { useIsomorphicLayoutEffect, useMediaQuery } from "@/components/ui/three-d-carousel"
+
+export function Example() {
+  return (
+    <useIsomorphicLayoutEffect>
+      <useMediaQuery />
+    </useIsomorphicLayoutEffect>
+  )
+}
+~~~
+
+## 导出部件
+
+- `useIsomorphicLayoutEffect`
+- `useMediaQuery`
+
+## 依赖
+
+- `motion`
+
+## 源码属性定义
+
+### UseMediaQueryOptions
+
+~~~ts
+type UseMediaQueryOptions = {
+  defaultValue?: boolean
+  initializeWithValue?: boolean
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 推文网格 (Tweet Grid)
+
+> 展示推文式内容卡片的网格布局。
+
+- 分类:展示区块
+- 本站页面:https://cult-ui.ndjp.net/docs/components/tweet-grid
+- 官方文档:https://www.cult-ui.com/docs/components/tweet-grid
+- 源码位置:`src/components/ui/tweet-grid.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/tweet-grid
+~~~
+
+## 用法
+
+~~~tsx
+import { TweetGrid } from "@/components/ui/tweet-grid"
+
+export function Example() {
+  return (
+    <TweetGrid>内容</TweetGrid>
+  )
+}
+~~~
+
+## 导出部件
+
+- `TweetGrid`
+
+## 依赖
+
+- `class-variance-authority`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 分析图表 (Analytics Chart)
+
+> Vercel 风格的 SVG 折线图组件,渐变描边、悬浮 tooltip 卡片,纯 SVG 实现无第三方图表库,适合分析仪表盘。
+
+- 分类:数据展示
+- 本站页面:https://cult-ui.ndjp.net/docs/components/analytics-chart
+- 官方文档:https://www.cult-ui.com/docs/components/analytics-chart
+- 源码位置:`src/components/ui/analytics-chart.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/analytics-chart
+~~~
+
+## 用法
+
+~~~tsx
+import { AnalyticsLineChart } from "@/components/ui/analytics-chart"
+
+<AnalyticsLineChart
+  data={[
+    { date: "2024-01-07", label: "organic", value: 340 },
+    { date: "2024-01-14", label: "organic", value: 520 },
+  ]}
+  valueLabel="注册量"
+/>
+~~~
+
+## 导出部件
+
+- `AnalyticsDataPoint`
+- `AnalyticsGradientStop`
+- `AnalyticsLineChart`
+- `AnalyticsTooltip`
+- `AnalyticsTooltipPoint`
+- `DEFAULT_DATA`
+- `DEFAULT_GRADIENT`
+- `EASE_OUT`
+- `PALETTE`
+- `dotColor`
+- `fmtDate`
+- `fmtNum`
+
+## 依赖
+
+- 无额外依赖
+
+## 源码属性定义
+
+### AnalyticsTooltipProps
+
+~~~ts
+export interface AnalyticsTooltipProps {
+  point: AnalyticsTooltipPoint
+  color: string
+  px: number
+  py: number
+  side: "top" | "bottom"
+  valueLabel: string
+  show: boolean
+  /** When true, stacks above pinned/static tooltip cards */
+  isHovered?: boolean
+}
+~~~
+
+### AnalyticsLineChartProps
+
+~~~ts
+export interface AnalyticsLineChartProps {
+  data?: AnalyticsDataPoint[]
+  gradientStops?: AnalyticsGradientStop[]
+  dotColors?: string[]
+  gridLines?: number
+  height?: number
+  pinnedIndices?: number[]
+  valueLabel?: string
+  className?: string
+}
+~~~
+
+## 属性(Props)
+
+| 属性 | 类型 | 默认值 | 说明 |
+| --- | --- | --- | --- |
+| `data` | `AnalyticsDataPoint[]` | — | 数据点数组 {date, label, value}。 |
+| `gradientStops` | `AnalyticsGradientStop[]` | — | 渐变描边的色标。 |
+| `dotColors` | `string[]` | — | 按索引覆盖数据点颜色。 |
+| `gridLines` | `number` | `5` | 网格线数量。 |
+| `height` | `number` | `280` | viewBox 高度。 |
+| `pinnedIndices` | `number[]` | — | 常显 tooltip 的索引,默认最后两个点。 |
+| `valueLabel` | `string` | `"clicks"` | tooltip 中数值的标签。 |
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 选择投票 (Choice Poll)
+
+> 单选或多选投票,带百分比结果条与键盘导航。
+
+- 分类:数据展示
+- 本站页面:https://cult-ui.ndjp.net/docs/components/choice-poll
+- 官方文档:https://www.cult-ui.com/docs/components/choice-poll
+- 源码位置:`src/components/ui/choice-poll.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/choice-poll
+~~~
+
+## 用法
+
+~~~tsx
+import { ChoicePoll, ChoicePollDescription, ChoicePollFooter } from "@/components/ui/choice-poll"
+
+export function Example() {
+  return (
+    <ChoicePoll>
+      <ChoicePollDescription />
+    </ChoicePoll>
+  )
+}
+~~~
+
+## 导出部件
+
+- `ChoicePoll`
+- `ChoicePollDescription`
+- `ChoicePollFooter`
+- `ChoicePollHeader`
+- `ChoicePollIndicator`
+- `ChoicePollLabel`
+- `ChoicePollOption`
+- `ChoicePollOptions`
+- `ChoicePollPercentage`
+- `ChoicePollProgress`
+- `ChoicePollRoot`
+- `ChoicePollTitle`
+
+## 依赖
+
+- `@radix-ui/react-use-controllable-state`
+- `lucide-react`
+- `class-variance-authority`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 功能投票 (Feature Poll)
+
+> 功能投票的组合式实现,支持单选、多选与结果条。
+
+- 分类:数据展示
+- 本站页面:https://cult-ui.ndjp.net/docs/components/feature-poll
+- 官方文档:https://www.cult-ui.com/docs/components/feature-poll
+- 源码位置:`src/components/ui/feature-poll.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/feature-poll
+~~~
+
+## 用法
+
+~~~tsx
+import { FeaturePoll, FeaturePollDescription, FeaturePollFooter } from "@/components/ui/feature-poll"
+
+export function Example() {
+  return (
+    <FeaturePoll>
+      <FeaturePollDescription />
+    </FeaturePoll>
+  )
+}
+~~~
+
+## 导出部件
+
+- `FeaturePoll`
+- `FeaturePollDescription`
+- `FeaturePollFooter`
+- `FeaturePollHeader`
+- `FeaturePollIndicator`
+- `FeaturePollLabel`
+- `FeaturePollOption`
+- `FeaturePollOptions`
+- `FeaturePollPercentage`
+- `FeaturePollProgress`
+- `FeaturePollRoot`
+- `FeaturePollTitle`
+
+## 依赖
+
+- `@radix-ui/react-use-controllable-state`
+- `lucide-react`
+- `class-variance-authority`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 功能投票列表 (Feature Voting)
+
+> 带点赞的功能请求列表,可按票数排序。
+
+- 分类:数据展示
+- 本站页面:https://cult-ui.ndjp.net/docs/components/feature-voting
+- 官方文档:https://www.cult-ui.com/docs/components/feature-voting
+- 源码位置:`src/components/ui/feature-voting.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/feature-voting
+~~~
+
+## 用法
+
+~~~tsx
+import { FeatureVoting, FeatureVotingCount, FeatureVotingDescription } from "@/components/ui/feature-voting"
+
+export function Example() {
+  return (
+    <FeatureVoting>
+      <FeatureVotingCount />
+    </FeatureVoting>
+  )
+}
+~~~
+
+## 导出部件
+
+- `FeatureVoting`
+- `FeatureVotingCount`
+- `FeatureVotingDescription`
+- `FeatureVotingGroup`
+- `FeatureVotingItem`
+- `FeatureVotingRoot`
+- `FeatureVotingTitle`
+- `FeatureVotingTrigger`
+- `FeatureVotingValue`
+- `useFeatureVoting`
+
+## 依赖
+
+- `@radix-ui/react-use-controllable-state`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# Halo 徽章 (Halo Badge)
+
+> 带渐变边框、闪烁状态点与等宽数字的徽章,数字变化不抖动。
+
+- 分类:数据展示
+- 本站页面:https://cult-ui.ndjp.net/docs/components/halo-badge
+- 官方文档:https://www.cult-ui.com/docs/components/halo-badge
+- 源码位置:`src/components/ui/halo-badge.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/halo-badge
+~~~
+
+## 用法
+
+~~~tsx
+import { HaloBadge } from "@/components/ui/halo-badge"
+
+export function Example() {
+  return (
+    <HaloBadge>内容</HaloBadge>
+  )
+}
+~~~
+
+## 导出部件
+
+- `HaloBadge`
+
+## 依赖
+
+- `class-variance-authority`
+- `motion`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# Halo 进度条 (Halo Progress)
+
+> 弹簧驱动的确定型进度条,以及滑动的非确定型光带。
+
+- 分类:数据展示
+- 本站页面:https://cult-ui.ndjp.net/docs/components/halo-progress
+- 官方文档:https://www.cult-ui.com/docs/components/halo-progress
+- 源码位置:`src/components/ui/halo-progress.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/halo-progress
+~~~
+
+## 用法
+
+~~~tsx
+import { HaloProgress } from "@/components/ui/halo-progress"
+
+export function Example() {
+  return (
+    <HaloProgress>内容</HaloProgress>
+  )
+}
+~~~
+
+## 导出部件
+
+- `HaloProgress`
+
+## 依赖
+
+- `@base-ui/react`
+- `motion`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 投票组件 (Poll Widget)
+
+> 行内、弹出层、对话框三种形态的投票组件。
+
+- 分类:数据展示
+- 本站页面:https://cult-ui.ndjp.net/docs/components/poll-widget
+- 官方文档:https://www.cult-ui.com/docs/components/poll-widget
+- 源码位置:`src/components/ui/poll-widget.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/poll-widget
+~~~
+
+## 用法
+
+~~~tsx
+import { PollOption, PollWidget, PollWidgetAnimationPhase } from "@/components/ui/poll-widget"
+
+export function Example() {
+  return (
+    <PollOption>
+      <PollWidget />
+    </PollOption>
+  )
+}
+~~~
+
+## 导出部件
+
+- `PollOption`
+- `PollWidget`
+- `PollWidgetAnimationPhase`
+- `PollWidgetContent`
+- `PollWidgetDialog`
+- `PollWidgetIndicator`
+- `PollWidgetLabel`
+- `PollWidgetMode`
+- `PollWidgetOption`
+- `PollWidgetOptions`
+- `PollWidgetPercentage`
+- `PollWidgetQuestion`
+
+## 依赖
+
+- `@radix-ui/react-use-controllable-state`
+- `class-variance-authority`
+- `lucide-react`
+- `motion`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 滚动数字 (Rolling Number)
+
+> 数字滚动计数,可自定义格式化。
+
+- 分类:数据展示
+- 本站页面:https://cult-ui.ndjp.net/docs/components/rolling-number
+- 官方文档:https://www.cult-ui.com/docs/components/rolling-number
+- 源码位置:`src/components/ui/rolling-number.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/rolling-number
+~~~
+
+## 用法
+
+~~~tsx
+import { RollingNumber } from "@/components/ui/rolling-number"
+
+export function Example() {
+  return (
+    <RollingNumber>内容</RollingNumber>
+  )
+}
+~~~
+
+## 导出部件
+
+- `RollingNumber`
+
+## 依赖
+
+- `motion`
+
+## 源码属性定义
+
+### RollingNumberProps
+
+~~~ts
+interface RollingNumberProps {
+  value: number
+  mass?: number
+  stiffness?: number
+  damping?: number
+  precision?: number
+  format?: (value: number) => string
+  onAnimationStart?: () => void
+  onAnimationComplete?: () => void
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 投票计数 (Vote Tally)
+
+> 带点赞的票数统计列表,可按票数排序。
+
+- 分类:数据展示
+- 本站页面:https://cult-ui.ndjp.net/docs/components/vote-tally
+- 官方文档:https://www.cult-ui.com/docs/components/vote-tally
+- 源码位置:`src/components/ui/vote-tally.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/vote-tally
+~~~
+
+## 用法
+
+~~~tsx
+import { VoteTally, VoteTallyCount, VoteTallyDescription } from "@/components/ui/vote-tally"
+
+export function Example() {
+  return (
+    <VoteTally>
+      <VoteTallyCount />
+    </VoteTally>
+  )
+}
+~~~
+
+## 导出部件
+
+- `VoteTally`
+- `VoteTallyCount`
+- `VoteTallyDescription`
+- `VoteTallyGroup`
+- `VoteTallyItem`
+- `VoteTallyRoot`
+- `VoteTallyTitle`
+- `VoteTallyTrigger`
+- `VoteTallyValue`
+- `useVoteTally`
+
+## 依赖
+
+- `@radix-ui/react-use-controllable-state`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 看板 (Kanban Board)
+
+> 拖拽看板组件,卡片可在列之间拖动,支持标签、负责人头像与 Motion 布局动画,使用原生 HTML 拖放 API。
+
+- 分类:交互
+- 本站页面:https://cult-ui.ndjp.net/docs/components/kanban-board
+- 官方文档:https://www.cult-ui.com/docs/components/kanban-board
+- 源码位置:`src/components/ui/kanban-board.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/kanban-board
+~~~
+
+## 用法
+
+~~~tsx
+import { Column, gentleSpring } from "@/components/ui/kanban-board"
+import { MotionConfig } from "motion/react"
+
+<MotionConfig transition={gentleSpring}>
+  {columns.map((col) => (
+    <Column
+      key={col.id}
+      column={col}
+      dragState={dragState}
+      setDragState={setDragState}
+      onDrop={(cardId, from, to) => moveCard(cardId, from, to)}
+    />
+  ))}
+</MotionConfig>
+~~~
+
+## 导出部件
+
+- `Assignee`
+- `CardData`
+- `CardTag`
+- `Column`
+- `ColumnData`
+- `ColumnStatus`
+- `DragState`
+- `TagVariant`
+- `gentleSpring`
+
+## 依赖
+
+- `motion`
+
+## 源码属性定义
+
+### TagProps
+
+~~~ts
+type TagProps = {
+  label: string
+  variant: TagVariant
+}
+~~~
+
+### AvatarProps
+
+~~~ts
+type AvatarProps = {
+  src?: string
+  name?: string
+}
+~~~
+
+## 备注
+
+CardData 支持 { id, title, tags?, assignee?, date? };标签变体有 feature / bug / design / improvement / docs / done 六种配色。原组件的 next/image 头像已适配为标准 <img>。
+
+## 属性(Props)
+
+| 属性 | 类型 | 默认值 | 说明 |
+| --- | --- | --- | --- |
+| `column` | `ColumnData` | — | 列数据 {id, title, status, cards}。 |
+| `onDrop` | `(cardId, fromColumnId, toColumnId) => void` | — | 卡片落下的回调,在此更新状态。 |
+| `dragState` | `DragState \| null` | — | 当前拖拽中的卡片与来源列。 |
+| `setDragState` | `React.Dispatch<SetStateAction<DragState>>` | — | 拖拽状态更新器。 |
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 多步引导原语 (Onboarding)
+
+> 组合式多步引导:根组件、步骤导航、功能轮播、选择组、提示列表与步骤指示器。
+
+- 分类:交互
+- 本站页面:https://cult-ui.ndjp.net/docs/components/onboarding
+- 官方文档:https://www.cult-ui.com/docs/components/onboarding
+- 源码位置:`src/components/ui/onboarding.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/onboarding
+~~~
+
+## 用法
+
+~~~tsx
+import { ChoiceGroup, FeatureCarousel, Onboarding } from "@/components/ui/onboarding"
+
+export function Example() {
+  return (
+    <ChoiceGroup>
+      <FeatureCarousel />
+    </ChoiceGroup>
+  )
+}
+~~~
+
+## 导出部件
+
+- `ChoiceGroup`
+- `FeatureCarousel`
+- `Onboarding`
+- `StepIndicator`
+- `TipsList`
+- `useOnboarding`
+
+## 依赖
+
+- `@radix-ui/react-use-controllable-state`
+- `class-variance-authority`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 可排序列表 (Sortable List)
+
+> 拖放排序的列表,带布局动画。
+
+- 分类:交互
+- 本站页面:https://cult-ui.ndjp.net/docs/components/sortable-list
+- 官方文档:https://www.cult-ui.com/docs/components/sortable-list
+- 源码位置:`src/components/ui/sortable-list.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/sortable-list
+~~~
+
+## 用法
+
+~~~tsx
+import { Item, SortableList, SortableListItem } from "@/components/ui/sortable-list"
+
+export function Example() {
+  return (
+    <Item>
+      <SortableList />
+    </Item>
+  )
+}
+~~~
+
+## 导出部件
+
+- `Item`
+- `SortableList`
+- `SortableListItem`
+
+## 依赖
+
+- `motion`
+- `react-use-measure`
+- `lucide-react`
+
+## 源码属性定义
+
+### SortableListItemProps
+
+~~~ts
+interface SortableListItemProps {
+  item: Item
+  order: number
+  onCompleteItem: (id: number) => void
+  onRemoveItem: (id: number) => void
+  renderExtra?: (item: Item) => React.ReactNode
+  isExpanded?: boolean
+  className?: string
+  handleDrag: () => void
+}
+~~~
+
+### SortableListProps
+
+~~~ts
+interface SortableListProps {
+  items: Item[]
+  setItems: Dispatch<SetStateAction<Item[]>>
+  onCompleteItem: (id: number) => void
+  renderItem: (
+    item: Item,
+    order: number,
+    onCompleteItem: (id: number) => void,
+    onRemoveItem: (id: number) => void
+  ) => ReactNode
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 可扩展向导 (Wizard Expandable)
+
+> 可展开的多步向导,支持前进校验、可滚动步骤轨与高度过渡。
+
+- 分类:交互
+- 本站页面:https://cult-ui.ndjp.net/docs/components/wizard-expandable
+- 官方文档:https://www.cult-ui.com/docs/components/wizard-expandable
+- 源码位置:`src/components/ui/wizard-expandable.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/wizard-expandable
+~~~
+
+## 用法
+
+~~~tsx
+import { WizardStep, useWizardExpandable } from "@/components/ui/wizard-expandable"
+
+export function Example() {
+  return (
+    <WizardStep>
+      <useWizardExpandable />
+    </WizardStep>
+  )
+}
+~~~
+
+## 导出部件
+
+- `WizardStep`
+- `useWizardExpandable`
+
+## 依赖
+
+- `@base-ui/react`
+- `@radix-ui/react-use-controllable-state`
+- `motion`
+
+## 源码属性定义
+
+### WizardExpandableProps
+
+~~~ts
+export interface WizardExpandableProps {
+  steps: WizardStep[]
+  badgeText?: string
+
+  className?: string
+  expanded?: boolean
+  onExpandedChange?: (expanded: boolean) => void
+  activeStep?: string | null
+  onActiveStepChange?: (stepId: string | null) => void
+
+  /**
+   * Return false to block moving from the current step to `toStepId`.
+   * Not called when opening the first step (`fromStepId` is null), closing the wizard,
+   * or when `skipValidationForBackward` is true and the target step is before the current one.
+   */
+  canNavigateToStep?: (context: WizardNavigateContext) => boolean
+  /**
+   * When true, navigating to an earlier step does not call `canNavigateToStep`.
+   * @default true
+   */
+  skipValidationForBackward?: boolean
+  /** Called when navigation was blocked by `canNavigateToStep` returning false. */
+  onNavigateBlocked?: (context: WizardNavigateContext) => void
+
+  /**
+   * When `false`, disables Next and the Complete action. When `undefined`, only
+   * `canNavigateToStep` gates forward moves (and Complete stays enabled unless you set this).
+   */
+  // …
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 扭曲玻璃 (Distorted Glass)
+
+> 用 SVG 分形噪点位移做出玻璃分隔效果,适合区块过渡。
+
+- 分类:特效
+- 本站页面:https://cult-ui.ndjp.net/docs/components/distorted-glass
+- 官方文档:https://www.cult-ui.com/docs/components/distorted-glass
+- 源码位置:`src/components/ui/distorted-glass.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/distorted-glass
+~~~
+
+## 用法
+
+~~~tsx
+import { DistortedGlass } from "@/components/ui/distorted-glass"
+
+export function Example() {
+  return (
+    <DistortedGlass>内容</DistortedGlass>
+  )
+}
+~~~
+
+## 导出部件
+
+- `DistortedGlass`
+
+## 依赖
+
+- 无额外依赖
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 抖动图片 (Dither Image)
+
+> 用 CSS Bayer 抖动插件处理图片,支持局部揭示遮罩。
+
+- 分类:特效
+- 本站页面:https://cult-ui.ndjp.net/docs/components/dither-image
+- 官方文档:https://www.cult-ui.com/docs/components/dither-image
+- 源码位置:`src/components/ui/dither-image.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/dither-image
+~~~
+
+## 用法
+
+~~~tsx
+import { DitherAspectRatio, DitherImage, DitherImageCaption } from "@/components/ui/dither-image"
+
+export function Example() {
+  return (
+    <DitherAspectRatio>
+      <DitherImage />
+    </DitherAspectRatio>
+  )
+}
+~~~
+
+## 导出部件
+
+- `DitherAspectRatio`
+- `DitherImage`
+- `DitherImageCaption`
+- `DitherImageContent`
+- `DitherImageFrame`
+- `DitherImageOverlay`
+- `DitherImageReveal`
+- `DitherRevealDirection`
+- `DitherSize`
+
+## 依赖
+
+- `dither-plugin`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 灵动岛 (Dynamic Island)
+
+> iPhone 灵动岛组件,提供 14 种尺寸预设之间流畅的弹簧过渡,适合通知、播放器、通话等状态演示。
+
+- 分类:特效
+- 本站页面:https://cult-ui.ndjp.net/docs/components/dynamic-island
+- 官方文档:https://www.cult-ui.com/docs/components/dynamic-island
+- 源码位置:`src/components/ui/dynamic-island.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/dynamic-island
+~~~
+
+## 用法
+
+~~~tsx
+import {
+  DynamicIsland, DynamicContainer, DynamicTitle,
+  useScheduledAnimations,
+} from "@/components/ui/dynamic-island"
+
+function Demo() {
+  useScheduledAnimations([
+    { size: "compact", delay: 1000 },
+    { size: "large", delay: 2400 },
+    { size: "tall", delay: 3800 },
+  ])
+  return (
+    <DynamicContainer className="flex h-full w-full items-center justify-center">
+      <DynamicTitle className="text-white">正在播放</DynamicTitle>
+    </DynamicContainer>
+  )
+}
+
+<DynamicIsland id="island-demo"><Demo /></DynamicIsland>
+~~~
+
+## 导出部件
+
+- `DynamicContainer`
+- `DynamicDescription`
+- `DynamicDiv`
+- `DynamicIsland`
+- `DynamicIslandProvider`
+- `DynamicIslandSizePresets`
+- `DynamicTitle`
+- `SIZE_PRESETS`
+- `SizePresets`
+- `damping`
+- `stiffness`
+- `useDynamicIslandSize`
+
+## 依赖
+
+- `motion`
+
+## 源码属性定义
+
+### DynamicIslandProviderProps
+
+~~~ts
+interface DynamicIslandProviderProps {
+  children: React.ReactNode
+  initialSize?: SizePresets
+  initialAnimation?: Array<{ size: SizePresets; delay: number }>
+}
+~~~
+
+### DynamicContainerProps
+
+~~~ts
+type DynamicContainerProps = {
+  className?: string
+  children?: React.ReactNode
+}
+~~~
+
+## 备注
+
+需要配合 DynamicContainer / DynamicTitle / DynamicDescription 使用;useScheduledAnimations 可按时间表自动轮播尺寸。
+
+## 属性(Props)
+
+| 属性 | 类型 | 默认值 | 说明 |
+| --- | --- | --- | --- |
+| `id` | `string` | — | DynamicIsland 根节点必填的唯一标识。 |
+| `size 预设` | `"compact" \| "medium" \| "large" \| "tall" \| "long" \| "ultra" \| "massive" 等 14 种` | — | 通过 useDynamicIslandSize().setSize() 或 useScheduledAnimations 切换。 |
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 边缘模糊 (Edge Blur)
+
+> 多层遮罩 backdrop-filter 堆叠,让内容在页眉页脚处渐隐。
+
+- 分类:特效
+- 本站页面:https://cult-ui.ndjp.net/docs/components/edge-blur
+- 官方文档:https://www.cult-ui.com/docs/components/edge-blur
+- 源码位置:`src/components/ui/edge-blur.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/edge-blur
+~~~
+
+## 用法
+
+~~~tsx
+import { BottomBlur, EdgeBlur, TopBlur } from "@/components/ui/edge-blur"
+
+export function Example() {
+  return (
+    <BottomBlur>
+      <EdgeBlur />
+    </BottomBlur>
+  )
+}
+~~~
+
+## 导出部件
+
+- `BottomBlur`
+- `EdgeBlur`
+- `TopBlur`
+
+## 依赖
+
+- 无额外依赖
+
+## 源码属性定义
+
+### EdgeBlurProps
+
+~~~ts
+interface EdgeBlurProps {
+  position?: "top" | "bottom"
+  height?: number
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 全屏展开 (Expandable Screen)
+
+> 用共享布局动画把卡片或按钮形变成全屏视图。
+
+- 分类:特效
+- 本站页面:https://cult-ui.ndjp.net/docs/components/expandable-screen
+- 官方文档:https://www.cult-ui.com/docs/components/expandable-screen
+- 源码位置:`src/components/ui/expandable-screen.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/expandable-screen
+~~~
+
+## 用法
+
+~~~tsx
+import { ExpandableScreen, ExpandableScreenBackground, ExpandableScreenContent } from "@/components/ui/expandable-screen"
+
+export function Example() {
+  return (
+    <ExpandableScreen>
+      <ExpandableScreenBackground />
+    </ExpandableScreen>
+  )
+}
+~~~
+
+## 导出部件
+
+- `ExpandableScreen`
+- `ExpandableScreenBackground`
+- `ExpandableScreenContent`
+- `ExpandableScreenTrigger`
+- `useExpandableScreen`
+
+## 依赖
+
+- `motion`
+- `lucide-react`
+
+## 源码属性定义
+
+### ExpandableScreenProps
+
+~~~ts
+interface ExpandableScreenProps {
+  children: ReactNode
+  defaultExpanded?: boolean
+  onExpandChange?: (expanded: boolean) => void
+  layoutId?: string
+  triggerRadius?: string
+  contentRadius?: string
+  animationDuration?: number
+  lockScroll?: boolean
+}
+~~~
+
+### ExpandableScreenTriggerProps
+
+~~~ts
+interface ExpandableScreenTriggerProps {
+  children: ReactNode
+  className?: string
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 竖纹玻璃 (Fluted Glass)
+
+> WebGL 竖纹(凹槽)玻璃图像着色器,来自 Paper Design,可调纹理形状、棱镜畸变、高光阴影等参数。
+
+- 分类:特效
+- 本站页面:https://cult-ui.ndjp.net/docs/components/fluted-glass
+- 官方文档:https://www.cult-ui.com/docs/components/fluted-glass
+- 源码位置:`src/components/ui/fluted-glass.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/fluted-glass
+~~~
+
+## 用法
+
+~~~tsx
+import { FlutedGlass } from "@/components/ui/fluted-glass"
+
+<div className="relative aspect-video w-full overflow-hidden rounded-2xl">
+  <FlutedGlass
+    className="absolute inset-0 size-full"
+    image={imageUrl}
+    width={1280}
+    height={720}
+  />
+</div>
+~~~
+
+## 导出部件
+
+- `FlutedGlass`
+
+## 依赖
+
+- `@paper-design/shaders-react`
+## 备注
+
+需要浏览器支持 WebGL;所有视觉参数均可在运行时平滑过渡。
+
+## 属性(Props)
+
+| 属性 | 类型 | 默认值 | 说明 |
+| --- | --- | --- | --- |
+| `image` | `string` | — | 应用玻璃效果的图片地址。 |
+| `width / height` | `number` | `1280 / 720` | 着色器画布尺寸。 |
+| `shape` | `"lines" \| "linesIrregular" \| "wave" \| "zigzag" \| "pattern"` | `"lines"` | 纹理形状。 |
+| `distortionShape` | `"prism" \| "lens" \| "contour" \| "cascade" \| "flat"` | `"prism"` | 畸变形状。 |
+| `distortion` | `number` | `0.5` | 畸变强度。 |
+| `angle` | `number` | `0` | 纹理角度(0–180°)。 |
+| `fit` | `"cover" \| "contain" \| "none"` | `"cover"` | 图像填充方式。 |
+| `edges` | `number` | `0.25` | 边缘柔化。 |
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 3D 地球 (Globe (COBE))
+
+> 基于 cobe 构建的交互式 3D WebGL 地球组件,支持拖拽旋转、明暗主题自适应、标记点与飞行弧线,适合营销页首屏与仪表盘。
+
+- 分类:特效
+- 本站页面:https://cult-ui.ndjp.net/docs/components/globe
+- 官方文档:https://www.cult-ui.com/docs/components/globe
+- 源码位置:`src/components/ui/globe.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/globe
+~~~
+
+## 用法
+
+~~~tsx
+import { DefaultShowcaseGlobe } from "@/components/ui/globe"
+
+<DefaultShowcaseGlobe globeSize={520} title="CULT PRO" />
+~~~
+
+## 导出部件
+
+- `DefaultShowcaseGlobe`
+- `MarketingHeroGlobe`
+- `ShowcaseConfig`
+- `ShowcaseKey`
+- `analyticsMarkers`
+- `barMarkers`
+- `cdnArcs`
+- `cdnMarkers`
+- `flightArcs`
+- `flightMarkers`
+- `getShowcaseArcs`
+- `getShowcaseMarkers`
+
+## 依赖
+
+- `cobe`
+- `motion`
+- `next-themes`
+
+## 源码属性定义
+
+### ShowcaseConfig
+
+~~~ts
+export type ShowcaseConfig = {
+  theta: number
+  dark: number
+  mapBrightness: number
+  markerColor: [number, number, number]
+  baseColor: [number, number, number]
+  arcColor: [number, number, number]
+  markerSize: number
+  markerElevation: number
+}
+~~~
+
+### DefaultShowcaseGlobeProps
+
+~~~ts
+export interface DefaultShowcaseGlobeProps {
+  className?: string
+  globeSize?: number
+  title?: string
+  orbitPhrase?: string
+  /** When true, omit the centered scanline title (e.g. headline lives in the hero column). */
+  hideCenterTitle?: boolean
+}
+~~~
+
+## 备注
+
+标记点与弧线标签使用 CSS 锚点定位。组件同时导出 DefaultShowcaseGlobe 与 MarketingHeroGlobe 两个变体,以及 CDN、航班、卫星、分析等多种示例数据配置。
+
+## 属性(Props)
+
+| 属性 | 类型 | 默认值 | 说明 |
+| --- | --- | --- | --- |
+| `className` | `string` | — | 附加到根元素的类名。 |
+| `globeSize` | `number` | `520` | 地球渲染尺寸(px)。 |
+| `title` | `string` | `"CULT PRO"` | 中心标题贴纸文字。 |
+| `orbitPhrase` | `string` | `"Ship-ready sections · "` | 环绕轨道循环滚动的文字短语。 |
+| `hideCenterTitle` | `boolean` | `false` | 隐藏中心标题。 |
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# LED 灯板 (Lightboard)
+
+> 由灯点组成的滚动 LED 字幕板,含七段字体与手绘。
+
+- 分类:特效
+- 本站页面:https://cult-ui.ndjp.net/docs/components/lightboard
+- 官方文档:https://www.cult-ui.com/docs/components/lightboard
+- 源码位置:`src/components/ui/lightboard.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/lightboard
+~~~
+
+## 用法
+
+~~~tsx
+import { LightBoard, PatternCell } from "@/components/ui/lightboard"
+
+export function Example() {
+  return (
+    <LightBoard>
+      <PatternCell />
+    </LightBoard>
+  )
+}
+~~~
+
+## 导出部件
+
+- `LightBoard`
+- `PatternCell`
+
+## 依赖
+
+- 无额外依赖
+
+## 源码属性定义
+
+### LightBoardProps
+
+~~~ts
+interface LightBoardProps {
+  gap?: number
+  rows?: number
+  lightSize?: number
+  updateInterval?: number
+  text: string
+  font?: "default" | "7segment"
+  colors?: Partial<LightBoardColors>
+  disableDrawing?: boolean
+  controlledDrawState?: PatternCell
+  onDrawStateChange?: (newState: PatternCell) => void
+  controlledHoverState?: boolean
+  onHoverStateChange?: (isHovered: boolean) => void
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 形变面板 (Morph Surface)
+
+> 可平滑形变、尺寸与内容可配置的面板。
+
+- 分类:特效
+- 本站页面:https://cult-ui.ndjp.net/docs/components/morph-surface
+- 官方文档:https://www.cult-ui.com/docs/components/morph-surface
+- 源码位置:`src/components/ui/morph-surface.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/morph-surface
+~~~
+
+## 用法
+
+~~~tsx
+import { MorphSurface } from "@/components/ui/morph-surface"
+
+export function Example() {
+  return (
+    <MorphSurface>内容</MorphSurface>
+  )
+}
+~~~
+
+## 导出部件
+
+- `MorphSurface`
+
+## 依赖
+
+- `motion`
+
+## 源码属性定义
+
+### SpringConfig
+
+~~~ts
+type SpringConfig = {
+  type: "spring"
+  stiffness: number
+  damping: number
+  mass?: number
+  delay?: number
+}
+~~~
+
+### TriggerProps
+
+~~~ts
+interface TriggerProps {
+  isOpen: boolean
+  onClick: () => void
+  className?: string
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 镜头模糊 (Shader Lens Blur)
+
+> 带镜头模糊与鼠标交互的 WebGL 着色器组件。
+
+- 分类:特效
+- 本站页面:https://cult-ui.ndjp.net/docs/components/shader-lens-blur
+- 官方文档:https://www.cult-ui.com/docs/components/shader-lens-blur
+- 源码位置:`src/components/ui/shader-lens-blur.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/shader-lens-blur
+~~~
+
+## 用法
+
+~~~tsx
+import { ShaderLensBlur, configAtom } from "@/components/ui/shader-lens-blur"
+
+export function Example() {
+  return (
+    <ShaderLensBlur>
+      <configAtom />
+    </ShaderLensBlur>
+  )
+}
+~~~
+
+## 导出部件
+
+- `ShaderLensBlur`
+- `configAtom`
+
+## 依赖
+
+- `motion`
+- `three`
+- `jotai`
+- `next-themes`
+
+## 源码属性定义
+
+### ShaderConfig
+
+~~~ts
+interface ShaderConfig {
+  variation: number
+  color1: string
+  color2: string
+  color3: string
+  color4: string
+  enableHover: boolean
+  invertMouse: boolean
+  width: string
+  height: string
+}
+~~~
+
+### ShaderConfig
+
+~~~ts
+interface ShaderConfig {
+//   variation: number
+//   color1: string
+//   color2: string
+//   color3: string
+//   color4: string
+//   enableHover: boolean
+//   invertMouse: boolean
+//   width: string
+//   height: string
+// }
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 终端动画 (Terminal Animation)
+
+> 可组合的终端动画原语:按类型回放的命令、标签页场景与输出渲染。
+
+- 分类:特效
+- 本站页面:https://cult-ui.ndjp.net/docs/components/terminal-animation
+- 官方文档:https://www.cult-ui.com/docs/components/terminal-animation
+- 源码位置:`src/components/ui/terminal-animation.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/terminal-animation
+~~~
+
+## 用法
+
+~~~tsx
+import { TabContent, TerminalAnimationBackgroundGradient, TerminalAnimationBlinkingCursor } from "@/components/ui/terminal-animation"
+
+export function Example() {
+  return (
+    <TabContent>
+      <TerminalAnimationBackgroundGradient />
+    </TabContent>
+  )
+}
+~~~
+
+## 导出部件
+
+- `TabContent`
+- `TerminalAnimationBackgroundGradient`
+- `TerminalAnimationBlinkingCursor`
+- `TerminalAnimationCommandBar`
+- `TerminalAnimationContainer`
+- `TerminalAnimationContent`
+- `TerminalAnimationOutput`
+- `TerminalAnimationOutputLine`
+- `TerminalAnimationRoot`
+- `TerminalAnimationTabList`
+- `TerminalAnimationTabTrigger`
+- `TerminalAnimationTrailingPrompt`
+
+## 依赖
+
+- `@radix-ui/react-slot`
+- `@radix-ui/react-use-controllable-state`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 代码块 (Code Block)
+
+> 带复制按钮与可切换标签页的代码块组件,内置轻量语法着色,适合文档与安装说明。
+
+- 分类:工具
+- 本站页面:https://cult-ui.ndjp.net/docs/components/code-block
+- 官方文档:https://www.cult-ui.com/docs/components/code-block
+- 源码位置:`src/components/ui/code-block.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/code-block
+~~~
+
+## 用法
+
+~~~tsx
+import { CodeBlock } from "@/components/ui/code-block"
+
+<CodeBlock
+  tabs={[
+    { label: "npm", code: "npx shadcn add @cult-ui/globe" },
+    { label: "bun", code: "bunx shadcn add @cult-ui/globe" },
+  ]}
+/>
+
+// 或单段代码
+<CodeBlock code="bun run dev" language="bash" />
+~~~
+
+## 导出部件
+
+- `CodeBlock`
+
+## 依赖
+
+- `motion`
+- `lucide-react`
+
+## 源码属性定义
+
+### CodeBlockProps
+
+~~~ts
+interface CodeBlockProps {
+  tabs?: CodeTab[]
+  code?: string
+  language?: string
+  className?: string
+}
+~~~
+
+## 属性(Props)
+
+| 属性 | 类型 | 默认值 | 说明 |
+| --- | --- | --- | --- |
+| `tabs` | `CodeTab[]` | — | 标签页数组 {label, code, language?}。 |
+| `code` | `string` | — | 单段代码内容(与 tabs 二选一)。 |
+| `language` | `string` | `"bash"` | 默认语言。 |
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 复制按钮 (Copy Button)
+
+> 复制到剪贴板按钮,复制成功后图标切换为对勾并显示提示,提供 inline 与 overlay 两种布局。
+
+- 分类:工具
+- 本站页面:https://cult-ui.ndjp.net/docs/components/copy-button
+- 官方文档:https://www.cult-ui.com/docs/components/copy-button
+- 源码位置:`src/components/ui/copy-button.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/copy-button
+~~~
+
+## 用法
+
+~~~tsx
+import { CopyButton } from "@/components/ui/copy-button"
+
+<CopyButton value="npx shadcn@latest add @cult-ui/globe" tooltip="复制安装命令" />
+~~~
+
+## 导出部件
+
+- `CopyButton`
+- `copyToClipboardWithMeta`
+
+## 依赖
+
+- `lucide-react`
+- `motion`
+## 属性(Props)
+
+| 属性 | 类型 | 默认值 | 说明 |
+| --- | --- | --- | --- |
+| `value` | `string` | — | 要复制的文本。 |
+| `layout` | `"inline" \| "overlay"` | `"inline"` | 布局模式。 |
+| `tooltip` | `string` | — | 提示文字。 |
+| `variant` | `Button variant` | `"ghost"` | 按钮样式变体。 |
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 文件图标 (File Icons)
+
+> npm、pnpm、Yarn、React、Tailwind 等文件类型与工具图标集。
+
+- 分类:工具
+- 本站页面:https://cult-ui.ndjp.net/docs/components/file-icons
+- 官方文档:https://www.cult-ui.com/docs/components/file-icons
+- 源码位置:`src/components/ui/file-icons.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/file-icons
+~~~
+
+## 用法
+
+~~~tsx
+import { Icons, getIconForLanguageExtension } from "@/components/ui/file-icons"
+
+export function Example() {
+  return (
+    <Icons>
+      <getIconForLanguageExtension />
+    </Icons>
+  )
+}
+~~~
+
+## 导出部件
+
+- `Icons`
+- `getIconForLanguageExtension`
+
+## 依赖
+
+- `lucide-react`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 倒计时 (Timer)
+
+> 可设置时长与视觉样式的倒计时器。
+
+- 分类:工具
+- 本站页面:https://cult-ui.ndjp.net/docs/components/timer
+- 官方文档:https://www.cult-ui.com/docs/components/timer
+- 源码位置:`src/components/ui/timer.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/timer
+~~~
+
+## 用法
+
+~~~tsx
+import { Timer, TimerDisplay, TimerIcon } from "@/components/ui/timer"
+
+export function Example() {
+  return (
+    <Timer>
+      <TimerDisplay />
+    </Timer>
+  )
+}
+~~~
+
+## 导出部件
+
+- `Timer`
+- `TimerDisplay`
+- `TimerIcon`
+- `TimerRoot`
+- `UseTimerOptions`
+- `UseTimerReturn`
+- `useTimer`
+
+## 依赖
+
+- `class-variance-authority`
+- `lucide-react`
+
+## 源码属性定义
+
+### TimerRootProps
+
+~~~ts
+export type TimerRootProps = {
+  /** Whether the timer is in loading/running state */
+  loading?: boolean
+}
+~~~
+
+### TimerIconProps
+
+~~~ts
+export type TimerIconProps = {
+  /** Custom icon to display instead of default Clock */
+  icon?: React.ComponentType<{ className?: string }>
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 协作头像 (Collab Avatar)
+
+> 用姓名首字母与配色渐变表示在线成员的头像。
+
+- 分类:协作
+- 本站页面:https://cult-ui.ndjp.net/docs/components/collab-avatar
+- 官方文档:https://www.cult-ui.com/docs/components/collab-avatar
+- 源码位置:`src/components/ui/collab-avatar.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/collab-avatar
+~~~
+
+## 用法
+
+~~~tsx
+import { CollabAvatar } from "@/components/ui/collab-avatar"
+
+export function Example() {
+  return (
+    <CollabAvatar>内容</CollabAvatar>
+  )
+}
+~~~
+
+## 导出部件
+
+- `CollabAvatar`
+
+## 依赖
+
+- `motion`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 协作工具栏 (Collab Toolbar)
+
+> 把图标按钮与协作者头像分组的编辑器工具栏。
+
+- 分类:协作
+- 本站页面:https://cult-ui.ndjp.net/docs/components/collab-toolbar
+- 官方文档:https://www.cult-ui.com/docs/components/collab-toolbar
+- 源码位置:`src/components/ui/collab-toolbar.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/collab-toolbar
+~~~
+
+## 用法
+
+~~~tsx
+import { CollabToolbar, CollabToolbarDivider, CollabToolbarIcon } from "@/components/ui/collab-toolbar"
+
+export function Example() {
+  return (
+    <CollabToolbar>
+      <CollabToolbarDivider />
+    </CollabToolbar>
+  )
+}
+~~~
+
+## 导出部件
+
+- `CollabToolbar`
+- `CollabToolbarDivider`
+- `CollabToolbarIcon`
+- `Collaborator`
+- `IconKey`
+- `ToolbarGroup`
+
+## 依赖
+
+- 无额外依赖
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# Base UI 提示 (Base Tooltip)
+
+> Apple Pro Display XDR 等组件用到的 Base UI 提示原语(Tooltip、Trigger、Content)。
+
+- 分类:浮层与抽屉
+- 本站页面:https://cult-ui.ndjp.net/docs/components/base-tooltip
+- 官方文档:https://www.cult-ui.com/docs/components/base-tooltip
+- 源码位置:`src/components/ui/base-tooltip.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/base-tooltip
+~~~
+
+## 用法
+
+~~~tsx
+import { Tooltip, TooltipContent, TooltipProvider } from "@/components/ui/base-tooltip"
+
+export function Example() {
+  return (
+    <Tooltip>
+      <TooltipContent />
+    </Tooltip>
+  )
+}
+~~~
+
+## 导出部件
+
+- `Tooltip`
+- `TooltipContent`
+- `TooltipProvider`
+- `TooltipTrigger`
+
+## 依赖
+
+- `@base-ui/react`
+- `@radix-ui/react-slot`
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 悬停视频播放器 (Hover Video Player)
+
+> 悬停即播放的视频播放器,带懒加载、封面、画中画与触屏支持。
+
+- 分类:展示区块
+- 本站页面:https://cult-ui.ndjp.net/docs/components/hover-video-player
+- 官方文档:https://www.cult-ui.com/docs/components/hover-video-player
+- 源码位置:`src/components/ui/hover-video-player.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/hover-video-player
+~~~
+
+## 用法
+
+~~~tsx
+import { HoverVideoPaddingWrapper, HoverVideoPlayer, HoverVideoPlayerControls } from "@/components/ui/hover-video-player"
+
+export function Example() {
+  return (
+    <HoverVideoPaddingWrapper>
+      <HoverVideoPlayer />
+    </HoverVideoPaddingWrapper>
+  )
+}
+~~~
+
+## 导出部件
+
+- `HoverVideoPaddingWrapper`
+- `HoverVideoPlayer`
+- `HoverVideoPlayerControls`
+- `HoverVideoPlayerHoverOverlay`
+- `HoverVideoPlayerLoadingOverlay`
+- `HoverVideoPlayerPausedOverlay`
+- `HoverVideoPlayerPiPButton`
+- `HoverVideoPlayerPlayPauseButton`
+- `HoverVideoPlayerProgressBar`
+- `HoverVideoPlayerVolumeControl`
+
+## 依赖
+
+- `motion`
+- `lucide-react`
+
+## 源码属性定义
+
+### HoverVideoPlayerProps
+
+~~~ts
+interface HoverVideoPlayerProps {
+  videoSrc: string
+  thumbnailSrc?: string
+  hoverOverlay?: React.ReactNode
+  pausedOverlay?: React.ReactNode
+  loadingOverlay?: React.ReactNode
+  playbackStartDelay?: number
+  restartOnPaused?: boolean
+  unloadVideoOnPaused?: boolean
+  playbackRangeStart?: number
+  playbackRangeEnd?: number
+  muted?: boolean
+  loop?: boolean
+  preload?: "auto" | "metadata" | "none"
+  className?: string
+  style?: React.CSSProperties
+  onHoverStart?: () => void
+  onHoverEnd?: () => void
+  enableControls?: boolean
+  cropTop?: number
+  cropBottom?: number
+  isVimeo?: boolean
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# YouTube 播放器 (YouTube Video Player)
+
+> 带自定义控制与动画过渡的 YouTube 播放器。
+
+- 分类:展示区块
+- 本站页面:https://cult-ui.ndjp.net/docs/components/youtube-video-player
+- 官方文档:https://www.cult-ui.com/docs/components/youtube-video-player
+- 源码位置:`src/components/ui/youtube-video-player.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/youtube-video-player
+~~~
+
+## 用法
+
+~~~tsx
+import { YouTubePlayer, YouTubePlayerControls } from "@/components/ui/youtube-video-player"
+
+export function Example() {
+  return (
+    <YouTubePlayer>
+      <YouTubePlayerControls />
+    </YouTubePlayer>
+  )
+}
+~~~
+
+## 导出部件
+
+- `YouTubePlayer`
+- `YouTubePlayerControls`
+
+## 依赖
+
+- `motion`
+- `lucide-react`
+
+## 源码属性定义
+
+### YouTubePlayerProps
+
+~~~ts
+interface YouTubePlayerProps {
+  videoId: string
+  title?: string
+  defaultExpanded?: boolean
+  customThumbnail?: string
+
+  // Container & Layout
+  className?: string
+  containerClassName?: string
+  expandedClassName?: string
+
+  // Thumbnail & Media
+  thumbnailClassName?: string
+  thumbnailImageClassName?: string
+
+  // Play Button
+  playButtonClassName?: string
+  playIconClassName?: string
+
+  // Title
+  titleClassName?: string
+
+  // Controls
+  controlsClassName?: string
+  expandButtonClassName?: string
+
+  // Backdrop
+  backdropClassName?: string
+  // …
+~~~
+
+### YouTubePlayerControlsProps
+
+~~~ts
+interface YouTubePlayerControlsProps {
+  videoId: string
+  expanded: boolean
+  playing: boolean
+  isHovered: boolean
+  onToggleExpand: () => void
+  controlsClassName?: string
+  expandButtonClassName?: string
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。
+
+---
+
+# 波浪箭头 (Squiggle Arrow)
+
+> 手绘风格波浪箭头,可设方向、尺寸与变体。
+
+- 分类:插画
+- 本站页面:https://cult-ui.ndjp.net/docs/components/squiggle-arrow
+- 官方文档:https://www.cult-ui.com/docs/components/squiggle-arrow
+- 源码位置:`src/components/ui/squiggle-arrow.tsx`
+
+## 安装
+
+~~~bash
+npx shadcn@latest add @cult-ui/squiggle-arrow
+~~~
+
+## 用法
+
+~~~tsx
+import { SquiggleArrow } from "@/components/ui/squiggle-arrow"
+~~~
+
+## 导出部件
+
+
+## 依赖
+
+- 无额外依赖
+
+## 源码属性定义
+
+### SquigglyArrowProps
+
+~~~ts
+interface SquigglyArrowProps {
+  width?: number
+  height?: number
+  strokeWidth?: number
+  className?: string
+  direction?: "right" | "left" | "up" | "down"
+  variant?: "wavy" | "bouncy" | "smooth"
+}
+~~~
+
+---
+
+由 Cult UI 中文站生成。组件版权归 Nolly Studio,遵循 MIT 许可证。

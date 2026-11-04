@@ -1,5 +1,5 @@
 /* 由官方 registry(https://www.cult-ui.com/r/registry.json)整理生成,
-   覆盖 154 个 registry:ui 条目中除 18 个已废弃别名之外的 137 个组件。
+   共收录 137 个组件,逐项 Props 文档以 docs-data.ts 为准。
    导出部件与依赖取自各组件 registry JSON。 */
 
 export type ComponentCatalogEntry = {
@@ -11,7 +11,7 @@ export type ComponentCatalogEntry = {
   install: string
   parts: string[]
   dependencies: string[]
-  /** 本站是否提供了实时演示与逐项 Props 文档 */
+  /** 是否有逐项 Props 文档;实时演示由 demos/registry.ts 覆盖全部组件 */
   ported: boolean
 }
 
@@ -32,7 +32,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "VercelLogo"
     ],
     dependencies: [],
-    ported: true
+    ported: false
   },
   {
     slug: "ai-blob-warp",
@@ -48,7 +48,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "@paper-design/shaders-react",
       "motion"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "ai-instructions",
@@ -75,7 +75,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "@hugeicons/core-free-icons",
       "@hugeicons/react"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "prompt-composer",
@@ -95,7 +95,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "lucide-react",
       "motion"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "prompt-library",
@@ -122,7 +122,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "@hugeicons/core-free-icons",
       "@hugeicons/react"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "bg-animate-button",
@@ -138,7 +138,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "@radix-ui/react-slot",
       "class-variance-authority"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "border-beam-button",
@@ -152,7 +152,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "BorderBeamIconButton"
     ],
     dependencies: [],
-    ported: true
+    ported: false
   },
   {
     slug: "cosmic-button",
@@ -165,7 +165,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "CosmicButton"
     ],
     dependencies: [],
-    ported: true
+    ported: false
   },
   {
     slug: "family-button",
@@ -181,7 +181,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "lucide-react",
       "motion"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "gradient-button-group",
@@ -197,7 +197,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "motion",
       "next-themes"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "halo-button",
@@ -213,7 +213,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "@base-ui/react",
       "motion"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "metal-button",
@@ -230,7 +230,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "metal-fx",
       "class-variance-authority"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "neumorph-button",
@@ -245,7 +245,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "lucide-react",
       "motion"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "organic-button",
@@ -262,7 +262,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "class-variance-authority",
       "lucide-react"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "texture-button",
@@ -278,7 +278,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "@radix-ui/react-slot",
       "class-variance-authority"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "border-beam-card",
@@ -324,7 +324,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "motion",
       "@radix-ui/react-use-controllable-state"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "expandable",
@@ -347,7 +347,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "motion",
       "react-use-measure"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "folded-card",
@@ -394,7 +394,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "@base-ui/react",
       "motion"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "minimal-card",
@@ -412,7 +412,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "MinimalCardTitle"
     ],
     dependencies: [],
-    ported: true
+    ported: false
   },
   {
     slug: "organic-card",
@@ -436,7 +436,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
     dependencies: [
       "lucide-react"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "organic-card-small",
@@ -452,7 +452,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "lucide-react",
       "motion"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "shadow-card",
@@ -473,7 +473,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
     dependencies: [
       "@radix-ui/react-slot"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "shift-card",
@@ -490,7 +490,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
     dependencies: [
       "motion"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "texture-card",
@@ -510,7 +510,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "TextureSeparator"
     ],
     dependencies: [],
-    ported: true
+    ported: false
   },
   {
     slug: "base-select",
@@ -536,7 +536,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "@hugeicons/react",
       "@hugeicons/core-free-icons"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "border-beam-input",
@@ -557,7 +557,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
     dependencies: [
       "@base-ui/react"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "color-picker",
@@ -573,7 +573,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "motion",
       "lucide-react"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "halo-dropzone",
@@ -598,7 +598,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "lucide-react",
       "motion"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "halo-field",
@@ -616,7 +616,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "HaloFieldTitle"
     ],
     dependencies: [],
-    ported: true
+    ported: false
   },
   {
     slug: "halo-input",
@@ -633,7 +633,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "@base-ui/react",
       "motion"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "halo-search",
@@ -651,7 +651,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "@paper-design/shaders-react",
       "motion"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "halo-select",
@@ -679,7 +679,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "lucide-react",
       "motion"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "halo-segmented",
@@ -696,7 +696,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "@base-ui/react",
       "motion"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "halo-switch",
@@ -712,7 +712,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "@base-ui/react",
       "motion"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "halo-toggle-group",
@@ -729,7 +729,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "@base-ui/react",
       "motion"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "direction-aware-tabs",
@@ -745,7 +745,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "motion",
       "react-use-measure"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "dock",
@@ -785,7 +785,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
     dependencies: [
       "@base-ui/react"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "tabs-illustration-vercel",
@@ -796,7 +796,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
     install: "npx shadcn@latest add @cult-ui/tabs-illustration-vercel",
     parts: [],
     dependencies: [],
-    ported: true
+    ported: false
   },
   {
     slug: "toolbar-expandable",
@@ -810,7 +810,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "motion",
       "@radix-ui/react-scroll-area"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "family-drawer",
@@ -839,7 +839,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "vaul",
       "@radix-ui/react-slot"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "floating-panel",
@@ -866,7 +866,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "motion",
       "lucide-react"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "halo-notification",
@@ -885,7 +885,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "lucide-react",
       "motion"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "halo-toast",
@@ -906,7 +906,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "motion",
       "sonner"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "intro-disclosure",
@@ -923,7 +923,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "react-use-measure",
       "lucide-react"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "popover",
@@ -950,7 +950,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "motion",
       "lucide-react"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "popover-form",
@@ -971,7 +971,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "motion",
       "lucide-react"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "side-panel",
@@ -987,7 +987,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "motion",
       "react-use-measure"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "gradient-heading",
@@ -1007,7 +1007,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "@radix-ui/react-slot",
       "class-variance-authority"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "neumorph-eyebrow",
@@ -1022,7 +1022,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
     dependencies: [
       "class-variance-authority"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "pixel-heading-character",
@@ -1038,7 +1038,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
     dependencies: [
       "geist"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "pixel-heading-word",
@@ -1053,7 +1053,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
     dependencies: [
       "geist"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "pixel-paragraph-words",
@@ -1068,7 +1068,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
     dependencies: [
       "geist"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "pixel-paragraph-words-inverse",
@@ -1083,7 +1083,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
     dependencies: [
       "geist"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "text-animate",
@@ -1113,7 +1113,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
     dependencies: [
       "class-variance-authority"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "typewriter",
@@ -1128,7 +1128,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
     dependencies: [
       "motion"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "bg-animated-fractal-dot-grid",
@@ -1143,7 +1143,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
     dependencies: [
       "motion"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "bg-animated-gradient",
@@ -1158,7 +1158,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
     dependencies: [
       "motion"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "bg-image-texture",
@@ -1172,7 +1172,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "TextureVariant"
     ],
     dependencies: [],
-    ported: true
+    ported: false
   },
   {
     slug: "bg-media",
@@ -1187,7 +1187,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
     dependencies: [
       "class-variance-authority"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "canvas-fractal-grid",
@@ -1202,7 +1202,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
     dependencies: [
       "motion"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "grid-beam",
@@ -1226,7 +1226,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "RGB"
     ],
     dependencies: [],
-    ported: true
+    ported: false
   },
   {
     slug: "stripe-bg-guides",
@@ -1241,7 +1241,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
     dependencies: [
       "motion"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "svg-bands",
@@ -1265,7 +1265,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "NotchedTopBandSvg"
     ],
     dependencies: [],
-    ported: true
+    ported: false
   },
   {
     slug: "svg-shapes",
@@ -1289,7 +1289,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "OctahedronWireshapeSvg"
     ],
     dependencies: [],
-    ported: true
+    ported: false
   },
   {
     slug: "svg-shapes-animated",
@@ -1315,7 +1315,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
     dependencies: [
       "motion"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "texture-overlay",
@@ -1329,7 +1329,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "TextureType"
     ],
     dependencies: [],
-    ported: true
+    ported: false
   },
   {
     slug: "circuit-board",
@@ -1345,7 +1345,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "lucide-react",
       "motion"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "fluid-ai-workloads",
@@ -1363,7 +1363,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "FluidAIWorkloadsShadowLayer"
     ],
     dependencies: [],
-    ported: true
+    ported: false
   },
   {
     slug: "gateway-endpoint-illustration",
@@ -1387,7 +1387,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "OpenAIIcon"
     ],
     dependencies: [],
-    ported: true
+    ported: false
   },
   {
     slug: "gateway-route-illustration",
@@ -1410,7 +1410,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "GeminiIcon"
     ],
     dependencies: [],
-    ported: true
+    ported: false
   },
   {
     slug: "gateway-svg-illustration",
@@ -1434,7 +1434,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "GatewayOverheadSvg"
     ],
     dependencies: [],
-    ported: true
+    ported: false
   },
   {
     slug: "illustration-card-grid",
@@ -1449,7 +1449,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "IllustrationCardGridItem"
     ],
     dependencies: [],
-    ported: true
+    ported: false
   },
   {
     slug: "illustration-comment-bubble",
@@ -1464,7 +1464,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "CommentBubbleDemo"
     ],
     dependencies: [],
-    ported: true
+    ported: false
   },
   {
     slug: "illustration-cursor",
@@ -1480,7 +1480,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "CursorSvg"
     ],
     dependencies: [],
-    ported: true
+    ported: false
   },
   {
     slug: "illustration-fluid-rendering",
@@ -1497,7 +1497,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "FluidRenderingStoreIcon"
     ],
     dependencies: [],
-    ported: true
+    ported: false
   },
   {
     slug: "illustration-globe-vercel",
@@ -1521,7 +1521,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "DeployStatus"
     ],
     dependencies: [],
-    ported: true
+    ported: false
   },
   {
     slug: "illustration-graph",
@@ -1539,7 +1539,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "defaultDataPoints"
     ],
     dependencies: [],
-    ported: true
+    ported: false
   },
   {
     slug: "merging-bubbles",
@@ -1554,7 +1554,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "VercelLogo"
     ],
     dependencies: [],
-    ported: true
+    ported: false
   },
   {
     slug: "security-checkpoint",
@@ -1572,7 +1572,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "SecurityCheckpointRedLines"
     ],
     dependencies: [],
-    ported: true
+    ported: false
   },
   {
     slug: "speech-bubble",
@@ -1590,7 +1590,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "SpeechBubbleText"
     ],
     dependencies: [],
-    ported: true
+    ported: false
   },
   {
     slug: "apple-iphone-17-pro",
@@ -1607,7 +1607,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "lucide-react",
       "motion"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "apple-keyboard",
@@ -1622,7 +1622,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
     dependencies: [
       "@tabler/icons-react"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "apple-pro-display-xdr",
@@ -1639,7 +1639,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "@tabler/icons-react",
       "motion"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "apple-watch-ultra",
@@ -1655,7 +1655,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "lucide-react",
       "motion"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "mac-screen",
@@ -1681,7 +1681,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "BrowserWindow"
     ],
     dependencies: [],
-    ported: true
+    ported: false
   },
   {
     slug: "feature-carousel",
@@ -1698,7 +1698,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "clsx",
       "react-wrap-balancer"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "feature-sticky-section",
@@ -1718,7 +1718,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "@radix-ui/react-slot",
       "@radix-ui/react-use-controllable-state"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "hero-color-panel",
@@ -1744,7 +1744,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
     dependencies: [
       "@paper-design/shaders-react"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "hero-dithering",
@@ -1770,7 +1770,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
     dependencies: [
       "@paper-design/shaders-react"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "hero-heatmap",
@@ -1796,7 +1796,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
     dependencies: [
       "@paper-design/shaders-react"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "hero-liquid-metal",
@@ -1822,7 +1822,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
     dependencies: [
       "@paper-design/shaders-react"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "hero-static-radial-gradient",
@@ -1848,7 +1848,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
     dependencies: [
       "@paper-design/shaders-react"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "loading-carousel",
@@ -1865,7 +1865,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "lucide-react",
       "motion"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "logo-carousel",
@@ -1880,7 +1880,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
     dependencies: [
       "motion"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "marketing-feature-code",
@@ -1906,7 +1906,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
     dependencies: [
       "lucide-react"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "marketing-hero-analytics",
@@ -1930,7 +1930,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "AnalyticsHeroGithubIcon"
     ],
     dependencies: [],
-    ported: true
+    ported: false
   },
   {
     slug: "three-d-carousel",
@@ -1946,7 +1946,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
     dependencies: [
       "motion"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "tweet-grid",
@@ -1961,7 +1961,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
     dependencies: [
       "class-variance-authority"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "analytics-chart",
@@ -2013,7 +2013,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "lucide-react",
       "class-variance-authority"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "feature-poll",
@@ -2041,7 +2041,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "lucide-react",
       "class-variance-authority"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "feature-voting",
@@ -2065,7 +2065,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
     dependencies: [
       "@radix-ui/react-use-controllable-state"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "halo-badge",
@@ -2081,7 +2081,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "class-variance-authority",
       "motion"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "halo-progress",
@@ -2097,7 +2097,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "@base-ui/react",
       "motion"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "poll-widget",
@@ -2126,7 +2126,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "lucide-react",
       "motion"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "rolling-number",
@@ -2141,7 +2141,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
     dependencies: [
       "motion"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "vote-tally",
@@ -2165,7 +2165,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
     dependencies: [
       "@radix-ui/react-use-controllable-state"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "kanban-board",
@@ -2209,7 +2209,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "@radix-ui/react-use-controllable-state",
       "class-variance-authority"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "sortable-list",
@@ -2228,7 +2228,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "react-use-measure",
       "lucide-react"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "wizard-expandable",
@@ -2246,7 +2246,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "@radix-ui/react-use-controllable-state",
       "motion"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "distorted-glass",
@@ -2259,7 +2259,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "DistortedGlass"
     ],
     dependencies: [],
-    ported: true
+    ported: false
   },
   {
     slug: "dither-image",
@@ -2282,7 +2282,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
     dependencies: [
       "dither-plugin"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "dynamic-island",
@@ -2323,7 +2323,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "TopBlur"
     ],
     dependencies: [],
-    ported: true
+    ported: false
   },
   {
     slug: "expandable-screen",
@@ -2343,7 +2343,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "motion",
       "lucide-react"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "fluted-glass",
@@ -2400,7 +2400,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "PatternCell"
     ],
     dependencies: [],
-    ported: true
+    ported: false
   },
   {
     slug: "morph-surface",
@@ -2415,7 +2415,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
     dependencies: [
       "motion"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "shader-lens-blur",
@@ -2434,7 +2434,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "jotai",
       "next-themes"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "terminal-animation",
@@ -2461,7 +2461,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "@radix-ui/react-slot",
       "@radix-ui/react-use-controllable-state"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "code-block",
@@ -2510,7 +2510,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
     dependencies: [
       "lucide-react"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "timer",
@@ -2532,7 +2532,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "class-variance-authority",
       "lucide-react"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "collab-avatar",
@@ -2547,7 +2547,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
     dependencies: [
       "motion"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "collab-toolbar",
@@ -2565,7 +2565,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "ToolbarGroup"
     ],
     dependencies: [],
-    ported: true
+    ported: false
   },
   {
     slug: "base-tooltip",
@@ -2584,7 +2584,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "@base-ui/react",
       "@radix-ui/react-slot"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "hover-video-player",
@@ -2609,7 +2609,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "motion",
       "lucide-react"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "youtube-video-player",
@@ -2626,7 +2626,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
       "motion",
       "lucide-react"
     ],
-    ported: true
+    ported: false
   },
   {
     slug: "squiggle-arrow",
@@ -2637,7 +2637,7 @@ export const componentCatalog: ComponentCatalogEntry[] = [
     install: "npx shadcn@latest add @cult-ui/squiggle-arrow",
     parts: [],
     dependencies: [],
-    ported: true
+    ported: false
   }
 ]
 

@@ -3,7 +3,7 @@
 import * as React from "react"
 import createGlobe from "cobe"
 import { useInView, useReducedMotion } from "motion/react"
-import { useTheme } from "next-themes"
+import { useTheme } from "@/lib/theme"
 
 import { cn } from "@/lib/utils"
 import {

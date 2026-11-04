@@ -1,4 +1,5 @@
-import { NavLink, Outlet } from "react-router-dom"
+import { Suspense } from "react"
+import { NavLink, Outlet, useNavigate } from "react-router-dom"
 
 import { componentCatalog } from "@/lib/component-catalog"
 import { componentDocs } from "@/lib/docs-data"
@@ -13,6 +14,8 @@ const QUICK_LINKS = [
 ] as const
 
 export function DocsLayout() {
+  const navigate = useNavigate()
+
   return (
     <div className="mx-auto max-w-6xl gap-10 px-4 py-8 sm:px-6 lg:grid lg:grid-cols-[220px_minmax(0,1fr)]">
       {/* 侧边栏 */}
@@ -114,10 +117,11 @@ export function DocsLayout() {
       {/* 移动端下拉导航 */}
       <div className="mb-6 lg:hidden">
         <select
+          aria-label="跳转到文档页面"
           className="border-input bg-background w-full rounded-md border px-3 py-2 text-sm"
           defaultValue=""
           onChange={(e) => {
-            if (e.target.value) window.location.assign(e.target.value)
+            if (e.target.value) navigate(e.target.value)
           }}
         >
           <option value="" disabled>
@@ -144,7 +148,11 @@ export function DocsLayout() {
 
       {/* 文档内容 */}
       <main className="min-w-0 pb-16">
-        <Outlet />
+        <Suspense
+          fallback={<p className="text-muted-foreground py-16 text-sm">正在加载…</p>}
+        >
+          <Outlet />
+        </Suspense>
       </main>
     </div>
   )

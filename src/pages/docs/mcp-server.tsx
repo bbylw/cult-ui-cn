@@ -38,7 +38,7 @@ export function McpServerPage() {
         >
           shadcn MCP 服务器
         </a>{" "}
-        接入编辑器后,AI agent 就能搜索 Cult UI registry、读取组件示例,并直接把组件装进你的项目。你只需用自然语言说出需求,例如「把 cult-ui 的 Prompt Composer 换到聊天输入框」,agent
+        接入编辑器后,AI Agent 就能搜索 Cult UI registry、读取组件示例,并直接把组件装进你的项目。你只需用自然语言说出需求,例如「把 cult-ui 的 Prompt Composer 换到聊天输入框」,Agent
         会自己执行对应的 <code className="bg-muted rounded px-1.5 py-0.5 text-xs">shadcn add</code> 命令。
       </P>
 
@@ -104,7 +104,7 @@ export function McpServerPage() {
       <P>
         会生成{" "}
         <code className="bg-muted rounded px-1.5 py-0.5 text-xs">.vscode/mcp.json</code>。
-        打开该文件,点击 shadcn 服务器旁的「Start」,然后使用 agent 模式的 GitHub
+        打开该文件,点击 shadcn 服务器旁的「Start」,然后使用 Agent 模式的 GitHub
         Copilot。
       </P>
 
@@ -123,9 +123,9 @@ export function McpServerPage() {
         className="mt-3"
       />
 
-      <H2>让 agent 找组件</H2>
+      <H2>让 Agent 找组件</H2>
       <P>
-        提示词里带上「cult-ui」,agent 才会去搜索正确的 registry。例如:
+        提示词里带上「cult-ui」,Agent 才会去搜索正确的 registry。例如:
       </P>
       <ul className="text-muted-foreground mt-4 list-disc space-y-1.5 pl-5 text-sm leading-relaxed">
         <li>列出 cult-ui registry 里的表单控件</li>
@@ -134,10 +134,10 @@ export function McpServerPage() {
         <li>把聊天输入框换成 cult-ui 的 Prompt Composer</li>
       </ul>
 
-      <H2>给 agent 更多上下文</H2>
+      <H2>给 Agent 更多上下文</H2>
       <P>
         MCP 服务器会返回组件源码与示例,大多数安装场景已经够用。任务更大时,再把面向
-        LLM 的文档指给 agent,并把 Cult UI 规则写进{" "}
+        LLM 的文档指给 Agent,并把 Cult UI 规则写进{" "}
         <code className="bg-muted rounded px-1.5 py-0.5 text-xs">AGENTS.md</code>
         ——两者都见{" "}
         <Link to="/docs/llms" className="underline underline-offset-4">
@@ -148,7 +148,7 @@ export function McpServerPage() {
 
       <H2>故障排查</H2>
 
-      <H3>agent 只找到 shadcn 组件,找不到 Cult UI</H3>
+      <H3>Agent 只找到 shadcn 组件,找不到 Cult UI</H3>
       <P>
         确认{" "}
         <code className="bg-muted rounded px-1.5 py-0.5 text-xs">components.json</code>{" "}

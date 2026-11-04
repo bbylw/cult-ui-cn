@@ -71,7 +71,7 @@ import {
   type CSSProperties,
   type HTMLAttributes,
 } from "react"
-import Image, { type ImageProps } from "next/image"
+import Image, { type ImageProps } from "@/components/ui/image"
 
 import { cn } from "@/lib/utils"
 

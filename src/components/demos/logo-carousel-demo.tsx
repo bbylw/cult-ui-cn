@@ -11,7 +11,11 @@ export default function LogoCarouselDemo() {
           <GradientHeading variant="secondary">
             The best are already here
           </GradientHeading>
-          <a href="https://www.newcult.co" target="_blank">
+          <a
+            href="https://www.newcult.co"
+            target="_blank"
+            rel="noreferrer"
+          >
             <GradientHeading size="xxl">Join new cult</GradientHeading>
           </a>
         </div>

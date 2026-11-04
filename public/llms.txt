@@ -1,0 +1,215 @@
+# Cult UI 中文站
+
+> Cult UI 是 150+ 个免费开源的 shadcn/ui 动画组件。本站收录 137 个组件的源码、中文简介、在线演示与安装命令,并为其中 12 个组件提供逐项 Props 文档。
+
+每个组件都是 shadcn/ui registry 项,CLI 会把源码复制进你的项目。
+
+## 文档
+
+- [介绍](https://cult-ui.ndjp.net/docs):组件库定位、安装方式与本站说明
+- [安装(Vite + bun)](https://cult-ui.ndjp.net/docs/installation):从零搭建 Vite + React + Tailwind CSS v4 项目
+- [手动安装](https://cult-ui.ndjp.net/docs/installation/manual):逐项配置 components.json 与工具函数
+- [主题定制](https://cult-ui.ndjp.net/docs/theming):shadcn 主题令牌与暗色模式
+- [MCP 服务器](https://cult-ui.ndjp.net/docs/mcp-server):让 Agent 通过 shadcn MCP 搜索并安装组件
+- [LLMs 与 Agent](https://cult-ui.ndjp.net/docs/llms):机器可读文档与 Agent 规则
+
+## 机器可读资源
+
+- [llms.txt](https://cult-ui.ndjp.net/llms.txt):本索引
+- [llms-full.txt](https://cult-ui.ndjp.net/llms-full.txt):全部文档合并版
+- 任意组件页后加 `.md`:例如 https://cult-ui.ndjp.net/docs/components/globe.md
+- [component-api.json](https://cult-ui.ndjp.net/docs/component-api.json):用法与源码属性定义
+
+## 组件
+
+### AI 组件
+
+- [建议卡堆叠](https://cult-ui.ndjp.net/docs/components/agent-suggest-card-stack.md):AI 助手回复用的一叠建议卡,带进度条、成功与失败状态以及提交按钮。 安装:`npx shadcn@latest add @cult-ui/agent-suggest-card-stack`
+- [AI 光斑头像](https://cult-ui.ndjp.net/docs/components/ai-blob-warp.md):圆形 AI 助手头像,内部是 Paper Design Warp 着色器,遵循减弱动效设置。 安装:`npx shadcn@latest add @cult-ui/ai-blob-warp`
+- [AI 指令管理](https://cult-ui.ndjp.net/docs/components/ai-instructions.md):在弹出层里搜索、开关、新建自定义 AI 指令的组合式组件。 安装:`npx shadcn@latest add @cult-ui/ai-instructions`
+- [提示词输入器](https://cult-ui.ndjp.net/docs/components/prompt-composer.md):多行提示词输入框,带着色器头像、交错占位符、加载线与发送/附件按钮。 安装:`npx shadcn@latest add @cult-ui/prompt-composer`
+- [提示词库](https://cult-ui.ndjp.net/docs/components/prompt-library.md):按分类浏览、插入和管理提示词模板,支持自定义提示词。 安装:`npx shadcn@latest add @cult-ui/prompt-library`
+
+### 按钮
+
+- [渐变背景按钮](https://cult-ui.ndjp.net/docs/components/bg-animate-button.md):背景为旋转圆锥渐变的按钮,内置预设渐变、CVA 变体与 asChild。 安装:`npx shadcn@latest add @cult-ui/bg-animate-button`
+- [流光边框按钮](https://cult-ui.ndjp.net/docs/components/border-beam-button.md):shadcn 按钮外包一圈流动光束,提供文字与图标两种变体。 安装:`npx shadcn@latest add @cult-ui/border-beam-button`
+- [宇宙按钮](https://cult-ui.ndjp.net/docs/components/cosmic-button.md):带光晕宇宙渐变边框的链接或按钮,悬停时边框扩大,适合首屏 CTA。 安装:`npx shadcn@latest add @cult-ui/cosmic-button`
+- [Family 浮动按钮](https://cult-ui.ndjp.net/docs/components/family-button.md):从加号展开成内容面板的浮动按钮,灵感来自 Family 应用。 安装:`npx shadcn@latest add @cult-ui/family-button`
+- [渐变按钮组](https://cult-ui.ndjp.net/docs/components/gradient-button-group.md):分层图标按钮组,带流动的激活光环与内置明暗主题切换。 安装:`npx shadcn@latest add @cult-ui/gradient-button-group`
+- [Halo 按钮](https://cult-ui.ndjp.net/docs/components/halo-button.md):带流动渐变边框、磨砂填充与交错文字的主动作按钮,内置加载态。 安装:`npx shadcn@latest add @cult-ui/halo-button`
+- [金属按钮](https://cult-ui.ndjp.net/docs/components/metal-button.md):shadcn 按钮外包 MetalFx 液态金属光环,有文字与图标变体。 安装:`npx shadcn@latest add @cult-ui/metal-button`
+- [新拟态按钮](https://cult-ui.ndjp.net/docs/components/neumorph-button.md):柔光阴影的新拟态按钮,按下带触感回弹。 安装:`npx shadcn@latest add @cult-ui/neumorph-button`
+- [有机形状按钮](https://cult-ui.ndjp.net/docs/components/organic-button.md):两端固定 SVG 端帽的链接式 CTA,通过 CSS 变量共享表面配色。 安装:`npx shadcn@latest add @cult-ui/organic-button`
+- [纹理按钮](https://cult-ui.ndjp.net/docs/components/texture-button.md):带纹理叠加层的按钮,提供多种预设变体。 安装:`npx shadcn@latest add @cult-ui/texture-button`
+
+### 卡片
+
+- [流光边框卡片](https://cult-ui.ndjp.net/docs/components/border-beam-card.md):带有一道沿边缘循环流动光束的卡片组件,基于 shadcn Card 封装,常用于功能亮点展示与定价卡。 安装:`npx shadcn@latest add @cult-ui/border-beam-card`
+- [切角图片卡](https://cult-ui.ndjp.net/docs/components/cutout-card.md):带切角装饰、内嵌标签、图钉与悬停操作按钮的图片卡片。 安装:`npx shadcn@latest add @cult-ui/cutout-card`
+- [可展开卡片](https://cult-ui.ndjp.net/docs/components/expandable.md):在收起与展开状态间平滑动画,展开后显示更多细节。 安装:`npx shadcn@latest add @cult-ui/expandable`
+- [折角卡片](https://cult-ui.ndjp.net/docs/components/folded-card.md):可组合的折角卡片组件,右上角带真实翻折效果,适合模板集市、博客索引、资源目录等场景。 安装:`npx shadcn@latest add @cult-ui/folded-card`
+- [Halo 卡片](https://cult-ui.ndjp.net/docs/components/halo-card.md):带流动渐变边框、磨砂表面与页眉/内容/页脚插槽的卡片。 安装:`npx shadcn@latest add @cult-ui/halo-card`
+- [极简卡片](https://cult-ui.ndjp.net/docs/components/minimal-card.md):干净克制的卡片,只有细微边框与悬停阴影。 安装:`npx shadcn@latest add @cult-ui/minimal-card`
+- [有机卡片](https://cult-ui.ndjp.net/docs/components/organic-card.md):营销用组合卡片:图片插槽、眉标、标题、正文、强调色带与底部 CTA。 安装:`npx shadcn@latest add @cult-ui/organic-card`
+- [有机小卡片](https://cult-ui.ndjp.net/docs/components/organic-card-small.md):带 SVG 轮廓的小卡片,展示分类与日期,悬停时有形变动画。 安装:`npx shadcn@latest add @cult-ui/organic-card-small`
+- [阴影卡片](https://cult-ui.ndjp.net/docs/components/shadow-card.md):L 形成型阴影的营销卡片,可选像素渐变网格与链接根节点。 安装:`npx shadcn@latest add @cult-ui/shadow-card`
+- [位移动画卡片](https://cult-ui.ndjp.net/docs/components/shift-card.md):悬停时内部图层错位滑动的卡片。 安装:`npx shadcn@latest add @cult-ui/shift-card`
+- [纹理卡片](https://cult-ui.ndjp.net/docs/components/texture-card.md):带纹理背景与多种样式预设的卡片。 安装:`npx shadcn@latest add @cult-ui/texture-card`
+
+### 表单与输入
+
+- [Base UI 选择器](https://cult-ui.ndjp.net/docs/components/base-select.md):Halo Select 底层的 Base UI 选择器原语(Select、Item、Group 等)。 安装:`npx shadcn@latest add @cult-ui/base-select`
+- [流光输入框](https://cult-ui.ndjp.net/docs/components/border-beam-input.md):Base UI 输入框与输入组上加流动光束,可选底边或整圈。 安装:`npx shadcn@latest add @cult-ui/border-beam-input`
+- [颜色选择器](https://cult-ui.ndjp.net/docs/components/color-picker.md):HLS 滑杆、HEX 输入与预设色板组成的取色器。 安装:`npx shadcn@latest add @cult-ui/color-picker`
+- [Halo 拖放上传](https://cult-ui.ndjp.net/docs/components/halo-dropzone.md):带动画虚线边框与文件类型图标的拖放上传区,支持键盘操作。 安装:`npx shadcn@latest add @cult-ui/halo-dropzone`
+- [Halo 表单字段](https://cult-ui.ndjp.net/docs/components/halo-field.md):为 Halo Input 与 Textarea 提供的标签、描述与错误提示布局。 安装:`npx shadcn@latest add @cult-ui/halo-field`
+- [Halo 输入框](https://cult-ui.ndjp.net/docs/components/halo-input.md):单行与多行输入框,磨砂填充加渐变边框,含错误态。 安装:`npx shadcn@latest add @cult-ui/halo-input`
+- [Halo 搜索框](https://cult-ui.ndjp.net/docs/components/halo-search.md):带流动渐变边框、交错占位符、清除与加载态的搜索框。 安装:`npx shadcn@latest add @cult-ui/halo-search`
+- [Halo 选择器](https://cult-ui.ndjp.net/docs/components/halo-select.md):组合式动画下拉选择器,渐变边框、磨砂填充与交错标签。 安装:`npx shadcn@latest add @cult-ui/halo-select`
+- [Halo 分段控件](https://cult-ui.ndjp.net/docs/components/halo-segmented.md):磨砂轨道加弹簧滑块的分段控件。 安装:`npx shadcn@latest add @cult-ui/halo-segmented`
+- [Halo 开关](https://cult-ui.ndjp.net/docs/components/halo-switch.md):弹簧滑块、磨砂轨道并扩大触控热区的开关。 安装:`npx shadcn@latest add @cult-ui/halo-switch`
+- [Halo 切换组](https://cult-ui.ndjp.net/docs/components/halo-toggle-group.md):单选切换组,磨砂轨道加弹簧滑块,用于视图与对齐切换。 安装:`npx shadcn@latest add @cult-ui/halo-toggle-group`
+
+### 导航与标签页
+
+- [方向感知标签页](https://cult-ui.ndjp.net/docs/components/direction-aware-tabs.md):内容按方向左右滑动切换,并随内容平滑改变尺寸。 安装:`npx shadcn@latest add @cult-ui/direction-aware-tabs`
+- [程序坞](https://cult-ui.ndjp.net/docs/components/dock.md):macOS 风格的底部程序坞,鼠标靠近时图标放大、点击弹出动效,适合作品集与工具栏场景。 安装:`npx shadcn@latest add @cult-ui/dock`
+- [Halo 标签页](https://cult-ui.ndjp.net/docs/components/halo-tabs.md):Base UI 标签页,带下滑线或胶囊指示器与渐变配色。 安装:`npx shadcn@latest add @cult-ui/halo-tabs`
+- [Vercel 风格标签页](https://cult-ui.ndjp.net/docs/components/tabs-illustration-vercel.md):切换时展示 Vercel 风格插画的标签页。 安装:`npx shadcn@latest add @cult-ui/tabs-illustration-vercel`
+- [可扩展工具栏](https://cult-ui.ndjp.net/docs/components/toolbar-expandable.md):分步展开的工具栏,带动画与增强滚动。 安装:`npx shadcn@latest add @cult-ui/toolbar-expandable`
+
+### 浮层与抽屉
+
+- [多视图抽屉](https://cult-ui.ndjp.net/docs/components/family-drawer.md):基于 Vaul 的底部多视图抽屉,切换视图时平滑改变高度。 安装:`npx shadcn@latest add @cult-ui/family-drawer`
+- [浮动面板](https://cult-ui.ndjp.net/docs/components/floating-panel.md):从触发器位置形变展开的浮动面板,含表单与文本域部件。 安装:`npx shadcn@latest add @cult-ui/floating-panel`
+- [Halo 通知](https://cult-ui.ndjp.net/docs/components/halo-notification.md):行内通知卡片,多种边框风格与交错文字动画,可关闭。 安装:`npx shadcn@latest add @cult-ui/halo-notification`
+- [Halo Toast](https://cult-ui.ndjp.net/docs/components/halo-toast.md):基于 Sonner 的 Halo 风格 Toast,支持操作按钮,需在根布局挂载一次。 安装:`npx shadcn@latest add @cult-ui/halo-toast`
+- [新手引导](https://cult-ui.ndjp.net/docs/components/intro-disclosure.md):桌面用 Dialog、移动端用 Drawer 的多步引导,记录已关闭状态。 安装:`npx shadcn@latest add @cult-ui/intro-disclosure`
+- [弹出层](https://cult-ui.ndjp.net/docs/components/popover.md):带表单支持与流畅过渡的动画弹出层。 安装:`npx shadcn@latest add @cult-ui/popover`
+- [表单弹出层](https://cult-ui.ndjp.net/docs/components/popover-form.md):带成功态与动画过渡的表单弹出层。 安装:`npx shadcn@latest add @cult-ui/popover-form`
+- [侧边面板](https://cult-ui.ndjp.net/docs/components/side-panel.md):可从任意方向滑入的侧边面板。 安装:`npx shadcn@latest add @cult-ui/side-panel`
+- [Base UI 提示](https://cult-ui.ndjp.net/docs/components/base-tooltip.md):Apple Pro Display XDR 等组件用到的 Base UI 提示原语(Tooltip、Trigger、Content)。 安装:`npx shadcn@latest add @cult-ui/base-tooltip`
+
+### 文字与排版
+
+- [渐变标题](https://cult-ui.ndjp.net/docs/components/gradient-heading.md):渐变文字标题,提供颜色、字号、字重的 CVA 变体与 asChild。 安装:`npx shadcn@latest add @cult-ui/gradient-heading`
+- [新拟态眉标](https://cult-ui.ndjp.net/docs/components/neumorph-eyebrow.md):柔光阴影的新拟态小标题。 安装:`npx shadcn@latest add @cult-ui/neumorph-eyebrow`
+- [像素标题(逐字)](https://cult-ui.ndjp.net/docs/components/pixel-heading-character.md):逐字符动画的像素字体标题,提供四种动画模式。 安装:`npx shadcn@latest add @cult-ui/pixel-heading-character`
+- [像素标题(整词)](https://cult-ui.ndjp.net/docs/components/pixel-heading-word.md):整词切换像素字体的标题,悬停可换体或循环。 安装:`npx shadcn@latest add @cult-ui/pixel-heading-word`
+- [像素段落](https://cult-ui.ndjp.net/docs/components/pixel-paragraph-words.md):段落中指定单词渲染为可交互的像素字体,悬停切换。 安装:`npx shadcn@latest add @cult-ui/pixel-paragraph-words`
+- [反相像素段落](https://cult-ui.ndjp.net/docs/components/pixel-paragraph-words-inverse.md):整段像素字体,只有指定单词逃逸为可交互的无衬线或等宽字体。 安装:`npx shadcn@latest add @cult-ui/pixel-paragraph-words-inverse`
+- [文字动画](https://cult-ui.ndjp.net/docs/components/text-animate.md):动画文字组件,提供 8 种入场效果(fadeIn、rollIn、whipIn 等),支持逐词/逐字符交错动画,适合标题与口号。 安装:`npx shadcn@latest add @cult-ui/text-animate`
+- [GIF 文字](https://cult-ui.ndjp.net/docs/components/text-gif.md):模拟 GIF 循环跳动的文字效果。 安装:`npx shadcn@latest add @cult-ui/text-gif`
+- [打字机](https://cult-ui.ndjp.net/docs/components/typewriter.md):可调打字速度与光标动画的打字机文字。 安装:`npx shadcn@latest add @cult-ui/typewriter`
+
+### 背景与纹理
+
+- [分形点阵背景](https://cult-ui.ndjp.net/docs/components/bg-animated-fractal-dot-grid.md):带性能优化与响应式处理的分形点阵动画背景。 安装:`npx shadcn@latest add @cult-ui/bg-animated-fractal-dot-grid`
+- [渐变背景](https://cult-ui.ndjp.net/docs/components/bg-animated-gradient.md):颜色过渡可自定义的动画渐变背景。 安装:`npx shadcn@latest add @cult-ui/bg-animated-gradient`
+- [图片纹理背景](https://cult-ui.ndjp.net/docs/components/bg-image-texture.md):织物、网格噪点、纸张等纹理,可调不透明度。 安装:`npx shadcn@latest add @cult-ui/bg-image-texture`
+- [背景媒体](https://cult-ui.ndjp.net/docs/components/bg-media.md):全屏图片或视频背景,带明暗遮罩与播放/暂停按钮。 安装:`npx shadcn@latest add @cult-ui/bg-media`
+- [画布分形网格](https://cult-ui.ndjp.net/docs/components/canvas-fractal-grid.md):跟随鼠标的分形点阵画布,带波浪与光晕,适合首屏。 安装:`npx shadcn@latest add @cult-ui/canvas-fractal-grid`
+- [网格光束](https://cult-ui.ndjp.net/docs/components/grid-beam.md):网格上流动的光束画布,提供调色板预设、SVG 分隔与 useGridBeam。 安装:`npx shadcn@latest add @cult-ui/grid-beam`
+- [参考线背景](https://cult-ui.ndjp.net/docs/components/stripe-bg-guides.md):Stripe 风格的背景参考线与动画图案。 安装:`npx shadcn@latest add @cult-ui/stripe-bg-guides`
+- [SVG 分段带](https://cult-ui.ndjp.net/docs/components/svg-bands.md):宽幅分段带、城垛与锯齿边缘、陡峭首屏切角与装饰框。 安装:`npx shadcn@latest add @cult-ui/svg-bands`
+- [SVG 形状面板](https://cult-ui.ndjp.net/docs/components/svg-shapes.md):宽幅 SVG 形状与面板,用于背景和首屏装饰。 安装:`npx shadcn@latest add @cult-ui/svg-shapes`
+- [滚动描边 SVG](https://cult-ui.ndjp.net/docs/components/svg-shapes-animated.md):滚动触发的描边绘制动画,配合宽幅 SVG 形状使用。 安装:`npx shadcn@latest add @cult-ui/svg-shapes-animated`
+- [纹理叠加](https://cult-ui.ndjp.net/docs/components/texture-overlay.md):多种 CSS 渐变图案叠加层,给背景增加质感。 安装:`npx shadcn@latest add @cult-ui/texture-overlay`
+
+### 插画
+
+- [电路板插画](https://cult-ui.ndjp.net/docs/components/circuit-board.md):发光走线与中心芯片的 SVG 电路动画,适合 AI 与开发者工具。 安装:`npx shadcn@latest add @cult-ui/circuit-board`
+- [AI 负载插画](https://cult-ui.ndjp.net/docs/components/fluid-ai-workloads.md):用分叉连线连接卡片的 SVG 插画,展示 AI 负载与算力。 安装:`npx shadcn@latest add @cult-ui/fluid-ai-workloads`
+- [网关端点插画](https://cult-ui.ndjp.net/docs/components/gateway-endpoint-illustration.md):一个 API 端点扇出到四个模型提供商的 SVG 插画。 安装:`npx shadcn@latest add @cult-ui/gateway-endpoint-illustration`
+- [网关路由插画](https://cult-ui.ndjp.net/docs/components/gateway-route-illustration.md):用弧线与圆环表现网关在多个模型提供商之间路由请求。 安装:`npx shadcn@latest add @cult-ui/gateway-route-illustration`
+- [网关 SVG 插画](https://cult-ui.ndjp.net/docs/components/gateway-svg-illustration.md):把多条线汇入中心网关的 SVG 枢纽插画。 安装:`npx shadcn@latest add @cult-ui/gateway-svg-illustration`
+- [插画卡片网格](https://cult-ui.ndjp.net/docs/components/illustration-card-grid.md):带内置 AI 网关插画的功能卡片网格。 安装:`npx shadcn@latest add @cult-ui/illustration-card-grid`
+- [评论气泡插画](https://cult-ui.ndjp.net/docs/components/illustration-comment-bubble.md):含头像、行内代码与光标的评论气泡,用于评审与聊天。 安装:`npx shadcn@latest add @cult-ui/illustration-comment-bubble`
+- [多人光标插画](https://cult-ui.ndjp.net/docs/components/illustration-cursor.md):带名字标签与配色的协作光标动画。 安装:`npx shadcn@latest add @cult-ui/illustration-cursor`
+- [流体渲染插画](https://cult-ui.ndjp.net/docs/components/illustration-fluid-rendering.md):把浏览器连接到电商与 CMS 平台的 SVG 插画。 安装:`npx shadcn@latest add @cult-ui/illustration-fluid-rendering`
+- [Globe 部署插画](https://cult-ui.ndjp.net/docs/components/illustration-globe-vercel.md):展示部署中、已部署与失败状态的 Globe 动画。 安装:`npx shadcn@latest add @cult-ui/illustration-globe-vercel`
+- [图表插画](https://cult-ui.ndjp.net/docs/components/illustration-graph.md):带数据点、坐标标签与错误区域高亮的折线插画。 安装:`npx shadcn@latest add @cult-ui/illustration-graph`
+- [融合气泡插画](https://cult-ui.ndjp.net/docs/components/merging-bubbles.md):多个气泡相互融合的可视化插画。 安装:`npx shadcn@latest add @cult-ui/merging-bubbles`
+- [安全检查点插画](https://cult-ui.ndjp.net/docs/components/security-checkpoint.md):表现安全检查点流程的插画组件。 安装:`npx shadcn@latest add @cult-ui/security-checkpoint`
+- [对话气泡](https://cult-ui.ndjp.net/docs/components/speech-bubble.md):带方向与配色变体的对话气泡。 安装:`npx shadcn@latest add @cult-ui/speech-bubble`
+- [波浪箭头](https://cult-ui.ndjp.net/docs/components/squiggle-arrow.md):手绘风格波浪箭头,可设方向、尺寸与变体。 安装:`npx shadcn@latest add @cult-ui/squiggle-arrow`
+
+### 样机
+
+- [iPhone 17 Pro 样机](https://cult-ui.ndjp.net/docs/components/apple-iphone-17-pro.md):带灵动岛、状态栏与四种边框配色的 iPhone 17 Pro 外壳。 安装:`npx shadcn@latest add @cult-ui/apple-iphone-17-pro`
+- [苹果键盘](https://cult-ui.ndjp.net/docs/components/apple-keyboard.md):带标注按键与媒体键行的 Apple Magic Keyboard 插画,可演示快捷键。 安装:`npx shadcn@latest add @cult-ui/apple-keyboard`
+- [Pro Display XDR 样机](https://cult-ui.ndjp.net/docs/components/apple-pro-display-xdr.md):铝制边框、屏幕模式与可交互 macOS 程序坞的显示器样机。 安装:`npx shadcn@latest add @cult-ui/apple-pro-display-xdr`
+- [Apple Watch Ultra 样机](https://cult-ui.ndjp.net/docs/components/apple-watch-ultra.md):表壳、复杂功能、表冠与操作按钮俱全的 Watch Ultra 样机。 安装:`npx shadcn@latest add @cult-ui/apple-watch-ultra`
+- [Mac 屏幕](https://cult-ui.ndjp.net/docs/components/mac-screen.md):经典 Macintosh CRT 显示器样机,在复古屏幕框内展示图片或 GIF,响应式且零外部依赖。 安装:`npx shadcn@latest add @cult-ui/mac-screen`
+- [浏览器窗口](https://cult-ui.ndjp.net/docs/components/mock-browser-window.md):可定制的浏览器窗口样机,支持 Chrome、Safari 与通用样式和侧边栏。 安装:`npx shadcn@latest add @cult-ui/mock-browser-window`
+
+### 展示区块
+
+- [功能轮播](https://cult-ui.ndjp.net/docs/components/feature-carousel.md):左右并排截图的分步功能轮播,适合落地页与产品导览。 安装:`npx shadcn@latest add @cult-ui/feature-carousel`
+- [吸顶功能区块](https://cult-ui.ndjp.net/docs/components/feature-sticky-section.md):滚动吸顶的功能区块,把触发器与内容面板配对并跟踪当前面板。 安装:`npx shadcn@latest add @cult-ui/feature-sticky-section`
+- [Hero 色彩面板](https://cult-ui.ndjp.net/docs/components/hero-color-panel.md):左右分栏首屏,右侧为 ColorPanels 着色器视觉,含 CTA 与技术栈徽章。 安装:`npx shadcn@latest add @cult-ui/hero-color-panel`
+- [Hero 抖动](https://cult-ui.ndjp.net/docs/components/hero-dithering.md):左右分栏首屏,右侧为抖动着色器视觉。 安装:`npx shadcn@latest add @cult-ui/hero-dithering`
+- [Hero 热力图](https://cult-ui.ndjp.net/docs/components/hero-heatmap.md):左右分栏首屏,右侧为发光热力着色器视觉。 安装:`npx shadcn@latest add @cult-ui/hero-heatmap`
+- [Hero 液态金属](https://cult-ui.ndjp.net/docs/components/hero-liquid-metal.md):左右分栏首屏,右侧为铬金属液态着色器视觉。 安装:`npx shadcn@latest add @cult-ui/hero-liquid-metal`
+- [Hero 径向渐变](https://cult-ui.ndjp.net/docs/components/hero-static-radial-gradient.md):左右分栏首屏,右侧为静态径向渐变色视觉。 安装:`npx shadcn@latest add @cult-ui/hero-static-radial-gradient`
+- [加载轮播](https://cult-ui.ndjp.net/docs/components/loading-carousel.md):基于 Embla 的自动播放提示轮播,适合加载态展示。 安装:`npx shadcn@latest add @cult-ui/loading-carousel`
+- [Logo 轮播](https://cult-ui.ndjp.net/docs/components/logo-carousel.md):按列交错展示品牌 SVG 的 Logo 轮播。 安装:`npx shadcn@latest add @cult-ui/logo-carousel`
+- [功能代码区块](https://cult-ui.ndjp.net/docs/components/marketing-feature-code.md):面向代码或网络策略功能的营销区块。 安装:`npx shadcn@latest add @cult-ui/marketing-feature-code`
+- [分析首屏](https://cult-ui.ndjp.net/docs/components/marketing-hero-analytics.md):营销页用的分析风格首屏区块。 安装:`npx shadcn@latest add @cult-ui/marketing-hero-analytics`
+- [3D 轮播](https://cult-ui.ndjp.net/docs/components/three-d-carousel.md):带透视效果的三维轮播,项目之间平滑切换。 安装:`npx shadcn@latest add @cult-ui/three-d-carousel`
+- [推文网格](https://cult-ui.ndjp.net/docs/components/tweet-grid.md):展示推文式内容卡片的网格布局。 安装:`npx shadcn@latest add @cult-ui/tweet-grid`
+- [悬停视频播放器](https://cult-ui.ndjp.net/docs/components/hover-video-player.md):悬停即播放的视频播放器,带懒加载、封面、画中画与触屏支持。 安装:`npx shadcn@latest add @cult-ui/hover-video-player`
+- [YouTube 播放器](https://cult-ui.ndjp.net/docs/components/youtube-video-player.md):带自定义控制与动画过渡的 YouTube 播放器。 安装:`npx shadcn@latest add @cult-ui/youtube-video-player`
+
+### 数据展示
+
+- [分析图表](https://cult-ui.ndjp.net/docs/components/analytics-chart.md):Vercel 风格的 SVG 折线图组件,渐变描边、悬浮 tooltip 卡片,纯 SVG 实现无第三方图表库,适合分析仪表盘。 安装:`npx shadcn@latest add @cult-ui/analytics-chart`
+- [选择投票](https://cult-ui.ndjp.net/docs/components/choice-poll.md):单选或多选投票,带百分比结果条与键盘导航。 安装:`npx shadcn@latest add @cult-ui/choice-poll`
+- [功能投票](https://cult-ui.ndjp.net/docs/components/feature-poll.md):功能投票的组合式实现,支持单选、多选与结果条。 安装:`npx shadcn@latest add @cult-ui/feature-poll`
+- [功能投票列表](https://cult-ui.ndjp.net/docs/components/feature-voting.md):带点赞的功能请求列表,可按票数排序。 安装:`npx shadcn@latest add @cult-ui/feature-voting`
+- [Halo 徽章](https://cult-ui.ndjp.net/docs/components/halo-badge.md):带渐变边框、闪烁状态点与等宽数字的徽章,数字变化不抖动。 安装:`npx shadcn@latest add @cult-ui/halo-badge`
+- [Halo 进度条](https://cult-ui.ndjp.net/docs/components/halo-progress.md):弹簧驱动的确定型进度条,以及滑动的非确定型光带。 安装:`npx shadcn@latest add @cult-ui/halo-progress`
+- [投票组件](https://cult-ui.ndjp.net/docs/components/poll-widget.md):行内、弹出层、对话框三种形态的投票组件。 安装:`npx shadcn@latest add @cult-ui/poll-widget`
+- [滚动数字](https://cult-ui.ndjp.net/docs/components/rolling-number.md):数字滚动计数,可自定义格式化。 安装:`npx shadcn@latest add @cult-ui/rolling-number`
+- [投票计数](https://cult-ui.ndjp.net/docs/components/vote-tally.md):带点赞的票数统计列表,可按票数排序。 安装:`npx shadcn@latest add @cult-ui/vote-tally`
+
+### 交互
+
+- [看板](https://cult-ui.ndjp.net/docs/components/kanban-board.md):拖拽看板组件,卡片可在列之间拖动,支持标签、负责人头像与 Motion 布局动画,使用原生 HTML 拖放 API。 安装:`npx shadcn@latest add @cult-ui/kanban-board`
+- [多步引导原语](https://cult-ui.ndjp.net/docs/components/onboarding.md):组合式多步引导:根组件、步骤导航、功能轮播、选择组、提示列表与步骤指示器。 安装:`npx shadcn@latest add @cult-ui/onboarding`
+- [可排序列表](https://cult-ui.ndjp.net/docs/components/sortable-list.md):拖放排序的列表,带布局动画。 安装:`npx shadcn@latest add @cult-ui/sortable-list`
+- [可扩展向导](https://cult-ui.ndjp.net/docs/components/wizard-expandable.md):可展开的多步向导,支持前进校验、可滚动步骤轨与高度过渡。 安装:`npx shadcn@latest add @cult-ui/wizard-expandable`
+
+### 特效
+
+- [扭曲玻璃](https://cult-ui.ndjp.net/docs/components/distorted-glass.md):用 SVG 分形噪点位移做出玻璃分隔效果,适合区块过渡。 安装:`npx shadcn@latest add @cult-ui/distorted-glass`
+- [抖动图片](https://cult-ui.ndjp.net/docs/components/dither-image.md):用 CSS Bayer 抖动插件处理图片,支持局部揭示遮罩。 安装:`npx shadcn@latest add @cult-ui/dither-image`
+- [灵动岛](https://cult-ui.ndjp.net/docs/components/dynamic-island.md):iPhone 灵动岛组件,提供 14 种尺寸预设之间流畅的弹簧过渡,适合通知、播放器、通话等状态演示。 安装:`npx shadcn@latest add @cult-ui/dynamic-island`
+- [边缘模糊](https://cult-ui.ndjp.net/docs/components/edge-blur.md):多层遮罩 backdrop-filter 堆叠,让内容在页眉页脚处渐隐。 安装:`npx shadcn@latest add @cult-ui/edge-blur`
+- [全屏展开](https://cult-ui.ndjp.net/docs/components/expandable-screen.md):用共享布局动画把卡片或按钮形变成全屏视图。 安装:`npx shadcn@latest add @cult-ui/expandable-screen`
+- [竖纹玻璃](https://cult-ui.ndjp.net/docs/components/fluted-glass.md):WebGL 竖纹(凹槽)玻璃图像着色器,来自 Paper Design,可调纹理形状、棱镜畸变、高光阴影等参数。 安装:`npx shadcn@latest add @cult-ui/fluted-glass`
+- [3D 地球](https://cult-ui.ndjp.net/docs/components/globe.md):基于 cobe 构建的交互式 3D WebGL 地球组件,支持拖拽旋转、明暗主题自适应、标记点与飞行弧线,适合营销页首屏与仪表盘。 安装:`npx shadcn@latest add @cult-ui/globe`
+- [LED 灯板](https://cult-ui.ndjp.net/docs/components/lightboard.md):由灯点组成的滚动 LED 字幕板,含七段字体与手绘。 安装:`npx shadcn@latest add @cult-ui/lightboard`
+- [形变面板](https://cult-ui.ndjp.net/docs/components/morph-surface.md):可平滑形变、尺寸与内容可配置的面板。 安装:`npx shadcn@latest add @cult-ui/morph-surface`
+- [镜头模糊](https://cult-ui.ndjp.net/docs/components/shader-lens-blur.md):带镜头模糊与鼠标交互的 WebGL 着色器组件。 安装:`npx shadcn@latest add @cult-ui/shader-lens-blur`
+- [终端动画](https://cult-ui.ndjp.net/docs/components/terminal-animation.md):可组合的终端动画原语:按类型回放的命令、标签页场景与输出渲染。 安装:`npx shadcn@latest add @cult-ui/terminal-animation`
+
+### 工具
+
+- [代码块](https://cult-ui.ndjp.net/docs/components/code-block.md):带复制按钮与可切换标签页的代码块组件,内置轻量语法着色,适合文档与安装说明。 安装:`npx shadcn@latest add @cult-ui/code-block`
+- [复制按钮](https://cult-ui.ndjp.net/docs/components/copy-button.md):复制到剪贴板按钮,复制成功后图标切换为对勾并显示提示,提供 inline 与 overlay 两种布局。 安装:`npx shadcn@latest add @cult-ui/copy-button`
+- [文件图标](https://cult-ui.ndjp.net/docs/components/file-icons.md):npm、pnpm、Yarn、React、Tailwind 等文件类型与工具图标集。 安装:`npx shadcn@latest add @cult-ui/file-icons`
+- [倒计时](https://cult-ui.ndjp.net/docs/components/timer.md):可设置时长与视觉样式的倒计时器。 安装:`npx shadcn@latest add @cult-ui/timer`
+
+### 协作
+
+- [协作头像](https://cult-ui.ndjp.net/docs/components/collab-avatar.md):用姓名首字母与配色渐变表示在线成员的头像。 安装:`npx shadcn@latest add @cult-ui/collab-avatar`
+- [协作工具栏](https://cult-ui.ndjp.net/docs/components/collab-toolbar.md):把图标按钮与协作者头像分组的编辑器工具栏。 安装:`npx shadcn@latest add @cult-ui/collab-toolbar`
+
+## 使用约定
+
+- 组件是 shadcn/ui registry 项,用 `npx shadcn@latest add @cult-ui/<name>` 安装,不要手工重写。
+- 已安装的源码在 `components/ui/`,可以直接修改,它是你的代码而不是依赖。
+- 组件使用 Tailwind CSS v4 与 shadcn 主题令牌(`bg-background`、`text-foreground`、`ring-ring`),不要硬编码颜色。
+- 动画组件基于 `motion`,需尊重 `prefers-reduced-motion`。

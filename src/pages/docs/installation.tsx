@@ -71,7 +71,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      "@": path.resolve(import.meta.dirname, "./src"),
     },
   },
 })`}
@@ -221,26 +221,28 @@ bunx shadcn@latest add https://www.cult-ui.com/r/shift-card.json`}
 
       <H2>6. 适配说明(非 Next.js 项目)</H2>
       <P>
-        少数组件基于 Next.js 编写,在 Vite 中需要两处小改动:
+        部分组件基于 Next.js 编写,从官方 registry 安装后需要替换以下导入
+        (Vite 项目没有 Next 运行时):
       </P>
       <ul className="text-muted-foreground mt-4 list-disc space-y-1.5 pl-5 text-sm leading-relaxed">
         <li>
           <code className="bg-muted rounded px-1.5 py-0.5 text-xs">next/image</code>{" "}
-          → 替换为标准 <code className="bg-muted rounded px-1.5 py-0.5 text-xs">&lt;img&gt;</code>(如 kanban-board 的头像);
+          改为标准 <code className="bg-muted rounded px-1.5 py-0.5 text-xs">&lt;img&gt;</code>,
+          或使用本站的 <code className="bg-muted rounded px-1.5 py-0.5 text-xs">@/components/ui/image</code> 兼容层;
         </li>
         <li>
           <code className="bg-muted rounded px-1.5 py-0.5 text-xs">next/link</code>{" "}
-          → 替换为 <code className="bg-muted rounded px-1.5 py-0.5 text-xs">&lt;a&gt;</code>{" "}
-          或你所用路由的 Link(如 folded-card);
+          改为 <code className="bg-muted rounded px-1.5 py-0.5 text-xs">&lt;a&gt;</code>,
+          或你所用路由的 Link;
         </li>
         <li>
           <code className="bg-muted rounded px-1.5 py-0.5 text-xs">next-themes</code>{" "}
-          → 本站用 MutationObserver 监听 <code className="bg-muted rounded px-1.5 py-0.5 text-xs">&lt;html&gt;</code>{" "}
-          的 class 变化替代(globe 组件内已适配)。
+          改为项目内的主题 context,本站实现见{" "}
+          <code className="bg-muted rounded px-1.5 py-0.5 text-xs">src/lib/theme.tsx</code>。
         </li>
       </ul>
       <P>
-        其余代码在 Vite 中开箱即用。至此即可在页面里导入组件,例如{" "}
+        完成上述替换后即可在页面里导入组件,例如{" "}
         <code className="bg-muted rounded px-1.5 py-0.5 text-xs">
           import {"{"} DefaultShowcaseGlobe {"}"} from "@/components/ui/globe"
         </code>
@@ -256,7 +258,7 @@ npx shadcn@latest view @cult-ui/globe`}
         className="mt-4"
       />
       <P>
-        想让 AI agent 代劳,请配置{" "}
+        想让 AI Agent 代劳,请配置{" "}
         <Link to="/docs/mcp-server" className="underline underline-offset-4">
           MCP 服务器
         </Link>

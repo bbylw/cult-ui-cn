@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom"
 import {
-  ArrowRight,
   Bot,
   Code2,
   Copy,
@@ -44,18 +43,23 @@ function Hero() {
         </div>
 
         <h1 className="mt-6 text-4xl font-black tracking-tight text-balance sm:text-6xl">
-          <TextAnimate text="让 shadcn/ui 动起来" type="rollIn" />
+          <TextAnimate
+            as="span"
+            text="让 shadcn/ui 动起来"
+            type="rollIn"
+            className="inline-flex flex-wrap justify-center"
+          />
         </h1>
 
         <p className="text-muted-foreground mx-auto mt-5 max-w-2xl text-lg text-pretty leading-relaxed">
-          <strong className="text-foreground">150+ 个动画组件,全部免费。</strong>
-          包括刚刚新增的 58 个。开源,一行命令把源码复制进任何 shadcn/ui 项目——代码完全归你所有。
+          <strong className="text-foreground">官方 150+ 个动画组件,全部免费。</strong>
+          本站已收录其中 137 个,含最新新增的 58 个。开源,一行命令把源码复制进任何 shadcn/ui 项目——代码完全归你所有。
         </p>
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
           <Button size="lg" asChild>
             <Link to="/docs/components">
-              浏览组件 <ArrowRight className="size-4" />
+              浏览组件
             </Link>
           </Button>
           <Button size="lg" variant="outline" asChild>
@@ -66,8 +70,8 @@ function Hero() {
         {/* 统计条 */}
         <dl className="mx-auto mt-12 grid max-w-3xl grid-cols-2 gap-px overflow-hidden rounded-xl border bg-border sm:grid-cols-4">
           {[
-            ["150+", "动画组件"],
-            ["58", "最新新增"],
+            ["137", "本站收录"],
+            ["12", "精修 Props 文档"],
             ["100%", "免费开源"],
             ["MIT", "许可证"],
           ].map(([value, label]) => (
@@ -111,7 +115,7 @@ function FeaturedSection() {
         </div>
         <Button variant="outline" asChild>
           <Link to="/docs/components">
-            浏览全部组件 <ArrowRight className="size-4" />
+            浏览全部组件
           </Link>
         </Button>
       </div>
@@ -122,12 +126,9 @@ function FeaturedSection() {
           if (!doc) return null
           return (
             <div key={slug} className="flex flex-col gap-3">
-              <Link
-                to={`/docs/components/${slug}`}
-                className="group relative block overflow-hidden rounded-xl transition-shadow hover:shadow-lg"
-              >
+              <div className="relative overflow-hidden rounded-xl">
                 <ComponentDemo slug={slug} />
-              </Link>
+              </div>
               <div className="flex items-baseline justify-between gap-2">
                 <Link
                   to={`/docs/components/${slug}`}
@@ -142,7 +143,7 @@ function FeaturedSection() {
                   to={`/docs/components/${slug}`}
                   className="text-muted-foreground hover:text-foreground text-xs"
                 >
-                  文档 →
+                  文档
                 </Link>
               </div>
             </div>
@@ -248,7 +249,7 @@ function InstallSection() {
             ))}
           </ol>
           <Button className="mt-8" variant="outline" asChild>
-            <Link to="/docs/installation">查看完整安装文档 <ArrowRight className="size-4" /></Link>
+            <Link to="/docs/installation">查看完整安装文档</Link>
           </Button>
         </div>
 
@@ -292,7 +293,7 @@ function AiSection() {
       <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6">
         <div className="grid items-start gap-12 lg:grid-cols-2">
           <div>
-            <p className="text-muted-foreground text-sm font-medium">For AI agents</p>
+            <p className="text-muted-foreground text-sm font-medium">For AI Agents</p>
             <h2 className="mt-2 text-3xl font-bold tracking-tight">面向 AI Agent</h2>
             <p className="text-muted-foreground mt-4 leading-relaxed">
               这些文档既写给人看,也写给编码 Agent 看。让 Cursor、Claude Code
@@ -301,18 +302,18 @@ function AiSection() {
             <ul className="mt-6 space-y-3 text-sm">
               {[
                 {
-                  href: "https://www.cult-ui.com/llms.txt",
+                  href: "/llms.txt",
                   label: "llms.txt",
-                  desc: "索引每一个文档页面",
+                  desc: "索引本站全部 137 个组件",
                 },
                 {
-                  href: "https://www.cult-ui.com/llms-full.txt",
+                  href: "/llms-full.txt",
                   label: "llms-full.txt",
                   desc: "完整文档汇总在一个文件中",
                 },
                 {
-                  href: "https://www.cult-ui.com/docs/components/dock.md",
-                  label: "任意 URL + .md",
+                  href: "/docs/components/dock.md",
+                  label: "任意页面 + .md",
                   desc: "获得干净的 Markdown 版本",
                 },
               ].map((item) => (
@@ -390,7 +391,7 @@ function CtaSection() {
               target="_blank"
               rel="noreferrer"
             >
-              在 GitHub 上点 Star <ArrowRight className="size-4" />
+              在 GitHub 上点 Star
             </a>
           </Button>
           <Button size="lg" variant="outline" asChild>

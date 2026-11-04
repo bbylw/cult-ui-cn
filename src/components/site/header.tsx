@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react"
 import { Link, NavLink } from "react-router-dom"
+import { useTheme } from "@/lib/theme"
 import { Moon, Sun } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
@@ -11,7 +11,7 @@ type NavItem =
 const NAV_ITEMS: NavItem[] = [
   { kind: "link", to: "/", label: "首页", end: true },
   { kind: "link", to: "/docs", label: "文档", end: true },
-  { kind: "link", to: "/docs/components/globe", label: "组件" },
+  { kind: "link", to: "/docs/components", label: "组件" },
   {
     kind: "external",
     href: "https://www.cult-ui.com/docs/changelog",
@@ -28,21 +28,15 @@ function GithubIcon({ className }: { className?: string }) {
 }
 
 function ThemeToggle() {
-  const [dark, setDark] = useState(() =>
-    document.documentElement.classList.contains("dark")
-  )
-
-  useEffect(() => {
-    document.documentElement.classList.toggle("dark", dark)
-    localStorage.setItem("cult-ui-cn-theme", dark ? "dark" : "light")
-  }, [dark])
+  const { resolvedTheme, setTheme } = useTheme()
+  const dark = (resolvedTheme ?? "dark") === "dark"
 
   return (
     <Button
       variant="ghost"
       size="icon"
       aria-label={dark ? "切换到浅色模式" : "切换到深色模式"}
-      onClick={() => setDark((d) => !d)}
+      onClick={() => setTheme(dark ? "light" : "dark")}
     >
       {dark ? <Sun className="size-4" /> : <Moon className="size-4" />}
     </Button>

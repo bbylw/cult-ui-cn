@@ -50,6 +50,7 @@ export function ComponentsPage() {
         <div className="relative">
           <Search className="text-muted-foreground pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2" />
           <input
+            aria-label="搜索组件"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
             placeholder="搜索组件名称、slug 或简介…"
@@ -121,7 +122,7 @@ export function ComponentsPage() {
                     </div>
                     {entry.ported && (
                       <span className="shrink-0 rounded-full border border-amber-400/40 bg-amber-400/10 px-2 py-0.5 text-[10px] text-amber-500">
-                        可在线演示
+                        含 Props 文档
                       </span>
                     )}
                   </div>

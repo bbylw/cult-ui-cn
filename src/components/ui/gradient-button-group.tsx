@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react"
 import { animate, useMotionValue } from "motion/react"
 import * as motion from "motion/react-client"
-import { useTheme } from "next-themes"
+import { useTheme } from "@/lib/theme"
 
 import { cn } from "@/lib/utils"
 

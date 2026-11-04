@@ -9,7 +9,7 @@ import {
   type HTMLAttributes,
   type MouseEventHandler,
 } from "react"
-import Image from "next/image"
+import Image from "@/components/ui/image"
 import { useControllableState } from "@radix-ui/react-use-controllable-state"
 import { motion, useReducedMotion } from "motion/react"
 

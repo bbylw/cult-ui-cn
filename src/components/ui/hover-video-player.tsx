@@ -32,7 +32,7 @@ import React, {
   useRef,
   useState,
 } from "react"
-import Image from "next/image"
+import Image from "@/components/ui/image"
 import { Maximize, Minimize, Pause, Play, Volume2, VolumeX } from "lucide-react"
 import { AnimatePresence, motion, useReducedMotion } from "motion/react"
 

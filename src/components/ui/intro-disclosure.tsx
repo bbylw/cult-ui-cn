@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import Image from "next/image"
+import Image from "@/components/ui/image"
 import { CheckIcon, ExternalLinkIcon } from "lucide-react"
 import {
   AnimatePresence,
@@ -432,11 +432,6 @@ export function IntroDisclosure({
     }
   }, [open, currentStep])
 
-  // Early return if feature should be hidden
-  if (!isVisible || !open) {
-    return null
-  }
-
   const handleNext = () => {
     setDirection(1)
     setCompletedSteps((prev) =>
@@ -495,6 +490,11 @@ export function IntroDisclosure({
   }
 
   const { handleDragEnd } = useSwipe(handleSwipe)
+
+  // Hook 必须无条件执行,因此隐藏判断放在所有 Hook 之后。
+  if (!isVisible || !open) {
+    return null
+  }
 
   if (isDesktop) {
     return (

@@ -1,11 +1,13 @@
 import { Link, useParams } from "react-router-dom"
-import { ArrowLeft, ArrowRight, Package } from "lucide-react"
+import { Package } from "lucide-react"
 
 import { CodeBlock } from "@/components/ui/code-block"
 
 import { ComponentDemo } from "@/components/site/demos"
+import { CopyPageButton } from "@/components/site/copy-page"
 import { getCatalogEntry } from "@/lib/component-catalog"
 import type { ComponentCatalogEntry } from "@/lib/component-catalog"
+import { useComponentApi } from "@/lib/component-api"
 import { componentDocs, getComponentDoc } from "@/lib/docs-data"
 import { NotFoundPage } from "@/pages/not-found"
 
@@ -31,6 +33,9 @@ export function ComponentDocPage() {
         <span className="bg-muted text-muted-foreground rounded-full px-2.5 py-0.5 text-xs">
           {doc.category}
         </span>
+        <div className="ml-auto">
+          <CopyPageButton slug={doc.slug} />
+        </div>
       </div>
       <p className="text-muted-foreground mt-1 font-mono text-sm">{doc.name}</p>
       <p className="text-muted-foreground mt-4 leading-relaxed">
@@ -137,6 +142,15 @@ export function ComponentDocPage() {
           cult-ui.com/docs/components/{doc.slug}
         </a>
       </p>
+      <p className="text-muted-foreground mt-2 text-sm">
+        机器可读版本见{" "}
+        <a
+          href={`/docs/components/${doc.slug}.md`}
+          className="underline underline-offset-4"
+        >
+          本页 Markdown
+        </a>
+      </p>
 
       {/* 上一篇 / 下一篇 */}
       <nav className="mt-12 flex items-stretch justify-between gap-4 border-t pt-6">
@@ -146,7 +160,7 @@ export function ComponentDocPage() {
             className="group hover:bg-accent flex flex-1 flex-col rounded-lg border p-4 transition-colors"
           >
             <span className="text-muted-foreground flex items-center gap-1 text-xs">
-              <ArrowLeft className="size-3" /> 上一篇
+              上一篇
             </span>
             <span className="mt-1 text-sm font-semibold">{prev.zhName}</span>
           </Link>
@@ -159,7 +173,7 @@ export function ComponentDocPage() {
             className="group hover:bg-accent flex flex-1 flex-col items-end rounded-lg border p-4 text-right transition-colors"
           >
             <span className="text-muted-foreground flex items-center gap-1 text-xs">
-              下一篇 <ArrowRight className="size-3" />
+              下一篇
             </span>
             <span className="mt-1 text-sm font-semibold">{next.zhName}</span>
           </Link>
@@ -171,8 +185,10 @@ export function ComponentDocPage() {
   )
 }
 
-/* 已移植源码但暂无实时演示的组件:提供中文简介、安装、导出部件与依赖 */
+/* 无逐项 Props 文档的组件:提供实时演示、自动生成的用法与源码属性定义 */
 function CatalogEntryPage({ entry }: { entry: ComponentCatalogEntry }) {
+  const api = useComponentApi(entry.slug)
+
   return (
     <article className="max-w-3xl">
       <div className="flex flex-wrap items-center gap-3">
@@ -183,6 +199,9 @@ function CatalogEntryPage({ entry }: { entry: ComponentCatalogEntry }) {
         <span className="text-muted-foreground rounded-full border px-2.5 py-0.5 text-xs">
           源码已收录
         </span>
+        <div className="ml-auto">
+          <CopyPageButton slug={entry.slug} />
+        </div>
       </div>
       <p className="text-muted-foreground mt-1 font-mono text-sm">{entry.name}</p>
       <p className="text-muted-foreground mt-4 leading-relaxed">
@@ -196,8 +215,8 @@ function CatalogEntryPage({ entry }: { entry: ComponentCatalogEntry }) {
           <code className="text-foreground font-mono text-xs">
             src/components/ui/{entry.slug}.tsx
           </code>
-          ,可直接 import 使用;该组件暂未做实时演示与逐项 Props 表格,
-          完整示例与 Props 请参考官方文档。
+          ,可直接 import 使用;下方提供实时演示与自动生成的用法、源码属性定义,
+          完整官方 Props 说明请参考英文文档。
         </span>
       </p>
 
@@ -220,6 +239,16 @@ function CatalogEntryPage({ entry }: { entry: ComponentCatalogEntry }) {
         />
       </section>
 
+      {api && (
+        <section className="mt-10">
+          <h2 className="mb-4 text-xl font-bold tracking-tight">用法</h2>
+          <CodeBlock code={api.usage} language="tsx" />
+          <p className="text-muted-foreground mt-2 text-xs leading-relaxed">
+            最小可运行示例由导出部件自动生成,完整组合方式见官方文档。
+          </p>
+        </section>
+      )}
+
       {entry.parts.length > 0 && (
         <section className="mt-10">
           <h2 className="mb-4 text-xl font-bold tracking-tight">导出部件</h2>
@@ -233,6 +262,36 @@ function CatalogEntryPage({ entry }: { entry: ComponentCatalogEntry }) {
               </code>
             ))}
           </div>
+        </section>
+      )}
+
+      {api && (
+        <section className="mt-10">
+          <h2 className="mb-4 text-xl font-bold tracking-tight">源码属性定义</h2>
+          {api.typeDefs.length > 0 ? (
+            <>
+              <div className="space-y-3">
+                {api.typeDefs.map((def) => (
+                  <details key={def.name} className="rounded-xl border">
+                    <summary className="cursor-pointer px-4 py-3 text-sm font-medium">
+                      {def.name}
+                    </summary>
+                    <pre className="overflow-x-auto border-t px-4 py-3 text-xs leading-relaxed">
+                      <code>{def.code}</code>
+                    </pre>
+                  </details>
+                ))}
+              </div>
+              <p className="text-muted-foreground mt-2 text-xs leading-relaxed">
+                直接摘自 {`src/components/ui/${entry.slug}.tsx`} 的类型定义,未做改写。
+              </p>
+            </>
+          ) : (
+            <p className="text-muted-foreground text-sm leading-relaxed">
+              该组件使用组合式 API,没有单独的 Props 类型;属性直接来自各导出部件的参数,
+              详见源码与官方文档。
+            </p>
+          )}
         </section>
       )}
 
@@ -264,13 +323,22 @@ function CatalogEntryPage({ entry }: { entry: ComponentCatalogEntry }) {
           cult-ui.com/docs/components/{entry.slug}
         </a>
       </p>
+      <p className="text-muted-foreground mt-2 text-sm">
+        机器可读版本见{" "}
+        <a
+          href={`/docs/components/${entry.slug}.md`}
+          className="underline underline-offset-4"
+        >
+          本页 Markdown
+        </a>
+      </p>
 
       <nav className="mt-12 border-t pt-6">
         <Link
           to="/docs/components"
           className="text-muted-foreground hover:text-foreground text-sm"
         >
-          ← 返回组件总览
+          返回组件总览
         </Link>
       </nav>
     </article>

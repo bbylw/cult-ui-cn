@@ -3,7 +3,7 @@
 "use client"
 
 import { useCallback, useEffect, useMemo, useState } from "react"
-import Image from "next/image"
+import Image from "@/components/ui/image"
 import Autoplay from "embla-carousel-autoplay"
 import { ChevronRight } from "lucide-react"
 import {

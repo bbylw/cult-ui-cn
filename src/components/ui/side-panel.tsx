@@ -33,11 +33,11 @@ const sectionVariants = {
 const sharedTransition = { duration: 0.6, ease: [0.42, 0, 0.58, 1] as const }
 
 export const SidePanel = forwardRef<HTMLDivElement, PanelContainerProps>(
-  ({ panelOpen, handlePanelOpen, className, renderButton, children }) => {
+  ({ panelOpen, handlePanelOpen, className, renderButton, children }, ref) => {
     const [measureRef, bounds] = useMeasure()
 
     return (
-      <ResizablePanel>
+      <ResizablePanel ref={ref}>
         <motion.div
           className={cn(
             "w-[160px] rounded-r-[44px] bg-neutral-900 md:w-[260px]",

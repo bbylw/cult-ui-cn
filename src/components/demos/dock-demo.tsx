@@ -53,14 +53,14 @@ let gradients = [
 
 function DockAnimation() {
   let openIcons = [
-    <CircleIcon className="h-8 w-8 rounded-full fill-black stroke-black" />,
-    <TriangleIcon className="h-8 w-8 rounded-full fill-black stroke-black" />,
-    <SquareIcon className="h-8 w-8 rounded-full fill-black stroke-black" />,
-    <PentagonIcon className="h-8 w-8 rounded-full fill-black stroke-black" />,
-    <HexagonIcon className="h-8 w-8 rounded-full fill-black stroke-black" />,
-    <OctagonIcon className="h-8 w-8 rounded-full fill-black stroke-black" />,
+    <CircleIcon key="CircleIcon" className="h-8 w-8 rounded-full fill-black stroke-black" />,
+    <TriangleIcon key="TriangleIcon" className="h-8 w-8 rounded-full fill-black stroke-black" />,
+    <SquareIcon key="SquareIcon" className="h-8 w-8 rounded-full fill-black stroke-black" />,
+    <PentagonIcon key="PentagonIcon" className="h-8 w-8 rounded-full fill-black stroke-black" />,
+    <HexagonIcon key="HexagonIcon" className="h-8 w-8 rounded-full fill-black stroke-black" />,
+    <OctagonIcon key="OctagonIcon" className="h-8 w-8 rounded-full fill-black stroke-black" />,
     null, // skip
-    <BlocksIcon className="h-8 w-8 rounded-full fill-black stroke-black" />,
+    <BlocksIcon key="BlocksIcon" className="h-8 w-8 rounded-full fill-black stroke-black" />,
   ]
 
   const isMobile = useIsMobile()

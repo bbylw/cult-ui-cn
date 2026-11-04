@@ -10,11 +10,36 @@ import {
   type DitherRevealDirection,
 } from "@/components/ui/dither-image"
 
-const GHIBLI_STILLS: { alt: string; src: string }[] = Array.from(
-  { length: 9 },
-  (_, i) => ({
-    src: `/images/gibli/gibli-${i + 1}.jpg`,
-    alt: `Studio Ghibli-style still ${i + 1}, dithered`,
+/** 本地渐变插画,避免依赖 public 中不存在的图片文件。 */
+function gradientStill(from: string, to: string, accent: string) {
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600">
+    <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="${from}"/><stop offset="1" stop-color="${to}"/>
+    </linearGradient></defs>
+    <rect width="800" height="600" fill="url(#g)"/>
+    <circle cx="620" cy="150" r="110" fill="${accent}" opacity="0.55"/>
+    <circle cx="180" cy="440" r="150" fill="#ffffff" opacity="0.22"/>
+    <path d="M0 470 L220 300 L410 430 L610 260 L800 400 L800 600 L0 600 Z" fill="#0f172a" opacity="0.32"/>
+  </svg>`
+  return `data:image/svg+xml,${encodeURIComponent(svg)}`
+}
+
+const STILL_PALETTES: Array<[string, string, string]> = [
+  ["#f6d365", "#fda085", "#fef3c7"],
+  ["#a1c4fd", "#c2e9fb", "#e0f2fe"],
+  ["#fbc2eb", "#a6c1ee", "#fce7f3"],
+  ["#84fab0", "#8fd3f4", "#dcfce7"],
+  ["#ffecd2", "#fcb69f", "#fff7ed"],
+  ["#d4fc79", "#96e6a1", "#ecfccb"],
+  ["#e0c3fc", "#8ec5fc", "#ede9fe"],
+  ["#f093fb", "#f5576c", "#ffe4e6"],
+  ["#4facfe", "#00f2fe", "#cffafe"],
+]
+
+const GHIBLI_STILLS: { alt: string; src: string }[] = STILL_PALETTES.map(
+  ([from, to, accent], i) => ({
+    src: gradientStill(from, to, accent),
+    alt: `渐变插画 ${i + 1},抖动预览`,
   })
 )
 

@@ -15,6 +15,13 @@ import {
   NextjsIcon,
 } from "../ui/hero-liquid-metal"
 
+/** 内联菱形纹理,避免远程 logo 在 WebGL 纹理加载时失败。 */
+const DIAMOND_TEXTURE =
+  "data:image/svg+xml," +
+  encodeURIComponent(
+    '<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 100 100"><path d="M50 2 98 50 50 98 2 50Z" fill="white"/></svg>'
+  )
+
 export default function HeroLiquidMetalDemo() {
   return (
     <div className="space-y-16">
@@ -32,7 +39,7 @@ export default function HeroLiquidMetalDemo() {
         <HeroLiquidMetal
           width={1280}
           height={720}
-          image="https://shaders.paper.design/images/logos/diamond.svg"
+          image={DIAMOND_TEXTURE}
           colorBack="#ffffff00"
           colorTint="#2c5d72"
           shape={undefined}
@@ -67,7 +74,7 @@ export default function HeroLiquidMetalDemo() {
             distortion: 0.3,
             colorTint: "#4f46e5",
           }}
-          image="https://shaders.paper.design/images/logos/diamond.svg"
+          image={DIAMOND_TEXTURE}
           mobileShaderProps={{
             speed: 0.65,
             scale: 0.78,

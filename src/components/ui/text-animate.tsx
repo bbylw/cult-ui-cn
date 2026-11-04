@@ -1,6 +1,6 @@
 "use client"
 
-import { type FC, useRef } from "react"
+import { useRef } from "react"
 import { type HTMLMotionProps, motion } from "motion/react"
 
 type AnimationType =
@@ -18,6 +18,8 @@ interface Props extends HTMLMotionProps<"div"> {
   type?: AnimationType
   delay?: number
   duration?: number
+  /** 渲染标签,嵌套在标题里时用 span 避免非法 DOM 结构。 */
+  as?: "h1" | "h2" | "span" | "p"
 }
 
 const animationVariants = {
@@ -197,9 +199,14 @@ const animationVariants = {
   },
 }
 
-const TextAnimate: FC<Props> = ({
+const DEFAULT_CLASSNAME =
+  "mt-10 px-8 py-5 pb-8 text-3xl font-black text-black md:text-5xl dark:text-neutral-100"
+
+const TextAnimate = ({
   text,
   type = "whipInUp",
+  as = "h2",
+  className,
   ...props
 }: Props) => {
   //   const { ref, inView } = useInView({
@@ -221,9 +228,12 @@ const TextAnimate: FC<Props> = ({
   //     }
   //   }, [ctrls, isInView]);
 
+  const resolvedClassName = className ?? DEFAULT_CLASSNAME
+
   if (type === "rollIn" || type === "whipIn") {
+    const Tag = as as "h2"
     return (
-      <h2 className="mt-10 px-8 py-5 pb-8 text-3xl font-black text-black md:text-5xl dark:text-neutral-100">
+      <Tag className={resolvedClassName}>
         {text.split(" ").map((word, index) => {
           return (
             <motion.span
@@ -256,18 +266,20 @@ const TextAnimate: FC<Props> = ({
             </motion.span>
           )
         })}
-      </h2>
+      </Tag>
     )
   }
 
+  const MotionTag = motion[as] as typeof motion.h2
+
   return (
-    <motion.h2
+    <MotionTag
       style={{ display: "flex", overflow: "hidden" }}
       role="heading"
       variants={container}
       initial="hidden"
       animate="visible"
-      className="mt-10 px-8 py-5 pb-8 text-4xl font-black text-black md:text-5xl dark:text-neutral-100"
+      className={resolvedClassName}
       {...props}
     >
       {letters.map((letter, index) => (
@@ -275,7 +287,7 @@ const TextAnimate: FC<Props> = ({
           {letter === " " ? "\u00A0" : letter}
         </motion.span>
       ))}
-    </motion.h2>
+    </MotionTag>
   )
 }
 

@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import { ArrowRight } from "lucide-react"
 
 import { componentCatalog } from "@/lib/component-catalog"
 import { componentDocs } from "@/lib/docs-data"
@@ -39,7 +38,7 @@ export function DocsOverviewPage() {
           to="/docs/components"
           className="text-muted-foreground hover:text-foreground text-sm"
         >
-          查看全部 {componentCatalog.length} 个组件 →
+          查看全部 {componentCatalog.length} 个组件
         </Link>
       </div>
       <div className="mt-6 grid gap-4 sm:grid-cols-2">
@@ -62,7 +61,7 @@ export function DocsOverviewPage() {
               {doc.description}
             </p>
             <span className="text-foreground mt-3 inline-flex items-center gap-1 text-sm font-medium opacity-0 transition-opacity group-hover:opacity-100">
-              查看文档 <ArrowRight className="size-3.5" />
+              查看文档
             </span>
           </Link>
         ))}

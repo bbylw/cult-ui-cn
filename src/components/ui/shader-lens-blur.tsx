@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from "react"
 import { atom, useAtom } from "jotai"
 import { motion } from "motion/react"
-import { useTheme } from "next-themes"
+import { useTheme } from "@/lib/theme"
 import * as THREE from "three"
 
 const fragmentShader = `

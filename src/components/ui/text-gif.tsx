@@ -1,7 +1,7 @@
 "use client"
 
 import React, { useEffect, useMemo, useState, type CSSProperties } from "react"
-import Image from "next/image"
+import Image from "@/components/ui/image"
 import { cva, type VariantProps } from "class-variance-authority"
 
 import { cn } from "@/lib/utils"

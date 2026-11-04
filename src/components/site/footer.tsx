@@ -51,7 +51,7 @@ export function SiteFooter() {
               <span className="tracking-tight">Cult UI</span>
             </div>
             <p className="text-muted-foreground mt-3 max-w-xs text-sm leading-relaxed">
-              150+ 个免费开源的 shadcn/ui 动画组件。CLI 把源码复制进你的项目,代码完全归你所有。
+              官方 150+ 个免费开源的 shadcn/ui 动画组件,本站收录 137 个。CLI 把源码复制进你的项目,代码完全归你所有。
             </p>
           </div>
 

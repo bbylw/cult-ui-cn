@@ -2,12 +2,38 @@
 <html lang="zh-CN" class="dark">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      try {
+        if (localStorage.getItem("cult-ui-cn-theme") === "light") {
+          document.documentElement.classList.remove("dark")
+        }
+      } catch (e) {}
+    </script>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Cult UI — 150+ 个免费开源的 shadcn/ui 动画组件,基于 Tailwind CSS v4 与 Motion,一行命令安装,源码归你所有。"
+      content="Cult UI 中文站:137 个免费开源的 shadcn/ui 动画组件,带中文简介、实时演示与一行式安装命令,基于 Tailwind CSS v4 与 Motion。"
     />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Cult UI 中文站" />
+    <meta property="og:title" content="Cult UI — 免费开源的 shadcn/ui 动画组件" />
+    <meta
+      property="og:description"
+      content="137 个免费开源的 shadcn/ui 动画组件,带中文简介、实时演示与一行式安装命令。"
+    />
+    <meta property="og:url" content="https://cult-ui.ndjp.net/" />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/nolly-studio/cult-ui/main/apps/www/public/og.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Cult UI — 免费开源的 shadcn/ui 动画组件" />
+    <meta
+      name="twitter:description"
+      content="137 个免费开源的 shadcn/ui 动画组件,带中文简介、实时演示与一行式安装命令。"
+    />
+    <link rel="canonical" href="https://cult-ui.ndjp.net/" />
     <title>Cult UI — 免费开源的 shadcn/ui 动画组件</title>
   </head>
   <body>
