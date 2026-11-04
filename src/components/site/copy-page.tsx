@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import { Check, Copy } from "lucide-react"
 import { toast } from "sonner"
 
@@ -7,6 +7,14 @@ import { Button } from "@/components/ui/button"
 /** 复制当前组件页的 Markdown 版本(构建时生成的静态 .md 文件)。 */
 export function CopyPageButton({ slug }: { slug: string }) {
   const [copied, setCopied] = useState(false)
+  const timerRef = useRef<number | null>(null)
+
+  useEffect(
+    () => () => {
+      if (timerRef.current !== null) window.clearTimeout(timerRef.current)
+    },
+    []
+  )
 
   const handleCopy = async () => {
     try {
@@ -14,9 +22,13 @@ export function CopyPageButton({ slug }: { slug: string }) {
       if (!response.ok) throw new Error("Markdown 尚未生成")
       const markdown = await response.text()
       await navigator.clipboard.writeText(markdown)
+      if (timerRef.current !== null) window.clearTimeout(timerRef.current)
       setCopied(true)
       toast.success("已复制本页 Markdown")
-      window.setTimeout(() => setCopied(false), 2000)
+      timerRef.current = window.setTimeout(() => {
+        timerRef.current = null
+        setCopied(false)
+      }, 2000)
     } catch (error) {
       toast.error(error instanceof Error ? error.message : "复制失败")
     }

@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Link, NavLink } from "react-router-dom"
+import { componentCatalog } from "@/lib/component-catalog"
 import { useTheme } from "@/lib/theme"
 import { Menu, Moon, Sun, X } from "lucide-react"
 
@@ -177,7 +178,7 @@ export function SiteHeader() {
               </div>
             </div>
             <div className="text-muted-foreground mt-6 border-t px-2 pt-4 pb-2 text-xs leading-relaxed">
-              <p>Cult UI 中文站 · 收录 137 个动画组件</p>
+              <p>Cult UI 中文站 · 收录 {componentCatalog.length} 个动画组件</p>
               <a
                 href="https://github.com/nolly-studio/cult-ui"
                 target="_blank"

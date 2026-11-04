@@ -9,6 +9,7 @@ import path from "path"
 import { spawn } from "child_process"
 import { fileURLToPath } from "url"
 import { chromium } from "playwright"
+import { componentCatalog } from "../src/lib/component-catalog.ts"
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..")
 const dist = path.join(root, "dist")
@@ -109,6 +110,58 @@ try {
 
   const api = await fetch(BASE + "/docs/component-api.json")
   check("component-api 200", api.status === 200)
+
+  // 构建产物回归:dither 插件、双主题 color-scheme、静态正文与规范化 URL
+  const globeHtml = fs.readFileSync(
+    path.join(dist, "docs/components/globe/index.html"),
+    "utf8"
+  )
+  const css = fs
+    .readdirSync(path.join(dist, "assets"))
+    .filter((name) => name.endsWith(".css"))
+    .map((name) => fs.readFileSync(path.join(dist, "assets", name), "utf8"))
+    .join("\n")
+  check("dither 工具类已生成", css.includes(".dither-xs"))
+  check(
+    "双主题 color-scheme 已声明",
+    /color-scheme:\s*light/.test(css) && /color-scheme:\s*dark/.test(css)
+  )
+  check("静态页含正文骨架", /<main><h1>/.test(globeHtml))
+  check(
+    "canonical 使用带尾斜杠的最终地址",
+    globeHtml.includes('href="https://cult-ui.ndjp.net/docs/components/globe/"')
+  )
+  const homeHtml = fs.readFileSync(path.join(dist, "index.html"), "utf8")
+  check(
+    "首页 meta 数量由数据派生",
+    homeHtml.includes(`:${componentCatalog.length} 个免费开源`)
+  )
+
+  // 全量巡检:每个组件页的静态 head、演示 chunk 与运行时异常
+  await page.evaluate(() => localStorage.setItem("cult-ui-cn-theme", "dark"))
+  const pageFailures = []
+  for (const entry of componentCatalog) {
+    const before = pageErrors.length
+    await page.goto(`${BASE}/docs/components/${entry.slug}/`, {
+      waitUntil: "domcontentloaded",
+      timeout: 30000,
+    })
+    await page.waitForTimeout(120)
+    const heading =
+      (await page.locator("h1").first().textContent())?.trim() ?? ""
+    if (!heading) pageFailures.push(`${entry.slug}: 缺少 h1`)
+    if (await page.getByText("演示加载失败").count()) {
+      pageFailures.push(`${entry.slug}: 演示加载失败`)
+    }
+    if (pageErrors.length > before) {
+      pageFailures.push(`${entry.slug}: ${pageErrors[before]}`)
+    }
+  }
+  check(
+    `全部 ${componentCatalog.length} 个组件页可渲染`,
+    pageFailures.length === 0,
+    pageFailures.slice(0, 3).join(" | ")
+  )
 } finally {
   if (browser) await browser.close()
   server.kill()

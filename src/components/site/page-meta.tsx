@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 import { useLocation } from "react-router-dom"
 
-import { resolveMeta, SITE_URL } from "@/lib/site-meta"
+import { canonicalUrl, resolveMeta } from "@/lib/site-meta"
 
 /** 路由级标题与描述。构建后由 prerender-meta.mjs 写入静态 HTML。 */
 export function PageMeta() {
@@ -9,7 +9,7 @@ export function PageMeta() {
 
   useEffect(() => {
     const meta = resolveMeta(pathname)
-    const url = `${SITE_URL}${pathname}`
+    const url = canonicalUrl(pathname)
 
     document.title = meta.title
 

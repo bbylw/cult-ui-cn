@@ -88,11 +88,10 @@ export function CopyButton({
   className,
   variant = "ghost",
   layout = "inline",
-
+  tooltip,
   ...props
 }: React.ComponentProps<typeof Button> & {
   value: string
-  src?: string
   /** `overlay` = absolute corner for code blocks; `inline` = normal flow next to text */
   layout?: "inline" | "overlay"
   tooltip?: string
@@ -111,7 +110,8 @@ export function CopyButton({
 
   return (
     <Button
-      aria-label={hasCopied ? "Copied to clipboard" : "Copy to clipboard"}
+      aria-label={hasCopied ? "已复制" : (tooltip ?? "复制到剪贴板")}
+      title={tooltip}
       className={cn(
         "before:-inset-2 touch-manipulation before:absolute before:z-[-1] before:content-['']",
         "motion-safe:active:scale-[0.96]",

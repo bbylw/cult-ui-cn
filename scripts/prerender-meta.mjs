@@ -9,7 +9,7 @@ import fs from "fs"
 import path from "path"
 import { fileURLToPath } from "url"
 import { componentCatalog } from "../src/lib/component-catalog.ts"
-import { resolveMeta, SITE_URL } from "../src/lib/site-meta.ts"
+import { canonicalUrl, resolveMeta, SITE_URL } from "../src/lib/site-meta.ts"
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..")
 const dist = path.join(root, "dist")
@@ -39,7 +39,7 @@ function replaceMetaContent(html, attr, key, value) {
 
 function renderFor(route) {
   const meta = resolveMeta(route)
-  const url = `${SITE_URL}${route}`
+  const url = canonicalUrl(route)
   let html = template
 
   html = html.replace(
@@ -57,8 +57,20 @@ function renderFor(route) {
     `$1${url}$2`
   )
 
+  // 正文仍由客户端渲染;这里写入最小静态正文,供不执行 JS 的爬虫与
+  // JS 加载失败时兜底。React createRoot 挂载时会接管并清空 #root。
+  const heading = escapeHtml(meta.title.split(" · ")[0])
+  const mdLink = route.startsWith("/docs/components/")
+    ? `<p><a href="${route}.md">阅读本页 Markdown 版本</a></p>`
+    : ""
+  const shell = `<div id="root"><main><h1>${heading}</h1><p>${escapeHtml(meta.description)}</p>${mdLink}<p>启用 JavaScript 可查看实时演示与完整文档。</p></main></div>`
+  html = html.replace('<div id="root"></div>', () => shell)
+
   return html
 }
+
+// 首页同样走 renderFor,让 description / og 与站点数据保持同步。
+fs.writeFileSync(templatePath, renderFor("/"))
 
 const routes = [
   "/docs",
@@ -78,9 +90,11 @@ for (const route of routes) {
 }
 
 // 独立 404 页:保留静态 head 与客户端入口,GitHub Pages 会以 404 状态返回。
-const notFoundHtml = renderFor("/404").replace(
-  /<link rel="canonical"[^>]*>\s*/,
-  ""
+const notFoundHtml = replaceMetaContent(
+  renderFor("/404").replace(/<link rel="canonical"[^>]*>\s*/, ""),
+  "property",
+  "og:url",
+  canonicalUrl("/")
 )
 fs.writeFileSync(path.join(dist, "404.html"), notFoundHtml)
 
@@ -93,7 +107,7 @@ const sitemap = [
   '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
   ...sitemapUrls.map(
     (route) =>
-      `  <url><loc>${SITE_URL}${route}</loc><priority>${priorityFor(route)}</priority></url>`
+      `  <url><loc>${canonicalUrl(route)}</loc><priority>${priorityFor(route)}</priority></url>`
   ),
   "</urlset>",
   "",

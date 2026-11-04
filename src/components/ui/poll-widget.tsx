@@ -341,30 +341,41 @@ export function PollWidgetRoot({
     [votes, totalVotes]
   )
 
+  const timeoutsRef = useRef<ReturnType<typeof setTimeout>[]>([])
+  useEffect(
+    () => () => {
+      timeoutsRef.current.forEach(clearTimeout)
+    },
+    []
+  )
+  const schedule = useCallback((fn: () => void, delay: number) => {
+    timeoutsRef.current.push(setTimeout(fn, delay))
+  }, [])
+
   const submitVote = useCallback(() => {
     if (selected.length > 0 && onVote && animationPhase === "idle") {
       // Start animation sequence
       setAnimationPhase("voting")
 
       // Brief delay before showing results
-      setTimeout(() => {
+      schedule(() => {
         onVote(selected)
         setAnimationPhase("results")
 
         // Show success after results
-        setTimeout(() => {
+        schedule(() => {
           setAnimationPhase("success")
 
           // Auto-collapse after success (for popover/dialog modes)
           if (autoCollapseDelay > 0 && mode !== "inline") {
-            setTimeout(() => {
+            schedule(() => {
               setOpen(false)
               // Reset animation phase after close
-              setTimeout(() => setAnimationPhase("idle"), 300)
+              schedule(() => setAnimationPhase("idle"), 300)
             }, successDuration)
           } else if (autoCollapseDelay > 0 && mode === "inline") {
             // For inline mode, just go back to idle after showing success
-            setTimeout(() => setAnimationPhase("idle"), successDuration)
+            schedule(() => setAnimationPhase("idle"), successDuration)
           }
         }, autoCollapseDelay)
       }, 400)
@@ -377,6 +388,7 @@ export function PollWidgetRoot({
     successDuration,
     mode,
     setOpen,
+    schedule,
   ])
 
   // Reset animation phase when opening

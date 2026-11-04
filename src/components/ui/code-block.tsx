@@ -1,6 +1,13 @@
 "use client"
 
-import { useCallback, useLayoutEffect, useMemo, useRef, useState } from "react"
+import {
+  useCallback,
+  useEffect,
+  useLayoutEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react"
 import { Check, Copy } from "lucide-react"
 import { AnimatePresence, motion } from "motion/react"
 
@@ -109,10 +116,26 @@ export function CodeBlock({
     }
   }, [measureIndicator])
 
+  const copyTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+  useEffect(
+    () => () => {
+      if (copyTimerRef.current) clearTimeout(copyTimerRef.current)
+    },
+    []
+  )
+
   const handleCopy = async () => {
-    await navigator.clipboard.writeText(currentCode)
-    setCopied(true)
-    setTimeout(() => setCopied(false), 2000)
+    try {
+      await navigator.clipboard.writeText(currentCode)
+      setCopied(true)
+      if (copyTimerRef.current) clearTimeout(copyTimerRef.current)
+      copyTimerRef.current = setTimeout(() => {
+        copyTimerRef.current = null
+        setCopied(false)
+      }, 2000)
+    } catch {
+      setCopied(false)
+    }
   }
 
   const handleTabChange = (index: number) => {

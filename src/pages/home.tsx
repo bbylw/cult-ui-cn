@@ -21,7 +21,8 @@ import TextAnimate from "@/components/ui/text-animate"
 
 import { ComponentDemo } from "@/components/site/demos"
 import { Button } from "@/components/ui/button"
-import { getComponentDoc } from "@/lib/docs-data"
+import { componentCatalog } from "@/lib/component-catalog"
+import { componentDocs, getComponentDoc } from "@/lib/docs-data"
 
 /* ── 顶部 Hero ─────────────────────────────────────────── */
 function Hero() {
@@ -56,7 +57,7 @@ function Hero() {
             官方 150+ 个免费 shadcn/ui 动画组件。
           </strong>
           <span className="mt-1 block">
-            本站收录 137 个,一行命令即可安装。
+            本站收录 {componentCatalog.length} 个,一行命令即可安装。
           </span>
         </p>
 
@@ -72,8 +73,8 @@ function Hero() {
         {/* 统计条 */}
         <dl className="mx-auto mt-10 grid max-w-4xl grid-cols-2 gap-px overflow-hidden rounded-xl border bg-border shadow-sm sm:grid-cols-4">
           {[
-            ["137", "本站收录"],
-            ["12", "含 Props 文档"],
+            [String(componentCatalog.length), "本站收录"],
+            [String(componentDocs.length), "含 Props 文档"],
             ["100%", "免费开源"],
             ["MIT", "许可证"],
           ].map(([value, label]) => (
@@ -309,7 +310,7 @@ function AiSection() {
                 {
                   href: "/llms.txt",
                   label: "llms.txt",
-                  desc: "索引本站全部 137 个组件",
+                  desc: `索引本站全部 ${componentCatalog.length} 个组件`,
                 },
                 {
                   href: "/llms-full.txt",

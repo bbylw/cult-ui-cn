@@ -5,7 +5,7 @@
  *   public/docs/components/<slug>.md
  *   public/docs/component-api.json
  *
- * 数据源:component-catalog.ts(137 个组件)、docs-data.ts(12 篇精修文档)、
+ * 数据源:component-catalog.ts 与 docs-data.ts(数量由数据本身派生)、
  * src/components/ui/<slug>.tsx(自动提取 Props 类型定义)。
  *
  * 运行:bun scripts/generate-agent-docs.mjs(由 build 脚本自动调用)
@@ -207,7 +207,7 @@ for (const entry of componentCatalog) {
 const indexLines = [
   "# Cult UI 中文站",
   "",
-  "> Cult UI 是 150+ 个免费开源的 shadcn/ui 动画组件。本站收录 137 个组件的源码、中文简介、在线演示与安装命令,并为其中 12 个组件提供逐项 Props 文档。",
+  `> Cult UI 是 150+ 个免费开源的 shadcn/ui 动画组件。本站收录 ${componentCatalog.length} 个组件的源码、中文简介、在线演示与安装命令,并为其中 ${componentDocs.length} 个组件提供逐项 Props 文档。`,
   "",
   "每个组件都是 shadcn/ui registry 项,CLI 会把源码复制进你的项目。",
   "",

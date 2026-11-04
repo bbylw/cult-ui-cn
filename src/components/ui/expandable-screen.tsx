@@ -69,12 +69,14 @@ export function ExpandableScreen({
   }
 
   useEffect(() => {
-    if (lockScroll) {
-      if (isExpanded) {
-        document.body.style.overflow = "hidden"
-      } else {
-        document.body.style.overflow = "unset"
-      }
+    if (!lockScroll) return
+
+    const previous = document.body.style.overflow
+    document.body.style.overflow = isExpanded ? "hidden" : previous
+
+    // 组件卸载(或展开态切换)时恢复原值,避免把页面永久锁死。
+    return () => {
+      document.body.style.overflow = previous
     }
   }, [isExpanded, lockScroll])
 

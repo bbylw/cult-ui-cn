@@ -1,5 +1,5 @@
 /* 由官方 registry(https://www.cult-ui.com/r/registry.json)整理生成,
-   共收录 137 个组件,逐项 Props 文档以 docs-data.ts 为准。
+   逐项 Props 文档以 docs-data.ts 为准。
    导出部件与依赖取自各组件 registry JSON。 */
 
 export type ComponentCatalogEntry = {

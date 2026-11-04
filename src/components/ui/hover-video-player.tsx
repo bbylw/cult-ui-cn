@@ -178,14 +178,17 @@ function debounce<T extends (...args: any[]) => any>(
   return debouncedFn
 }
 
-// Add this helper function
 function isVimeoUrl(url: string): boolean {
   return url.includes("player.vimeo.com/video/") || url.includes("vimeo.com/")
 }
 
-// Add this helper function
+/* SDK 是全局单例:缓存 Promise 避免并发调用重复注入脚本,失败时清空缓存以便重试。 */
+let vimeoSDKPromise: Promise<VimeoConstructor> | null = null
+
 function loadVimeoSDK(): Promise<VimeoConstructor> {
-  return new Promise((resolve, reject) => {
+  if (vimeoSDKPromise) return vimeoSDKPromise
+
+  vimeoSDKPromise = new Promise((resolve, reject) => {
     if ((window as any).Vimeo) {
       resolve((window as any).Vimeo)
       return
@@ -195,9 +198,14 @@ function loadVimeoSDK(): Promise<VimeoConstructor> {
     script.src = "https://player.vimeo.com/api/player.js"
     script.async = true
     script.onload = () => resolve((window as any).Vimeo)
-    script.onerror = reject
+    script.onerror = () => {
+      vimeoSDKPromise = null
+      reject(new Error("Vimeo Player SDK 加载失败"))
+    }
     document.body.appendChild(script)
   })
+
+  return vimeoSDKPromise
 }
 
 // Main Component

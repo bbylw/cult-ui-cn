@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@import "dither-plugin";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -133,8 +134,11 @@
   }
 }
 
-/* 深色为默认主题 */
-html {
+/* 主题切换时同步原生控件(滚动条、表单控件)的配色 */
+:root {
+  color-scheme: light;
+}
+html.dark {
   color-scheme: dark;
 }
 
